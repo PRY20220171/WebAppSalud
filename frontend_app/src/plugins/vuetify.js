@@ -20,12 +20,12 @@ export default new Vuetify({
         success: '#4CAF50',
         warning: '#FFC107',
 
-        // colores creados
-        rojo: '#E3371E',
-        naranja: '#FF7A48',
-        turquesa: '#0593A2',
-        azul: '#103778',
-        humo: '#F9FAFC',
+        // colores de la marca
+        main_color: '#1CE8B6', // turquesa
+        second_0: '#2E9EFF', // azul claro
+        second_1: '#33FF35', // verde limon
+        third_0: '#6245F5',//violeta
+        third_1: '#E8FF00',//amarillo
       },
     },
   },
