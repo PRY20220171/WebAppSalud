@@ -1,5 +1,5 @@
-.fixed_top{
-    position:fixed;
+.stepper_plus{
     width: 100%;
-    top:100;
+    height: 50px !important;
+    box-shadow: none !important;
 }
