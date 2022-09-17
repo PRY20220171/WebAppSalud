@@ -1,5 +1,5 @@
 <template> <!-- https://github.com/zakaria-29-dev/Vuejs-Vuetify-Login-Application-Moden/blob/main/src/views/Home.vue -->
-    <v-app id="login">
+    <div id="login">
       
           <v-row align="center" justify="center">
             <v-col cols="12" sm="8" md="8">
@@ -57,7 +57,7 @@
             </v-col>
           </v-row>
           
-    </v-app>
+        </div>
   </template>
   
   <script>

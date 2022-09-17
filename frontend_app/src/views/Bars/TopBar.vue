@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <div id="TopBar">
     <v-app-bar app color="white" >
       <v-container fluid class="align-center">
         <v-row class="mx-0 py-n16">
@@ -14,5 +14,5 @@
         </v-row>
       </v-container>
     </v-app-bar>
-  </v-app>
+  </div>
 </template>
