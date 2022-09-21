@@ -1,14 +1,24 @@
-export function PacienteRoute() {
+export function RegistrarPacienteRoute() {
     return {
-        path: '/registrar_paciente',
-        name: 'registrar_paciente',
+        path: '/pacientes/create',
+        name: 'RegistroPaciente',
         component: () => import( '../views/_createOrUpdate/Pacientes/_RegistrarPaciente.vue')
+        //beforeEnter: SellerAuthorization
     };
 }
-export function ListaPacientesRoute() {
+export function EditarPacienteRoute() {
     return {
-        path: '/listar_pacientes',
-        name: 'listar_pacientes',
+        path: '/pacientes/update/:id',
+        name: 'ActualizarPaciente',
+        component: () => import("../views/_createOrUpdate/Pacientes/_RegistrarPaciente.vue"),
+        //beforeEnter: SellerAuthorization
+    };
+}
+export function ListarPacientesRoute() {
+    return {
+        path: '/pacientes',
+        name: 'pacientes',
         component: () => import( '../views/_indexes/PacientesIndex.vue')
+        //beforeEnter: SellerAuthorization
     };
 }

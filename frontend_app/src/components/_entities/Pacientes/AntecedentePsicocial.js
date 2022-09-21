@@ -8,6 +8,7 @@ export default {
       return {
         
         model:{
+          antecedentePsicosocialId:'',
             apoyofam: '',
             edadgestante: '',
             nrohijos: '',

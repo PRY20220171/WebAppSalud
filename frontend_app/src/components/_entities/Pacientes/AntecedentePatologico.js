@@ -8,6 +8,7 @@ export default {
       return {
         
         model:{
+          antecedentePatologicoId:'',
             tbc: '',
             sobasma: '',
             transfsangre: '',

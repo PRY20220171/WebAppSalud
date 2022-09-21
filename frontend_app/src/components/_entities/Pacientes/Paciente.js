@@ -8,6 +8,7 @@ export default {
       return {
         
         model:{
+            pacienteId:'',
             fec_nac:'',
             anios:null,
             meses:null,
@@ -35,7 +36,25 @@ export default {
         tipo_ecivil: [ 'soltero', 'casado', 'divorciado', 'en separación', 'viudo', 'concubinato']
       }
     },
-    
+
+    validators: {
+        'model.Nombres'(value) {
+            return this.$validator
+                .value(value)
+                .required();
+        },
+        'model.Apellidos'(value) {
+            return this.$validator
+                .value(value)
+                .required();
+        },
+        'model.Docnum'(value) {
+            return this.$validator
+                .value(value)
+                .required();
+        },
+    },
+
     methods:{
       clacEdad: function(){
         var fecha=this.model.fec_nac;

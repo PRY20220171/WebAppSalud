@@ -8,6 +8,7 @@ export default {
     data () {
       return {
         model:{
+          ubicacionId:'',
             Pais:'',
             Region:'',
             Provincia:'',

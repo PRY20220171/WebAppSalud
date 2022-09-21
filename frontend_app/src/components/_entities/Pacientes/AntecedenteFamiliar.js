@@ -1,5 +1,5 @@
 export default {
-    name: 'AntecedentePatologico',
+    name: 'AntecedenteFamiliar',
 
     components: {
     },
@@ -8,6 +8,7 @@ export default {
       return {
         
         model:{
+          antecedenteFamiliarId: '',
             tbc: '',
             vihsida: '',
             diabetes: '',

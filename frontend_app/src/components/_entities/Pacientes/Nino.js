@@ -8,6 +8,7 @@ export default {
       return {
         
         model:{
+          ninoId:'',
             Tipoembarazo: '',
             Embarazoriesgo: '',
             Controlprenatal: '',

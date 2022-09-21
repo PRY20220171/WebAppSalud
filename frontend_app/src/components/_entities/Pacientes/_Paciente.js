@@ -31,6 +31,8 @@ export default {
     
     data () {
       return {
+      //  user: this.$store.state.user,
+      //  isLoading: false,
         e1: 1,
         paciente: Paciente.model,
         lugarnac: Ubicacion.lugarnac,
