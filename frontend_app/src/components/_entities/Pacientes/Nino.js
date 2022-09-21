@@ -1,9 +1,5 @@
-// import TopBar from '../Bars/TopBar.vue';
-
-//import PacienteView from '../../../views/_createOrUpdate/Pacientes/PacienteView.vue';
-
 export default {
-    name: 'Paciente',
+    name: 'Nino',
 
     components: {
     },
@@ -22,6 +18,10 @@ export default {
             Perimcefalico: '',
             Respllanto: '',
         },
+
+        tipo_embarazo: ['Normal', 'complicado'],
+        tipo_riesgo: ['Si', 'No'],
+        tipo_control: ['Si', 'No'],
 
       }
     },
