@@ -6,7 +6,7 @@
             <h2 class="text-h1">¡Hola! ¿Qué tal,</h2>
         </v-row>
         <v-row class="my-15 justify-center">
-            <h2 class="text-h2"> {{model.nombres}}Karina Antorcha {{model.apellidos}}?</h2>
+            <h2 class="text-h2"> {{model.nombres}}Samael Veritas {{model.apellidos}}?</h2>
             <v-icon>mdi-account</v-icon>
             <h2 class="text-h3 main_color--text text--darken-1"> {{model.rol}}Administrador</h2>
         </v-row>
@@ -48,6 +48,9 @@
                             
                     </v-card-text>
                     </v-card>
+                    
+                    <router-link to="/pacientes/create"  class="btn primary ">Editar</router-link>
+
                     <v-btn color="primary" @click="e1 = 1" > Editar </v-btn>
             </v-col>
             </v-row>

@@ -18,7 +18,7 @@ export function ListarResultadossRoute() {
     return {
         path: '/Resultados',
         name: 'Resultados',
-        component: () => import( '../views/_indexes/ResultadosIndex.vue')
+        component: () => import( '../views/_indexes/Resultados/ResultadosIndex.vue')
         //beforeEnter: SellerAuthorization
     };
 }

@@ -4,9 +4,11 @@ import Atencion from '../../../views/_createOrUpdate/Atenciones/AtencionView.vue
 import Acompanante from '../../../views/_createOrUpdate/Atenciones/AcompananteView.vue';
 import FactoresRiesgo from '../../../views/_createOrUpdate/Atenciones/FactoresRiesgoView.vue';
 import CentroMedico from '../../../views/_createOrUpdate/Atenciones/CentroMedicoView.vue';
-import SignosVitales from '../../../views/_createOrUpdate/Pruebas/SignosVitales';
 
+import SignosVitales from '../../../views/_createOrUpdate/Pruebas/SignosVitales';
 import Tratamientos from '../../../views/_indexes/Pruebas/TratamientoIndex';
+import Pruebas from '../../../views/_indexes/Pruebas/PruebasIndex';
+import Diagnosticos from '../../../views/_indexes/DiagnosticosIndex';
 
 export default {
     name: 'RegistrarAtencion',
@@ -21,7 +23,9 @@ export default {
         CentroMedico,
       //de otros modulos
         SignosVitales,
-        Tratamientos
+        Pruebas,
+        Tratamientos,
+        Diagnosticos
     },
     
     data () {

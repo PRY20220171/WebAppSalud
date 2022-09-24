@@ -18,7 +18,7 @@ export function ListaAtencionesRoute() {
     return {
         path: '/Consultas',
         name: 'Consultas',
-        component: () => import( '../views/_indexes/AtencionesIndex.vue')
+        component: () => import( '../views/_indexes/Atenciones/AtencionesIndex.vue')
         //beforeEnter: SellerAuthorization
     };
 }

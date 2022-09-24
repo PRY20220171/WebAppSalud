@@ -34,4 +34,4 @@
     </v-card>
   </template>
   
-  <script src="../../../components/_indexes/PruebasIndex.js"></script>
+  <script src="../../../components/_indexes/SignosVitales"></script>

@@ -49,9 +49,11 @@
                   <v-row>
                     <v-col cols="12"  md="2"> <SignosVitales/> </v-col>
                     <v-col cols="12"  md="10"> <Tratamientos/> </v-col>
+                    <v-col cols="12"  > <Diagnosticos/> </v-col>
+                    <v-col cols="12"  > <Pruebas/> </v-col>
                   </v-row>
                   <v-btn color="main_color darken-1" @click="e1 = 1" dark> Anterior </v-btn>
-                  <v-btn color="primary" @click="e1 = 3" > Continue </v-btn>
+                  <v-btn color="primary" @click="e1 = 1" > Continue </v-btn>
                   <v-btn text> Cancel </v-btn>
                 </v-stepper-content>
   
@@ -65,4 +67,5 @@
   
   <script src="../../../components/_entities/Atenciones/_Atencion">
 import SignosVitales from "../Pruebas/SignosVitales.vue";
-import TratamientoIndex from '@/views/_indexes/Pruebas/TratamientoIndex.vue';</script>
+import TratamientoIndex from '@/views/_indexes/Pruebas/TratamientoIndex.vue';
+import DiagnosticosIndex from '@/views/_indexes/DiagnosticosIndex.vue';</script>

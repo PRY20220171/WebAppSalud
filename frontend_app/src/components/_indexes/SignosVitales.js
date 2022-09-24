@@ -1,11 +1,8 @@
 import Bars from '../../views/Shared/Bars.vue';
-import Prueba from '../../views/_createOrUpdate/Pruebas/PruebaView.vue'
-
 export default {
-    name: 'PruebaIndex',
+    name: 'SignosVitales',
     components: {
         Bars,
-        Prueba
     },
     mounted() {
         this.getAll(1);

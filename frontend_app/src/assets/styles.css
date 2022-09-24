@@ -7,3 +7,6 @@
     text-decoration: none;
     color: var(--v-secondary-darken1);
 }
+.v-application--wrap{
+    background-color: #F5F5F5   ;
+}

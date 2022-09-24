@@ -18,7 +18,7 @@ export function ListarPruebasRoute() {
     return {
         path: '/Pruebas',
         name: 'Pruebas',
-        component: () => import( '../views/_indexes/PruebasIndex.vue')
+        component: () => import( '../views/_indexes/Pruebas/PruebasIndex.vue')
         //beforeEnter: SellerAuthorization
     };
 }
