@@ -1,10 +1,12 @@
 import Bars from '../../../views/Shared/Bars.vue';
 
 import Atencion from '../../../views/_createOrUpdate/Atenciones/AtencionView.vue';
-import CentroMedico from '../../../views/_createOrUpdate/Atenciones/CentroMedicoView.vue';
 import Acompanante from '../../../views/_createOrUpdate/Atenciones/AcompananteView.vue';
 import FactoresRiesgo from '../../../views/_createOrUpdate/Atenciones/FactoresRiesgoView.vue';
-import Sintoma from '../../../views/_createOrUpdate/Atenciones/SintomaView.vue';
+import CentroMedico from '../../../views/_createOrUpdate/Atenciones/CentroMedicoView.vue';
+import SignosVitales from '../../../views/_createOrUpdate/Pruebas/SignosVitales';
+
+import Tratamientos from '../../../views/_indexes/Pruebas/TratamientoIndex';
 
 export default {
     name: 'RegistrarAtencion',
@@ -14,10 +16,12 @@ export default {
         Bars,
       //detalle
         Atencion,
-        CentroMedico,
         Acompanante,
         FactoresRiesgo,
-        Sintoma,
+        CentroMedico,
+      //de otros modulos
+        SignosVitales,
+        Tratamientos
     },
     
     data () {

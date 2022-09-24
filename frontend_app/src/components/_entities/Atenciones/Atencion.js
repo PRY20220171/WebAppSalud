@@ -1,7 +1,10 @@
+import Sintoma from '../../../views/_createOrUpdate/Atenciones/SintomaView.vue';
+
 export default {
     name: 'Atencion',
 
     components: {
+      Sintoma,
     },
     
     data () {

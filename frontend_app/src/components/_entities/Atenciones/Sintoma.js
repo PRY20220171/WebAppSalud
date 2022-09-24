@@ -12,9 +12,18 @@ export default {
             idatencion: '',
             signossintomas: '',
         },
+        items:[
+            'Fiebre','Diarrea','Fatiga','Dolores musculares','Tos'
+        ],
+        loading: false,
+        search: '',
+        selected: [],
       }
     },
     
-    methods:{
-    }
+    methods: {
+      addSintoma(value){
+        this.items.push({value})
+      }
+    },
   }

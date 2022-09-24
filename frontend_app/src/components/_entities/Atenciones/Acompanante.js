@@ -20,6 +20,8 @@ export default {
             parentezco: '',
         },
 
+        tipo_doc: ['DNI', 'Carnet de Extranjería', 'Pasaporte'],
+        tipo_educ: ['Inicial','Primario','Secundario','Técnica','Superior','Especial'],
         tipo_parentezco: ['Padre', 'Madre','Hermano(a)','Tío(a)','Primo(a)','Hijo(a)','Nieto(a)','Sobrino(a)','Ninguno'],
 
       }

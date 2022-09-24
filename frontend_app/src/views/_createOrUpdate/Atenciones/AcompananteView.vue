@@ -32,10 +32,6 @@
   
           <v-row>
             <v-col >
-              <v-text-field label="telefono" name="telefono" v-model="model.Telefono" 
-              prepend-icon="mdi-phone" type="text" color="main_color" hide-details="auto" />
-            </v-col>
-            <v-col >
               <v-text-field label="Fecha de nacimiento" name="Fecha de nacimiento"  v-model="model.fec_nac" @input="clacEdad"
               prepend-icon="mdi-cake-variant" type="date" color="main_color" hide-details="auto" />
             </v-col>
@@ -48,12 +44,18 @@
           </v-row>
   
           <v-row>
-            <v-col md="6">
-              <v-select :items="tipo_educ" label="grado de instrucción" name="grado_instr" v-model="model.Gradoinstruccion" 
-              prepend-icon="mdi-school" color="main_color" hide-details="auto"></v-select>
-            </v-col>
+            <v-col >
+              <v-text-field label="telefono" name="telefono" v-model="model.Telefono" 
+              prepend-icon="mdi-phone" type="text" color="main_color" hide-details="auto" />
+            </v-col>            
             <v-col cols="12" md="6">
               <v-select :items="tipo_parentezco" label="parentezco" name="parentezco" v-model="model.parentezco" 
+              prepend-icon="mdi-school" color="main_color" hide-details="auto"></v-select>
+            </v-col>
+          </v-row>
+          <v-row>
+            <v-col md="6">
+              <v-select :items="tipo_educ" label="grado de instrucción" name="grado_instr" v-model="model.Gradoinstruccion" 
               prepend-icon="mdi-school" color="main_color" hide-details="auto"></v-select>
             </v-col>
           </v-row>

@@ -6,14 +6,14 @@
         <v-row class="mx-0">
           <v-icon class="main_color--text text--darken-1">mdi-chevron-double-right</v-icon>
           <v-breadcrumbs></v-breadcrumbs>
-          <v-col cols="3" class="main_color--text text--darken-1 " >
+          <!--<v-col cols="3" class="main_color--text text--darken-1 " >
             <h4 class="font-weight-regular">Registrar paciente</h4>
           </v-col>
         
           <v-icon class="main_color--text text--darken-2">mdi-chevron-double-right</v-icon>
           <v-col cols="4" class="main_color--text text--darken-2 fill-height">
             <h4 class="font-weight-regular">Informacion general</h4>
-          </v-col>
+          </v-col>-->
         </v-row>
 
       </v-container>

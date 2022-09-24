@@ -9,7 +9,9 @@ export default {
         
         model:{
             idtratamiento: '',
-            medicamento: '',
+            nombre: '',//CORREGIR BD
+            tiempo: '',//CORREGIR BD nulleable
+            dosis: '',//CORREGIR BD nulleable
             descripcion: '',
         },
       }

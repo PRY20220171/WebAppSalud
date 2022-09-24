@@ -14,11 +14,9 @@ export default {
             fecprueba: '',
             resultado: '',
             observacion: '',
-            signosvitales: '',
         },
       }
     },
-    
     methods:{
     }
   }
