@@ -7,7 +7,7 @@
 <script>
   //import HelloWorld from '../components/HelloWorld'
 //import Login from '@/components/Login.vue';
-import Login from './/Login.vue';
+import Login from './LoginView.vue';
 
   export default {
     name: 'Home',

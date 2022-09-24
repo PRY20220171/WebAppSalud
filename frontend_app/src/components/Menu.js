@@ -16,39 +16,39 @@
         {
           name: ['Usuarios','mdi-account-circle'],
           submenus: [
-            ['Mi perfil','mdi-account-outline','/'],
-            ['Registrar usuario','mdi-account-plus-outline','/registrar_paciente'],
-            ['Ver usuarios','mdi-account-multiple-outline','/registrar_paciente']
+            ['Mi perfil','mdi-account-outline','/perfil'],
+            ['Registrar usuario','mdi-account-plus-outline','/Usuarios/create'],
+            ['Ver usuarios','mdi-account-multiple-outline','/Usuarios']
           ]
         },{
           name: ['Pacientes','mdi-account-circle'],
           submenus: [
-            ['Registrar paciente','mdi-account-plus-outline','/registrar_paciente'],
-            ['Ver pacientes','mdi-account-multiple-outline','/registrar_paciente']
+            ['Registrar paciente','mdi-account-plus-outline','/pacientes/create'],
+            ['Ver pacientes','mdi-account-multiple-outline','/pacientes']
           ]
         },{
           name: ['Consultas','mdi-file'],
           submenus: [
-            ['Registrar consulta','mdi-file-plus-outline','/registrar_paciente'],
-            ['Ver consultas','mdi-file-multiple-outline','/registrar_paciente']
+            ['Registrar consulta','mdi-file-plus-outline','/Consultas/create'],
+            ['Ver consultas','mdi-file-multiple-outline','/Consultas']
           ]
         },{
           name: ['Diagnósticos','mdi-file'],
           submenus: [
-            ['Registrar diagnóstico','mdi-file-plus-outline','/registrar_paciente'],
-            ['Ver diagnósticos','mdi-file-multiple-outline','/registrar_paciente']
+            ['Registrar diagnóstico','mdi-file-plus-outline','/Diagnosticos/create'],
+            ['Ver diagnósticos','mdi-file-multiple-outline','/Diagnosticos']
           ]
         }, {
           name: ['Pruebas','mdi-file'],
           submenus: [
-            ['Registrar prueba','mdi-file-plus-outline','/registrar_paciente'],
-            ['Ver pruebas','mdi-file-multiple-outline','/registrar_paciente']
+            ['Registrar prueba','mdi-file-plus-outline','/Pruebas/create'],
+            ['Ver pruebas','mdi-file-multiple-outline','/Pruebas']
           ]
         }, {
           name: ['Resultados','mdi-file'],
           submenus: [
-            ['Registrar resultados','mdi-file-plus-outline','/registrar_paciente'],
-            ['Ver resultados','mdi-file-multiple-outline','/registrar_paciente']
+            ['Registrar resultados','mdi-file-plus-outline','/Resultados/create'],
+            ['Ver resultados','mdi-file-multiple-outline','/Resultados']
           ]
         },{
           name: ['Cerrar Sesión','mdi-account'],

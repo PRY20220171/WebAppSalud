@@ -13,6 +13,7 @@ export default {
       //compartidos
         Bars,
       //detalle
+        Atencion,
         CentroMedico,
         Acompanante,
         FactoresRiesgo,

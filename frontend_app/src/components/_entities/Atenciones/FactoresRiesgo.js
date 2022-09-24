@@ -19,7 +19,7 @@ export default {
             fecultregla: '',
         },
         
-        tipo_parentezco: ['Padre', 'Madre','Hermano(a)','Tío(a)','Primo(a)','Hijo(a)','Nieto(a)','Sobrino(a)','Ninguno'],
+        tipo_parentezco: ['Padre', 'Madre','Hermano(a)','Tío(a)','Primo(a)','Hijo(a)','Nieto(a)','Sobrino(a)','Sin parentezco','Sin cuidador'],
 
       }
     },

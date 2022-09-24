@@ -5,12 +5,27 @@ export function RegistrarUsuarioRoute() {
         component: () => import( '../views/_createOrUpdate/Usuarios/_RegistrarUsuario.vue')
         //beforeEnter: SellerAuthorization
     };
+}export function VerPerfilRoute() {
+    return {
+        path: '/perfil',
+        name: 'Mi Perfil',
+        component: () => import( '../views/Usuario/PerfilView.vue')
+        //beforeEnter: SellerAuthorization
+    };
 }
 export function EditarUsuarioRoute() {
     return {
         path: '/Usuarios/update/:id',
         name: 'ActualizarUsuario',
         component: () => import("../views/_createOrUpdate/Usuarios/_RegistrarUsuario.vue"),
+        //beforeEnter: SellerAuthorization
+    };
+}
+export function EditarPerfilRoute() {
+    return {
+        path: '/Usuarios/update/:id',
+        name: 'ActualizarUsuario',
+        component: () => import("../views/Usuario/EditarPerfilView.vue"),
         //beforeEnter: SellerAuthorization
     };
 }

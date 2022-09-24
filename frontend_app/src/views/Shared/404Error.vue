@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div style="display:inline-block; vertical-align: middle;">
-      <img  src="../assets/logo.jpg" width="80%"/>
+      <img  src="../../assets/logo.png" width="80%"/>
     </div>
     <div style="display:inline-block; vertical-align: middle;">
       <h1 class="title"> </h1>

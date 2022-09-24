@@ -14,14 +14,25 @@ Vue.use(VueRouter)
 
 const routes = [
   {
+    path: '*',
+    name: 'pageerror',
+    component: () => import("../views/Shared/404Error.vue")
+  },{
     path: '/',
     name: 'home',
     component: HomeView
-  },
-  {
+  },{
+    path: '/MiPerfil',
+    name: 'MiPerfil',
+    component: () => import('../views/Usuario/PerfilView.vue')
+  },{
+    path: '/MiPerfil/editar',
+    name: 'EditarPerfil',
+    component: () => import('../views/Usuario/EditarPerfilView.vue')
+  },{
     path: '/about',
     name: 'about',
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    component: () => import('../views/AboutView.vue')
   },
   PacientesRoutes.RegistrarPacienteRoute(),
   PacientesRoutes.EditarPacienteRoute(),
@@ -46,6 +57,9 @@ const routes = [
   UsuariosRoutes.RegistrarUsuarioRoute(),
   UsuariosRoutes.EditarUsuarioRoute(),
   UsuariosRoutes.ListarUsuariosRoute(),
+  UsuariosRoutes.VerPerfilRoute(),
+  UsuariosRoutes.EditarPerfilRoute(),
+
 ]
 
 

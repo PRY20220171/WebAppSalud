@@ -1,24 +1,24 @@
 export function RegistrarResultadosRoute() {
     return {
-        path: '/Resultadoss/create',
+        path: '/Resultados/create',
         name: 'RegistroResultados',
-        component: () => import( '../views/_createOrUpdate/Resultadoss/_RegistrarResultados.vue')
+        component: () => import( '../views/_createOrUpdate/Resultados/_RegistrarResultado.vue')
         //beforeEnter: SellerAuthorization
     };
 }
 export function EditarResultadosRoute() {
     return {
-        path: '/Resultadoss/update/:id',
+        path: '/Resultados/update/:id',
         name: 'ActualizarResultados',
-        component: () => import("../views/_createOrUpdate/Resultadoss/_RegistrarResultados.vue"),
+        component: () => import("../views/_createOrUpdate/Resultados/_RegistrarResultado.vue"),
         //beforeEnter: SellerAuthorization
     };
 }
 export function ListarResultadossRoute() {
     return {
-        path: '/Resultadoss',
-        name: 'Resultadoss',
-        component: () => import( '../views/_indexes/ResultadossIndex.vue')
+        path: '/Resultados',
+        name: 'Resultados',
+        component: () => import( '../views/_indexes/ResultadosIndex.vue')
         //beforeEnter: SellerAuthorization
     };
 }

@@ -3,3 +3,7 @@
     height: 50px !important;
     box-shadow: none !important;
 }
+.v-application a.navbar-item{
+    text-decoration: none;
+    color: var(--v-secondary-darken1);
+}
