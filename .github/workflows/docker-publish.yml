@@ -27,8 +27,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      #- name: Build image
-      #  run: docker build . --file Dockerfile --tag $IMAGE_NAME
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
+      - name: Log in to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v1
 
       - name: Log into GitHub Container Registry
         uses: docker/login-action@f054a8b539a109f9f41c372932f1ae047eff08c9
@@ -41,7 +49,9 @@ jobs:
         id: meta
         uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
         with:
-          images: ghcr.io/${{ github.repository }}
+          images: |
+            ${{ steps.login-ecr.outputs.registry }}/${{ IMAGE_NAME }}
+            ghcr.io/${{ github.repository }}
 
       - name: Build and push Docker images
         uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
@@ -50,3 +60,7 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+
+      - name: Log out of Amazon ECR
+        if: always()
+        run: docker logout ${{ steps.login-ecr.outputs.registry }}
