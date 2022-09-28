@@ -1,0 +1,30 @@
+{
+    "post":{
+    "nombres": "nombreprueba",
+    "apellidos": "apellidoprueba",
+    "docnum": "78945632",
+    "doctipo": "dni",
+    "sexo": "m",
+    "gruposang": "ab",
+    "rh": "+",
+    "telefono": "1231231",
+    "gradoinstruccion": "instruccion de prueba",
+    "ocupacion": "ocupacion de prueba",
+    "estadocivil": "estado civil de prueba"
+    },
+    "get":{
+        "@id": 1,
+        "id": "7713e670-2406-11ed-90a0-aff60eb4026f",
+        "nombres": "nombreprueba",
+        "apellidos": "apellidoprueba",
+        "docnum": "78945632",
+        "doctipo": "dni",
+        "sexo": "m",
+        "gruposang": "ab",
+        "rh": "+",
+        "telefono": "1231231",
+        "gradoinstruccion": "instruccion de prueba",
+        "ocupacion": "ocupacion de prueba",
+        "estadocivil": "estado civil de prueba"
+    }
+}
