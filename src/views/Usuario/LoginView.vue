@@ -14,7 +14,7 @@
 
                         <v-card-text class="">
                           <h4 class="text-center mt-4" >Por favor, ingresa tus datos</h4>
-                          <v-form>
+                          <v-form ref="form">
                             <v-text-field
                               label="Correo" name="Correo"
                               prepend-icon="mdi-email"
@@ -29,7 +29,7 @@
                           </v-form>
                         </v-card-text>
                         <v-card-actions class="justify-center mb-6">
-                          <v-btn rounded color="main_color" dark class="px-5">
+                          <v-btn rounded color="main_color" dark class="px-5" @click="authenticate" >
                            <v-icon>mdi-login  </v-icon> Ingresar
                           </v-btn>
                         </v-card-actions>
@@ -60,7 +60,7 @@
         
   </template>
   
-  <script>
+<script>
   export default {
     name:'Login',
     data: () => ({
@@ -68,6 +68,70 @@
     }),
     props: {
       //source: String
+    },
+    
+    methods: {
+      authenticate() {/*
+        this.login.loading = true;
+        this.$proxies.identityProxy
+          .login(this.login)
+          .then(x => {
+            let token = x.data.split(".");
+            let user = atob(token[1]);
+            user;
+
+            this.login.loading = false;
+            this.$parent.isLoggedIn = true;
+
+            this.$notify({
+              group: "global",
+              type: "is-success",
+              text: "Su acceso ha sido validado correctamente."
+            });
+
+            localStorage.setItem("access_token", x.data);
+            this.$user.initialize();
+          })
+          .catch(x => {
+            if (x.response.status === 400) {
+              this.$notify({
+                group: "global",
+                type: "is-warning",
+                text: x.response.data
+              });
+            }
+            this.login.loading = false;
+          });*/
+            localStorage.setItem("access_token", "l");
+            this.$refs.form.validate()
+      },
+      addNewUser() {/*
+        this.register.loading = true;
+        this.$proxies.identityProxy
+          .register(this.register)
+          .then(() => {
+            this.register.email = null;
+            this.register.password = null;
+            this.register.firstNames = null;
+            this.register.lastNames = null;
+            this.$notify({
+              group: "global",
+              type: "is-success",
+              text: "Su cuenta ha sido creada con éxito"
+            });
+            this.register.loading = false;
+          })
+          .catch(x => {
+            if (x.response.status === 400) {
+              this.$notify({
+                group: "global",
+                type: "is-warning",
+                text: x.response.data
+              });
+            }
+            this.register.loading = false;
+          });*/
+      }
     }
   };
-  </script>
+</script>
