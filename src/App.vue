@@ -1,31 +1,33 @@
 <template>
       <v-app>
-      <Bars v-if="isLoggedIn"/>
-      <v-main class="fill-height" fluid>
-        <router-view v-if="isLoggedIn"/>
-        <Login v-else/>
-      </v-main>
+            <Bars v-if="isLoggedIn"/>
+            <v-main class="fill-height" fluid>
+              <router-view v-if="isLoggedIn"/>
+              <Login v-else/>
+            </v-main>
       </v-app>
 </template>
-   
+
 <script>
 
     import Login from './views/Usuario/LoginView.vue';
     import Bars from './views/Shared/Bars.vue';
     
     export default {
-      name: 'Home',
+      name: 'app',
+      mounted() {
+        this.__isLoggedIn();
+      },
       components: {
             Bars,
             Login,
       },
-
       data() {
             return {
                   isLoggedIn: false
             };
       },
-      methods: {     
+      methods: {
             __isLoggedIn() {
                   if (localStorage.getItem("access_token") != null) { /*
                         let token = localStorage.getItem("access_token").split("."),
@@ -40,12 +42,12 @@
                                     })
                                     .join("")
                               )
-                              );
-                        user;
-                        this.$user.initialize();*/
+                              );*/
+                        //user;
+                        //this.$user.initialize();
                         this.isLoggedIn = true;
-                  }      
+                  }
             }
       }
-}
+};
 </script>

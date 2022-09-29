@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import HomeView from '../views/Usuario/HomeView.vue'
+//import HomeView from '../views/Usuario/HomeView.vue'
 
 import * as AtencionesRoutes from  './AtencionesRoutes'
 import * as DiagnosticosRoutes from  './DiagnosticosRoutes'
@@ -15,14 +15,14 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '*',
-    name: 'pageerror',
+    name: 'NotFoundPage',
     component: () => import("../views/Shared/404Error.vue")
   },{
     path: '/',
-    name: 'home',
-    component: HomeView
+    name: 'HomePage',
+    component: () => import("../views/Usuario/HomeView.vue")
   },{
-    path: '/MiPerfil',
+    path: '/perfil',
     name: 'MiPerfil',
     component: () => import('../views/Usuario/PerfilView.vue')
   },{
@@ -31,7 +31,7 @@ const routes = [
     component: () => import('../views/Usuario/EditarPerfilView.vue')
   },{
     path: '/about',
-    name: 'about',
+    name: 'AboutPage',
     component: () => import('../views/AboutView.vue')
   },
   PacientesRoutes.RegistrarPacienteRoute(),

@@ -1,6 +1,7 @@
 
   export default {
-    data: () => ({
+    data() {
+      return {
       drawer: false,
       admins: [
         ['Management', 'mdi-account-multiple-outline'],
@@ -50,12 +51,28 @@
             ['Registrar resultados','mdi-file-plus-outline','/Resultados/create'],
             ['Ver resultados','mdi-file-multiple-outline','/Resultados']
           ]
-        },{
-          name: ['Cerrar Sesión','mdi-account'],
-          submenus: [
-            ['Cerrar','mdi-door','/']
-          ]
-        },
+        }
       ]
-    }),
+    }
+    },
+    methods:{
+      logout() {
+        console.log('logged out');
+        localStorage.removeItem("access_token");
+        this.$parent.$parent.isLoggedIn = false;
+        //this.$proxies.identityProxy
+        //  .logout()
+        //  .then(() => {
+        //    localStorage.removeItem("access_token");
+        //    this.$parent.isLoggedIn = false;
+        //  })
+        //  .catch(() => {
+        //    this.$notify({
+        //      group: "global",
+        //      type: "is-danger",
+        //      text: "Ocurrió un error inesperado",
+        //    });
+        //  });
+      },
+    }
   }

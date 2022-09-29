@@ -1,6 +1,6 @@
 import Bars from '../../../views/Shared/Bars.vue';
-import Bars from '../../../views/Shared/Loader.vue';
-import Bars from '../../../views/Shared/Pager.vue';
+import Loader from '../../../views/Shared/Loader.vue';
+import Pager from '../../../views/Shared/Pager.vue';
 
 export default {
     name: 'ListaAtenciones',
