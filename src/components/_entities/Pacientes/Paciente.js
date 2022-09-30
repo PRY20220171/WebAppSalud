@@ -8,27 +8,27 @@ export default {
       return {
         
         model:{
-            pacienteId:'',
+            id:'',
             fec_nac:'',
             anios:null,
             meses:null,
             dias:null,
             edad:'',
             
-            Nombres:'',
-            Apellidos:'',
-            Docnum:'',
-            Doctipo:'',
-            Sexo:'',
-            Gruposang:'',
-            Rh:'',
-            Telefono:'',
-            Gradoinstruccion:'',
-            Ocupacion:'',
-            Estadocivil:'',
+            nombres:'',
+            apellidos:'',
+            docnum:'',
+            doctipo:'',
+            sexo:'',
+            gruposang:'',
+            rh:'',
+            telefono:'',
+            gradoinstruccion:'',
+            ocupacion:'',
+            estadocivil:'',
         },
 
-        tipo_doc: ['DNI', 'Carnet de Extranjería', 'Pasaporte'],
+        tipo_doc: ['dni', 'Carnet de Extranjería', 'Pasaporte'],
         tipo_sexo: ['masculino','femenino','intersexual'],
         tipo_sangre: ['O','A','B','AB'],
         tipo_rh:['negativo','positivo','nulo'],
@@ -55,8 +55,54 @@ export default {
         },
     },
 
+    mounted() {
+        this.initialize();
+    },
     methods:{
-      clacEdad: function(){
+        convertTypeSex(val){
+            let sexType=''
+            switch (val) {
+                case 'm':sexType=this.tipo_sexo[0]; break;
+                case 'f':sexType=this.tipo_sexo[1]; break;
+                case 'i':sexType=this.tipo_sexo[2]; break;
+                default:val;
+              }
+              return sexType;
+        },
+        convertTypeRH(val){
+            let rhType=''
+            switch (val) {
+                case '-':rhType=this.tipo_rh[0]; break;
+                case '+':rhType=this.tipo_rh[1]; break;
+                case '0':rhType=this.tipo_rh[2]; break;
+                default:val;
+              }
+              return rhType;
+        },
+        initialize() {
+            let id = this.$route.params.id;
+            if (!id) return;
+            this.isLoading = true;
+            this.$proxies.pacienteProxy.getById(id)
+                .then(x => {
+                    this.model = x.data;
+                    this.model.sexo=this.convertTypeSex(this.model.sexo)
+                    this.model.rh=this.convertTypeRH(this.model.rh)
+                    this.model.gruposang=this.model.gruposang.toUpperCase()
+                    this.isLoading = false;
+                })
+                .catch(() => {
+                    this.isLoading = false; 
+                    /* this.$notify({
+                        group: "global",
+                        type: "is-danger",
+                        text: 'Ocurrió un error inesperado'
+                    }); */
+                });
+            
+        },
+
+      clacEdad(){
         var fecha=this.model.fec_nac;
         var ultimoDiaMes = new Date();
         

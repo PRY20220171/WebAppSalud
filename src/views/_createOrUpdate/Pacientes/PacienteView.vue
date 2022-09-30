@@ -10,33 +10,33 @@
 
         <v-row>
           <v-col cols="12" md="6">
-            <v-text-field label="Nombres" name="Nombres" v-model="model.Nombres" 
+            <v-text-field label="Nombres" name="Nombres" v-model="model.nombres" 
             prepend-icon="mdi-account" type="text" color="main_color" hide-details="auto"/>
           </v-col>
           <v-col cols="12" md="6">
-            <v-text-field label="Apellidos" name="Apellidos" v-model="model.Apellidos" 
+            <v-text-field label="Apellidos" name="Apellidos" v-model="model.apellidos" 
             prepend-icon="mdi-account-group" type="text" color="main_color" hide-details="auto"/>
           </v-col>
         </v-row>
 
         <v-row>
           <v-col cols="12" sm="6">
-            <v-select :items="tipo_doc" label="Tipo de Documento" name="tipo_doc" v-model="model.Doctipo" 
+            <v-select :items="tipo_doc" label="Tipo de Documento" name="tipo_doc" v-model="model.doctipo" 
             prepend-icon="mdi-card-bulleted-settings" color="main_color" hide-details="auto"></v-select>
           </v-col>
           <v-col  cols="12" sm="6">
-            <v-text-field label="Número de documento" name="num_doc" v-model="model.Docnum" 
+            <v-text-field label="Número de documento" name="num_doc" v-model="model.docnum" 
             prepend-icon="mdi-card-account-details" type="text" color="main_color" hide-details="auto"/>
           </v-col>
         </v-row>
 
         <v-row>
           <v-col cols="12" sm="6">
-            <v-text-field label="telefono" name="telefono" v-model="model.Telefono" 
+            <v-text-field label="telefono" name="telefono" v-model="model.telefono" 
             prepend-icon="mdi-phone" type="text" color="main_color" hide-details="auto" />
           </v-col>
           <v-col cols="12" sm="6">
-            <v-select :items="tipo_sexo" label="Sexo" name="tipo_sexo" v-model="model.Sexo" 
+            <v-select :items="tipo_sexo" label="Sexo" name="tipo_sexo" v-model="model.sexo"
             prepend-icon="mdi-gender-male-female" color="main_color" hide-details="auto" >
             </v-select>
           </v-col>
@@ -57,26 +57,26 @@
 
         <v-row>
           <v-col sm="6">
-            <v-select :items="tipo_sangre" label="Grupo Sanguíneo" name="grup_sang" v-model="model.Gruposang" 
+            <v-select :items="tipo_sangre" label="Grupo Sanguíneo" name="grup_sang" v-model="model.gruposang" 
             prepend-icon="mdi-water" color="main_color" hide-details="auto"></v-select>
           </v-col>
           <v-col sm="6">
             <v-select :items="tipo_rh" label="RH" name="RH" 
-            prepend-icon="mdi-water-remove" v-model="model.Rh" color="main_color" hide-details="auto"></v-select>
+            prepend-icon="mdi-water-remove" v-model="model.rh" color="main_color" hide-details="auto"></v-select>
           </v-col>
         </v-row>
 
         <v-row>
           <v-col md="6">
-            <v-select :items="tipo_ecivil" label="estado civil" name="estado_civil" v-model="model.Estadocivil" 
+            <v-select :items="tipo_ecivil" label="estado civil" name="estado_civil" v-model="model.estadocivil" 
             prepend-icon="mdi-account-multiple" color="main_color" hide-details="auto"></v-select>
           </v-col>
           <v-col md="6">
-            <v-select :items="tipo_educ" label="grado de instrucción" name="grado_instr" v-model="model.Gradoinstruccion" 
+            <v-select :items="tipo_educ" label="grado de instrucción" name="grado_instr" v-model="model.gradoinstruccion" 
             prepend-icon="mdi-school" color="main_color" hide-details="auto"></v-select>
           </v-col>
           <v-col cols="12" md="6">
-            <v-text-field label="ocupacion" name="ocupacion" v-model="model.Ocupacion"
+            <v-text-field label="ocupacion" name="ocupacion" v-model="model.ocupacion"
             prepend-icon="mdi-briefcase" type="text" color="main_color" hide-details="auto" />
           </v-col>
         </v-row>

@@ -49,7 +49,7 @@ Axios.interceptors.response.use(
 //En caso querramos poner la direccion con DNS de la computadora, esta direccion es más permanente:
 //let url = 'http://ec2-54-196-169-244.compute-1.amazonaws.com:5000/';
 //let url = 'http://localhost:5000/'; //->Para conexion local
-let url='http://localhost:3000/'
+let url='http://localhost:3000/';
 
 export default {/*
     identityProxy: new IdentityProxy(Axios,url),

@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router/_indexRoutes'
 import store from './store/index'
 import vuetify from './plugins/vuetify'
-//import proxyConfig from './proxies/_config';
+import proxyConfig from './proxies/_config';
 import './assets/styles.css'
 import 'vuetify/dist/vuetify.min.css'
 Vue.config.productionTip = false
@@ -38,13 +38,13 @@ Vue.config.productionTip = false
 //     })
 //   }
 // });
-// Vue.use({
-//   install(Vue) {
-//     Object.defineProperty(Vue.prototype, '$proxies', {
-//       value: proxyConfig
-//     })
-//   }
-// });
+Vue.use({
+  install(Vue) {
+    Object.defineProperty(Vue.prototype, '$proxies', {
+      value: proxyConfig
+    })
+  }
+});
 new Vue({
   router,
   store,

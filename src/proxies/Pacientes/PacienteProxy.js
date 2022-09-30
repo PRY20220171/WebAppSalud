@@ -3,8 +3,9 @@ export default class PacienteProxy {
       this.axios = axios;
       this.url = url;
   }
-  getAll(page, take) {
-      return this.axios.get(this.url + `pacientes?page=${page}&take=${take}`);
+  getAll() {
+    return this.axios.get(this.url + `pacientes`);
+    // return this.axios.get(this.url + `pacientes?page=${page}&take=${take}`);
   }/*
   getAllSimple(page, take){
       return this.axios.get(this.url + `pacientes/simple?page=${page}&take=${take}`);

@@ -8,7 +8,7 @@ export default {
       return {
         
         model:{
-          antecedenteFamiliarId: '',
+          id: '',
             tbc: '',
             vihsida: '',
             diabetes: '',
@@ -30,7 +30,29 @@ export default {
         select_icons:[ 'mdi-close-box', 'mdi-checkbox-blank-outline'],
       }
     },
+    mounted() {
+        this.initialize();
+    },
     
     methods:{
+      initialize() {
+          let id = this.$route.params.id;
+          if (!id) return;
+          this.isLoading = true;
+          this.$proxies.antecedenteFamiliarProxy.getById(id)
+              .then(x => {
+                  this.model = x.data;
+                  this.isLoading = false;
+              })
+              .catch(() => {
+                  this.isLoading = false; 
+                  /* this.$notify({
+                      group: "global",
+                      type: "is-danger",
+                      text: 'Ocurrió un error inesperado'
+                  }); */
+              });
+          
+      },
     }
   }

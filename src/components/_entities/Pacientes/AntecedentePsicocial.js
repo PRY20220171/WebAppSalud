@@ -8,7 +8,7 @@ export default {
       return {
         
         model:{
-          antecedentePsicosocialId:'',
+          id:'',
             apoyofam: '',
             edadgestante: '',
             nrohijos: '',
@@ -38,6 +38,29 @@ export default {
       }
     },
     
+    mounted() {
+      this.initialize();
+    },
+    
     methods:{
+      initialize() {
+          let id = this.$route.params.id;
+          if (!id) return;
+          this.isLoading = true;
+          this.$proxies.antecedentePsicocialProxy.getById(id)
+              .then(x => {
+                  this.model = x.data;
+                  this.isLoading = false;
+              })
+              .catch(() => {
+                  this.isLoading = false; 
+                  /* this.$notify({
+                      group: "global",
+                      type: "is-danger",
+                      text: 'Ocurrió un error inesperado'
+                  }); */
+              });
+          
+      },
     }
   }

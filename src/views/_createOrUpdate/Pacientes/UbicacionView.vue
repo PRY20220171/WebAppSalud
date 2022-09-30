@@ -15,28 +15,28 @@
             </v-row>
             <v-row>
                 <v-col cols="12" sm="6">
-                    <v-text-field label="Pais" name="nac_Pais" v-model="lugarnac.Pais" 
+                    <v-text-field label="Pais" name="nac_Pais" v-model="lugarnac.pais" 
                     prepend-icon="mdi-earth" type="text" color="main_color" hide-details="auto"/>
                 </v-col>
                 <v-col cols="12" sm="6">
-                    <v-text-field label="Region" name="nac_Region" v-model="lugarnac.Region"
+                    <v-text-field label="Region" name="nac_Region" v-model="lugarnac.region"
                     prepend-icon="mdi-map" type="text" color="main_color" hide-details="auto"/>
                 </v-col>
             </v-row>
             <v-row>
                 <v-col cols="12" sm="6">
-                    <v-text-field label="Provincia" name="nac_Provincia" v-model="lugarnac.Provincia" 
+                    <v-text-field label="Provincia" name="nac_Provincia" v-model="lugarnac.provincia" 
                     prepend-icon="mdi-city" type="text" color="main_color" hide-details="auto"/>
                 </v-col>
                 <v-col cols="12" sm="6">
-                    <v-text-field label="Distrito" name="nac_Distrito" v-model="lugarnac.Distrito" 
+                    <v-text-field label="Distrito" name="nac_Distrito" v-model="lugarnac.distrito" 
                     prepend-icon="mdi-home-city" type="text" color="main_color" hide-details="auto"/>
                 </v-col>
             </v-row>
     
             <v-row>
                 <v-col >
-                    <v-text-field label="Direccion" name="nac_Direccion" v-model="lugarnac.Direccion" 
+                    <v-text-field label="Direccion" name="nac_Direccion" v-model="lugarnac.direccion" 
                     prepend-icon="mdi-map-marker" type="text" color="main_color" hide-details="auto"/>
                 </v-col>
             </v-row>
@@ -50,28 +50,28 @@
             
             <v-row>
                 <v-col cols="12" sm="6">
-                    <v-text-field label="Pais" name="dom_Pais" v-model="domicilioact.Pais" 
+                    <v-text-field label="Pais" name="dom_Pais" v-model="domicilioact.pais" 
                     prepend-icon="mdi-earth" type="text" color="main_color" hide-details="auto"/>
                 </v-col>
                 <v-col cols="12" sm="6">
-                    <v-text-field label="Region" name="dom_Region" v-model="domicilioact.Region" 
+                    <v-text-field label="Region" name="dom_Region" v-model="domicilioact.region" 
                     prepend-icon="mdi-map" type="text" color="main_color" hide-details="auto"/>
                 </v-col>
             </v-row>
             <v-row>
                 <v-col cols="12" sm="6">
-                    <v-text-field label="Provincia" name="dom_Provincia" v-model="domicilioact.Provincia"
+                    <v-text-field label="Provincia" name="dom_Provincia" v-model="domicilioact.provincia"
                     prepend-icon="mdi-city" type="text" color="main_color" hide-details="auto"/>
                 </v-col>
                 <v-col cols="12" sm="6">
-                    <v-text-field label="Distrito" name="dom_Distrito" v-model="domicilioact.Distrito" 
+                    <v-text-field label="Distrito" name="dom_Distrito" v-model="domicilioact.distrito" 
                     prepend-icon="mdi-home-city" type="text" color="main_color" hide-details="auto"/>
                 </v-col>
             </v-row>
     
             <v-row>
                 <v-col >
-                    <v-text-field label="Direccion" name="dom_Direccion" v-model="domicilioact.Direccion" 
+                    <v-text-field label="Direccion" name="dom_Direccion" v-model="domicilioact.direccion" 
                     prepend-icon="mdi-map-marker" type="text" color="main_color" hide-details="auto"/>
                 </v-col>
             </v-row>
