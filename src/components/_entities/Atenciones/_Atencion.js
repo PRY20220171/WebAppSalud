@@ -1,5 +1,3 @@
-import Bars from '../../../views/Shared/Bars.vue';
-
 import Atencion from '../../../views/_createOrUpdate/Atenciones/AtencionView.vue';
 import Acompanante from '../../../views/_createOrUpdate/Atenciones/AcompananteView.vue';
 import FactoresRiesgo from '../../../views/_createOrUpdate/Atenciones/FactoresRiesgoView.vue';
@@ -15,7 +13,6 @@ export default {
 
     components: {
       //compartidos
-        Bars,
       //detalle
         Atencion,
         Acompanante,

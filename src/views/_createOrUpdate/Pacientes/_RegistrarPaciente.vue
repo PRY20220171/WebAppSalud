@@ -1,7 +1,6 @@
 <template>
   <div id="RegistrarPaciente" class="fill-height">
-    <Bars/>
-    <v-main class="fill-height">
+   
       <v-stepper v-model="e1" class="grey lighten-4 fill-height" >
           <v-stepper-header class="stepper_plus">
 
@@ -56,7 +55,6 @@
             </v-form>
       </v-stepper>
       
-    </v-main>
   </div>
 </template>
 

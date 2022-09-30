@@ -4,18 +4,18 @@ export default class UbicacionProxy {
         this.url = url;
     }
     getAll(page, take) {
-        return this.axios.get(this.url + `ubicacion?page=${page}&take=${take}`);
+        return this.axios.get(this.url + `ubicaciones?page=${page}&take=${take}`);
     }
     getById(id) {
-        return this.axios.get(this.url + `ubicacion/${id}`);
+        return this.axios.get(this.url + `ubicaciones/${id}`);
     }
     register(model){
-        return this.axios.post(this.url+`ubicacion`,model);
+        return this.axios.post(this.url+`ubicaciones`,model);
     }
     update(id, model){
-        return this.axios.put(this.url+`ubicacion/${id}`,model);
+        return this.axios.put(this.url+`ubicaciones/${id}`,model);
     }
     remove(id){
-        return this.axios.delete(this.url+`ubicacion/${id}`);
+        return this.axios.delete(this.url+`ubicaciones/${id}`);
     }
   }

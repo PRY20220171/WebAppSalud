@@ -1,8 +1,6 @@
 <template>
     <div id="RegistrarPaciente" class="fill-height">
-      <Bars/>
-      <v-main class="fill-height grey lighten-4 ">
-        <v-form>
+      <v-form>
         <v-row class="mx-auto justify-center my-10">
             <v-col cols="8"  md="4" class="">
                 <v-card class="mb-12 elevation-4 px-5 py-5" outlined id="Nino">
@@ -53,7 +51,7 @@
                             </v-row>
                             
                     </v-card-text>
-                    </v-card>
+                </v-card>
             </v-col>
             <v-col cols="10"  md="4">
                 <v-card class="mb-12 elevation-4 px-5 py-5" outlined id="Nino">
@@ -81,13 +79,12 @@
                             </v-row>
                             
                     </v-card-text>
-                    </v-card>
-                    <v-btn color="primary" @click="e1 = 1" > Registrar </v-btn>
-                    <v-btn text> Cancel </v-btn>
-                </v-col>
-            </v-row>
-            </v-form>
-        </v-main>
+                </v-card>
+                <v-btn color="primary" @click="e1 = 1" > Registrar </v-btn>
+                <v-btn text> Cancel </v-btn>
+            </v-col>
+        </v-row>
+      </v-form>
     </div>
   </template>
   

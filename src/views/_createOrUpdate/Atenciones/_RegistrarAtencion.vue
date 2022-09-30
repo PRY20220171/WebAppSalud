@@ -1,7 +1,6 @@
   <template>
     <div id="RegistrarPaciente" class="fill-height">
-      <Bars/>
-      <v-main class="fill-height grey lighten-4 ">
+      
         <v-row class="mt-5 mb-0 mx-5">
               <v-col>
                 <v-text-field label="Fecha de registro" name="fecharegistro" 
@@ -61,7 +60,6 @@
               </v-form>
         </v-stepper>
         
-      </v-main>
     </div>
   </template>
   

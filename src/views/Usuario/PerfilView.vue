@@ -1,6 +1,6 @@
 <template>
     <div id="RegistrarPaciente" class="fill-height">
-      <Bars/>
+        
       <v-main class="fill-height grey lighten-4 ">
         <v-row class="my-15 justify-center">
             <h2 class="text-h1">¡Hola! ¿Qué tal,</h2>

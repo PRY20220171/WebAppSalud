@@ -4,18 +4,18 @@ export default class AntecedentePsicocialProxy {
         this.url = url;
     }
     getAll(page, take) {
-        return this.axios.get(this.url + `antecedentepsicocial?page=${page}&take=${take}`);
+        return this.axios.get(this.url + `antecedentesperinatales?page=${page}&take=${take}`);
     }
     getById(id) {
-        return this.axios.get(this.url + `antecedentepsicocial/${id}`);
+        return this.axios.get(this.url + `antecedentesperinatales/${id}`);
     }
     register(model){
-        return this.axios.post(this.url+`antecedentepsicocial`,model);
+        return this.axios.post(this.url+`antecedentesperinatales`,model);
     }
     update(id, model){
-        return this.axios.put(this.url+`antecedentepsicocial/${id}`,model);
+        return this.axios.put(this.url+`antecedentesperinatales/${id}`,model);
     }
     remove(id){
-        return this.axios.delete(this.url+`antecedentepsicocial/${id}`);
+        return this.axios.delete(this.url+`antecedentesperinatales/${id}`);
     }
   }

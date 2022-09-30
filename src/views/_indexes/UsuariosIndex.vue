@@ -1,7 +1,6 @@
 <template>
     <div id="UsuariosIndex">
-        <Bars/>
-        <v-main>
+        
             <v-container>
                 <v-row class="align-items-center">
                     <v-col class="py-5">Usuarios</v-col>
@@ -17,7 +16,6 @@
                     </v-col>
                 </v-row>
             </v-container>
-        </v-main>
     </div>
 </template>
 <script src="../../components/_indexes/UsuariosIndex">

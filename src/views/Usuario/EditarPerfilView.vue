@@ -1,6 +1,6 @@
 <template>
     <div id="RegistrarPaciente" class="fill-height">
-      <Bars/>
+      
       <v-main class="fill-height grey lighten-4 ">
         <v-form>
         <v-row class="mx-auto justify-center my-10">

@@ -15,15 +15,15 @@ export default {
         return {
             search: '',
             headers: [
-                {
-                  text: 'Nombres',value: 'nombres',
-                },
+                { text: 'Nombres',value: 'nombres'},
                 { text: 'doctipo', value: 'doctipo' },
                 { text: 'docnum', value: 'docnum' },
                 { text: 'correo', value: 'email' },
                 { text: 'Gruposang', value: 'Gruposang' },
                 { text: 'telefono', value: 'telefono' },
                 { text: 'Fec. nacimiento', value: 'date' },
+                { text: 'Actions', sortable: false, value: 'actions',
+                },
               ],
             pacientes : [
                 {

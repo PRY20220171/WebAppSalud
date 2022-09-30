@@ -1,5 +1,3 @@
-import Bars from '../../../views/Shared/Bars.vue';
-
 import Resultado from '../../../views/_createOrUpdate/Resultados/ResultadoView.vue';
 import Tratamiento from '../../../views/_createOrUpdate/Resultados/TratamientoView.vue';
 import TratamientoXResultado from '../../../views/_createOrUpdate/Resultados/TratamientoXResultadoView.vue';
@@ -9,7 +7,6 @@ export default {
 
     components: {
       //compartidos
-        Bars,
       //inf. general
         Resultado,
         Tratamiento,

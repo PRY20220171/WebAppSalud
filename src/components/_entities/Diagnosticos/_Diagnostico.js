@@ -1,5 +1,3 @@
-import Bars from '../../../views/Shared/Bars.vue';
-
 import Diagnostico from '../../../views/_createOrUpdate/Diagnosticos/DiagnosticoView.vue';
 import DiagnosticoXPrueba from '../../../views/_createOrUpdate/Diagnosticos/DiagnosticoXPruebaView.vue';
 import DiagnosticoXResultado from '../../../views/_createOrUpdate/Diagnosticos/DiagnosticoXResultadoView.vue';
@@ -9,7 +7,6 @@ export default {
 
     components: {
       //compartidos
-        Bars,
       //inf. general
         Diagnostico,
         DiagnosticoXPrueba,

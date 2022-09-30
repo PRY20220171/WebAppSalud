@@ -4,18 +4,18 @@ export default class AntecedenteFamiliarProxy {
         this.url = url;
     }
     getAll(page, take) {
-        return this.axios.get(this.url + `antecedentefamiliar?page=${page}&take=${take}`);
+        return this.axios.get(this.url + `antecedentesfamiliares?page=${page}&take=${take}`);
     }
     getById(id) {
-        return this.axios.get(this.url + `antecedentefamiliar/${id}`);
+        return this.axios.get(this.url + `antecedentesfamiliares/${id}`);
     }
     register(model){
-        return this.axios.post(this.url+`antecedentefamiliar`,model);
+        return this.axios.post(this.url+`antecedentesfamiliares`,model);
     }
     update(id, model){
-        return this.axios.put(this.url+`antecedentefamiliar/${id}`,model);
+        return this.axios.put(this.url+`antecedentesfamiliares/${id}`,model);
     }
     remove(id){
-        return this.axios.delete(this.url+`antecedentefamiliar/${id}`);
+        return this.axios.delete(this.url+`antecedentesfamiliares/${id}`);
     }
   }

@@ -4,18 +4,18 @@ export default class NinoProxy {
         this.url = url;
     }
     getAll(page, take) {
-        return this.axios.get(this.url + `nino?page=${page}&take=${take}`);
+        return this.axios.get(this.url + `ninos?page=${page}&take=${take}`);
     }
     getById(id) {
-        return this.axios.get(this.url + `nino/${id}`);
+        return this.axios.get(this.url + `ninos/${id}`);
     }
     register(model){
-        return this.axios.post(this.url+`nino`,model);
+        return this.axios.post(this.url+`ninos`,model);
     }
     update(id, model){
-        return this.axios.put(this.url+`nino/${id}`,model);
+        return this.axios.put(this.url+`ninos/${id}`,model);
     }
     remove(id){
-        return this.axios.delete(this.url+`nino/${id}`);
+        return this.axios.delete(this.url+`ninos/${id}`);
     }
   }
