@@ -1,11 +1,12 @@
 export function RegistrarUsuarioRoute() {
     return {
-        path: '/Usuarios/create',
-        name: 'RegistroUsuario',
+        path: '/usuarios/create',
+        name: 'Registro Usuario',
         component: () => import( '../views/_createOrUpdate/Usuarios/_RegistrarUsuario.vue')
         //beforeEnter: SellerAuthorization
     };
-}export function VerPerfilRoute() {
+}
+export function VerPerfilRoute() {
     return {
         path: '/perfil',
         name: 'Mi Perfil',
@@ -13,25 +14,33 @@ export function RegistrarUsuarioRoute() {
         //beforeEnter: SellerAuthorization
     };
 }
+export function EditarPerfilRoute() {
+    return {
+        path: '/perfil/editar',
+        name: 'Editar Perfil',
+        component: () => import("../views/_createOrUpdate/Usuarios/_RegistrarUsuario.vue"),
+      };
+}
 export function EditarUsuarioRoute() {
     return {
-        path: '/Usuarios/update/:id',
-        name: 'ActualizarUsuario',
+        path: '/usuarios/update/:id',
+        name: 'Editar Usuario',
         component: () => import("../views/_createOrUpdate/Usuarios/_RegistrarUsuario.vue"),
         //beforeEnter: SellerAuthorization
     };
 }
-export function EditarPerfilRoute() {
-    return {
-        path: '/Usuarios/update/:id',
-        name: 'ActualizarUsuario',
-        component: () => import("../views/Usuario/EditarPerfilView.vue"),
-        //beforeEnter: SellerAuthorization
-    };
-}
+// export function EditarPerfilRoute() {
+    // es igual a EditarPerfilRoute (linea 17)
+//     return {
+//         path: '/usuarios/update/:id',
+//         name: 'ActualizarUsuario',
+//         component: () => import("../views/Usuario/EditarPerfilView.vue"),
+//         //beforeEnter: SellerAuthorization
+//     };
+// }
 export function ListarUsuariosRoute() {
     return {
-        path: '/Usuarios',
+        path: '/usuarios',
         name: 'Usuarios',
         component: () => import( '../views/_indexes/UsuariosIndex.vue')
         //beforeEnter: SellerAuthorization

@@ -1,22 +1,22 @@
 export function RegistrarPruebaRoute() {
     return {
-        path: '/Pruebas/create',
-        name: 'RegistroPrueba',
+        path: '/pruebas/create',
+        name: 'Registro Prueba',
         component: () => import( '../views/_createOrUpdate/Pruebas/_RegistrarPrueba.vue')
         //beforeEnter: SellerAuthorization
     };
 }
 export function EditarPruebaRoute() {
     return {
-        path: '/Pruebas/update/:id',
-        name: 'ActualizarPrueba',
+        path: '/pruebas/update/:id',
+        name: 'Editar Prueba',
         component: () => import("../views/_createOrUpdate/Pruebas/_RegistrarPrueba.vue"),
         //beforeEnter: SellerAuthorization
     };
 }
 export function ListarPruebasRoute() {
     return {
-        path: '/Pruebas',
+        path: '/pruebas',
         name: 'Pruebas',
         component: () => import( '../views/_indexes/Pruebas/PruebasIndex.vue')
         //beforeEnter: SellerAuthorization

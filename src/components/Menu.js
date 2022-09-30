@@ -1,7 +1,13 @@
 
   export default {
+    mounted() {
+      this.__testfunction();
+    },
     data() {
       return {
+        route: '',
+        mainroute: '',
+        subroute: '',
       drawer: false,
       admins: [
         ['Management', 'mdi-account-multiple-outline'],
@@ -15,41 +21,41 @@
       ],
       menu:[
         {
-          name: ['Usuarios','mdi-account-circle'],
+          name: ['Usuarios','mdi-badge-account-horizontal'],
           submenus: [
-            ['Mi perfil','mdi-account-outline','/perfil'],
-            ['Registrar usuario','mdi-account-plus-outline','/Usuarios/create'],
-            ['Ver usuarios','mdi-account-multiple-outline','/Usuarios']
+            ['Mi perfil','mdi-account-circle-outline','Mi Perfil'],
+            ['Registrar usuario','mdi-account-plus-outline','Registro Usuario'],
+            ['Ver usuarios','mdi-account-multiple-outline','Usuarios']
           ]
         },{
-          name: ['Pacientes','mdi-account-circle'],
+          name: ['Pacientes','mdi-account-supervisor-circle'],
           submenus: [
-            ['Registrar paciente','mdi-account-plus-outline','/pacientes/create'],
-            ['Ver pacientes','mdi-account-multiple-outline','/pacientes']
+            ['Registrar paciente','mdi-account-plus-outline','Registro Paciente'],
+            ['Ver pacientes','mdi-account-multiple-outline','Pacientes']
           ]
         },{
-          name: ['Consultas','mdi-file'],
+          name: ['Consultas','mdi-book-account'],
           submenus: [
-            ['Registrar consulta','mdi-file-plus-outline','/Consultas/create'],
-            ['Ver consultas','mdi-file-multiple-outline','/Consultas']
+            ['Registrar consulta','mdi-file-plus-outline','Registro Consulta'],
+            ['Ver consultas','mdi-file-multiple-outline','Consultas']
           ]
         },{
-          name: ['Diagnósticos','mdi-file'],
+          name: ['Diagnósticos','mdi-medical-bag'],
           submenus: [
-            ['Registrar diagnóstico','mdi-file-plus-outline','/Diagnosticos/create'],
-            ['Ver diagnósticos','mdi-file-multiple-outline','/Diagnosticos']
+            ['Registrar diagnóstico','mdi-file-plus-outline','Registro Diagnostico'],
+            ['Ver diagnósticos','mdi-file-multiple-outline','Diagnosticos']
           ]
         }, {
-          name: ['Pruebas','mdi-file'],
+          name: ['Pruebas','mdi-needle'],
           submenus: [
-            ['Registrar prueba','mdi-file-plus-outline','/Pruebas/create'],
-            ['Ver pruebas','mdi-file-multiple-outline','/Pruebas']
+            ['Registrar prueba','mdi-file-plus-outline','Registro Prueba'],
+            ['Ver pruebas','mdi-file-multiple-outline','Pruebas']
           ]
         }, {
-          name: ['Resultados','mdi-file'],
+          name: ['Resultados','mdi-clipboard-pulse-outline'],
           submenus: [
-            ['Registrar resultados','mdi-file-plus-outline','/Resultados/create'],
-            ['Ver resultados','mdi-file-multiple-outline','/Resultados']
+            ['Registrar resultados','mdi-file-plus-outline','Registro Resultado'],
+            ['Ver resultados','mdi-file-multiple-outline','Resultados']
           ]
         }
       ]
@@ -73,6 +79,24 @@
         //      text: "Ocurrió un error inesperado",
         //    });
         //  });
+      },
+      __testfunction(){
+        this.$router.onReady(()=>{
+          this.route = this.$route.name;
+          console.log(this.route);
+          if (this.route==='Mi Perfil') {
+            //No se puere partir el nombre de la ruta
+            this.mainroute = this.route;
+          }
+          else if(this.route.split(' ').length >= 2){
+            // console.log(this.route.split(' '))
+            this.mainroute = this.route.split(' ',2)[1];
+            this.subroute = this.route.split(' ')[0];
+          }
+          else{
+            this.mainroute = this.route;
+          }
+        })
       },
     }
   }

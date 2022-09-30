@@ -1,12 +1,14 @@
 export default {
     name: 'PacienteIndex',
     components: {
-        Bars,
+        //Bars,
         //Paciente
         //Usuario
     },
     data() {
         return {
+            searchText:'',
+            searchBoxClosed: true,
             isLoading: false,
             search: '',
             headers: [
@@ -62,7 +64,7 @@ export default {
             this.isLoading = true;
                 this.$proxies.pacienteProxy.getAll()
                 .then(x => {
-                    //this.collection = x.data;                    
+                    //this.collection = x.data;
                     this.collection.items = x.data;
                     if (this.collection.items.length>0)
                         this.collection.hasItems=true;

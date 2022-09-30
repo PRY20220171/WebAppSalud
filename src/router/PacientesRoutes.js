@@ -1,7 +1,7 @@
 export function RegistrarPacienteRoute() {
     return {
         path: '/pacientes/create',
-        name: 'RegistroPaciente',
+        name: 'Registro Paciente',
         component: () => import( '../views/_createOrUpdate/Pacientes/_RegistrarPaciente.vue')
         //beforeEnter: SellerAuthorization
     };
@@ -9,7 +9,7 @@ export function RegistrarPacienteRoute() {
 export function EditarPacienteRoute() {
     return {
         path: '/pacientes/update/:id',
-        name: 'ActualizarPaciente',
+        name: 'Editar Paciente',
         component: () => import("../views/_createOrUpdate/Pacientes/_RegistrarPaciente.vue"),
         //beforeEnter: SellerAuthorization
     };
@@ -17,7 +17,7 @@ export function EditarPacienteRoute() {
 export function ListarPacientesRoute() {
     return {
         path: '/pacientes',
-        name: 'pacientes',
+        name: 'Pacientes',
         component: () => import( '../views/_indexes/PacientesIndex.vue')
         //beforeEnter: SellerAuthorization
     };

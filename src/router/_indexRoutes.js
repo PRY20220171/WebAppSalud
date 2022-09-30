@@ -15,23 +15,28 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '*',
-    name: 'NotFoundPage',
+    name: 'No encontrado',
     component: () => import("../views/Shared/404Error.vue")
   },{
     path: '/',
-    name: 'HomePage',
+    name: 'Inicio',
     component: () => import("../views/Usuario/HomeView.vue")
-  },{
-    path: '/perfil',
-    name: 'MiPerfil',
-    component: () => import('../views/Usuario/PerfilView.vue')
-  },{
-    path: '/MiPerfil/editar',
-    name: 'EditarPerfil',
-    component: () => import('../views/Usuario/EditarPerfilView.vue')
-  },{
+  },
+  // {
+  //   path: '/perfil',
+  //   name: 'MiPerfil',
+  //   component: () => import('../views/Usuario/PerfilView.vue')
+  //   //Esta ruto está dentro del routing de usuarios (UsuariosRoutes)-> revisar
+  // },
+  // {
+  //   path: '/miperfil/editar',
+  //   name: 'EditarPerfil',
+  //   component: () => import('../views/Usuario/EditarPerfilView.vue')
+  //   //Esta ruto está dentro del routing de usuarios (UsuariosRoutes)-> revisar
+  // },
+  {
     path: '/about',
-    name: 'AboutPage',
+    name: 'Sobre nosotros',
     component: () => import('../views/AboutView.vue')
   },
   PacientesRoutes.RegistrarPacienteRoute(),
@@ -48,8 +53,8 @@ const routes = [
 
   PruebasRoutes.RegistrarPruebaRoute(),
   PruebasRoutes.EditarPruebaRoute(),
-  PruebasRoutes.ListarPruebasRoute(), 
-  
+  PruebasRoutes.ListarPruebasRoute(),
+
   ResultadosRoutes.RegistrarResultadosRoute(),
   ResultadosRoutes.EditarResultadosRoute(),
   ResultadosRoutes.ListarResultadossRoute(),
@@ -64,6 +69,8 @@ const routes = [
 
 
 const router = new VueRouter({
+  mode: 'history',
+  base: process.env.BASE_URL,
   routes
 })
 

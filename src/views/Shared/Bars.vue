@@ -4,16 +4,22 @@
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-container fluid class="align-center flex-wrap">
         <v-row class="mx-0">
-          <v-icon class="main_color--text text--darken-1">mdi-chevron-double-right</v-icon>
-          <v-breadcrumbs></v-breadcrumbs>
-          <!--<v-col cols="3" class="main_color--text text--darken-1 " >
-            <h4 class="font-weight-regular">Registrar paciente</h4>
+          <v-col class="main_color--text text--darken-1 " >
+            <h4 class="font-weight-regular">
+              <v-icon left class="main_color--text text--darken-1">
+                mdi-chevron-double-right
+                </v-icon>
+              {{ mainroute }}
+            </h4>
           </v-col>
-        
-          <v-icon class="main_color--text text--darken-2">mdi-chevron-double-right</v-icon>
-          <v-col cols="4" class="main_color--text text--darken-2 fill-height">
-            <h4 class="font-weight-regular">Informacion general</h4>
-          </v-col>-->
+          <v-col class="main_color--text text--darken-2" >
+            <h4 class="font-weight-regular" v-if="subroute!==''">
+              <v-icon left class="main_color--text text--darken-2">
+                mdi-chevron-double-right
+                </v-icon>
+                {{subroute}}
+            </h4>
+          </v-col>
         </v-row>
 
       </v-container>
@@ -33,7 +39,7 @@
               <v-icon>mdi-home</v-icon>
             </v-list-item-icon>
             <v-list-item-content>
-              <router-link to="/" class="navbar-item">
+              <router-link :to="{name: 'Inicio'}" class="navbar-item">
               <v-list-item-title>
               Inicio
             </v-list-item-title>
@@ -47,7 +53,7 @@
           </template>
           <v-list-item v-for="([title, icon, link], i) in item.submenus" :key="i" link
             active-class="subcolor_0--text text--accent-4">
-            <router-link :to="link" class="navbar-item ">
+            <router-link :to="{'name': link}" class="navbar-item ">
               <span>{{title}}</span>
               <v-list-item-icon>
                 <v-icon v-text="icon"></v-icon>
@@ -58,7 +64,7 @@
         <v-list-item-group color="primary">
           <v-list-item>
             <v-list-item-icon>
-              <v-icon>mdi-door</v-icon>
+              <v-icon>mdi-exit-run</v-icon>
             </v-list-item-icon>
             <v-list-item-content @click="logout">
               <v-list-item-title>Cerrar Sesión</v-list-item-title>

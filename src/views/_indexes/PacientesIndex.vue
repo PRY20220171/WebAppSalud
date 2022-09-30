@@ -3,30 +3,45 @@
         <v-row align="center" justify="center">
             <v-card class="px-5 pb-5 pt-6">
                 <v-row class="align-items-center px-5">
-                    <v-col class="py-5">
-                        <v-row>
-                            <h3 >Pacientes</h3>
-                            <router-link to="/pacientes/create" class="px-5">
-                                <v-btn color="primary"> 
-                                    Agregar paciente
-                                    <v-icon>mdi-account-plus</v-icon>
-                                </v-btn>
-                            </router-link>
-                        </v-row>
+                    <h3>Pacientes</h3>
+                </v-row>
+                <v-row class="align-items-center px-5">
+                    <v-col >
+                        <router-link :to="{name: 'Registro Paciente'}" >
+                            <v-btn color="primary">
+                                <v-icon left>mdi-account-plus</v-icon>
+                                Registrar paciente
+                            </v-btn>
+                        </router-link>
+                        
                     </v-col>
-                    <v-col class="py-5">
-                    </v-col>
+                    
                     <v-spacer></v-spacer>
                     <v-col>
-                        <v-text-field v-model="search" append-icon="mdi-magnify"
-                        label="Search" single-line hide-details class="py-0"></v-text-field>
+                        <!-- <v-text-field
+                            v-model="search"
+                            dense
+                            filled
+                            rounded
+                            clearable
+                            placeholder="Search"
+                            prepend-inner-icon="mdi-magnify"
+                            class=" shrink expanding-search"
+                            :class="{ closed: searchBoxClosed && !searchText }"
+                            @focus="searchBoxClosed = false"
+                            @blur="searchBoxClosed = true"
+                            hide-details
+                        ></v-text-field> -->
+                        <v-text-field class="py-0" v-model="search" append-icon="mdi-magnify"
+                        label="Search" single-line hide-details ></v-text-field>
                     </v-col>
                 </v-row>
                 <v-row>
                     <v-col>
                         <v-data-table :headers="headers" :items="collection.items" :search="search">
-                            <template #item.gruposangrh="{ item }">{{ item.gruposang }} {{ item.rh }}</template>
-                            <template #item.actions="{ item }">
+                            <template #[`item.gruposangrh`]="{ item }">{{ item.gruposang }} {{ item.rh }}</template>
+                            <!--https://stackoverflow.com/questions/61344980/v-slot-directive-doesnt-support-any-modifier-->
+                            <template #[`item.actions`]="{ item }">
                                 <router-link :to="'/pacientes/update/'+item.id">
                                     <v-btn color="primary" outlined x-small fab> 
                                         <v-icon>mdi-pencil</v-icon>
@@ -44,4 +59,10 @@
     </v-container>
 </template>
 <script src="../../components/_indexes/PacientesIndex">
-import Bars from '../Shared/Bars.vue';</script>
+</script>
+<style scoped>
+.v-input.expanding-search {
+  transition: max-width 0.5s; }
+  .v-input.expanding-search.closed {
+    max-width: 70px; }
+</style>

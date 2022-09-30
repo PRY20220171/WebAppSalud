@@ -1,29 +1,22 @@
-import Bars from '../../../views/Shared/Bars.vue';
 
 export default {
     name: 'Usuario',
-
-    components: {
-      Bars,
-    },
-    
     data () {
       return {
-        
         model:{
-            idusuario:'',
-            nombres:'',
-            apellidos:'',
+            idusuario:'1',
+            nombres:'Samael',
+            apellidos:'Veritas',
             password:'',
-            docnum:'',
-            doctipo:'',
-            correo:'',
-            telefono:'',
-            direccion:'',
-            procedencia:'',
-            rol:"",
-            numcolegiatura:"",
-            especialidad:"",
+            docnum:'12345678',
+            doctipo:'DNI',
+            correo:'sveritas@salud.com',
+            telefono:'987654321',
+            direccion:'Psje. 123',
+            procedencia:'Peruano',
+            rol:"Administrador",
+            numcolegiatura:"123456",
+            especialidad:"Cardiología",
         },
         rol:{
             idrol:'',
@@ -31,7 +24,11 @@ export default {
         },
 
         tipo_doc: ['DNI', 'Carnet de Extranjería', 'Pasaporte'],
-        roles: ['Administrador', 'Médico','Enfermero'],
+        roles: [
+          {nombre:'Administrador',descripcion:'Acceso completo al sistema'},
+          {nombre:'Médico',descripcion:'Acceso parcial al sistema'},
+          {nombre:'Enfermero',descripcion:'Acceso parcial al sistema'}
+        ],
         especialidades:[
           "Alergología",
           "Cardiología",
@@ -70,7 +67,4 @@ export default {
         ]
       }
     },
-    
-    methods:{
-    }
   }
