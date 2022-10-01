@@ -1,0 +1,2747 @@
+[
+    {
+        "id": "2a811d22-dd44-42b5-9cc8-446deea58fd0",
+        "tbc": "No sabe",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "3d9ccb60-9f5f-4eeb-af16-27b14542788d",
+        "tbc": "No sabe",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "8ee3112f-a3fe-45df-9b50-17ab55bc2ab3",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "e6577b2f-b605-4818-9284-76da445bb700",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "No sabe",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "2adf4d36-1828-4dcf-b6c5-6f0517e28ffa",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "ff1a758c-f7c4-4ec3-ae05-fc3491d6c977",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "15e42b1e-e7eb-43a9-9bf5-489f6410c511",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "b73fbdd5-f748-4fb8-992d-cd01714aba4b",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "0e4ed446-f340-4dfb-a3b8-ab4bd8f8a5fe",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "92db1969-b994-43d8-b1bd-d0d7d03d9c19",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "7b15e7ff-82f3-48ce-9cbd-4b5b94bb38cc",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "f7336afc-3b0e-434c-a755-fc4dd29bc1cf",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "2c6c9430-3e63-4699-bb78-4a3ec4f1aef2",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "4e5874d6-480f-4841-ae01-d8039de8283b",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "No sabe",
+        "neurologico": "No sabe",
+        "alergiamedic": "No sabe",
+        "otros": "No sabe"
+    },
+    {
+        "id": "884f4448-abf9-477e-8691-8d7fbf5b5e55",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "a18005db-56c4-4a0c-9775-ca39760b1729",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "9c20b810-f1fc-431e-8b6a-0ff33b079259",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "a5ba95e4-d95c-4a86-8a01-f813d1ffb050",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "52c7eede-fef7-42bc-be49-592568ef462a",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "c852ea5c-7657-451d-b86d-b6ec6dd2687d",
+        "tbc": "No sabe",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "fe67c339-a33d-48e7-bbc4-89b8924ad0ca",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "da4cc87e-4a17-4b40-99b0-5307231d7ba0",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "No sabe",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "9faaa16a-86a8-4fc7-9076-63316bfd1b65",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "c8d42fec-0d12-480d-9127-0923613eb166",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "eee4e245-719f-4be1-ae1c-eebd11b8e1a6",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "a7240d40-0449-4ac1-8f2c-320b27b115d9",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "a61fff92-9848-4e0f-874e-96ee918b0bf5",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "4eaba3fc-f587-4b0b-815b-f0b3e7cec2e1",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "dea7a72b-ebf0-4af5-95b0-61dae90489c1",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "a5a0cc78-82c0-4318-9bf0-2d557a56a044",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "a47dacaa-74cd-4881-8c46-cfb58e926d5d",
+        "tbc": "No sabe",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "94a1def4-8094-45ca-ad34-7052b8e3c3ec",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "c42f9e89-ccc3-4379-a392-ab61e6ed5dfe",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "No sabe",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "a39ef77f-8a9f-474c-9f37-28020588c33f",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "No sabe"
+    },
+    {
+        "id": "44d783b1-793c-4f2c-8477-98ac88c06d06",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "481da3c0-ee54-46d5-b50e-55028f04a9d4",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "5daf2fee-08e7-42dc-831c-3b1c89ee8c23",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "3488a1f3-7a6b-4de0-8ae9-1b9cfac36d0b",
+        "tbc": "No sabe",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "No sabe",
+        "otros": "No sabe"
+    },
+    {
+        "id": "7d838cd1-55f9-403a-bf71-e956e10e8c0d",
+        "tbc": "No sabe",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "b9ec56ad-252a-49d0-8dad-eb87231c19b6",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "159bda62-bad5-46c5-8ce9-a937ed25257d",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "f3243693-b55d-42d4-9c22-78e19089c3fd",
+        "tbc": "No sabe",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "6390f0f0-760f-4810-a1e5-43fcc3ce8a04",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "a53e88b3-f0c4-4464-bb52-62cd7358eef3",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "d25b0b44-5650-4af3-af5f-8091b88807ce",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "No sabe",
+        "otros": "No sabe"
+    },
+    {
+        "id": "e2cdbfa9-b753-4d7b-bc96-32ef1f8b300a",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "15981900-36bc-4218-ae5e-1e1ee38c6037",
+        "tbc": "No sabe",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "3aa2fe9a-8825-485a-a578-c36b2bbb41f9",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "1d0b810c-eabd-4591-88c8-b6d345ec3a0b",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "e8374c47-d292-4fc0-b653-21cd10c1ad6a",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "c96cfa8c-e96a-4336-ad40-c6b4778c4e75",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "07bae7d5-6319-43ba-9da7-696eb1f441ec",
+        "tbc": "No sabe",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "9fa48bb2-9f5e-44da-b976-5112e4721e2e",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "9568c5de-7704-4c24-90c1-7b48869031c6",
+        "tbc": "No sabe",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "2c4e9e82-2a15-4b11-acc0-4087c3d2dbd5",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "f419e735-07ed-410d-bd2f-2c921e932a6d",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "2efe1dc2-3450-44c6-a6be-6df1335d1838",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "bd90b1ce-e461-4e36-af2c-c0e128faf2b2",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "c2364c01-132e-404c-bde5-571c5c7075ad",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "d03ebfc4-9309-44f0-b018-a21f7b0aaf08",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "No sabe"
+    },
+    {
+        "id": "e34371a4-7df3-416e-9f41-b790940cf7b1",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "2a87e573-958b-4e14-92dd-0ee48885d5cf",
+        "tbc": "No sabe",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "94bcf17f-0de8-4851-bee3-f2630de8aa4d",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "294dfcd9-e3e8-48a0-b3e1-fbc6e639c385",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "caa123c7-c1fc-4bee-b22e-032627c90612",
+        "tbc": "No sabe",
+        "sobasma": "No sabe",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "ca4e9602-070e-47c0-91fd-cc43d961eb5c",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "420a3cd2-2271-4c5c-9d01-09031f0f638c",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "90365f25-4ea8-4740-9ecf-33d836426fc7",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "2728e182-617d-4a0a-896c-a3a256a3e341",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "e791c8ef-6902-457f-b2a8-d88a844b5dbc",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "36ffc5d6-70be-472b-9f36-389ef1ab6e99",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "81d41ca9-8a0e-4e4a-88d3-17d7f2066b8f",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "e896f1f0-0bff-455c-af32-c0792b547eca",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "8e1d2cc8-26d4-4b31-8f13-394f80a0f012",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "fb49bba7-e301-45e8-a44c-86137764b698",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "d34055d6-2934-4924-aae1-7c999e6d3057",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "0c49cf4d-723a-466d-81d7-a5acbba65d9a",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "No sabe"
+    },
+    {
+        "id": "8d069e33-eab2-4538-814f-372693d82650",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "f96d00da-7a8b-42b9-8bbe-c0bee62b8f67",
+        "tbc": "No sabe",
+        "sobasma": "No sabe",
+        "transfsangre": "No sabe",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "80ac8a83-c20a-4500-b32f-9db72dbb221f",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "No sabe",
+        "neurologico": "No sabe",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "d45581fc-9f7d-44b0-a44d-942f6a006001",
+        "tbc": "No sabe",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "No sabe"
+    },
+    {
+        "id": "e365af8c-3e28-44a8-b31b-5f70ad9f3c5e",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "20cdf242-d099-45bd-8115-b4ee2dc38af2",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "424ea6fa-f558-4219-9aa2-32c3ce741a44",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "7ab92350-93c7-43a1-a55a-9a133edaf302",
+        "tbc": "No sabe",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "65c6a300-5bac-49ce-82fb-9a2ba89a9524",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "d6273a8f-e321-412a-a5fc-3de4a8f07054",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "d71e69be-f63a-4d5b-ac53-b597a66f30e6",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "fb00bec0-c613-4960-b520-1705121049b9",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "1b71c5c4-10f8-41d2-bcf2-945fdd1f4c56",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "No sabe",
+        "otros": "No sabe"
+    },
+    {
+        "id": "b7ae9e4b-e749-44ce-adf3-49050cdbbf4d",
+        "tbc": "No sabe",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "e0fc5f27-a167-4c77-9f21-795b38dced6e",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "a7e113fa-fcb3-40e2-b1f6-a991726b2198",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "134bcc5c-78a1-4d94-8f03-f3cdd6f49c85",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "492ad0e8-f610-43a5-93c0-c10f45a24cb4",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "5656cef0-cbf6-467f-bacd-66609ca19f24",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "2106d404-0ac9-468c-adbf-2a8d08684012",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "e254cbbb-d27b-4985-a7a7-684ec0454891",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "f6002473-442a-45e2-8717-9ea0e5e16501",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "1d629537-d015-4003-b0c8-324c8aac1916",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "02f59e2b-13bb-4ea2-a1d3-892750ccdd2b",
+        "tbc": "No sabe",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "94260b06-d3fc-47ba-8773-ad789ad1abff",
+        "tbc": "No sabe",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "d1ee2ad6-6ef8-4907-823c-89f6c310ec65",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "1f6d188d-25df-4fa7-a463-cce928c67ada",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "No sabe",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "ed06babe-d72a-46c3-a934-80b1458fea01",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "98f9081a-dd7a-43db-b9ce-afcb300cc8f7",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "899a9bdd-93de-49d3-aba0-3017e088265b",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "e98f1ab0-0e54-4b87-ae85-1fee957c7877",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "6ea435d6-e182-4245-9da4-670fb1699a03",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "521e8c52-f827-40cd-ad56-7189d3f71226",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "d4368f84-86c9-4206-877a-197325216078",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "b841ecea-9951-45f9-b560-a0714bb65908",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "2225f7cc-6ff0-455e-8e8c-43b3057b6e19",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "2327ae35-a070-4667-b37c-3e87da94ae37",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "ab77188d-5555-4a4f-8701-e83485f2103a",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "No sabe"
+    },
+    {
+        "id": "9d0ccba8-ff3e-4a26-8283-a2671bc6e381",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "No sabe",
+        "otros": "No sabe"
+    },
+    {
+        "id": "7380d5b7-9a50-4fa8-82e6-2dcf852c1c00",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "206b78e2-f653-44f8-abb5-566a0378a79d",
+        "tbc": "No sabe",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "7238b3e0-2971-4d7f-8ccc-894596e9a575",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "9af3e133-7565-443d-ae59-818bd790ebef",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "4bc660c1-ab12-487b-a4be-0c549282cffc",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "39d87eb0-06f4-41f4-9df4-9023da754929",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "c798125a-8c72-43a7-8914-edf50fd6c6e0",
+        "tbc": "No sabe",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "360701e5-0a39-44be-8ab5-1c315ec46b81",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "08f1251b-b0dd-4b9a-aa9e-1a69bbdd6ffc",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "e5bba751-ee20-460d-8ad4-e2eee564cf68",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "8fe57259-28e9-4bb2-9aa0-e9f7970dda66",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "31b6e473-0eb3-4187-99ca-190ba9902557",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "8aa695ca-126d-470c-ac58-b245c1dad576",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "d5176105-1aeb-478d-9376-5304dbf07c7e",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "641a5784-ff9c-4fbf-a407-7312878b1a24",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "2b1113b2-2506-4c61-87b6-e5d20da47eaf",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "3e3ca704-4a54-4dde-a7d5-b8144412fab3",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "f81c58ec-f905-4d6b-84ad-6b443a99498e",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "No sabe",
+        "otros": "No sabe"
+    },
+    {
+        "id": "7cac2ec6-7bc4-491c-bb05-c3b1b57419c0",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "No sabe"
+    },
+    {
+        "id": "da1d3455-1eae-4967-a5fb-433b8c508571",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "d30478ee-5170-4394-9fdf-15e27216222a",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "c93b5664-c01e-4414-b512-4b28831d647d",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "e2d32cfe-39ac-40e3-92ac-b58d679c817b",
+        "tbc": "No sabe",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "18d247fc-6449-477c-a2d0-d384292ba06a",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "43b68e85-4364-4a85-9483-c1779bf6d49a",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "No sabe"
+    },
+    {
+        "id": "fc6589aa-d8e7-497a-bb64-67f19611df4e",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "bb5e44fe-8e7f-46ea-87a8-d3e3c91d1ca5",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "8638a689-9524-40a0-bef2-f80251b6a4d1",
+        "tbc": "No sabe",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "77a6a0d4-f320-456a-8771-ee51e08fb91f",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "786d3de3-7815-491d-a10b-188526a3fecc",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "333817c0-f4c9-4872-985d-e7044c7130f4",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "22d5f731-08d7-4b06-b72e-6bfc503e0b9c",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "a530e23f-3402-493b-a330-fb596858c7a8",
+        "tbc": "No sabe",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "c6215537-54ed-4170-b465-fcdb6cefe248",
+        "tbc": "No sabe",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "6cb5a961-e499-4a7f-b6a5-aa1e7f9fdf77",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "No sabe",
+        "alergiamedic": "No sabe",
+        "otros": "No sabe"
+    },
+    {
+        "id": "5111e1cf-631a-482c-937b-83fb44058252",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "No sabe"
+    },
+    {
+        "id": "43b4a3ad-22e2-4aec-a05b-62630fe5ee6c",
+        "tbc": "No sabe",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "182597d4-3499-49c9-92d2-29c9eeea62ae",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "6b0e5bbb-2a18-472d-9ddb-ad5570d2febe",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "b45ed559-9e5d-4ad5-9d94-dfff981b765d",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "2bac5c1d-dc44-495f-982c-96b0ff14dacd",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "63fd1026-b848-4610-b771-a72eeff95048",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "b9ba6463-9ee5-4598-9f4c-bbeb53c8a21a",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "c6a5859b-6658-4466-b66f-cc62b44ea570",
+        "tbc": "No sabe",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "32030164-6d07-4923-a877-3119722ff879",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "2477d029-9985-4366-8aa0-7c91d88e4e8f",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "1c0f7d60-8f33-44ca-a226-85c9d96ebd82",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "fe18a1a8-f57b-4fd5-be2d-be71d5f70420",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "40b83a96-35c8-4146-9273-5ee2a7e2df6f",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "c575c2a0-e843-41bd-846b-c90cc7a5c099",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "No sabe",
+        "otros": "No sabe"
+    },
+    {
+        "id": "71459938-dcf1-42d2-9743-4cffce9b36a3",
+        "tbc": "No sabe",
+        "sobasma": "No sabe",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "a7a64532-a8c9-476d-80cb-afd9927ee837",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "229462ff-3836-4a34-b8e8-eb13a8f56c8f",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "d166b911-b7e6-4136-9879-985b9a788499",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "f28f7d97-de5f-415a-9e87-f3cb000ab407",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "4a6aeac2-d56c-4a39-8693-170cc48c15ff",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "04b22c69-beae-42b2-ac63-84e1958a7814",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "852ccad2-26c4-42ed-aa52-522ffa0e31cd",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "No sabe",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "61058de9-3fad-4e0b-880e-4db30b4de6b5",
+        "tbc": "No sabe",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "1c8576ea-3d8e-4905-87f7-5e48857ecf1c",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "20211ba0-a574-4695-8eb8-704d038bfe9f",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "94111c79-f99b-45f7-8553-7e3c67195e67",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "f9168450-eefa-4c46-b030-8cd2089d269d",
+        "tbc": "No sabe",
+        "sobasma": "No sabe",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "No sabe"
+    },
+    {
+        "id": "a61cce67-6051-4b6c-b558-db217bfc635a",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "8ddc8761-2c11-4ad0-93cf-80cbe43a67fb",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "80546259-bf08-495a-9110-8595e0eb3f48",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "85701bd0-f7df-4c02-8942-1811212f7bcc",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "c30a5ed5-6d9a-441f-885a-c8d7b6ad8339",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "386938d8-1fe1-4573-b713-6e6d66fdea28",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "15791c2b-0c0e-4a5b-b70d-3e1fc2cd538d",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "f425ba41-26cc-4957-b493-9b24a357c585",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "92cea0a6-700d-4acf-b0e1-4a9d250d3517",
+        "tbc": "No sabe",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "No sabe",
+        "otros": "No sabe"
+    },
+    {
+        "id": "c87f43fc-44f4-4745-b257-99058f9c0a29",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "f70478c9-1a09-425f-8174-abe17b76cac3",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "No sabe",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "d9fdb17c-ffa7-4900-86ea-87a17d7786d6",
+        "tbc": "No sabe",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "No sabe"
+    },
+    {
+        "id": "e464dadd-1bbd-4d03-8231-cc66f4e005f5",
+        "tbc": "No sabe",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "480d634b-b323-4fef-956d-b87a61c96943",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "9eaa73d7-5505-44f8-b354-fdb2444de568",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "7fb35d7e-13db-45fa-8aea-c1d407554c30",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "e8e6e24a-ec33-482e-8400-846d8b1d32ff",
+        "tbc": "No sabe",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "079cccac-adfb-4fe1-9eb7-b38ab32b2322",
+        "tbc": "No sabe",
+        "sobasma": "No sabe",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "068ec30f-49d8-4cf7-b191-49098c8d1e8f",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "9cc816d4-56f5-4a98-be90-e9f0994d50d3",
+        "tbc": "No sabe",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "6d18341d-9573-42ad-9727-d6449d3f9821",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "04be743e-7039-4074-a6ad-82bdf3397c4d",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "1e51fb15-3b08-4e04-b4a2-8c55886750ad",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "e8bf087c-f0f0-4f98-8497-e3dbcdad5fb8",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "b4482a89-5162-4945-8b45-da33370f5332",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "c46dad50-7cd1-4d52-91d3-6680d8868e62",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "dfdf75f9-f925-4582-a9e3-6b76e4683494",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "720c0900-f30f-4a41-b4be-7d8906e55fe1",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "20480ddd-1740-41ab-bd65-0a9099355e69",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "cea5a462-083b-46bf-9995-ea8cd7bb71ba",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "3e37c504-583f-4936-bfc2-63ca6a317558",
+        "tbc": "No sabe",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "48b63b61-b759-4be1-857a-80a78d749394",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "a9bc8e56-8e39-40b0-97d7-6e9082082a85",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "7bcc9f48-2e15-441d-8020-f86e6365ff0e",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "7063ad3c-beee-447a-87f8-ca0e3629e72f",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "e485f043-a2a1-4154-896a-d904beaa3f6e",
+        "tbc": "No sabe",
+        "sobasma": "No sabe",
+        "transfsangre": "No sabe",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "089fe6d4-ce8b-4ff9-831d-46a5d24e2eac",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "b7109d37-66df-4431-b6b3-934a9d657439",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "d486e6db-f668-4895-b89e-540833570f99",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "17fc9513-ad69-4302-ae8f-fd25f0c4f6e5",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "No sabe"
+    },
+    {
+        "id": "94f74595-8509-44f6-b31d-379eb164c607",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "No sabe",
+        "neurologico": "No sabe",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "a4bfd3f9-66b2-4cec-96dc-fb737d1fd154",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "6ff0d889-6b7b-4289-aae6-826bbc63a46c",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "c73c1cdd-9124-4a00-97a0-b0f17450710a",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "4245672c-48ec-44f8-9f90-b894d9a988e5",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "dc8b0967-2646-4e7d-9186-f38d7f9c015f",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "90bfb88e-6969-4927-9122-25ede6b34560",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "8b5632e4-280c-4911-b238-0d827bdfb725",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "0346f55a-c636-4017-8cc1-83d76b3b595f",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "8627f5fd-df75-4218-a27e-06429a0bb203",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "759e4986-35cc-45c1-8f53-a255685d305c",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "57b44e96-84ba-4962-b134-677072bbfcf5",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "d733a685-7f8e-4ab9-8d27-9aeb010451df",
+        "tbc": "No sabe",
+        "sobasma": "No sabe",
+        "transfsangre": "No sabe",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "ac56789c-c324-4458-8fa3-24c4b89a7d33",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "4fe48dc0-3d52-459a-a3c2-8d161d30b087",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "e14cf89c-084b-4c05-a9bb-aa1814019392",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "No sabe",
+        "alergiamedic": "No sabe",
+        "otros": "No sabe"
+    },
+    {
+        "id": "5879e4e9-cc17-46c8-a302-86334ff99f51",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "d2408ed7-449d-4929-b06a-ee36fa83087d",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "fa126ce1-58d8-4933-af26-36e4e8d2ddaa",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "957f69ad-9d1b-47ef-bfed-37a86ff08edf",
+        "tbc": "No sabe",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "8534fa7d-c9ff-4bef-9c5b-b78a63fdf57e",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "8f59a866-8255-434b-aa49-0acf43cf2fb2",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "99d218c8-ef2a-4a81-a179-8fa602171ff5",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "No sabe"
+    },
+    {
+        "id": "e4c40966-851d-4ac6-8316-4372e76dd66e",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "fe3f3499-9518-4290-b1f0-59f15013e0c1",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "b35d0dbf-12e1-431b-8851-bf585bf0a5f6",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "ed7ab36c-7306-4592-831b-cc966f4272cd",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "1edba211-6a65-422c-a809-a573ed10e30f",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "a29cdc7d-884f-44fa-9ead-0c1fdcc80c84",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "7d734f92-8b0c-4630-b386-a63a66eb344d",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "160ed698-e7b3-4baf-b167-46df8817be15",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "58fdf61e-0f31-460e-b63e-23ed4ce284ca",
+        "tbc": "No sabe",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "9dd875f9-7be9-47da-8918-3e1f42e2e3ae",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "78aeed0b-6ad3-4cff-bc26-01ff8a3e1849",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "a1a09fc6-1a60-4f4f-b823-d2777de4412f",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "b50f378a-0e70-41cd-be97-869b4ec2bb2b",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "edf5c432-000c-4f81-9561-c92198d6962f",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "257c5b62-4d41-4f39-9833-d8f04f0f433a",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "6e394df3-706c-49c8-a147-e9dc0936657a",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "No sabe",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "23e9b37f-1f98-468f-a5e6-bb31b302bb1c",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "a4910872-530b-4808-82b3-7d1390cebeb6",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "1c75bff2-a1d8-4f3d-9317-6333cbacab16",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "121f6f6f-5e40-40e6-b0f5-7a70c333e482",
+        "tbc": "No sabe",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "93ecc92d-c286-4ef7-8a5a-0dcd6d332e76",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "4d976a76-410c-4ce5-97e1-bf39ff476605",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "No sabe",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "7655d922-779b-4016-89d4-538e00668a01",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "c1e18b91-b2de-4ff6-b56a-25214d7e173e",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "86e4542b-1881-4f8f-8bc7-a8520291b14c",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "e0779613-0530-4ed4-a422-5175397a8f2d",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "54a5a090-c8fa-4edb-aa41-ff49bf6191d5",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "8e7a93f6-6598-42bb-a2e7-b2ab6f48fafb",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "No sabe"
+    },
+    {
+        "id": "e00c5277-d080-40ff-a87f-ac41c6a95d1e",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "f8a588f8-6eda-43fe-8806-bac7fc2d764d",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "89149688-5b93-4cfb-b44b-5e6bafef7cd1",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "006d6aef-4265-4868-9e5c-f55f91678626",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "dfe96a51-f5e7-448e-a2d2-8d245f3d23ba",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "9cb1d29e-616a-497c-885f-d58eff5c0ba2",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "a5eebe76-7391-44b4-826d-94d3d2d36e79",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "5709a781-8e6b-4fb2-92f6-86795323bedc",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "cf8e30fa-c2ec-4bd9-b5e7-f0428952bb48",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "321312a6-04de-4654-82d3-777c83e2a94e",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "No sabe"
+    },
+    {
+        "id": "9d098f6b-559c-4201-aa6c-b870ca8785dd",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "No sabe"
+    },
+    {
+        "id": "89e20545-f1b0-453a-9ff9-4add5c8ec566",
+        "tbc": "No sabe",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "adcff568-6765-4bd9-aa19-ec652e30d9c7",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "e7004cd9-0dce-4a34-af79-dfac1ecbf1c7",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "11efde67-0a34-4d26-9a82-e787019ed4c4",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "4e416c80-35f1-434f-87c8-a0bd7b70bd97",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "b43f4104-101e-4c83-a518-86f6f80c9cf2",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "eac11e56-aff9-4fab-acd5-678a7eaef6ae",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "a32d0449-9c3b-41fe-802f-65ca3adf64b6",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "232c81af-51cf-4256-a7a1-371a770f1fa3",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "a1e05156-0a28-4056-892b-ed131915e9e9",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "6d0837ff-a1e3-40f7-8dcf-808eb17bc634",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "d4bbfac2-11d1-4916-855a-cfdcc43f9765",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "No sabe",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "c8170ace-0f49-4b60-bfee-06af680b8fed",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "El paciente no tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "136bb08c-7408-4f3c-b68c-4c4ceb755c47",
+        "tbc": "El paciente tiene TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "No sabe",
+        "otros": "No sabe"
+    },
+    {
+        "id": "5b379fac-3237-4796-99b2-ddbbedb74eaa",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "El paciente tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "8e728af1-ab00-4f69-a0e5-ff1c84833382",
+        "tbc": "No sabe",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "El paciente tuvo una transferencia de sangre",
+        "neurologico": "No sabe",
+        "alergiamedic": "El paciente no tiene alergia",
+        "otros": "No sabe"
+    },
+    {
+        "id": "5ad9c7a6-39dc-4b08-ad83-c76d1981c315",
+        "tbc": "El paciente no tiene TBC",
+        "sobasma": "El paciente tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente no tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "d1593330-94e3-479a-8c97-f69d59825dd1",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "No sabe",
+        "transfsangre": "No sabe",
+        "neurologico": "El paciente no tiene un padecimiento neurologico",
+        "alergiamedic": "El paciente tiene una alergia",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "beab75ce-58b7-46fb-b35f-77d426439af5",
+        "tbc": "El paciente tuvo TBC",
+        "sobasma": "El paciente no tiene asma",
+        "transfsangre": "No sabe",
+        "neurologico": "No sabe",
+        "alergiamedic": "No sabe",
+        "otros": "El paciente tiene otros antecedentes patologicos"
+    },
+    {
+        "id": "Aaegfv7",
+        "tbc": "Si",
+        "sobasma": "",
+        "transfsangre": "",
+        "neurologico": "Neurologico",
+        "alergiamedic": "",
+        "otros": ""
+    },
+    {
+        "id": "T-zp8G-",
+        "tbc": "",
+        "sobasma": "",
+        "transfsangre": "",
+        "neurologico": "",
+        "alergiamedic": "",
+        "otros": ""
+    },
+    {
+        "id": "INxQiNl",
+        "tbc": "",
+        "sobasma": "",
+        "transfsangre": "",
+        "neurologico": "",
+        "alergiamedic": "",
+        "otros": ""
+    },
+    {
+        "id": "eG-BwRG",
+        "tbc": "",
+        "sobasma": "",
+        "transfsangre": "",
+        "neurologico": "",
+        "alergiamedic": "",
+        "otros": ""
+    },
+    {
+        "id": "AohKBNS",
+        "tbc": "",
+        "sobasma": "",
+        "transfsangre": "",
+        "neurologico": "",
+        "alergiamedic": "",
+        "otros": ""
+    }
+]
