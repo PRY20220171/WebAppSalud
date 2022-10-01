@@ -51,7 +51,11 @@ export default {
             collection: {
                 hasItems: false,
                 items: [{
-                    paciente: Object,
+                    pacienteid: null,
+                    paciente: {
+                        id: null,
+                        nombres: null,
+                    },
                     acompanante: null,
                     centromedico: null,
                 }],
@@ -63,46 +67,25 @@ export default {
         }
     },
     methods: {
-        getAll(page) {
+        async getAll(page) {
             this.isLoading = true;
             this.$proxies.atencionProxy.getAll()
                 .then(x => {
                     //this.collection = x.data;
-                    let tempvar = x.data;
-                    tempvar.forEach(x => {
-                        if(x.pacienteid!==null){
-                            this.$proxies.pacienteProxy.getById(x.pacienteid)
-                                .then(xy=>{
-                                    console.log(xy.data);
-                                    x.paciente=xy.data;
-                                }
-                                );
-                        }
-                        //this.$proxies.acompananteProxy.getById(x.acompananteid).then(xy=>{
-                        //        x.acompanante=xy.data;
-                        //    }
-                        //    );
-                        this.$proxies.centroMedicoProxy.getById(x.centromedicid).then(xy=>{
-                                x.centromedico=xy.data;
-                            }
-                            );
-                        //x.usuario=this.getUsuario(x.usuarioregistroid);
-                        //x.acompanante=this.getAcompanante(x.acompananteid);
-                        //x.centromedico=this.getCentro(x.centromedicid);
-                        //x.sintomas=this.getAllSintomas(x.id);
-                        //console.log(x)
-                    });
-                    this.collection.items = tempvar;
-                    //this.collection.items = x.data;
+                    this.collection.items = x.data;
                     if (this.collection.items.length>0)
                         this.collection.hasItems=true;
                     this.collection.total=this.collection.items.length
                     // this.collection.items.forEach(x => {
                     //     if(x.pacienteid!==null){
+                    //         x.paciente={};
+                    //         x.paciente.nombres='';
                     //         this.$proxies.pacienteProxy.getById(x.pacienteid)
                     //             .then(xy=>{
-                    //                 console.log(xy.data);
-                    //                 x.paciente=xy.data;
+                    //                 //console.log(xy.data);
+                    //                 x.paciente={};
+                    //                 x.paciente.nombres=xy.data.nombres;
+                    //                 //console.log(x.paciente)
                     //             }
                     //             );
                     //     }
@@ -114,6 +97,7 @@ export default {
                     //             x.centromedico=xy.data;
                     //         }
                     //         );
+                    //     //console.log(x);
                     //     //x.usuario=this.getUsuario(x.usuarioregistroid);
                     //     //x.acompanante=this.getAcompanante(x.acompananteid);
                     //     //x.centromedico=this.getCentro(x.centromedicid);

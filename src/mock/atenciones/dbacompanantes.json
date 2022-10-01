@@ -1,6 +1,6 @@
 [
     {
-        "id": "c02102c9-3b22-4e4c-a06d-8da96c00f0e4",
+        "id": "1341e49b-9c44-43ed-910c-4cef447b4269",
         "nombres": "Kristen",
         "apellidos": "Goullee",
         "docnum": "98926073",
@@ -9,10 +9,10 @@
         "telefono": "921930983",
         "gradoinstruccion": "Secundaria",
         "ocupacion": "Dependiente",
-        "parentezco": "primer grado"
+        "parentezco": "segundo grado"
     },
     {
-        "id": "473b122e-f45f-4541-8ae4-ffee51c27231",
+        "id": "53ce1a7d-d3ee-4299-b4bc-ba1525d749af",
         "nombres": "Thor",
         "apellidos": "Rapport",
         "docnum": "29686488",
@@ -21,10 +21,10 @@
         "telefono": "907326326",
         "gradoinstruccion": "Secundaria",
         "ocupacion": "Independiente",
-        "parentezco": "primer grado"
+        "parentezco": "segundo grado"
     },
     {
-        "id": "b354893a-ab6f-4596-af97-2f20d138492a",
+        "id": "7601d700-4dd1-423e-a35b-debd463868e6",
         "nombres": "Latrina",
         "apellidos": "Chesnut",
         "docnum": "63539130",
@@ -33,10 +33,10 @@
         "telefono": "950159976",
         "gradoinstruccion": "Superior",
         "ocupacion": "Dependiente",
-        "parentezco": "segundo grado"
+        "parentezco": "primer grado"
     },
     {
-        "id": "00a9ea5b-4f96-4f19-9cb0-674eba5576e1",
+        "id": "ff652bb9-64b6-49d3-b49c-d53715eeb5d4",
         "nombres": "Ozzie",
         "apellidos": "Trimmell",
         "docnum": "60342558",
@@ -45,10 +45,10 @@
         "telefono": "913047691",
         "gradoinstruccion": "Pre-escolar",
         "ocupacion": "Dependiente",
-        "parentezco": "segundo grado"
+        "parentezco": "primer grado"
     },
     {
-        "id": "bc0aef5a-6c48-41aa-b272-f0555d4f3d4d",
+        "id": "5da934a1-d35b-4190-87f8-5f1755fd38c7",
         "nombres": "Tanny",
         "apellidos": "Chaudron",
         "docnum": "08300874",
@@ -57,10 +57,10 @@
         "telefono": "982654791",
         "gradoinstruccion": "Primaria",
         "ocupacion": "Independiente",
-        "parentezco": "primer grado"
+        "parentezco": "otro"
     },
     {
-        "id": "2af479be-b994-4d2e-a580-ac1253b56d5e",
+        "id": "c8b4fbec-b7b7-4a13-b200-6182e50517a5",
         "nombres": "Shurwood",
         "apellidos": "Tonn",
         "docnum": "97949973",
@@ -69,10 +69,10 @@
         "telefono": "961826411",
         "gradoinstruccion": "Secundaria",
         "ocupacion": "Independiente",
-        "parentezco": "segundo grado"
+        "parentezco": "otro"
     },
     {
-        "id": "df566b0f-f309-4478-9363-b908e09a8e38",
+        "id": "c3e6a05e-59aa-4b2c-b3ac-4973a3989dfc",
         "nombres": "Lorilee",
         "apellidos": "Craigs",
         "docnum": "00327850",
@@ -81,10 +81,10 @@
         "telefono": "922184960",
         "gradoinstruccion": "Sin nivel",
         "ocupacion": "Dependiente",
-        "parentezco": "segundo grado"
+        "parentezco": "otro"
     },
     {
-        "id": "4bababb0-5c14-4d50-ba90-fc93e1fd626c",
+        "id": "5a19cab1-cd7b-4b89-901d-4437bf2d9807",
         "nombres": "Jody",
         "apellidos": "Bauckham",
         "docnum": "30939608",
@@ -96,7 +96,7 @@
         "parentezco": "otro"
     },
     {
-        "id": "cb4f3a99-232a-4c84-8de4-6e280417fcd6",
+        "id": "2654e8fa-3948-4955-8563-e23f24564ac1",
         "nombres": "Hirsch",
         "apellidos": "Petrusch",
         "docnum": "54003807",
@@ -105,10 +105,10 @@
         "telefono": "961489789",
         "gradoinstruccion": "Pre-escolar",
         "ocupacion": "Independiente",
-        "parentezco": "primer grado"
+        "parentezco": "segundo grado"
     },
     {
-        "id": "073aa662-39ba-4edf-a7c3-a126c408b4fe",
+        "id": "182c5899-afe9-4698-83fc-6a95ccc2e69b",
         "nombres": "Herbie",
         "apellidos": "Dood",
         "docnum": "34619516",
@@ -117,10 +117,10 @@
         "telefono": "983334046",
         "gradoinstruccion": "Secundaria",
         "ocupacion": "Independiente",
-        "parentezco": "segundo grado"
+        "parentezco": "otro"
     },
     {
-        "id": "e72a37ed-ce94-472a-b14a-5755d938b0ba",
+        "id": "965f9da2-0dd7-4315-b3c1-bd602f03e0d9",
         "nombres": "Ardene",
         "apellidos": "Franklin",
         "docnum": "09530614",
@@ -129,10 +129,10 @@
         "telefono": "956775562",
         "gradoinstruccion": "Primaria",
         "ocupacion": "Dependiente",
-        "parentezco": "segundo grado"
+        "parentezco": "primer grado"
     },
     {
-        "id": "3c2a7674-e072-4ae6-b1a4-efa8465387e8",
+        "id": "a5ceee38-9224-4336-865e-3e2e5b23ba01",
         "nombres": "Annelise",
         "apellidos": "Mortel",
         "docnum": "23521970",
@@ -144,7 +144,7 @@
         "parentezco": "primer grado"
     },
     {
-        "id": "625523d3-082c-462d-87c8-974397abc4e7",
+        "id": "b062e987-1f36-4e7e-8c51-d76057f0371e",
         "nombres": "Glenden",
         "apellidos": "Cescoti",
         "docnum": "19382357",
@@ -153,10 +153,10 @@
         "telefono": "978099547",
         "gradoinstruccion": "Primaria",
         "ocupacion": "Dependiente",
-        "parentezco": "otro"
+        "parentezco": "primer grado"
     },
     {
-        "id": "2962e49c-679a-40b6-90f2-c999939bf620",
+        "id": "0ce9ac97-f00a-4ece-8c6f-918641d97759",
         "nombres": "Lucia",
         "apellidos": "Crowdace",
         "docnum": "58898738",
@@ -165,10 +165,10 @@
         "telefono": "987830276",
         "gradoinstruccion": "Pre-escolar",
         "ocupacion": "Independiente",
-        "parentezco": "segundo grado"
+        "parentezco": "primer grado"
     },
     {
-        "id": "ac2ce64e-67b4-4e40-a6a7-0fb2b7d93705",
+        "id": "83be3dce-7431-4664-9a22-dce1c4da4794",
         "nombres": "Maris",
         "apellidos": "Klimushev",
         "docnum": "42837659",
@@ -180,7 +180,7 @@
         "parentezco": "primer grado"
     },
     {
-        "id": "e34b4117-7b2a-4af5-8ef2-b8379985fb45",
+        "id": "9a626c03-5618-495a-8c31-1487607aefb6",
         "nombres": "Hillery",
         "apellidos": "Mealand",
         "docnum": "50125269",
@@ -189,10 +189,10 @@
         "telefono": "957147934",
         "gradoinstruccion": "Superior",
         "ocupacion": "Dependiente",
-        "parentezco": "segundo grado"
+        "parentezco": "primer grado"
     },
     {
-        "id": "9dee6b1c-c20c-4798-bc85-60bc0c0a07b1",
+        "id": "6f61dbdc-a175-4b95-afd3-ee61250b26c3",
         "nombres": "Cassandre",
         "apellidos": "Skryne",
         "docnum": "75306970",
@@ -201,10 +201,10 @@
         "telefono": "902450176",
         "gradoinstruccion": "Superior",
         "ocupacion": "Dependiente",
-        "parentezco": "otro"
+        "parentezco": "segundo grado"
     },
     {
-        "id": "b4cdea54-49b5-4dfc-9fc8-62612072e714",
+        "id": "01c977a6-cbc2-4d20-a205-22564635365a",
         "nombres": "Matilde",
         "apellidos": "Cossans",
         "docnum": "29893864",
@@ -213,10 +213,10 @@
         "telefono": "964284312",
         "gradoinstruccion": "Pre-escolar",
         "ocupacion": "Dependiente",
-        "parentezco": "otro"
+        "parentezco": "primer grado"
     },
     {
-        "id": "453733f2-0f9c-4b5e-88f9-667d0a9c15e1",
+        "id": "4676b787-2082-4f44-ad81-0527f9a64d0f",
         "nombres": "Melesa",
         "apellidos": "Smiley",
         "docnum": "40741094",
@@ -225,10 +225,10 @@
         "telefono": "995759746",
         "gradoinstruccion": "Primaria",
         "ocupacion": "Dependiente",
-        "parentezco": "primer grado"
+        "parentezco": "segundo grado"
     },
     {
-        "id": "2c18cf63-98e0-4d73-918d-0bf6cba9e9d0",
+        "id": "bfe1e168-d83e-4765-a0bb-fb75e85da500",
         "nombres": "Thatch",
         "apellidos": "Denison",
         "docnum": "50682403",
@@ -237,10 +237,10 @@
         "telefono": "959272262",
         "gradoinstruccion": "Sin nivel",
         "ocupacion": "Independiente",
-        "parentezco": "otro"
+        "parentezco": "primer grado"
     },
     {
-        "id": "22fdd802-3869-4ac4-8fb9-a25b2141f1c3",
+        "id": "f4c6873e-e413-4376-b7b2-97966927fc3c",
         "nombres": "Hazlett",
         "apellidos": "Louedey",
         "docnum": "68553793",
@@ -252,7 +252,7 @@
         "parentezco": "otro"
     },
     {
-        "id": "a54f4642-67a9-4411-b23f-f89a43c6ff05",
+        "id": "4c4fc64d-e32d-450b-8d82-88c738aea2b3",
         "nombres": "Sharai",
         "apellidos": "Shuttlewood",
         "docnum": "92278550",
@@ -264,7 +264,7 @@
         "parentezco": "segundo grado"
     },
     {
-        "id": "998ed830-fae3-4833-9140-979ba190822a",
+        "id": "73c50062-ec9f-4a7c-9cbd-c931dff154fa",
         "nombres": "Agnella",
         "apellidos": "Oldaker",
         "docnum": "44591339",
@@ -276,7 +276,7 @@
         "parentezco": "primer grado"
     },
     {
-        "id": "4950d4f2-2f07-4f6b-b248-3543794bbfef",
+        "id": "a2cc37be-fcfa-4bab-a36c-98740297dece",
         "nombres": "Paquito",
         "apellidos": "Curcher",
         "docnum": "20869054",
@@ -285,10 +285,10 @@
         "telefono": "926991475",
         "gradoinstruccion": "Secundaria",
         "ocupacion": "Dependiente",
-        "parentezco": "segundo grado"
+        "parentezco": "primer grado"
     },
     {
-        "id": "cf2523f8-84dd-4f7e-a2a6-2df48a53d7c5",
+        "id": "e16f612e-6aa8-45ad-8f2f-f5681c9bfb1e",
         "nombres": "Hartley",
         "apellidos": "Goldfinch",
         "docnum": "33603307",
@@ -297,10 +297,10 @@
         "telefono": "914309481",
         "gradoinstruccion": "Sin nivel",
         "ocupacion": "Independiente",
-        "parentezco": "otro"
+        "parentezco": "segundo grado"
     },
     {
-        "id": "81bb93f0-782d-4579-a07e-1e31fb441de9",
+        "id": "5678ef09-e3e3-4057-bd4f-02c10c410be5",
         "nombres": "Nerte",
         "apellidos": "Zecchii",
         "docnum": "60462526",
@@ -309,10 +309,10 @@
         "telefono": "986153189",
         "gradoinstruccion": "Superior",
         "ocupacion": "Independiente",
-        "parentezco": "primer grado"
+        "parentezco": "segundo grado"
     },
     {
-        "id": "ef8d1479-d59f-4f32-9750-686947a8fcb0",
+        "id": "ad76ba45-df70-419c-b206-9c5ed98786b9",
         "nombres": "Shalom",
         "apellidos": "MacDonogh",
         "docnum": "73882931",
@@ -321,10 +321,10 @@
         "telefono": "908163181",
         "gradoinstruccion": "Pre-escolar",
         "ocupacion": "Independiente",
-        "parentezco": "segundo grado"
+        "parentezco": "otro"
     },
     {
-        "id": "a8df6e69-93c1-41cf-b929-59c96db03179",
+        "id": "140b726e-ddfd-40b4-aa1a-e2123e3876d1",
         "nombres": "Hatti",
         "apellidos": "Salmoni",
         "docnum": "72179849",
@@ -333,10 +333,10 @@
         "telefono": "934486911",
         "gradoinstruccion": "Sin nivel",
         "ocupacion": "Independiente",
-        "parentezco": "otro"
+        "parentezco": "primer grado"
     },
     {
-        "id": "3e923b07-0366-47c9-a877-81c42848503e",
+        "id": "1a00bf03-fea7-468b-9660-4de53e36e0b8",
         "nombres": "Tim",
         "apellidos": "Bacon",
         "docnum": "15374268",
@@ -348,7 +348,7 @@
         "parentezco": "segundo grado"
     },
     {
-        "id": "8135aa21-b672-44a1-83e9-69ebafc9b481",
+        "id": "c8302b25-eb5e-47c7-b54a-d1b05e2becdd",
         "nombres": "Chantalle",
         "apellidos": "Diament",
         "docnum": "83250719",
@@ -360,7 +360,7 @@
         "parentezco": "otro"
     },
     {
-        "id": "9b9247f4-724c-4eab-9438-2d45e2d8cbd6",
+        "id": "38611c5a-fc40-4482-998e-fcd05c9c8fec",
         "nombres": "Lionel",
         "apellidos": "Pach",
         "docnum": "95618478",
@@ -369,10 +369,10 @@
         "telefono": "987489926",
         "gradoinstruccion": "Secundaria",
         "ocupacion": "Dependiente",
-        "parentezco": "otro"
+        "parentezco": "primer grado"
     },
     {
-        "id": "e462a5a7-c6cf-4ef9-9011-f61b4a939a51",
+        "id": "f3a7a4aa-510b-4d9c-9922-8a8257ff11af",
         "nombres": "Elisha",
         "apellidos": "Wittey",
         "docnum": "53378550",
@@ -381,10 +381,10 @@
         "telefono": "966257710",
         "gradoinstruccion": "Superior",
         "ocupacion": "Dependiente",
-        "parentezco": "primer grado"
+        "parentezco": "segundo grado"
     },
     {
-        "id": "1249fdb0-d5e4-49d0-ac04-c7b2fda5b56f",
+        "id": "3e94a063-3e2b-4699-9046-779c89567d65",
         "nombres": "Trista",
         "apellidos": "Llewelyn",
         "docnum": "51296283",
@@ -393,10 +393,10 @@
         "telefono": "925859561",
         "gradoinstruccion": "Sin nivel",
         "ocupacion": "Independiente",
-        "parentezco": "otro"
+        "parentezco": "primer grado"
     },
     {
-        "id": "dc8d6400-ec57-4383-8a4c-6bb84b8db3a6",
+        "id": "dcc5ff0b-0eea-4500-aa73-ea356c65a6f8",
         "nombres": "Suellen",
         "apellidos": "Davidy",
         "docnum": "28944575",
@@ -405,10 +405,10 @@
         "telefono": "919590592",
         "gradoinstruccion": "Primaria",
         "ocupacion": "Independiente",
-        "parentezco": "primer grado"
+        "parentezco": "otro"
     },
     {
-        "id": "695c7511-b0a6-4b30-8737-20e86077d740",
+        "id": "12809e10-fe9c-4bb8-8fc0-e36fe5fb0245",
         "nombres": "Lutero",
         "apellidos": "Gruszka",
         "docnum": "29869676",
@@ -420,7 +420,7 @@
         "parentezco": "primer grado"
     },
     {
-        "id": "2f44a6bd-9c0f-45c5-823c-93f0f2bc27e2",
+        "id": "ab0c62dd-0648-428f-9555-63f0f800bfde",
         "nombres": "Ingrid",
         "apellidos": "Karp",
         "docnum": "54556440",
@@ -432,7 +432,7 @@
         "parentezco": "primer grado"
     },
     {
-        "id": "3f7718da-f011-4bff-9401-d2a39c4f05a4",
+        "id": "352d5342-1b61-4778-9563-98f7c28304a2",
         "nombres": "Kippie",
         "apellidos": "Ingyon",
         "docnum": "36901380",
@@ -444,7 +444,7 @@
         "parentezco": "segundo grado"
     },
     {
-        "id": "bcd1302b-9278-4b36-8c26-b02367008ba7",
+        "id": "6e35598e-219a-42d3-b954-3d1dc45ead94",
         "nombres": "Drugi",
         "apellidos": "Baumann",
         "docnum": "70769533",
@@ -453,10 +453,10 @@
         "telefono": "932020542",
         "gradoinstruccion": "Superior",
         "ocupacion": "Independiente",
-        "parentezco": "segundo grado"
+        "parentezco": "otro"
     },
     {
-        "id": "aacda527-92dd-419d-9f47-316f068a5f60",
+        "id": "03fff1dd-68c5-480b-98df-4127f222ba48",
         "nombres": "Dora",
         "apellidos": "Verdon",
         "docnum": "89691758",
@@ -468,7 +468,7 @@
         "parentezco": "otro"
     },
     {
-        "id": "405e2fe2-ed93-467f-a323-1c30c8d76cfb",
+        "id": "16794b7f-5abc-451e-b63e-b818256b9592",
         "nombres": "Paquito",
         "apellidos": "Neate",
         "docnum": "13993427",
@@ -477,10 +477,10 @@
         "telefono": "984254571",
         "gradoinstruccion": "Pre-escolar",
         "ocupacion": "Dependiente",
-        "parentezco": "otro"
+        "parentezco": "primer grado"
     },
     {
-        "id": "3014d083-870f-417a-a084-0676c30b1277",
+        "id": "b9407217-0f62-4346-a356-3e3c15216a24",
         "nombres": "Corny",
         "apellidos": "Argont",
         "docnum": "68870035",
@@ -489,10 +489,10 @@
         "telefono": "944141115",
         "gradoinstruccion": "Sin nivel",
         "ocupacion": "Independiente",
-        "parentezco": "primer grado"
+        "parentezco": "segundo grado"
     },
     {
-        "id": "82823a67-09ec-427b-8296-be9615ddce7e",
+        "id": "702deed5-faae-4db8-a973-55609ca6d100",
         "nombres": "Julian",
         "apellidos": "Maffini",
         "docnum": "16659785",
@@ -501,10 +501,10 @@
         "telefono": "906556109",
         "gradoinstruccion": "Pre-escolar",
         "ocupacion": "Dependiente",
-        "parentezco": "primer grado"
+        "parentezco": "otro"
     },
     {
-        "id": "c2f8ee3e-33a0-4ede-bdf7-8c4d341576e5",
+        "id": "0508480c-189c-4613-9770-0767d8271dba",
         "nombres": "Ivar",
         "apellidos": "O'Dwyer",
         "docnum": "55334823",
@@ -513,10 +513,10 @@
         "telefono": "934896195",
         "gradoinstruccion": "Primaria",
         "ocupacion": "Dependiente",
-        "parentezco": "primer grado"
+        "parentezco": "otro"
     },
     {
-        "id": "eb5073d2-7611-4a81-b7ba-3522a568f2ab",
+        "id": "d908fe6c-b00c-4682-ba32-ac47ae7c9f2d",
         "nombres": "Alayne",
         "apellidos": "Palffy",
         "docnum": "10856161",
@@ -525,10 +525,10 @@
         "telefono": "913459921",
         "gradoinstruccion": "Sin nivel",
         "ocupacion": "Dependiente",
-        "parentezco": "segundo grado"
+        "parentezco": "primer grado"
     },
     {
-        "id": "e5598744-3241-4007-914d-837c4cca6663",
+        "id": "25ce5f41-c2d7-4d0e-ac59-c5ee46504e37",
         "nombres": "Frederica",
         "apellidos": "Garrit",
         "docnum": "71082959",
@@ -537,10 +537,10 @@
         "telefono": "994856009",
         "gradoinstruccion": "Superior",
         "ocupacion": "Independiente",
-        "parentezco": "otro"
+        "parentezco": "primer grado"
     },
     {
-        "id": "95281b97-692d-411f-8941-5c5dcf5c40b1",
+        "id": "9cc6b45b-a0e8-497e-8db4-635b16ae3a97",
         "nombres": "Ardath",
         "apellidos": "Drew-Clifton",
         "docnum": "63009360",
@@ -549,10 +549,10 @@
         "telefono": "974911950",
         "gradoinstruccion": "Primaria",
         "ocupacion": "Independiente",
-        "parentezco": "segundo grado"
+        "parentezco": "primer grado"
     },
     {
-        "id": "1a353f1f-9af9-405c-b77c-33324ee52a6e",
+        "id": "4b870213-8e10-42b6-ba67-a8942bd822d5",
         "nombres": "Dino",
         "apellidos": "O' Donohue",
         "docnum": "99406574",
@@ -564,7 +564,7 @@
         "parentezco": "otro"
     },
     {
-        "id": "829f7946-49d2-428a-96d8-44e4fb23bec1",
+        "id": "2676f1e8-5eba-49e1-bdc3-cbf531b2fe2d",
         "nombres": "Binnie",
         "apellidos": "Treharne",
         "docnum": "50800951",
@@ -573,10 +573,10 @@
         "telefono": "924081458",
         "gradoinstruccion": "Superior",
         "ocupacion": "Dependiente",
-        "parentezco": "primer grado"
+        "parentezco": "segundo grado"
     },
     {
-        "id": "b6c07248-1ea4-4e06-b4ad-dc89398f5e64",
+        "id": "74c13777-c93b-4121-8e30-92e6a1c106fa",
         "nombres": "Clerc",
         "apellidos": "Brotherhed",
         "docnum": "73183601",
@@ -588,7 +588,7 @@
         "parentezco": "segundo grado"
     },
     {
-        "id": "7c916bfc-ab79-4750-ad6c-ad0e1c15f175",
+        "id": "e971490b-6bd6-4979-a6ef-b3f25e513827",
         "nombres": "Martainn",
         "apellidos": "Winterson",
         "docnum": "53814898",
@@ -597,10 +597,10 @@
         "telefono": "949588531",
         "gradoinstruccion": "Pre-escolar",
         "ocupacion": "Independiente",
-        "parentezco": "segundo grado"
+        "parentezco": "primer grado"
     },
     {
-        "id": "5f82fb3b-4c8d-453f-bc9f-d9f3a916caeb",
+        "id": "f9000c46-21fe-4a01-839b-4a4501de8ffb",
         "nombres": "Archambault",
         "apellidos": "Stemp",
         "docnum": "37345213",
@@ -609,10 +609,10 @@
         "telefono": "925153843",
         "gradoinstruccion": "Primaria",
         "ocupacion": "Dependiente",
-        "parentezco": "otro"
+        "parentezco": "primer grado"
     },
     {
-        "id": "0b5e4072-08ab-47b0-b429-2f84d5aa216c",
+        "id": "a63d3162-b1ef-4161-aa70-7c3ade04596e",
         "nombres": "Katey",
         "apellidos": "Towson",
         "docnum": "96117350",
@@ -621,10 +621,10 @@
         "telefono": "943714112",
         "gradoinstruccion": "Pre-escolar",
         "ocupacion": "Dependiente",
-        "parentezco": "segundo grado"
+        "parentezco": "primer grado"
     },
     {
-        "id": "0c19b951-1d83-4eb7-8114-79c91bb8c178",
+        "id": "c15ce075-b718-469f-8184-6b4d6fe6ca1e",
         "nombres": "Wood",
         "apellidos": "Brotherick",
         "docnum": "06589755",
@@ -636,7 +636,7 @@
         "parentezco": "otro"
     },
     {
-        "id": "28b082a6-9f89-485d-b5f5-8c8a9bc33ce5",
+        "id": "f518b97a-011b-457c-8882-f92c27432252",
         "nombres": "Hervey",
         "apellidos": "Tabary",
         "docnum": "82982266",
@@ -645,10 +645,10 @@
         "telefono": "972810351",
         "gradoinstruccion": "Pre-escolar",
         "ocupacion": "Dependiente",
-        "parentezco": "otro"
+        "parentezco": "primer grado"
     },
     {
-        "id": "a8322fa4-c439-42d2-970d-107d3e90e706",
+        "id": "d918b627-c22f-4b0d-8531-1ef0bd0cc67e",
         "nombres": "Tull",
         "apellidos": "McCrow",
         "docnum": "62073797",
@@ -660,7 +660,7 @@
         "parentezco": "otro"
     },
     {
-        "id": "99803cb3-1662-418a-8957-d1c9b3ededd0",
+        "id": "3f3d6826-58d3-4290-a774-2059551074ef",
         "nombres": "Curtice",
         "apellidos": "Malins",
         "docnum": "43985870",
@@ -669,10 +669,10 @@
         "telefono": "973465092",
         "gradoinstruccion": "Primaria",
         "ocupacion": "Dependiente",
-        "parentezco": "segundo grado"
+        "parentezco": "otro"
     },
     {
-        "id": "c15d2f8c-9a76-48dc-9fc5-ecdf0d271b28",
+        "id": "df638a33-380e-4aa5-a532-74a34c1fe367",
         "nombres": "Fredrick",
         "apellidos": "Abramcik",
         "docnum": "10024225",
@@ -681,10 +681,10 @@
         "telefono": "953314572",
         "gradoinstruccion": "Primaria",
         "ocupacion": "Dependiente",
-        "parentezco": "segundo grado"
+        "parentezco": "otro"
     },
     {
-        "id": "ecf243a8-3289-4987-8d64-202bcf1eaefe",
+        "id": "f0524d88-0e8e-49a7-85f2-e749743c859f",
         "nombres": "Hewe",
         "apellidos": "Charteris",
         "docnum": "39891424",
@@ -693,10 +693,10 @@
         "telefono": "912690507",
         "gradoinstruccion": "Sin nivel",
         "ocupacion": "Dependiente",
-        "parentezco": "primer grado"
+        "parentezco": "segundo grado"
     },
     {
-        "id": "7aabe92f-8bf4-4107-b47e-77b6544570c5",
+        "id": "25a18854-13d9-457b-8daa-68599dd90f8d",
         "nombres": "Cordell",
         "apellidos": "Wolfendell",
         "docnum": "28740626",
@@ -705,10 +705,10 @@
         "telefono": "916231799",
         "gradoinstruccion": "Sin nivel",
         "ocupacion": "Dependiente",
-        "parentezco": "segundo grado"
+        "parentezco": "primer grado"
     },
     {
-        "id": "40a6aad0-317b-4fa0-b267-62e119db4aba",
+        "id": "a340818f-6b4a-438d-80b6-bc3937af24ef",
         "nombres": "Frederica",
         "apellidos": "Petkovic",
         "docnum": "07634230",
@@ -720,7 +720,7 @@
         "parentezco": "otro"
     },
     {
-        "id": "4000d815-9dc2-4572-9f6d-d6977f0edd1d",
+        "id": "9e54c3f3-ef09-43b7-9e98-178950c6f7d3",
         "nombres": "Gilly",
         "apellidos": "Buxam",
         "docnum": "80503639",
@@ -729,10 +729,10 @@
         "telefono": "933463550",
         "gradoinstruccion": "Primaria",
         "ocupacion": "Independiente",
-        "parentezco": "segundo grado"
+        "parentezco": "primer grado"
     },
     {
-        "id": "35dab491-dcb6-4a4e-b993-132e6e76c8ca",
+        "id": "77a75458-ad5b-446d-a85b-2c93d1083569",
         "nombres": "Tiffie",
         "apellidos": "MacGauhy",
         "docnum": "98626370",
@@ -741,10 +741,10 @@
         "telefono": "998347109",
         "gradoinstruccion": "Sin nivel",
         "ocupacion": "Dependiente",
-        "parentezco": "otro"
+        "parentezco": "segundo grado"
     },
     {
-        "id": "2e536a1c-67e2-48b0-bf8d-b704b00f87a7",
+        "id": "ae273728-48e4-47a5-8752-901f54411f12",
         "nombres": "John",
         "apellidos": "Dovermann",
         "docnum": "96547042",
@@ -753,10 +753,10 @@
         "telefono": "991981942",
         "gradoinstruccion": "Pre-escolar",
         "ocupacion": "Dependiente",
-        "parentezco": "segundo grado"
+        "parentezco": "primer grado"
     },
     {
-        "id": "47626ae0-5a17-4e69-a93e-a5a27bcd4783",
+        "id": "2062bca3-ebc2-4633-9de1-846becc5f887",
         "nombres": "Abbie",
         "apellidos": "Lawey",
         "docnum": "04499257",
@@ -765,10 +765,10 @@
         "telefono": "953551805",
         "gradoinstruccion": "Superior",
         "ocupacion": "Dependiente",
-        "parentezco": "primer grado"
+        "parentezco": "segundo grado"
     },
     {
-        "id": "81a9b720-e8d9-4dc4-b497-eb740484e3c1",
+        "id": "5e7a4915-55d7-434a-8772-0eef6ebe3d9a",
         "nombres": "Bat",
         "apellidos": "Dionisi",
         "docnum": "75343122",
@@ -780,7 +780,7 @@
         "parentezco": "segundo grado"
     },
     {
-        "id": "3ce91ac1-11e5-4ba9-838b-735c9d9bb7ab",
+        "id": "0ef5498e-a8ea-445a-ae50-e2a278161bcd",
         "nombres": "Denver",
         "apellidos": "Wadham",
         "docnum": "47602420",
@@ -789,10 +789,10 @@
         "telefono": "982217842",
         "gradoinstruccion": "Secundaria",
         "ocupacion": "Independiente",
-        "parentezco": "segundo grado"
+        "parentezco": "primer grado"
     },
     {
-        "id": "eace9ac7-4aad-4162-b317-de53655c7c87",
+        "id": "7823ea53-091b-4531-a3ca-4441906e3075",
         "nombres": "Marianna",
         "apellidos": "Cleator",
         "docnum": "36635364",
@@ -801,10 +801,10 @@
         "telefono": "904206849",
         "gradoinstruccion": "Primaria",
         "ocupacion": "Independiente",
-        "parentezco": "segundo grado"
+        "parentezco": "primer grado"
     },
     {
-        "id": "ddc0289c-5203-4310-bfa9-db24d80eef33",
+        "id": "5317b333-6221-4880-b756-1108c8c4eb9d",
         "nombres": "Bernita",
         "apellidos": "Nunson",
         "docnum": "28497200",
@@ -813,10 +813,10 @@
         "telefono": "951491897",
         "gradoinstruccion": "Superior",
         "ocupacion": "Independiente",
-        "parentezco": "segundo grado"
+        "parentezco": "primer grado"
     },
     {
-        "id": "d10d54ca-d9a0-40c7-b436-4ae4706fba23",
+        "id": "baad6817-3ab1-4c80-ad3b-534a65a154e3",
         "nombres": "Obadiah",
         "apellidos": "Bloxsum",
         "docnum": "57165340",
@@ -828,7 +828,7 @@
         "parentezco": "primer grado"
     },
     {
-        "id": "3175d742-141a-4b57-940e-7e1301d84075",
+        "id": "311d9384-0be8-44bf-af9c-ebd8e0ba9061",
         "nombres": "Broddie",
         "apellidos": "Mytton",
         "docnum": "53485300",
@@ -837,10 +837,10 @@
         "telefono": "925231254",
         "gradoinstruccion": "Superior",
         "ocupacion": "Independiente",
-        "parentezco": "segundo grado"
+        "parentezco": "primer grado"
     },
     {
-        "id": "1729d500-e2d2-4e27-9587-022e81d6feeb",
+        "id": "1284010a-72c0-47da-a5b5-041ab44c8ed0",
         "nombres": "Alessandro",
         "apellidos": "Mercer",
         "docnum": "55750458",
@@ -849,10 +849,10 @@
         "telefono": "972539559",
         "gradoinstruccion": "Superior",
         "ocupacion": "Independiente",
-        "parentezco": "segundo grado"
+        "parentezco": "primer grado"
     },
     {
-        "id": "624598b4-b14f-43c8-86b0-21d8d39721e9",
+        "id": "bf080dd4-b3cb-4f64-ad0c-3dceb1f32573",
         "nombres": "Jany",
         "apellidos": "Crellin",
         "docnum": "00697509",
@@ -864,7 +864,7 @@
         "parentezco": "otro"
     },
     {
-        "id": "950b0923-5219-44fa-96fc-e322a10c21da",
+        "id": "74fef723-69d1-4275-9fee-5dd9a0923a5e",
         "nombres": "Phillida",
         "apellidos": "Kneel",
         "docnum": "97864517",
@@ -873,10 +873,10 @@
         "telefono": "924307814",
         "gradoinstruccion": "Secundaria",
         "ocupacion": "Dependiente",
-        "parentezco": "primer grado"
+        "parentezco": "segundo grado"
     },
     {
-        "id": "b661c330-e6e6-445a-b152-3625b1d00cc7",
+        "id": "cd754751-c994-4ec6-b2da-3945ac2ee41f",
         "nombres": "Ian",
         "apellidos": "Vater",
         "docnum": "84454592",
@@ -888,7 +888,7 @@
         "parentezco": "segundo grado"
     },
     {
-        "id": "ca8c16a6-ad8c-4328-9d99-d82e62628155",
+        "id": "32fa9432-7efb-4d65-8647-4fed2719fb10",
         "nombres": "Barbee",
         "apellidos": "Shoebrook",
         "docnum": "41933805",
@@ -897,10 +897,10 @@
         "telefono": "904701568",
         "gradoinstruccion": "Sin nivel",
         "ocupacion": "Independiente",
-        "parentezco": "otro"
+        "parentezco": "primer grado"
     },
     {
-        "id": "becd0761-3781-4463-b7c3-b47c83844ff7",
+        "id": "76224ef5-0033-4dd7-8bee-e96906a373a5",
         "nombres": "Forster",
         "apellidos": "Dinsell",
         "docnum": "44486463",
@@ -909,10 +909,10 @@
         "telefono": "989764752",
         "gradoinstruccion": "Primaria",
         "ocupacion": "Dependiente",
-        "parentezco": "primer grado"
+        "parentezco": "otro"
     },
     {
-        "id": "4042f4cc-4926-4c90-8cd1-4cf0753fc645",
+        "id": "fa31a77b-27a4-4359-af14-c9d014bc12b1",
         "nombres": "Hillard",
         "apellidos": "Levane",
         "docnum": "71390949",
@@ -921,10 +921,10 @@
         "telefono": "946853943",
         "gradoinstruccion": "Primaria",
         "ocupacion": "Dependiente",
-        "parentezco": "segundo grado"
+        "parentezco": "primer grado"
     },
     {
-        "id": "d412e5b4-7c6b-481d-a705-20ece06ed011",
+        "id": "82d3b1e1-af49-4fe7-8a57-5d75beba4f68",
         "nombres": "Ignatius",
         "apellidos": "Carding",
         "docnum": "99529832",
@@ -936,7 +936,7 @@
         "parentezco": "otro"
     },
     {
-        "id": "bcd31c77-1b4c-4699-99e3-cde243eb84a8",
+        "id": "a2843bca-ef50-42c8-9e3c-a1d917d422de",
         "nombres": "Whitman",
         "apellidos": "Gibbe",
         "docnum": "36623914",
@@ -945,10 +945,10 @@
         "telefono": "949644706",
         "gradoinstruccion": "Pre-escolar",
         "ocupacion": "Independiente",
-        "parentezco": "primer grado"
+        "parentezco": "segundo grado"
     },
     {
-        "id": "82f1adbf-6e91-44d0-99c1-d92b809727b8",
+        "id": "d0083233-ff28-4cbc-8bed-dd3f68bc165c",
         "nombres": "Theo",
         "apellidos": "Gabb",
         "docnum": "44066279",
@@ -957,10 +957,10 @@
         "telefono": "906305084",
         "gradoinstruccion": "Superior",
         "ocupacion": "Independiente",
-        "parentezco": "segundo grado"
+        "parentezco": "otro"
     },
     {
-        "id": "0c6601cc-c541-4257-9d83-8b621499e60b",
+        "id": "e852f07c-a7d6-4a93-b086-cb435f6bf32f",
         "nombres": "Kiersten",
         "apellidos": "Tippell",
         "docnum": "55540841",
@@ -969,10 +969,10 @@
         "telefono": "956709674",
         "gradoinstruccion": "Sin nivel",
         "ocupacion": "Dependiente",
-        "parentezco": "otro"
+        "parentezco": "segundo grado"
     },
     {
-        "id": "b0854766-d787-4336-92a5-c63996f51a07",
+        "id": "aafc2654-4ec3-48bf-aa61-1b2f15dbe306",
         "nombres": "Benton",
         "apellidos": "Sivess",
         "docnum": "92828269",
@@ -984,7 +984,7 @@
         "parentezco": "primer grado"
     },
     {
-        "id": "9dcb1cbf-ce09-43b7-a41f-5eee509b79ba",
+        "id": "8f1aadbd-2f33-435f-89bd-7442d95231b6",
         "nombres": "Flora",
         "apellidos": "Cragell",
         "docnum": "11140898",
@@ -993,10 +993,10 @@
         "telefono": "997210738",
         "gradoinstruccion": "Primaria",
         "ocupacion": "Independiente",
-        "parentezco": "otro"
+        "parentezco": "segundo grado"
     },
     {
-        "id": "b94938a6-6f51-4a7b-adc1-580aad58092d",
+        "id": "4bca1aaf-6af0-47c8-bdb1-0d81d3523ddf",
         "nombres": "Agnella",
         "apellidos": "Leifer",
         "docnum": "81428823",
@@ -1008,7 +1008,7 @@
         "parentezco": "primer grado"
     },
     {
-        "id": "4d8a3d6e-f689-4c00-b754-fcbcb4234888",
+        "id": "750e32cc-e463-4879-ab16-cc45ddc350ec",
         "nombres": "Willow",
         "apellidos": "Newman",
         "docnum": "98109318",
@@ -1020,7 +1020,7 @@
         "parentezco": "primer grado"
     },
     {
-        "id": "d2bc6f50-1cab-43a1-b01d-9460ff302a4c",
+        "id": "f047b60f-a2b2-4fa3-9a7a-24f7d3976160",
         "nombres": "Lutero",
         "apellidos": "Coppo",
         "docnum": "51888275",
@@ -1029,10 +1029,10 @@
         "telefono": "977999835",
         "gradoinstruccion": "Sin nivel",
         "ocupacion": "Dependiente",
-        "parentezco": "segundo grado"
+        "parentezco": "primer grado"
     },
     {
-        "id": "d7fe30c9-ae9b-4b60-b6b8-5f93081781e3",
+        "id": "7c175424-7c7d-4196-a622-a767e4ff425d",
         "nombres": "Miquela",
         "apellidos": "Rushbrook",
         "docnum": "01615768",
@@ -1041,10 +1041,10 @@
         "telefono": "993373574",
         "gradoinstruccion": "Sin nivel",
         "ocupacion": "Independiente",
-        "parentezco": "segundo grado"
+        "parentezco": "primer grado"
     },
     {
-        "id": "37165802-cffb-404c-b4e6-b99cc3981a19",
+        "id": "e11336ee-608e-49a9-94da-c68a3f10c98d",
         "nombres": "Amara",
         "apellidos": "Iban",
         "docnum": "30926922",
@@ -1053,10 +1053,10 @@
         "telefono": "990342782",
         "gradoinstruccion": "Sin nivel",
         "ocupacion": "Independiente",
-        "parentezco": "primer grado"
+        "parentezco": "segundo grado"
     },
     {
-        "id": "14492d83-f03a-48b7-8ae2-87b744fceba3",
+        "id": "3c05037b-5ecc-441b-a9b8-0f8fa7ebf427",
         "nombres": "Edyth",
         "apellidos": "Rattenbury",
         "docnum": "52239954",
@@ -1065,10 +1065,10 @@
         "telefono": "949291203",
         "gradoinstruccion": "Sin nivel",
         "ocupacion": "Independiente",
-        "parentezco": "primer grado"
+        "parentezco": "segundo grado"
     },
     {
-        "id": "1f09e5e7-3eb6-4706-b454-8609e2497d38",
+        "id": "2353139a-fa4d-4225-a2af-f710c8f87c8b",
         "nombres": "Issie",
         "apellidos": "Pappi",
         "docnum": "12787121",
@@ -1077,10 +1077,10 @@
         "telefono": "988359645",
         "gradoinstruccion": "Superior",
         "ocupacion": "Dependiente",
-        "parentezco": "otro"
+        "parentezco": "segundo grado"
     },
     {
-        "id": "66a4eeed-37d3-4f03-aea7-6a3e198ce982",
+        "id": "ac533ff3-4924-4b1e-9b28-2403abf78aa5",
         "nombres": "Johnna",
         "apellidos": "Ranyard",
         "docnum": "86112234",
@@ -1092,7 +1092,7 @@
         "parentezco": "segundo grado"
     },
     {
-        "id": "dcb7620b-5b54-4d12-8823-7b491ffeed91",
+        "id": "f39572e7-a0e1-428e-b5a8-555e2b5f8320",
         "nombres": "Nat",
         "apellidos": "Bownde",
         "docnum": "47197873",
@@ -1101,10 +1101,10 @@
         "telefono": "950307259",
         "gradoinstruccion": "Superior",
         "ocupacion": "Dependiente",
-        "parentezco": "primer grado"
+        "parentezco": "segundo grado"
     },
     {
-        "id": "feb604dd-c985-4d10-b6e6-87da7758a003",
+        "id": "494010e7-5174-43ed-972a-933d48149edb",
         "nombres": "Blondelle",
         "apellidos": "Hodge",
         "docnum": "16789536",
@@ -1116,7 +1116,7 @@
         "parentezco": "segundo grado"
     },
     {
-        "id": "5425808d-123a-4849-bf02-cd0dc9b6d867",
+        "id": "0662fe3b-8541-4aba-8269-f62841bd8a79",
         "nombres": "Ange",
         "apellidos": "Hazel",
         "docnum": "37376086",
@@ -1125,10 +1125,10 @@
         "telefono": "967634358",
         "gradoinstruccion": "Pre-escolar",
         "ocupacion": "Dependiente",
-        "parentezco": "otro"
+        "parentezco": "primer grado"
     },
     {
-        "id": "49d8c237-1dd0-421b-8e84-cc3fc9085afe",
+        "id": "620870b2-a423-47c3-b0e8-979529932439",
         "nombres": "Cyndi",
         "apellidos": "Romanelli",
         "docnum": "46463269",
@@ -1137,10 +1137,10 @@
         "telefono": "905751405",
         "gradoinstruccion": "Secundaria",
         "ocupacion": "Independiente",
-        "parentezco": "segundo grado"
+        "parentezco": "otro"
     },
     {
-        "id": "69e49446-41ac-4280-bc80-134d1b53797a",
+        "id": "c7a661e9-f10e-405b-9490-074190cd0600",
         "nombres": "Ingram",
         "apellidos": "Symms",
         "docnum": "75869694",
@@ -1152,7 +1152,7 @@
         "parentezco": "otro"
     },
     {
-        "id": "7dc519ca-87d8-49fd-aa4a-4892795e9850",
+        "id": "fb3a8975-3b63-43a7-a229-d55f336b8cec",
         "nombres": "Mylo",
         "apellidos": "Dusting",
         "docnum": "73668759",
@@ -1161,10 +1161,10 @@
         "telefono": "964422054",
         "gradoinstruccion": "Secundaria",
         "ocupacion": "Independiente",
-        "parentezco": "otro"
+        "parentezco": "primer grado"
     },
     {
-        "id": "43efded6-3ae8-4b34-8879-714d146b5499",
+        "id": "6e76eca0-2de1-4289-a2cf-311a6d1b41b4",
         "nombres": "Darcee",
         "apellidos": "Micah",
         "docnum": "81229195",
@@ -1173,10 +1173,10 @@
         "telefono": "998131586",
         "gradoinstruccion": "Sin nivel",
         "ocupacion": "Dependiente",
-        "parentezco": "otro"
+        "parentezco": "segundo grado"
     },
     {
-        "id": "4d7e8c73-f1ed-4bfe-966f-74940aa0a14f",
+        "id": "33b22eb7-dae3-4be5-8796-700984285213",
         "nombres": "Corinne",
         "apellidos": "Erwin",
         "docnum": "53604857",
@@ -1188,7 +1188,7 @@
         "parentezco": "segundo grado"
     },
     {
-        "id": "58940983-4819-47d6-b136-7c19bed5ea5a",
+        "id": "2a3d093d-feb1-406d-874d-f902de5b9cc2",
         "nombres": "Paxton",
         "apellidos": "Riepel",
         "docnum": "88832048",
