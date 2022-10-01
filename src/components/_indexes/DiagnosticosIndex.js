@@ -28,26 +28,26 @@ export default {
                     { text: 'Telefono', value: 'tipo' },
                 ],
                 locationDetail:[
-                    {
-                        text: 'Lugar de nacimiento',
-                        value: 'lugarnac',
-                        detail: [
-                            { text: 'Procedencia', value: 'pais' },
-                            { text: 'Region natal', value: 'region' },
-                            { text: 'Provincia natal', value: 'provincia' },
-                            { text: 'Distrito natal', value: 'distrito' }
-                        ]
-                    },
-                    {
-                        text: 'Ubicación actual',
-                        value: 'domicilioact',
-                        detail: [
-                            { text: 'Procedencia', value: 'pais' },
-                            { text: 'Region natal', value: 'region' },
-                            { text: 'Provincia natal', value: 'provincia' },
-                            { text: 'Distrito natal', value: 'distrito' }
-                        ]
-                    }
+                    // {
+                    //     text: 'Lugar de nacimiento',
+                    //     value: 'lugarnac',
+                    //     detail: [
+                    //         { text: 'Procedencia', value: 'pais' },
+                    //         { text: 'Region natal', value: 'region' },
+                    //         { text: 'Provincia natal', value: 'provincia' },
+                    //         { text: 'Distrito natal', value: 'distrito' }
+                    //     ]
+                    // },
+                    // {
+                    //     text: 'Ubicación actual',
+                    //     value: 'domicilioact',
+                    //     detail: [
+                    //         { text: 'Procedencia', value: 'pais' },
+                    //         { text: 'Region natal', value: 'region' },
+                    //         { text: 'Provincia natal', value: 'provincia' },
+                    //         { text: 'Distrito natal', value: 'distrito' }
+                    //     ]
+                    // }
                 ]
             },
             collection: {
