@@ -11,7 +11,7 @@ import CentroMedico from '../../../views/uneditable/Atenciones/CentroMedicoView.
 import SignosVitales from '../../../views/uneditable/Pruebas/SignosVitales';
 import Tratamientos from '../../../views/_indexes/Resultados/TratamientoIndexInAtencion';
 import Pruebas from '../../../views/_indexes/Pruebas/PruebasIndexInAtencion.vue';
-import DiagnosticosEdit from '../../../views/_indexes/Diagnosticos/DiagnosticosIndexInAtencionEdit.vue';
+import Diagnosticos from '../../../views/_indexes/Diagnosticos/DiagnosticosIndexInAtencionEdit.vue';
 
 export default {
     name: 'RegistrarCategoriaPrueba',
@@ -32,7 +32,7 @@ export default {
         SignosVitales,
         Pruebas,
         Tratamientos,
-        DiagnosticosEdit,
+        Diagnosticos,
       //inf. general
         Diagnostico,
         DiagnosticoXPrueba,
