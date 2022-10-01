@@ -13,32 +13,29 @@
                                 Registrar paciente
                             </v-btn>
                         </router-link>
-                        
                     </v-col>
-                    
                     <v-spacer></v-spacer>
                     <v-col>
-                        <!-- <v-text-field
-                            v-model="search"
-                            dense
-                            filled
-                            rounded
-                            clearable
-                            placeholder="Search"
-                            prepend-inner-icon="mdi-magnify"
-                            class=" shrink expanding-search"
-                            :class="{ closed: searchBoxClosed && !searchText }"
-                            @focus="searchBoxClosed = false"
-                            @blur="searchBoxClosed = true"
-                            hide-details
-                        ></v-text-field> -->
                         <v-text-field class="py-0" v-model="search" append-icon="mdi-magnify"
                         label="Search" single-line hide-details ></v-text-field>
                     </v-col>
                 </v-row>
                 <v-row>
                     <v-col>
-                        <v-data-table :headers="headers" :items="collection.items" :search="search">
+                        <v-data-table :headers="pacienteHeaders.base" :items="collection.items" :expanded.sync="expanded" :search="search" @click:row="clickRow">
+                            <template v-slot:expanded-item="{ headers, item }">
+                              <td :colspan="headers.length" class="py-2" >
+                                <v-row class="align-items-center px-5">
+                                    <v-col v-for="header in pacienteHeaders.locationDetail" v-bind:key="header.value"> 
+                                        <b>{{header.text}}:</b> 
+                                        <div v-for="subheader in header.detail" v-bind:key="subheader.value">
+                                            {{subheader.text}}: {{item[header.value][subheader.value]}}
+                                        </div>
+                                    </v-col>
+                                </v-row>
+                                <!--{{item}}-->
+                              </td>
+                            </template>
                             <template #[`item.gruposangrh`]="{ item }">{{ item.gruposang }} {{ item.rh }}</template>
                             <!--https://stackoverflow.com/questions/61344980/v-slot-directive-doesnt-support-any-modifier-->
                             <template #[`item.actions`]="{ item }">
@@ -58,7 +55,7 @@
         </v-row>
     </v-container>
 </template>
-<script src="../../components/_indexes/PacientesIndex">
+<script src="../../components/_indexes/PacientesIndex.js">
 </script>
 <style scoped>
 .v-input.expanding-search {

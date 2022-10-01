@@ -7,28 +7,46 @@ export default {
     },
     data() {
         return {
+            expanded: [],
+            singleExpand: false,
             searchText:'',
             searchBoxClosed: true,
             isLoading: false,
             search: '',
-            headers: [
-                { text: 'Nombres',value: 'nombres'},
-                { text: 'Apellidos',value: 'apellidos'},
-                { text: 'Tipo de Doc.', value: 'doctipo' },
-                { text: 'Num. de Doc', value: 'docnum' },
-                { text: 'Gruposang', value: 'gruposangrh' },
-                { text: 'telefono', value: 'telefono' },
-                { text: 'Fec. nacimiento', value: 'date' },
-                { text: 'Procedencia', value: 'lugarnac.pais' },
-                { text: 'Region natal', value: 'lugarnac.region' },
-                { text: 'Provincia natal', value: 'v.provincia' },
-               // { text: 'Distrito natal', value: 'lugarnac.distrito' },
-                { text: 'Region actual', value: 'domicilioact.region' },
-                { text: 'Provincia actual', value: 'domicilioact.provincia' },
-                { text: 'Distrito actual', value: 'domicilioact.distrito' },
-                { text: 'Actions', sortable: false, value: 'actions',
-                },
-              ],
+            pacienteHeaders: {
+                base:[
+                    { text: 'Nombres',value: 'nombres'},
+                    { text: 'Apellidos',value: 'apellidos'},
+                    { text: 'Tipo de Doc.', value: 'doctipo' },
+                    { text: 'Num. de Doc', value: 'docnum' },
+                    { text: 'Gruposang', value: 'gruposangrh' },
+                    { text: 'telefono', value: 'telefono' },
+                    { text: 'Fec. nacimiento', value: 'fecnac' },
+                    { text: 'Actions', sortable: false, value: 'actions'},
+                ],
+                locationDetail:[
+                    {
+                        text: 'Lugar de nacimiento',
+                        value: 'lugarnac',
+                        detail: [
+                            { text: 'Procedencia', value: 'pais' },
+                            { text: 'Region natal', value: 'region' },
+                            { text: 'Provincia natal', value: 'provincia' },
+                            { text: 'Distrito natal', value: 'distrito' }
+                        ]
+                    },
+                    {
+                        text: 'Ubicación actual',
+                        value: 'domicilioact',
+                        detail: [
+                            { text: 'Procedencia', value: 'pais' },
+                            { text: 'Region natal', value: 'region' },
+                            { text: 'Provincia natal', value: 'provincia' },
+                            { text: 'Distrito natal', value: 'distrito' }
+                        ]
+                    }
+                ]
+            },
             collection: {
                 hasItems: false,
                 items: [],
@@ -81,6 +99,16 @@ export default {
             this.detailed = !this.detailed;
             this.getAll(this.collection.page);
         },
+        clickRow(item, event) {
+            console.log(item);
+            console.log(event);
+            if(event.isExpanded) {
+              const indexExpanded = this.expanded.findIndex(i => i === item);
+              this.expanded.splice(indexExpanded, 1)
+            } else {
+              this.expanded.push(item);
+            }
+          },
         remove(pacienteid){
             this.isLoading = true;
             this.$proxies.pacienteProxy.remove(pacienteid)
@@ -99,7 +127,7 @@ export default {
                     //Aqui tenemos que empujar los datos adicionales al paciente
                     let aux = this.collection.items.find(element => element.pacienteId === id);
                     aux.details = x.data;
-                    this.ids.push(id);                
+                    this.ids.push(id);
                 })
                 .catch(() => {
                     this.$notify({
@@ -141,7 +169,7 @@ export default {
                         type: "is-danger",
                         text: 'Ocurrió un error inesperado, codigo de error: '+ cod
                     });
-                });   
+                });
         }
     }
 }
