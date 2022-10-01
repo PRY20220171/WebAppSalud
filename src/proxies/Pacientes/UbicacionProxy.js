@@ -6,6 +6,9 @@ export default class UbicacionProxy {
     getAll(page, take) {
         return this.axios.get(this.url + `ubicaciones?page=${page}&take=${take}`);
     }
+    getAll() {
+        return this.axios.get(this.url + `ubicaciones`);
+    }
     getById(id) {
         return this.axios.get(this.url + `ubicaciones/${id}`);
     }

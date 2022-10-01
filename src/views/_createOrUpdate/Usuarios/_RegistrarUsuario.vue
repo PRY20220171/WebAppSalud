@@ -1,11 +1,9 @@
 <template>
-    <div>
-
     
     <v-container fill-height fluid>
-        <v-form>
+        <v-form class="flex">
             <v-row class="mx-auto justify-center my-10">
-                <v-col cols="8" md="4" class="">
+                <v-col cols="12" md="5" class="">
                     <v-card class="mb-12 elevation-4 px-5 py-5" outlined id="Nino">
                         <v-card-title class="main_color--text text--darken-1 text-subtitle-1">
                             Información general
@@ -56,7 +54,7 @@
                         </v-card-text>
                     </v-card>
                 </v-col>
-                <v-col cols="10" md="4">
+                <v-col cols="12" md="5">
                     <v-card class="mb-12 elevation-4 px-5 py-5" outlined id="Nino">
                         <v-card-title class="main_color--text text--darken-1 text-subtitle-1">
                             Información específica
@@ -88,7 +86,7 @@
             </v-row>
         </v-form>
     </v-container>
-</div>
+    
 </template>
 
 <script src="../../../components/_entities/Usuarios/Usuario.js"></script>

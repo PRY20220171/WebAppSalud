@@ -62,7 +62,7 @@ export default {
         this.getAll(1);
     },
     methods: {
-        getPlace(id){
+        getPlace(id){/*
             let pais ='';
             let region ='';
             let provincia ='';
@@ -76,7 +76,7 @@ export default {
                 }).catch(() => {
                     this.isLoading = false;
                 });
-            console.log(pais)
+            console.log(pais)*/
         },
         getAll(page) {
             this.isLoading = true;

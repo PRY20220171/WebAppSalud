@@ -31,12 +31,11 @@ export default {
       }
     },
     mounted() {
-        this.initialize();
+        this.initialize(null);
     },
     
     methods:{
-      initialize() {
-          let id = this.$route.params.id;
+      initialize(id) {
           if (!id) return;
           this.isLoading = true;
           this.$proxies.antecedenteFamiliarProxy.getById(id)
@@ -54,5 +53,14 @@ export default {
               });
           
       },
+      save() {
+        console.log("guardar antecedente familiar")
+
+              if (this.model.id) {
+                  this.$proxies.antecedenteFamiliarProxy.update(this.model.id, this.model)
+              } else {
+                  this.$proxies.antecedenteFamiliarProxy.register(this.model)
+              }
+      }
     }
   }

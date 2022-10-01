@@ -1,7 +1,7 @@
 <template>
     <div id="UsuariosIndex">
         
-            <v-container>
+            <v-container fill-height fluid>
                 <v-row class="align-items-center">
                     <v-col class="py-5">Usuarios</v-col>
                     <v-spacer></v-spacer>

@@ -6,6 +6,9 @@ export default class NinoProxy {
     getAll(page, take) {
         return this.axios.get(this.url + `ninos?page=${page}&take=${take}`);
     }
+    getAll() {
+        return this.axios.get(this.url + `ninos`);
+    }
     getById(id) {
         return this.axios.get(this.url + `ninos/${id}`);
     }

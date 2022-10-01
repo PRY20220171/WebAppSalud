@@ -26,6 +26,13 @@ export default {
             gradoinstruccion:'',
             ocupacion:'',
             estadocivil:'',
+
+            lugarnacid:'',
+            domicilioactid:'',
+            idnino:'',
+            idantecedenteperi:'',
+            idantecedentefam:'',
+            idantecedentepato:'',
         },
 
         tipo_doc: ['dni', 'Carnet de Extranjería', 'Pasaporte'],
@@ -159,6 +166,16 @@ export default {
             this.model.dias=dias;
             this.model.edad = edad + " años, " + meses + " meses y " + dias + " días";
         }
+      },
+      save() {
+        console.log("guardar paciente")
+
+              if (this.model.id) {
+                  this.$proxies.pacienteProxy.update(this.model.id, this.model)
+              } else {
+                  this.$proxies.pacienteProxy.register(this.model)
+              }
       }
+      
     }
   }

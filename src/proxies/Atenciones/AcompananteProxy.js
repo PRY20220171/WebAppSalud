@@ -4,18 +4,21 @@ export default class AcompananteProxy {
         this.url = url;
     }
     getAll(page, take) {
-        return this.axios.get(this.url + `acompanante?page=${page}&take=${take}`);
+        return this.axios.get(this.url + `acompanantes?page=${page}&take=${take}`);
+    }
+    getAll() {
+        return this.axios.get(this.url + `acompanantes`);
     }
     getById(id) {
-        return this.axios.get(this.url + `acompanante/${id}`);
+        return this.axios.get(this.url + `acompanantes/${id}`);
     }
     register(model){
-        return this.axios.post(this.url+`acompanante`,model);
+        return this.axios.post(this.url+`acompanantes`,model);
     }
     update(id, model){
-        return this.axios.put(this.url+`acompanante/${id}`,model);
+        return this.axios.put(this.url+`acompanantes/${id}`,model);
     }
     remove(id){
-        return this.axios.delete(this.url+`acompanante/${id}`);
+        return this.axios.delete(this.url+`acompanantes/${id}`);
     }
   }

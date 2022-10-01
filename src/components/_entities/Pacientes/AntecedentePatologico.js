@@ -23,12 +23,11 @@ export default {
     },
     
     mounted() {
-      this.initialize();
+      this.initialize(null);
     },
     
     methods:{
-      initialize() {
-          let id = this.$route.params.id;
+      initialize(id) {
           if (!id) return;
           this.isLoading = true;
           this.$proxies.antecedentePatologicoProxy.getById(id)
@@ -46,5 +45,14 @@ export default {
               });
           
       },
+      save() {
+        console.log("guardar antecedente patológico")
+
+              if (this.model.id) {
+                  this.$proxies.antecedentePatologicoProxy.update(this.model.id, this.model)
+              } else {
+                  this.$proxies.antecedentePatologicoProxy.register(this.model)
+              }
+      }
     }
   }

@@ -4,18 +4,21 @@ export default class DiagnosticoxResultadoProxy {
         this.url = url;
     }
     getAll(page, take) {
-        return this.axios.get(this.url + `diagnosticoxresultado?page=${page}&take=${take}`);
+        return this.axios.get(this.url + `diagnosticosxresultados?page=${page}&take=${take}`);
+    }
+    getAll() {
+        return this.axios.get(this.url + `diagnosticosxresultados`);
     }
     getById(id) {
-        return this.axios.get(this.url + `diagnosticoxresultado/${id}`);
+        return this.axios.get(this.url + `diagnosticosxresultados/${id}`);
     }
     register(model){
-        return this.axios.post(this.url+`diagnosticoxresultado`,model);
+        return this.axios.post(this.url+`diagnosticosxresultados`,model);
     }
     update(id, model){
-        return this.axios.put(this.url+`diagnosticoxresultado/${id}`,model);
+        return this.axios.put(this.url+`diagnosticosxresultados/${id}`,model);
     }
     remove(id){
-        return this.axios.delete(this.url+`diagnosticoxresultado/${id}`);
+        return this.axios.delete(this.url+`diagnosticosxresultados/${id}`);
     }
   }

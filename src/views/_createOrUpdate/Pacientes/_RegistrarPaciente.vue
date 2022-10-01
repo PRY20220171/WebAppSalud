@@ -29,7 +29,7 @@
                   <v-col cols="12"  md="6"><Ubicacion ref="Ubicacion"/></v-col>
                 </v-row>
                 <v-btn color="primary" @click="nextStep">  Continue </v-btn>
-                <v-btn text> Cancel </v-btn>
+                <v-btn text @click="Cancel"> Cancel </v-btn>
               </v-stepper-content>
 
               <v-stepper-content step="2">
@@ -41,14 +41,14 @@
                 </v-row>
                 <v-btn color="main_color darken-1" @click="e1 = 1" dark> Anterior </v-btn>
                 <v-btn color="primary" @click="nextStep" > Continue </v-btn>
-                <v-btn text> Cancel </v-btn>
+                <v-btn text @click="Cancel"> Cancel </v-btn>
               </v-stepper-content>
 
               <v-stepper-content step="3">
                   <v-col class="justify-center"><Consentimiento/></v-col>
                 <v-btn color="main_color darken-1" @click="e1 = 2" dark> Anterior </v-btn>
-                <v-btn color="primary" @click="nextStep" > ACEPTO </v-btn>
-                <v-btn text> Cancel </v-btn>
+                <v-btn color="primary" @click="registrar" > ACEPTO </v-btn>
+                <v-btn text @click="Cancel"> Cancel </v-btn>
               </v-stepper-content>
 
           </v-stepper-items>

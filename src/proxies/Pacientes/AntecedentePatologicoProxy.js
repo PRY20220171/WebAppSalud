@@ -6,6 +6,9 @@ export default class AntecedentePatologicoProxy {
     getAll(page, take) {
         return this.axios.get(this.url + `antecedentespatologicos?page=${page}&take=${take}`);
     }
+    getAll() {
+        return this.axios.get(this.url + `antecedentespatologicos`);
+    }
     getById(id) {
         return this.axios.get(this.url + `antecedentespatologicos/${id}`);
     }

@@ -4,18 +4,21 @@ export default class TratamientoXResultadoProxyProxy {
         this.url = url;
     }
     getAll(page, take) {
-        return this.axios.get(this.url + `tratamientoxresultadoproxy?page=${page}&take=${take}`);
+        return this.axios.get(this.url + `tratamientosxresultadosproxy?page=${page}&take=${take}`);
+    }
+    getAll() {
+        return this.axios.get(this.url + `tratamientosxresultadosproxy`);
     }
     getById(id) {
-        return this.axios.get(this.url + `tratamientoxresultadoproxy/${id}`);
+        return this.axios.get(this.url + `tratamientosxresultadosproxy/${id}`);
     }
     register(model){
-        return this.axios.post(this.url+`tratamientoxresultadoproxy`,model);
+        return this.axios.post(this.url+`tratamientosxresultadosproxy`,model);
     }
     update(id, model){
-        return this.axios.put(this.url+`tratamientoxresultadoproxy/${id}`,model);
+        return this.axios.put(this.url+`tratamientosxresultadosproxy/${id}`,model);
     }
     remove(id){
-        return this.axios.delete(this.url+`tratamientoxresultadoproxy/${id}`);
+        return this.axios.delete(this.url+`tratamientosxresultadosproxy/${id}`);
     }
   }

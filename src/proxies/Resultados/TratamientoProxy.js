@@ -4,18 +4,21 @@ export default class TratamientoProxy {
         this.url = url;
     }
     getAll(page, take) {
-        return this.axios.get(this.url + `tratamiento?page=${page}&take=${take}`);
+        return this.axios.get(this.url + `tratamientos?page=${page}&take=${take}`);
+    }
+    getAll() {
+        return this.axios.get(this.url + `tratamientos`);
     }
     getById(id) {
-        return this.axios.get(this.url + `tratamiento/${id}`);
+        return this.axios.get(this.url + `tratamientos/${id}`);
     }
     register(model){
-        return this.axios.post(this.url+`tratamiento`,model);
+        return this.axios.post(this.url+`tratamientos`,model);
     }
     update(id, model){
-        return this.axios.put(this.url+`tratamiento/${id}`,model);
+        return this.axios.put(this.url+`tratamientos/${id}`,model);
     }
     remove(id){
-        return this.axios.delete(this.url+`tratamiento/${id}`);
+        return this.axios.delete(this.url+`tratamientos/${id}`);
     }
   }

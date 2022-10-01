@@ -6,6 +6,9 @@ export default class FactoresRiesgoProxy {
     getAll(page, take) {
         return this.axios.get(this.url + `factoresriesgo?page=${page}&take=${take}`);
     }
+    getAll() {
+        return this.axios.get(this.url + `factoresriesgo`);
+    }
     getById(id) {
         return this.axios.get(this.url + `factoresriesgo/${id}`);
     }

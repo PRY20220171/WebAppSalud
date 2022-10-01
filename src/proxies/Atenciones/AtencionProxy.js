@@ -6,6 +6,9 @@ export default class AtencionProxy {
     getAll(page, take) {
         return this.axios.get(this.url + `atencion?page=${page}&take=${take}`);
     }
+    getAll() {
+        return this.axios.get(this.url + `atencion`);
+    }
     getById(id) {
         return this.axios.get(this.url + `atencion/${id}`);
     }

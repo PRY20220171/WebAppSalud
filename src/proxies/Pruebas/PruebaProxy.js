@@ -4,18 +4,21 @@ export default class PruebaProxy {
         this.url = url;
     }
     getAll(page, take) {
-        return this.axios.get(this.url + `prueba?page=${page}&take=${take}`);
+        return this.axios.get(this.url + `pruebas?page=${page}&take=${take}`);
+    }
+    getAll() {
+        return this.axios.get(this.url + `pruebas`);
     }
     getById(id) {
-        return this.axios.get(this.url + `prueba/${id}`);
+        return this.axios.get(this.url + `pruebas/${id}`);
     }
     register(model){
-        return this.axios.post(this.url+`prueba`,model);
+        return this.axios.post(this.url+`pruebas`,model);
     }
     update(id, model){
-        return this.axios.put(this.url+`prueba/${id}`,model);
+        return this.axios.put(this.url+`pruebas/${id}`,model);
     }
     remove(id){
-        return this.axios.delete(this.url+`prueba/${id}`);
+        return this.axios.delete(this.url+`pruebas/${id}`);
     }
   }

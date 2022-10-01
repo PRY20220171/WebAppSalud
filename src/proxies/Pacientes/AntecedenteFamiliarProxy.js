@@ -6,6 +6,9 @@ export default class AntecedenteFamiliarProxy {
     getAll(page, take) {
         return this.axios.get(this.url + `antecedentesfamiliares?page=${page}&take=${take}`);
     }
+    getAll() {
+        return this.axios.get(this.url + `antecedentesfamiliares`);
+    }
     getById(id) {
         return this.axios.get(this.url + `antecedentesfamiliares/${id}`);
     }
