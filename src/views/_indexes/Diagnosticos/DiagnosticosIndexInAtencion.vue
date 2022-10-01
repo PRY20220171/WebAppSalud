@@ -21,4 +21,4 @@
     </v-card>
   </template>
   
-  <script src="../../components/_indexes/DiagnosticosIndex.js">
+  <script src="../../../components/_indexes/DiagnosticosIndex.js">

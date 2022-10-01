@@ -6,7 +6,7 @@ import CentroMedico from '../../../views/_createOrUpdate/Atenciones/CentroMedico
 import SignosVitales from '../../../views/_createOrUpdate/Pruebas/SignosVitales';
 import Tratamientos from '../../../views/_indexes/Pruebas/TratamientoIndex';
 import Pruebas from '../../../views/_indexes/Pruebas/PruebasIndex';
-import Diagnosticos from '../../../views/_indexes/DiagnosticosIndex';
+import Diagnosticos from '../../../views/_indexes/Diagnosticos/DiagnosticosIndexInAtencion.vue';
 
 export default {
     name: 'RegistrarAtencion',
