@@ -54,7 +54,7 @@ export default {
                 page: 1,
                 pages: 0
             },
-            ids: [], 
+            ids: [],
         }
     },
     mounted() {
