@@ -22,7 +22,8 @@
                 </v-row>
                 <v-row>
                     <v-col>
-                        <v-data-table :headers="pacienteHeaders.base" :items="collection.items" :expanded.sync="expanded" :search="search" @click:row="clickRow">
+                        <v-data-table :headers="pacienteHeaders.base" :items="collection.items" 
+                        :expanded.sync="expanded" :search="search" :item-key="collection.items.id">
                             <template v-slot:expanded-item="{ headers, item }">
                               <td :colspan="headers.length" class="py-2" >
                                 <v-row class="align-items-center px-5">
@@ -37,6 +38,7 @@
                               </td>
                             </template>
                             <template #[`item.gruposangrh`]="{ item }">{{ item.gruposang }} {{ item.rh }}</template>
+                            <template #[`item.nombres`]="{ item }">{{ item.paciente }}</template>
                             <!--https://stackoverflow.com/questions/61344980/v-slot-directive-doesnt-support-any-modifier-->
                             <template #[`item.actions`]="{ item }">
                                 <router-link :to="'/diagnosticos/update/'+item.id">

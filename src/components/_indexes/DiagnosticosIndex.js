@@ -32,20 +32,20 @@ export default {
                         text: 'Lugar de nacimiento',
                         value: 'lugarnac',
                         detail: [
-                            { text: 'Procedencia', value: 'pais' },
+                          /*  { text: 'Procedencia', value: 'pais' },
                             { text: 'Region natal', value: 'region' },
                             { text: 'Provincia natal', value: 'provincia' },
-                            { text: 'Distrito natal', value: 'distrito' }
+                            { text: 'Distrito natal', value: 'distrito' }*/
                         ]
                     },
                     {
                         text: 'Ubicación actual',
                         value: 'domicilioact',
                         detail: [
-                            { text: 'Procedencia', value: 'pais' },
+                        /*    { text: 'Procedencia', value: 'pais' },
                             { text: 'Region natal', value: 'region' },
                             { text: 'Provincia natal', value: 'provincia' },
-                            { text: 'Distrito natal', value: 'distrito' }
+                            { text: 'Distrito natal', value: 'distrito' }*/
                         ]
                     }
                 ]
@@ -58,11 +58,29 @@ export default {
                 pages: 0
             },
             ids: [], 
+            paciente:{},
         }
     },
-    mounted() {
+    beforeMount() {
        // console.log(this.$proxies)
         this.getAll(1);
+    },
+    watch:{
+        collection:{
+            handler(val){
+                for(let item in val.items){
+                    item = {item, paciente:this.getPaciente('d5775113-ed08-4de0-8945-d3c977d504f5')}
+                }
+                console.log(val.items)
+            },
+            deep: true,
+            flush: 'post'
+        }
+    },
+    mounted(){
+        /*
+        console.log(this.collection)
+        console.log(this.collection.items)*/
     },
     methods: {
         getAll(page) {
@@ -80,22 +98,25 @@ export default {
                     this.isLoading = false;
                 });
             //console.log(this.$proxies.pacienteProxy.getAll())
-            console.log(this.collection)
+            //console.log(this.collection)
+        },
+        getPaciente(idPaciente) {
+                this.isLoading = true;
+    
+                    this.$proxies.pacienteProxy.getById(idPaciente)
+                    .then(x => {
+                        this.paciente = x.data;
+                        this.isLoading = false;
+                    }).catch(() => {
+                        this.isLoading = false;
+                    });
+                       console.log(this.paciente)
+                return this.paciente;
         },
         changeview(){
             this.detailed = !this.detailed;
             this.getAll(this.collection.page);
-        },
-        clickRow(item, event) {
-            console.log(item);
-            console.log(event);
-            if(event.isExpanded) {
-              const indexExpanded = this.expanded.findIndex(i => i === item);
-              this.expanded.splice(indexExpanded, 1)
-            } else {
-              this.expanded.push(item);
-            }
-          },
+        },/*
         remove(pacienteid){
             this.isLoading = true;
             this.$proxies.pacienteProxy.remove(pacienteid)
@@ -157,6 +178,6 @@ export default {
                         text: 'Ocurrió un error inesperado, codigo de error: '+ cod
                     });
                 });
-        }
+        }*/
     }
 }
