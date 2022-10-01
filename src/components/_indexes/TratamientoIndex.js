@@ -8,9 +8,23 @@ export default {
         Tratamiento
     },
     mounted() {
-        this.getAll(1);
+        //this.getAll(1);
     },
     data() {
-        return {}
+        return {
+            headers: [
+                { text: 'Nombre',value: 'nombre'},
+                { text: 'Tiempo',value: 'tiempo'},
+                { text: 'Dosis',value: 'dosis'},
+                { text: 'Descripcion',value: 'descripcion'},
+            ], 
+            collection: {
+                hasItems: false,
+                items: [],
+                total: 0,
+                page: 1,
+                pages: 0
+            },
+        }
     }
 }

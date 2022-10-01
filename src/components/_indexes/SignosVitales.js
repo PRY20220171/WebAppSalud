@@ -10,17 +10,41 @@ export default {
     data() {
         return {
             signosVitales:[
-                temperatura={
-                    nombre:'Temperatura'
+                {
+                    nombre:'temperatura',
+                    sigla:'PA',
+                    medicion:'°C',
+                    val:''
                 },
-                presionArterial={
-                    nombre:'PA'
+                {
+                    nombre:'presionArterial',
+                    sigla:'PA',
+                    medicion:'',
+                    val:''
                 },
-                frecuenciaCardiaca={
-                    nombre:'FC'
+                {
+                    nombre:'frecuenciaCardiaca',
+                    sigla:'FC',
+                    medicion:'',
+                    val:''
                 },
-                factoresReumatoides={
-                    nombre:'FR'
+                {
+                    nombre:'factoresReumatoides',
+                    sigla:'FR',
+                    medicion:'PA',
+                    val:''
+                },
+                {
+                    nombre:'peso',
+                    sigla:'Peso',
+                    medicion:'kg',
+                    val:''
+                },
+                {
+                    nombre:'talla',
+                    sigla:'talla',
+                    medicion:'cm',
+                    val:''
                 },
             ]
             

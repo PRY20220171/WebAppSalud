@@ -4,9 +4,9 @@ import FactoresRiesgo from '../../../views/_createOrUpdate/Atenciones/FactoresRi
 import CentroMedico from '../../../views/_createOrUpdate/Atenciones/CentroMedicoView.vue';
 
 import SignosVitales from '../../../views/_createOrUpdate/Pruebas/SignosVitales';
-import Tratamientos from '../../../views/_indexes/Pruebas/TratamientoIndex';
+import Tratamientos from '../../../views/_indexes/Resultados/TratamientoIndex';
 import Pruebas from '../../../views/_indexes/Pruebas/PruebasIndex';
-import Diagnosticos from '../../../views/_indexes/Diagnosticos/DiagnosticosIndexInAtencion.vue';
+import Diagnosticos from '../../../views/_indexes/Diagnosticos/DiagnosticosIndexInAtencionEdit.vue';
 
 export default {
     name: 'RegistrarAtencion',

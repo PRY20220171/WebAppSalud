@@ -12,21 +12,19 @@ export default {
     },
     data() {
         return {
-            signosVitales:[
-                temperatura={
-                    nombre:'Temperatura'
-                },
-                presionArterial={
-                    nombre:'PA'
-                },
-                frecuenciaCardiaca={
-                    nombre:'FC'
-                },
-                factoresReumatoides={
-                    nombre:'FR'
-                },
-            ]
-            
+            headers: [
+                { text: 'Nombres',value: 'fecresultado'},
+                { text: 'Apellidos',value: 'fecprueba'},
+                { text: 'resultado',value: 'resultado'},
+                { text: 'observacion',value: 'observacion'},
+            ], 
+            collection: {
+                hasItems: false,
+                items: [],
+                total: 0,
+                page: 1,
+                pages: 0
+            },
             /*
             user: this.$store.state.user,
             isLoading: false,

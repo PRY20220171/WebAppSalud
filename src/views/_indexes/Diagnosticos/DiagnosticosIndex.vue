@@ -3,14 +3,14 @@
         <v-row align="center" justify="center">
             <v-card class="px-5 pb-5 pt-6">
                 <v-row class="align-items-center px-5">
-                    <h3>Pacientes</h3>
+                    <h3>Diagnósticos</h3>
                 </v-row>
                 <v-row class="align-items-center px-5">
                     <v-col >
-                        <router-link :to="{name: 'Registro Paciente'}" >
+                        <router-link :to="{name: 'Registro Diagnostico'}" >
                             <v-btn color="primary">
                                 <v-icon left>mdi-account-plus</v-icon>
-                                Registrar paciente
+                                Registrar diagnósticos
                             </v-btn>
                         </router-link>
                     </v-col>
