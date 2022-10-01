@@ -14,11 +14,11 @@
                         <v-card-text class="">
                             <v-row class="py-3">
                                 <v-text-field label="Nombre(s)" name="nombres" v-model="model.nombres"
-                                    prepend-icon="mdi-email" type="text" color="main_color" hide-details="auto" />
+                                    prepend-icon="mdi-account" type="text" color="main_color" hide-details="auto" />
                             </v-row>
                             <v-row class="py-3">
                                 <v-text-field label="Apellido(s)" name="apellidos" v-model="model.apellidos"
-                                    prepend-icon="mdi-email" type="text" color="main_color" hide-details="auto" />
+                                    prepend-icon="mdi-account-group" type="text" color="main_color" hide-details="auto" />
                             </v-row>
                             <v-row class="py-3">
                                 <v-text-field label="Contraseña" name="password" v-model="model.password"
@@ -42,15 +42,15 @@
                             </v-row>
                             <v-row class="py-3">
                                 <v-text-field label="Teléfono" name="correo" v-model="model.telefono"
-                                    prepend-icon="mdi-email" type="number" color="main_color" hide-details="auto" />
+                                    prepend-icon="mdi-phone" type="number" color="main_color" hide-details="auto" />
                             </v-row>
                             <v-row class="py-3">
                                 <v-text-field label="Dirección actual" name="correo" v-model="model.direccion"
-                                    prepend-icon="mdi-email" type="text" color="main_color" hide-details="auto" />
+                                    prepend-icon="mdi-map-marker" type="text" color="main_color" hide-details="auto" />
                             </v-row>
                             <v-row class="py-3">
                                 <v-text-field label="Procedencia (Nacionalidad)" name="correo"
-                                    v-model="model.procedencia" prepend-icon="mdi-email" type="text" color="main_color"
+                                    v-model="model.procedencia" prepend-icon="mdi-earth" type="text" color="main_color"
                                     hide-details="auto" />
                             </v-row>
                         </v-card-text>
@@ -65,19 +65,19 @@
                         <v-card-text class="">
                             <v-row class="py-3">
                                 <v-radio-group label="Por favor, seleccionar rol del usuario" v-model="model.rol"
-                                    prepend-icon="mdi-email" color="main_color" hide-details="auto">
+                                    prepend-icon="mdi-account" color="main_color" hide-details="auto">
                                     <v-radio v-for="rol in roles" :value="rol.nombre" :key="rol.nombre" :label="rol.nombre">
                                     </v-radio>
                                 </v-radio-group>
                             </v-row>
                             <v-row class="py-3">
                                 <v-text-field label="Número de Colegiatura" name="numcolegiatura"
-                                    v-model="model.numcolegiatura" prepend-icon="mdi-email" type="number"
+                                    v-model="model.numcolegiatura" prepend-icon="mdi-medical-bag" type="number"
                                     color="main_color" hide-details="auto" />
                             </v-row>
                             <v-row class="py-3">
                                 <v-select v-model="model.especialidad" :items="especialidades" chips
-                                    label="Especialidades" multiple prepend-icon="mdi-water" color="main_color">
+                                    label="Especialidades" multiple prepend-icon="mdi-school" color="main_color">
                                 </v-select>
                             </v-row>
                         </v-card-text>
