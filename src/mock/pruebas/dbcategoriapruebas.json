@@ -1,0 +1,502 @@
+[
+    {
+        "id": "9dcf240c-606c-4b13-a404-d7c777b4f9c2",
+        "nombre": "nombre de categoria de prueba 0",
+        "descripcion": "descripcion de categoria de prueba 0"
+    },
+    {
+        "id": "fc55fe0b-99ee-47bc-83b7-51f9e9ef3eed",
+        "nombre": "nombre de categoria de prueba 1",
+        "descripcion": "descripcion de categoria de prueba 1"
+    },
+    {
+        "id": "b1f4361b-6d9d-438b-a555-7a450ad132dd",
+        "nombre": "nombre de categoria de prueba 2",
+        "descripcion": "descripcion de categoria de prueba 2"
+    },
+    {
+        "id": "1e7de023-6013-4972-b098-882523d48c93",
+        "nombre": "nombre de categoria de prueba 3",
+        "descripcion": "descripcion de categoria de prueba 3"
+    },
+    {
+        "id": "ea81eea2-55a0-4bb4-90b1-ff4e028911e9",
+        "nombre": "nombre de categoria de prueba 4",
+        "descripcion": "descripcion de categoria de prueba 4"
+    },
+    {
+        "id": "6ed61bf6-5ba6-42fb-8232-389506ab0cdb",
+        "nombre": "nombre de categoria de prueba 5",
+        "descripcion": "descripcion de categoria de prueba 5"
+    },
+    {
+        "id": "f6c8c86b-c819-4230-9f1c-964d57c77eca",
+        "nombre": "nombre de categoria de prueba 6",
+        "descripcion": "descripcion de categoria de prueba 6"
+    },
+    {
+        "id": "e33abeb7-53de-47f4-8c30-3c114bd1d873",
+        "nombre": "nombre de categoria de prueba 7",
+        "descripcion": "descripcion de categoria de prueba 7"
+    },
+    {
+        "id": "c9d96e80-7aca-4cfc-9691-753085150cde",
+        "nombre": "nombre de categoria de prueba 8",
+        "descripcion": "descripcion de categoria de prueba 8"
+    },
+    {
+        "id": "aeba9d0e-0a1c-4287-9461-df131dead34e",
+        "nombre": "nombre de categoria de prueba 9",
+        "descripcion": "descripcion de categoria de prueba 9"
+    },
+    {
+        "id": "ed950e9e-af42-4998-9b5e-2019b8a74f85",
+        "nombre": "nombre de categoria de prueba 10",
+        "descripcion": "descripcion de categoria de prueba 10"
+    },
+    {
+        "id": "e9ca0e6c-1311-4bb4-9c23-b83767891b84",
+        "nombre": "nombre de categoria de prueba 11",
+        "descripcion": "descripcion de categoria de prueba 11"
+    },
+    {
+        "id": "03c02932-d4b8-446c-83f0-7dedb044ecee",
+        "nombre": "nombre de categoria de prueba 12",
+        "descripcion": "descripcion de categoria de prueba 12"
+    },
+    {
+        "id": "ddd64f0d-8690-4173-a849-f3196611ee6a",
+        "nombre": "nombre de categoria de prueba 13",
+        "descripcion": "descripcion de categoria de prueba 13"
+    },
+    {
+        "id": "f4efee9b-ce0f-45ba-9c59-d9fff17c2b29",
+        "nombre": "nombre de categoria de prueba 14",
+        "descripcion": "descripcion de categoria de prueba 14"
+    },
+    {
+        "id": "12e26b89-6cde-43b6-8fbb-58cab694c91c",
+        "nombre": "nombre de categoria de prueba 15",
+        "descripcion": "descripcion de categoria de prueba 15"
+    },
+    {
+        "id": "e1fc98d7-164f-4132-8501-e719c19ce450",
+        "nombre": "nombre de categoria de prueba 16",
+        "descripcion": "descripcion de categoria de prueba 16"
+    },
+    {
+        "id": "12bab33c-258d-449a-9a50-e62f302ef358",
+        "nombre": "nombre de categoria de prueba 17",
+        "descripcion": "descripcion de categoria de prueba 17"
+    },
+    {
+        "id": "32f8bef8-1240-4dc2-ae31-1bb6999815ec",
+        "nombre": "nombre de categoria de prueba 18",
+        "descripcion": "descripcion de categoria de prueba 18"
+    },
+    {
+        "id": "51164e01-aef4-4259-aed4-50e89f702150",
+        "nombre": "nombre de categoria de prueba 19",
+        "descripcion": "descripcion de categoria de prueba 19"
+    },
+    {
+        "id": "33f7b063-62c9-4d34-a9e6-71464005e675",
+        "nombre": "nombre de categoria de prueba 20",
+        "descripcion": "descripcion de categoria de prueba 20"
+    },
+    {
+        "id": "63c427d3-6714-4c3b-b111-39c96c796c61",
+        "nombre": "nombre de categoria de prueba 21",
+        "descripcion": "descripcion de categoria de prueba 21"
+    },
+    {
+        "id": "6002a509-6316-493a-99e5-f35708c7bf51",
+        "nombre": "nombre de categoria de prueba 22",
+        "descripcion": "descripcion de categoria de prueba 22"
+    },
+    {
+        "id": "6f594212-09df-48d4-995b-52caa48556b8",
+        "nombre": "nombre de categoria de prueba 23",
+        "descripcion": "descripcion de categoria de prueba 23"
+    },
+    {
+        "id": "936e955f-0159-4227-8cc4-a047efa6cad9",
+        "nombre": "nombre de categoria de prueba 24",
+        "descripcion": "descripcion de categoria de prueba 24"
+    },
+    {
+        "id": "3d587e33-983a-4157-ae61-f9fef10e821b",
+        "nombre": "nombre de categoria de prueba 25",
+        "descripcion": "descripcion de categoria de prueba 25"
+    },
+    {
+        "id": "9a6fcea8-daaa-4468-a3c0-3c3ffc7b541a",
+        "nombre": "nombre de categoria de prueba 26",
+        "descripcion": "descripcion de categoria de prueba 26"
+    },
+    {
+        "id": "9acd5385-d4f5-4ad1-a4d4-c38c74e82d02",
+        "nombre": "nombre de categoria de prueba 27",
+        "descripcion": "descripcion de categoria de prueba 27"
+    },
+    {
+        "id": "2b681d93-eaa3-4d6e-8f6a-fb13a0b199da",
+        "nombre": "nombre de categoria de prueba 28",
+        "descripcion": "descripcion de categoria de prueba 28"
+    },
+    {
+        "id": "a9794fc1-3e47-4051-8a0d-8347cffdd2a5",
+        "nombre": "nombre de categoria de prueba 29",
+        "descripcion": "descripcion de categoria de prueba 29"
+    },
+    {
+        "id": "08abba63-8d30-461d-a2db-413f365d630a",
+        "nombre": "nombre de categoria de prueba 30",
+        "descripcion": "descripcion de categoria de prueba 30"
+    },
+    {
+        "id": "677026aa-c92d-434c-8321-f683915ebe31",
+        "nombre": "nombre de categoria de prueba 31",
+        "descripcion": "descripcion de categoria de prueba 31"
+    },
+    {
+        "id": "e0fe2c40-546c-418c-a489-d36e4095a6f4",
+        "nombre": "nombre de categoria de prueba 32",
+        "descripcion": "descripcion de categoria de prueba 32"
+    },
+    {
+        "id": "36829e8c-63d0-43d5-9f61-0138d432f1c8",
+        "nombre": "nombre de categoria de prueba 33",
+        "descripcion": "descripcion de categoria de prueba 33"
+    },
+    {
+        "id": "b9901003-7573-49ca-b4d1-e57422b88c3b",
+        "nombre": "nombre de categoria de prueba 34",
+        "descripcion": "descripcion de categoria de prueba 34"
+    },
+    {
+        "id": "1d3263a4-180b-4480-ab31-73003a05bbb8",
+        "nombre": "nombre de categoria de prueba 35",
+        "descripcion": "descripcion de categoria de prueba 35"
+    },
+    {
+        "id": "629203e2-086a-4306-9a36-15f761b05c47",
+        "nombre": "nombre de categoria de prueba 36",
+        "descripcion": "descripcion de categoria de prueba 36"
+    },
+    {
+        "id": "e50b2588-936a-465a-a58e-cfb97c889b5c",
+        "nombre": "nombre de categoria de prueba 37",
+        "descripcion": "descripcion de categoria de prueba 37"
+    },
+    {
+        "id": "1fad0836-e2f9-4a42-a378-71e7a2a62b1e",
+        "nombre": "nombre de categoria de prueba 38",
+        "descripcion": "descripcion de categoria de prueba 38"
+    },
+    {
+        "id": "164151fc-9297-4d3a-b5e3-ae86bb28f1db",
+        "nombre": "nombre de categoria de prueba 39",
+        "descripcion": "descripcion de categoria de prueba 39"
+    },
+    {
+        "id": "fa6ad320-5e98-487e-b872-817f59f0504b",
+        "nombre": "nombre de categoria de prueba 40",
+        "descripcion": "descripcion de categoria de prueba 40"
+    },
+    {
+        "id": "a3c528e9-3969-4961-b68d-7fabb3bdb148",
+        "nombre": "nombre de categoria de prueba 41",
+        "descripcion": "descripcion de categoria de prueba 41"
+    },
+    {
+        "id": "b44a750a-3294-49bf-a9f8-c5c4de99e357",
+        "nombre": "nombre de categoria de prueba 42",
+        "descripcion": "descripcion de categoria de prueba 42"
+    },
+    {
+        "id": "45804e8e-3c93-44e0-b51e-7c3eee6e58bf",
+        "nombre": "nombre de categoria de prueba 43",
+        "descripcion": "descripcion de categoria de prueba 43"
+    },
+    {
+        "id": "a9b55572-5b2e-4c12-82c9-c652fbc30e19",
+        "nombre": "nombre de categoria de prueba 44",
+        "descripcion": "descripcion de categoria de prueba 44"
+    },
+    {
+        "id": "2cb780a3-3d3a-490e-96f4-ff46a0114ad9",
+        "nombre": "nombre de categoria de prueba 45",
+        "descripcion": "descripcion de categoria de prueba 45"
+    },
+    {
+        "id": "e727e59b-9611-4912-a200-9029e5c63f07",
+        "nombre": "nombre de categoria de prueba 46",
+        "descripcion": "descripcion de categoria de prueba 46"
+    },
+    {
+        "id": "0d9065ff-879b-4276-8826-6bc5322fae72",
+        "nombre": "nombre de categoria de prueba 47",
+        "descripcion": "descripcion de categoria de prueba 47"
+    },
+    {
+        "id": "55bb4391-fe4d-4521-88c9-ab786960a7fc",
+        "nombre": "nombre de categoria de prueba 48",
+        "descripcion": "descripcion de categoria de prueba 48"
+    },
+    {
+        "id": "0a293d94-c763-4ef6-bf96-f33e5f3a6b66",
+        "nombre": "nombre de categoria de prueba 49",
+        "descripcion": "descripcion de categoria de prueba 49"
+    },
+    {
+        "id": "d0602d4d-4eb9-4eb3-8964-7c8a1348c189",
+        "nombre": "nombre de categoria de prueba 50",
+        "descripcion": "descripcion de categoria de prueba 50"
+    },
+    {
+        "id": "87057199-6efb-4542-9734-a86fdbf09568",
+        "nombre": "nombre de categoria de prueba 51",
+        "descripcion": "descripcion de categoria de prueba 51"
+    },
+    {
+        "id": "45e6cbf5-8b0f-4be2-8edb-247fd78477bc",
+        "nombre": "nombre de categoria de prueba 52",
+        "descripcion": "descripcion de categoria de prueba 52"
+    },
+    {
+        "id": "8c8583f3-5513-4f95-b285-428aa0670523",
+        "nombre": "nombre de categoria de prueba 53",
+        "descripcion": "descripcion de categoria de prueba 53"
+    },
+    {
+        "id": "d2077646-7436-4002-b0dd-b829bc91e5a9",
+        "nombre": "nombre de categoria de prueba 54",
+        "descripcion": "descripcion de categoria de prueba 54"
+    },
+    {
+        "id": "c3da8b99-1302-47a8-b85d-d0114f722028",
+        "nombre": "nombre de categoria de prueba 55",
+        "descripcion": "descripcion de categoria de prueba 55"
+    },
+    {
+        "id": "fb1a1647-cb3a-4181-beb8-894a17a1793b",
+        "nombre": "nombre de categoria de prueba 56",
+        "descripcion": "descripcion de categoria de prueba 56"
+    },
+    {
+        "id": "eb2c7266-475c-4d75-a6b6-01e061ed9481",
+        "nombre": "nombre de categoria de prueba 57",
+        "descripcion": "descripcion de categoria de prueba 57"
+    },
+    {
+        "id": "58428031-6107-4e4c-b6df-ff113cdf6ba9",
+        "nombre": "nombre de categoria de prueba 58",
+        "descripcion": "descripcion de categoria de prueba 58"
+    },
+    {
+        "id": "f85144c9-6f6f-435d-ba9c-c4b539cde3c3",
+        "nombre": "nombre de categoria de prueba 59",
+        "descripcion": "descripcion de categoria de prueba 59"
+    },
+    {
+        "id": "a378a71d-539d-4b07-8372-c3731a7d9d46",
+        "nombre": "nombre de categoria de prueba 60",
+        "descripcion": "descripcion de categoria de prueba 60"
+    },
+    {
+        "id": "b3d66fce-d0a1-4f01-bf78-6719f925018d",
+        "nombre": "nombre de categoria de prueba 61",
+        "descripcion": "descripcion de categoria de prueba 61"
+    },
+    {
+        "id": "4aef93d7-6831-41ff-8c89-42a3a014e88f",
+        "nombre": "nombre de categoria de prueba 62",
+        "descripcion": "descripcion de categoria de prueba 62"
+    },
+    {
+        "id": "60417540-ad71-4be7-8d06-5dbfaaedb248",
+        "nombre": "nombre de categoria de prueba 63",
+        "descripcion": "descripcion de categoria de prueba 63"
+    },
+    {
+        "id": "58bd642a-d409-4b5d-965d-f04c87127e60",
+        "nombre": "nombre de categoria de prueba 64",
+        "descripcion": "descripcion de categoria de prueba 64"
+    },
+    {
+        "id": "8569bf76-af1f-4687-847b-c3f4dbebe56a",
+        "nombre": "nombre de categoria de prueba 65",
+        "descripcion": "descripcion de categoria de prueba 65"
+    },
+    {
+        "id": "e90a32c1-cb47-406c-9b4a-d3b2d9d60e6d",
+        "nombre": "nombre de categoria de prueba 66",
+        "descripcion": "descripcion de categoria de prueba 66"
+    },
+    {
+        "id": "8ef48ae5-5e05-43e3-a3d1-58d8d711fd97",
+        "nombre": "nombre de categoria de prueba 67",
+        "descripcion": "descripcion de categoria de prueba 67"
+    },
+    {
+        "id": "04eb8438-abeb-4e59-b709-b137f2a00cde",
+        "nombre": "nombre de categoria de prueba 68",
+        "descripcion": "descripcion de categoria de prueba 68"
+    },
+    {
+        "id": "4631bed9-b08d-48fb-8422-f8785a99dafe",
+        "nombre": "nombre de categoria de prueba 69",
+        "descripcion": "descripcion de categoria de prueba 69"
+    },
+    {
+        "id": "696dde0a-e913-404a-8757-34ccbfd642c7",
+        "nombre": "nombre de categoria de prueba 70",
+        "descripcion": "descripcion de categoria de prueba 70"
+    },
+    {
+        "id": "88cdbbcb-7113-495a-b36e-cdf4a222fee1",
+        "nombre": "nombre de categoria de prueba 71",
+        "descripcion": "descripcion de categoria de prueba 71"
+    },
+    {
+        "id": "a078800f-f773-4ac6-bc21-b3c929735579",
+        "nombre": "nombre de categoria de prueba 72",
+        "descripcion": "descripcion de categoria de prueba 72"
+    },
+    {
+        "id": "dd402a70-18c0-4868-89ef-288b9eac1264",
+        "nombre": "nombre de categoria de prueba 73",
+        "descripcion": "descripcion de categoria de prueba 73"
+    },
+    {
+        "id": "654e72c0-acc9-4de4-baf8-706e78e1dfbf",
+        "nombre": "nombre de categoria de prueba 74",
+        "descripcion": "descripcion de categoria de prueba 74"
+    },
+    {
+        "id": "0d295896-ce27-4fc1-a40f-2f42e084e064",
+        "nombre": "nombre de categoria de prueba 75",
+        "descripcion": "descripcion de categoria de prueba 75"
+    },
+    {
+        "id": "a36b3ce7-121b-465f-9696-57eabdf195d3",
+        "nombre": "nombre de categoria de prueba 76",
+        "descripcion": "descripcion de categoria de prueba 76"
+    },
+    {
+        "id": "801bacf0-ade2-47b7-b428-20587b68d366",
+        "nombre": "nombre de categoria de prueba 77",
+        "descripcion": "descripcion de categoria de prueba 77"
+    },
+    {
+        "id": "23e52fa5-7d16-42ef-b052-cde70815977f",
+        "nombre": "nombre de categoria de prueba 78",
+        "descripcion": "descripcion de categoria de prueba 78"
+    },
+    {
+        "id": "73a2aa90-386a-41a3-83f4-3ba6687e7297",
+        "nombre": "nombre de categoria de prueba 79",
+        "descripcion": "descripcion de categoria de prueba 79"
+    },
+    {
+        "id": "f067454d-b7b6-4e58-8c88-e7249edc6a44",
+        "nombre": "nombre de categoria de prueba 80",
+        "descripcion": "descripcion de categoria de prueba 80"
+    },
+    {
+        "id": "d5060e7f-a01b-4e13-a25a-77c63d5fe1cf",
+        "nombre": "nombre de categoria de prueba 81",
+        "descripcion": "descripcion de categoria de prueba 81"
+    },
+    {
+        "id": "2e1c44e9-a4c6-46bf-9686-2e3eafb203e6",
+        "nombre": "nombre de categoria de prueba 82",
+        "descripcion": "descripcion de categoria de prueba 82"
+    },
+    {
+        "id": "1ea13a5a-38fc-408c-a9a8-d59954cbf99f",
+        "nombre": "nombre de categoria de prueba 83",
+        "descripcion": "descripcion de categoria de prueba 83"
+    },
+    {
+        "id": "2eb8bbd5-c528-42be-9c69-b3fb0347e3c4",
+        "nombre": "nombre de categoria de prueba 84",
+        "descripcion": "descripcion de categoria de prueba 84"
+    },
+    {
+        "id": "30e1c0e5-669e-4825-9d60-671f6e2a72b7",
+        "nombre": "nombre de categoria de prueba 85",
+        "descripcion": "descripcion de categoria de prueba 85"
+    },
+    {
+        "id": "601ad10c-be07-4c75-9e2e-cfa9af6cc6b3",
+        "nombre": "nombre de categoria de prueba 86",
+        "descripcion": "descripcion de categoria de prueba 86"
+    },
+    {
+        "id": "184833dd-c952-441c-89f8-ee785251f3ce",
+        "nombre": "nombre de categoria de prueba 87",
+        "descripcion": "descripcion de categoria de prueba 87"
+    },
+    {
+        "id": "f25478dc-fe2a-454f-9921-9d470378c1aa",
+        "nombre": "nombre de categoria de prueba 88",
+        "descripcion": "descripcion de categoria de prueba 88"
+    },
+    {
+        "id": "879f9a93-afae-46e7-922c-edb1b1199ca0",
+        "nombre": "nombre de categoria de prueba 89",
+        "descripcion": "descripcion de categoria de prueba 89"
+    },
+    {
+        "id": "ac17fa36-0319-479e-9c2f-e83718d9d316",
+        "nombre": "nombre de categoria de prueba 90",
+        "descripcion": "descripcion de categoria de prueba 90"
+    },
+    {
+        "id": "aadf684d-7c49-4053-8f71-b2f5bc5c38be",
+        "nombre": "nombre de categoria de prueba 91",
+        "descripcion": "descripcion de categoria de prueba 91"
+    },
+    {
+        "id": "93daaa9b-2edf-4401-a48e-cb8a159c0bc0",
+        "nombre": "nombre de categoria de prueba 92",
+        "descripcion": "descripcion de categoria de prueba 92"
+    },
+    {
+        "id": "90188464-3d3a-40f1-ae4e-3230ef04c977",
+        "nombre": "nombre de categoria de prueba 93",
+        "descripcion": "descripcion de categoria de prueba 93"
+    },
+    {
+        "id": "556f43b5-92ab-4268-8c53-d1dc67657f6e",
+        "nombre": "nombre de categoria de prueba 94",
+        "descripcion": "descripcion de categoria de prueba 94"
+    },
+    {
+        "id": "17a70741-fc72-48bc-83fc-3d0712d9a8ce",
+        "nombre": "nombre de categoria de prueba 95",
+        "descripcion": "descripcion de categoria de prueba 95"
+    },
+    {
+        "id": "b49243fa-c5e3-424c-a98c-b71f0fce8d84",
+        "nombre": "nombre de categoria de prueba 96",
+        "descripcion": "descripcion de categoria de prueba 96"
+    },
+    {
+        "id": "f4e566e5-05a9-42b5-ad22-4f89dd90884f",
+        "nombre": "nombre de categoria de prueba 97",
+        "descripcion": "descripcion de categoria de prueba 97"
+    },
+    {
+        "id": "a6ef57a7-2e47-4f8e-9b55-81e01605c6fa",
+        "nombre": "nombre de categoria de prueba 98",
+        "descripcion": "descripcion de categoria de prueba 98"
+    },
+    {
+        "id": "19c970a9-6a49-4698-8e36-c5f8a9ac8514",
+        "nombre": "nombre de categoria de prueba 99",
+        "descripcion": "descripcion de categoria de prueba 99"
+    }
+]
