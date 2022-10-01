@@ -1,0 +1,502 @@
+[
+    {
+        "diagnosticoid": "41c70ae0-7383-4a9b-9625-d4df745c7e9a",
+        "pruebaid": "04e77d02-1a3b-428b-83f0-bef1aa426020",
+        "motivo": "motivo de prueba 0"
+    },
+    {
+        "diagnosticoid": "714448ba-2d58-44fe-b872-f2072c85dab0",
+        "pruebaid": "a5217597-3336-4dc4-af6b-a7f9b87aa320",
+        "motivo": "motivo de prueba 1"
+    },
+    {
+        "diagnosticoid": "5c3b1834-8e75-4194-aca6-16b3727f08bf",
+        "pruebaid": "fa55600f-db31-4e22-8f11-bf8470890c2b",
+        "motivo": "motivo de prueba 2"
+    },
+    {
+        "diagnosticoid": "cea780ee-d441-4cde-aeab-78e6888f519f",
+        "pruebaid": "eddcdfbc-fd3a-4951-a284-ddd734539682",
+        "motivo": "motivo de prueba 3"
+    },
+    {
+        "diagnosticoid": "80b43d0f-8990-41f5-97cb-35bc3a51cd64",
+        "pruebaid": "c96b4416-da7d-4309-b763-58e73cc13367",
+        "motivo": "motivo de prueba 4"
+    },
+    {
+        "diagnosticoid": "c9877f5c-abf8-4be3-83f5-41c344ab836e",
+        "pruebaid": "1d8aed37-9b72-4813-8b72-d1cc6cd03266",
+        "motivo": "motivo de prueba 5"
+    },
+    {
+        "diagnosticoid": "38353ebc-ca5c-4fe4-9a1e-32f923775d5e",
+        "pruebaid": "668cccae-c969-4c0f-96c0-f8fc83e47a9e",
+        "motivo": "motivo de prueba 6"
+    },
+    {
+        "diagnosticoid": "ebd4660b-f3bf-4f21-be06-7e1711278849",
+        "pruebaid": "9f7c7eaa-b112-47dd-b6f1-b28dd8b42cff",
+        "motivo": "motivo de prueba 7"
+    },
+    {
+        "diagnosticoid": "aeba77ef-a344-46c4-95dc-9df8453ad19f",
+        "pruebaid": "aefc364e-b6db-4c9d-b63d-c947691f1b42",
+        "motivo": "motivo de prueba 8"
+    },
+    {
+        "diagnosticoid": "d4ab1d0e-4717-4af1-b53b-ba8be04b9912",
+        "pruebaid": "971e65df-eb1a-4905-9fb8-c14a97b883fa",
+        "motivo": "motivo de prueba 9"
+    },
+    {
+        "diagnosticoid": "31bacdb3-2c74-4b74-92ca-f17aebfddb91",
+        "pruebaid": "a5a0b514-9f02-4ede-8d41-d9be29622d66",
+        "motivo": "motivo de prueba 10"
+    },
+    {
+        "diagnosticoid": "c3d32664-c20b-4a0b-b38b-2af3029b305a",
+        "pruebaid": "f4be1ccf-1883-45ad-9b04-2fcb012878a3",
+        "motivo": "motivo de prueba 11"
+    },
+    {
+        "diagnosticoid": "b026ceea-0f5d-4291-a25b-98f4266f1cca",
+        "pruebaid": "b035a901-5392-4a02-9027-50f189c8ed20",
+        "motivo": "motivo de prueba 12"
+    },
+    {
+        "diagnosticoid": "8b3b7578-390c-4116-9298-2788bbd90fcf",
+        "pruebaid": "f3fcbbd9-cbe6-4039-bdf5-27c080f8a29e",
+        "motivo": "motivo de prueba 13"
+    },
+    {
+        "diagnosticoid": "33430495-625e-4d29-8ce6-167e32c7452d",
+        "pruebaid": "432e917d-f792-4552-9cbd-954e3fc288f1",
+        "motivo": "motivo de prueba 14"
+    },
+    {
+        "diagnosticoid": "eff49e4a-b010-40e4-bc8c-8894f5131b81",
+        "pruebaid": "b021e0e4-2207-45f9-aff1-1f314d1ead1e",
+        "motivo": "motivo de prueba 15"
+    },
+    {
+        "diagnosticoid": "279c9179-4efc-40f7-bb76-ea7d6ba8eb3d",
+        "pruebaid": "0b31cbb2-0623-4017-9364-a435432477b8",
+        "motivo": "motivo de prueba 16"
+    },
+    {
+        "diagnosticoid": "749548d4-9579-4e34-8215-3fd1b74cad61",
+        "pruebaid": "703fb731-84ba-4116-aeff-597e4d36b859",
+        "motivo": "motivo de prueba 17"
+    },
+    {
+        "diagnosticoid": "82f7f2d7-47ed-415e-bd5a-89eb37a659f8",
+        "pruebaid": "e388cb57-fb8a-4faa-a210-9acecf36eb74",
+        "motivo": "motivo de prueba 18"
+    },
+    {
+        "diagnosticoid": "632f1eb8-3f62-4cbb-9e02-0ebe036db0f3",
+        "pruebaid": "6c45af38-bdc9-4841-b768-46a76e0bc7c6",
+        "motivo": "motivo de prueba 19"
+    },
+    {
+        "diagnosticoid": "07fcb977-bed3-4ae0-b695-f3c16c97d73f",
+        "pruebaid": "326818e0-5ff8-483e-b90f-cf4f8ebe8d90",
+        "motivo": "motivo de prueba 20"
+    },
+    {
+        "diagnosticoid": "f866780a-58cb-4add-8834-dfdb55ad3ad3",
+        "pruebaid": "ba128da2-e364-4ce5-87f6-65c0c61286e2",
+        "motivo": "motivo de prueba 21"
+    },
+    {
+        "diagnosticoid": "e2c28b52-11a2-4cf1-878b-4cb34849d242",
+        "pruebaid": "6212ddeb-ffa8-4a2e-8918-cc4a32213c7e",
+        "motivo": "motivo de prueba 22"
+    },
+    {
+        "diagnosticoid": "5fb7badf-64ae-4456-88b9-260a587384c4",
+        "pruebaid": "37369001-e5e0-4ede-84da-88a33ad8da0b",
+        "motivo": "motivo de prueba 23"
+    },
+    {
+        "diagnosticoid": "7c04a32b-6022-4537-8159-148f9ce58dba",
+        "pruebaid": "5176827e-698a-4b5c-90ed-89efd6cf9c5d",
+        "motivo": "motivo de prueba 24"
+    },
+    {
+        "diagnosticoid": "4364277e-eee7-4983-9bbb-5884ebf5a8f5",
+        "pruebaid": "5507161f-cd1e-49bc-a4bc-7429b80c2673",
+        "motivo": "motivo de prueba 25"
+    },
+    {
+        "diagnosticoid": "392a156c-02c4-4fbc-8962-b845bd4aab63",
+        "pruebaid": "43bea6f4-58e4-4b76-ac27-c62eb5754358",
+        "motivo": "motivo de prueba 26"
+    },
+    {
+        "diagnosticoid": "25c34588-0e60-401d-a567-4a68e1391121",
+        "pruebaid": "4d42e1f3-56e6-4dbe-bc7b-401d43e9f707",
+        "motivo": "motivo de prueba 27"
+    },
+    {
+        "diagnosticoid": "32237d47-9eaf-4596-894b-44f555983240",
+        "pruebaid": "9694ad34-b9d4-4b79-93b3-b84f085070c7",
+        "motivo": "motivo de prueba 28"
+    },
+    {
+        "diagnosticoid": "efd58044-040c-4404-9003-f654ab549cf4",
+        "pruebaid": "76241036-e603-471a-a074-7132c5241a4e",
+        "motivo": "motivo de prueba 29"
+    },
+    {
+        "diagnosticoid": "f1da4cbe-28ee-4aad-9c18-76d789657c77",
+        "pruebaid": "40af15f9-746f-4525-b9e2-cf92815631df",
+        "motivo": "motivo de prueba 30"
+    },
+    {
+        "diagnosticoid": "486e55f1-75a3-482f-8385-62609e80722d",
+        "pruebaid": "05a2a017-66bb-4fd3-82a9-42dc952ea0fc",
+        "motivo": "motivo de prueba 31"
+    },
+    {
+        "diagnosticoid": "53f9853e-141b-4649-ae7e-e01583287cb8",
+        "pruebaid": "7337b088-9788-464c-8e60-d5ba35a231c6",
+        "motivo": "motivo de prueba 32"
+    },
+    {
+        "diagnosticoid": "663b6d36-4cc6-49dc-b977-9e550cde9e3c",
+        "pruebaid": "1e42e559-da62-4862-9f8a-21eae3b8b2ae",
+        "motivo": "motivo de prueba 33"
+    },
+    {
+        "diagnosticoid": "3dac7db6-47d0-4ad6-ab78-9168d7f905ad",
+        "pruebaid": "7494ad87-c083-4cfc-97d4-d39a52c880a1",
+        "motivo": "motivo de prueba 34"
+    },
+    {
+        "diagnosticoid": "5217d46e-d8d8-4bf7-b819-d8939e225991",
+        "pruebaid": "20139c86-4ce5-453d-8255-183d209cc0b3",
+        "motivo": "motivo de prueba 35"
+    },
+    {
+        "diagnosticoid": "abaf4554-3dfe-403f-92de-a6ec14a1c1aa",
+        "pruebaid": "c97e128a-54d4-4bc3-99c3-4c3b71ccc9cc",
+        "motivo": "motivo de prueba 36"
+    },
+    {
+        "diagnosticoid": "d5df726b-7ffc-4ee1-84dd-70b495af9054",
+        "pruebaid": "6617b663-47ef-45f0-a29f-b014aec816b4",
+        "motivo": "motivo de prueba 37"
+    },
+    {
+        "diagnosticoid": "de1774d8-b790-456f-ad72-dc53962341bc",
+        "pruebaid": "af436c32-809a-4e52-9795-475d3fc3f741",
+        "motivo": "motivo de prueba 38"
+    },
+    {
+        "diagnosticoid": "75d1b9eb-9dd6-40aa-8aa8-0697c720ee2d",
+        "pruebaid": "7f437bd0-3e49-4e1b-b39f-5d5882b7eb65",
+        "motivo": "motivo de prueba 39"
+    },
+    {
+        "diagnosticoid": "0d6088ff-816f-4aec-a286-e67115ec76f4",
+        "pruebaid": "db090557-c753-4244-acf5-213117a9735c",
+        "motivo": "motivo de prueba 40"
+    },
+    {
+        "diagnosticoid": "0bb3d534-cef8-4863-b44e-4d1003208218",
+        "pruebaid": "41c95271-8251-41b0-b868-801b26833521",
+        "motivo": "motivo de prueba 41"
+    },
+    {
+        "diagnosticoid": "34bae06a-db2a-45b4-97b5-45341abc23d4",
+        "pruebaid": "d323a5d5-477a-4d37-abf2-b027baa5e9a6",
+        "motivo": "motivo de prueba 42"
+    },
+    {
+        "diagnosticoid": "380fe248-30be-4cc3-8623-ec857d2bb654",
+        "pruebaid": "8a3cc798-24e3-4736-ba18-cd382b99667a",
+        "motivo": "motivo de prueba 43"
+    },
+    {
+        "diagnosticoid": "e8ef6984-2111-47c2-87b2-ebe266c936d8",
+        "pruebaid": "2a07a1c2-7e3a-4eb1-ba74-37f4af878176",
+        "motivo": "motivo de prueba 44"
+    },
+    {
+        "diagnosticoid": "00cc9df2-e7f9-4fe6-ad06-69e0d61cbaf1",
+        "pruebaid": "5d83af91-f785-4e7b-8043-18999a050f8a",
+        "motivo": "motivo de prueba 45"
+    },
+    {
+        "diagnosticoid": "d23a0d8d-8376-480a-a736-7db5bb5b7578",
+        "pruebaid": "a0fd527d-0b0e-4ed4-9c8d-8c62743df8e8",
+        "motivo": "motivo de prueba 46"
+    },
+    {
+        "diagnosticoid": "98b0cd2c-0a40-4be4-9c84-27d30fd88706",
+        "pruebaid": "d5fe1c6f-1ec8-4f59-97e6-6fb0f5c5c46e",
+        "motivo": "motivo de prueba 47"
+    },
+    {
+        "diagnosticoid": "0ae09346-1843-425b-a18f-6487bbec4fcb",
+        "pruebaid": "af294bbf-8131-48de-bb4b-8b3a63dbbe58",
+        "motivo": "motivo de prueba 48"
+    },
+    {
+        "diagnosticoid": "741adcd5-bcc0-41d7-a8cc-96b3ad0c95ec",
+        "pruebaid": "24148f81-16e5-41f3-b3a8-afb6a96233fb",
+        "motivo": "motivo de prueba 49"
+    },
+    {
+        "diagnosticoid": "eae02095-1af5-4d7c-b725-abc93da6fc2a",
+        "pruebaid": "1cc10dc1-f1fd-4997-aa9a-3acecee070da",
+        "motivo": "motivo de prueba 50"
+    },
+    {
+        "diagnosticoid": "d6bcf5a9-84ee-49a9-8b60-0cdaf975fb5a",
+        "pruebaid": "6be0a761-2774-4e28-94be-140bab7e2b57",
+        "motivo": "motivo de prueba 51"
+    },
+    {
+        "diagnosticoid": "4476ae29-af1d-4ea5-86d7-a01121e68f7c",
+        "pruebaid": "9ef5ffb1-136e-4e9b-a602-99cfbed660cd",
+        "motivo": "motivo de prueba 52"
+    },
+    {
+        "diagnosticoid": "807313d5-2295-4c77-8138-f6dd17ded3ef",
+        "pruebaid": "3cd5772e-4817-4218-beea-b913e77966c6",
+        "motivo": "motivo de prueba 53"
+    },
+    {
+        "diagnosticoid": "d77d9e0c-1adf-4efe-97eb-b5eba280dec5",
+        "pruebaid": "b10a32c5-1bcc-4034-bf21-a5dc27a71005",
+        "motivo": "motivo de prueba 54"
+    },
+    {
+        "diagnosticoid": "f82c0e56-f669-485c-a544-ada0b3df0e24",
+        "pruebaid": "e3142a94-9e33-4dd7-8ef5-15a99d15178d",
+        "motivo": "motivo de prueba 55"
+    },
+    {
+        "diagnosticoid": "373d7d6c-1d66-43e6-b03b-46ffc7ae8bd3",
+        "pruebaid": "b7d2dbaf-2443-4b10-a919-1859181a9408",
+        "motivo": "motivo de prueba 56"
+    },
+    {
+        "diagnosticoid": "05d3e29f-a2af-42d6-9a5b-7c7209cc4fdf",
+        "pruebaid": "cc50e759-0a6c-4c0a-b3df-b49690a57d64",
+        "motivo": "motivo de prueba 57"
+    },
+    {
+        "diagnosticoid": "7105636c-f086-47d1-aea0-dde6f5efcb55",
+        "pruebaid": "375c5014-55f6-4d58-9758-44f44f2f94a8",
+        "motivo": "motivo de prueba 58"
+    },
+    {
+        "diagnosticoid": "440b3f92-ede4-4917-9c3c-aad1a464e56b",
+        "pruebaid": "d06f39f1-4e2b-4be6-ac31-1a0ec8fdbae3",
+        "motivo": "motivo de prueba 59"
+    },
+    {
+        "diagnosticoid": "98e38b20-8993-41b7-bdf0-06b6fb0e396b",
+        "pruebaid": "30c05833-06aa-4c1d-a214-6a7116ceeb0f",
+        "motivo": "motivo de prueba 60"
+    },
+    {
+        "diagnosticoid": "0cc3c2f3-37d4-42ae-9f6d-61d98737dd86",
+        "pruebaid": "7f327ad7-bbdf-4d72-b03c-85b0499f886e",
+        "motivo": "motivo de prueba 61"
+    },
+    {
+        "diagnosticoid": "0ac25176-2798-4a5a-b028-ce981e33c781",
+        "pruebaid": "af0431fd-6ea2-4ed1-acef-18dda4418e25",
+        "motivo": "motivo de prueba 62"
+    },
+    {
+        "diagnosticoid": "f28769a7-db9d-4997-b5e7-e0545628bb65",
+        "pruebaid": "17efd938-1999-4451-a142-a213cc93ac12",
+        "motivo": "motivo de prueba 63"
+    },
+    {
+        "diagnosticoid": "9e87984c-720d-4bb8-aa99-c7cbdf6ab0a0",
+        "pruebaid": "ed53716e-c7d4-44c1-997a-2b60bd5ea4d6",
+        "motivo": "motivo de prueba 64"
+    },
+    {
+        "diagnosticoid": "5d84e98e-029e-4aa7-99fe-e86083e9334e",
+        "pruebaid": "e1a0de97-6d78-4a0a-83d7-32a736618da5",
+        "motivo": "motivo de prueba 65"
+    },
+    {
+        "diagnosticoid": "dd01332f-7869-4352-83b4-2fd9cc656a3d",
+        "pruebaid": "d876792f-f0e4-430d-9206-e6097b1311c7",
+        "motivo": "motivo de prueba 66"
+    },
+    {
+        "diagnosticoid": "e588a89c-f995-4e69-a7c2-aa909a302962",
+        "pruebaid": "450c6754-3760-4245-97bb-6a671390eba8",
+        "motivo": "motivo de prueba 67"
+    },
+    {
+        "diagnosticoid": "642eacb2-8b19-4156-bb35-e7c806c22507",
+        "pruebaid": "97fc948f-9a80-4fb1-ba76-445e991e1406",
+        "motivo": "motivo de prueba 68"
+    },
+    {
+        "diagnosticoid": "8df0ca74-ac05-414d-95d5-846faf8601a4",
+        "pruebaid": "b73335b9-c232-489d-b700-d9e274ee342a",
+        "motivo": "motivo de prueba 69"
+    },
+    {
+        "diagnosticoid": "d722109d-e306-49fe-834b-788586d60660",
+        "pruebaid": "2d9e2408-a333-4fb0-a6b0-0bc7304cebb4",
+        "motivo": "motivo de prueba 70"
+    },
+    {
+        "diagnosticoid": "2556b79c-6b0f-4d8a-bdd1-393c42ecda38",
+        "pruebaid": "4a44de2d-8d83-4da3-821f-e28634c3a950",
+        "motivo": "motivo de prueba 71"
+    },
+    {
+        "diagnosticoid": "a676e3fa-f7d0-4d6e-b8f7-50e537174f62",
+        "pruebaid": "4ed8b55c-c20d-4f02-9425-e8121c428b2c",
+        "motivo": "motivo de prueba 72"
+    },
+    {
+        "diagnosticoid": "96d59767-8657-4e7b-b3b9-d7eb6287648b",
+        "pruebaid": "c357622b-53eb-4d66-a7a8-d6284539fe23",
+        "motivo": "motivo de prueba 73"
+    },
+    {
+        "diagnosticoid": "b97a7c77-1ee0-43a6-9cbe-3587e5e7595d",
+        "pruebaid": "05ff6156-e66f-42a5-a5f2-f311942c30db",
+        "motivo": "motivo de prueba 74"
+    },
+    {
+        "diagnosticoid": "397228a1-5d4b-4068-b3e3-df548046b4df",
+        "pruebaid": "06deda42-08df-4dfe-9588-43c11b5ce30e",
+        "motivo": "motivo de prueba 75"
+    },
+    {
+        "diagnosticoid": "27943ff5-595a-49cc-8b8f-4c0efda3709a",
+        "pruebaid": "7ab377c3-668f-4877-8cc8-ee97593c615d",
+        "motivo": "motivo de prueba 76"
+    },
+    {
+        "diagnosticoid": "bb6ade32-aca0-4642-b945-2c98bac06cdd",
+        "pruebaid": "5a08cba5-c238-4c6a-9bfa-6dbc36c187fc",
+        "motivo": "motivo de prueba 77"
+    },
+    {
+        "diagnosticoid": "c7a71b9a-b84e-4a54-94d7-61c94369c930",
+        "pruebaid": "cba52db0-e979-4ea7-b8a5-6b777958759a",
+        "motivo": "motivo de prueba 78"
+    },
+    {
+        "diagnosticoid": "f88e8b82-bf5f-445a-a87c-63d559150435",
+        "pruebaid": "ff6e08f7-6dc0-41ed-8d9f-5b7a096d432d",
+        "motivo": "motivo de prueba 79"
+    },
+    {
+        "diagnosticoid": "7f4e974a-8605-447a-a0c8-2e2035d2ba71",
+        "pruebaid": "9577ecc6-5296-4015-a3de-a0d280ce2814",
+        "motivo": "motivo de prueba 80"
+    },
+    {
+        "diagnosticoid": "a3984b42-929a-4435-bbf1-5c226a2ea2b3",
+        "pruebaid": "2e4fdf3d-09c4-4698-9ec1-2fb1bbcd8eab",
+        "motivo": "motivo de prueba 81"
+    },
+    {
+        "diagnosticoid": "8ae3db1c-ff1e-4c05-a99d-c51e42769b94",
+        "pruebaid": "ee4d32eb-79f7-410f-8446-596bfda14121",
+        "motivo": "motivo de prueba 82"
+    },
+    {
+        "diagnosticoid": "a0efa4dd-384a-4d62-b027-4bbd634d322d",
+        "pruebaid": "6ec90230-7dd5-4a35-a3d9-b9b9900fc133",
+        "motivo": "motivo de prueba 83"
+    },
+    {
+        "diagnosticoid": "90580ae0-ac77-4f8a-ab10-ecd4a95e5cf3",
+        "pruebaid": "cdaa9dd5-7fee-400f-af55-7c2011866a82",
+        "motivo": "motivo de prueba 84"
+    },
+    {
+        "diagnosticoid": "023a1c6b-756f-408b-962c-81ec8305dc45",
+        "pruebaid": "aca4ff38-9b2c-48a2-bc08-46e18fb1e49a",
+        "motivo": "motivo de prueba 85"
+    },
+    {
+        "diagnosticoid": "180b0225-7c5f-4d35-865f-b193b706d82a",
+        "pruebaid": "e347051d-7242-40fc-b90a-d5e07e5d0222",
+        "motivo": "motivo de prueba 86"
+    },
+    {
+        "diagnosticoid": "f4be7629-a106-4b54-afae-88be0faf7b2b",
+        "pruebaid": "e0dec685-c21d-4395-a548-47c53d46aac2",
+        "motivo": "motivo de prueba 87"
+    },
+    {
+        "diagnosticoid": "5ddadf6d-475f-452e-b72e-60e78bde094a",
+        "pruebaid": "d4150dc3-e261-4837-9df3-9166408a69d7",
+        "motivo": "motivo de prueba 88"
+    },
+    {
+        "diagnosticoid": "a9497906-1d4e-4846-9759-b670eb127cb3",
+        "pruebaid": "d1cda789-d22c-418c-8ad5-8587d44c6749",
+        "motivo": "motivo de prueba 89"
+    },
+    {
+        "diagnosticoid": "ce713ff6-af4e-4f68-840c-5365b6a3d32f",
+        "pruebaid": "69ba5cf7-8a9c-41d8-ae1b-3f6c4130eb88",
+        "motivo": "motivo de prueba 90"
+    },
+    {
+        "diagnosticoid": "ed5696ed-d243-4f57-9e89-51cb597d6830",
+        "pruebaid": "d534bffe-bec9-4df3-a75a-7464892cfbcb",
+        "motivo": "motivo de prueba 91"
+    },
+    {
+        "diagnosticoid": "9d8507c5-6c94-42d1-a03f-80417d17f8e9",
+        "pruebaid": "ebe26646-35d1-418d-8b3f-08e81f096b50",
+        "motivo": "motivo de prueba 92"
+    },
+    {
+        "diagnosticoid": "c4c691e0-84ea-4646-be7a-b5dc67b11101",
+        "pruebaid": "197f5b3b-b8a8-420d-8c72-e2ca76040424",
+        "motivo": "motivo de prueba 93"
+    },
+    {
+        "diagnosticoid": "5d8c8e43-1069-4ae2-9c35-b6a993c2c7a9",
+        "pruebaid": "b56ac743-7e75-4720-8ec7-1e3ef46d6dff",
+        "motivo": "motivo de prueba 94"
+    },
+    {
+        "diagnosticoid": "f3ee9918-cb2c-4e53-9de2-55f40505b93e",
+        "pruebaid": "f813a08b-d8bb-4a05-9c34-e4c9d321575c",
+        "motivo": "motivo de prueba 95"
+    },
+    {
+        "diagnosticoid": "9d3f1bed-2c34-4fc3-8953-115b988139b7",
+        "pruebaid": "99e67542-d21e-40d1-842e-6c8ba0880faa",
+        "motivo": "motivo de prueba 96"
+    },
+    {
+        "diagnosticoid": "444df399-ab5b-4b04-beb9-f88372ac7f78",
+        "pruebaid": "96eeea2c-0475-41b1-b876-6b8e3c4a8e7d",
+        "motivo": "motivo de prueba 97"
+    },
+    {
+        "diagnosticoid": "3fec4189-b472-4592-bae7-41be6ca87562",
+        "pruebaid": "1e40022c-425b-4078-95e3-e3720c903adf",
+        "motivo": "motivo de prueba 98"
+    },
+    {
+        "diagnosticoid": "0d5335a0-5c0f-4e20-9174-2d54801f34f0",
+        "pruebaid": "03412b69-d6ce-4845-9e8b-a80598a51e83",
+        "motivo": "motivo de prueba 99"
+    }
+]
