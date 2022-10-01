@@ -50,108 +50,155 @@ export default {
             },
             collection: {
                 hasItems: false,
-                items: [],
+                items: [{
+                    paciente: Object,
+                    acompanante: null,
+                    centromedico: null,
+                }],
                 total: 0,
                 page: 1,
                 pages: 0
             },
-            ids: [], 
+            ids: [],
         }
     },
     methods: {
         getAll(page) {
             this.isLoading = true;
-                this.$proxies.atencionProxy.getAll()
+            this.$proxies.atencionProxy.getAll()
                 .then(x => {
                     //this.collection = x.data;
-                    this.collection.items = x.data;
+                    let tempvar = x.data;
+                    tempvar.forEach(x => {
+                        if(x.pacienteid!==null){
+                            this.$proxies.pacienteProxy.getById(x.pacienteid)
+                                .then(xy=>{
+                                    console.log(xy.data);
+                                    x.paciente=xy.data;
+                                }
+                                );
+                        }
+                        //this.$proxies.acompananteProxy.getById(x.acompananteid).then(xy=>{
+                        //        x.acompanante=xy.data;
+                        //    }
+                        //    );
+                        this.$proxies.centroMedicoProxy.getById(x.centromedicid).then(xy=>{
+                                x.centromedico=xy.data;
+                            }
+                            );
+                        //x.usuario=this.getUsuario(x.usuarioregistroid);
+                        //x.acompanante=this.getAcompanante(x.acompananteid);
+                        //x.centromedico=this.getCentro(x.centromedicid);
+                        //x.sintomas=this.getAllSintomas(x.id);
+                        //console.log(x)
+                    });
+                    this.collection.items = tempvar;
+                    //this.collection.items = x.data;
                     if (this.collection.items.length>0)
                         this.collection.hasItems=true;
                     this.collection.total=this.collection.items.length
-                    this.collection.items.forEach(x => {
-                        x.paciente=this.getPaciente(x.pacienteid);
-                        //x.usuario=this.getUsuario(x.usuarioregistroid);
-                        x.acompanante=this.getAcompanante(x.acompananteid);
-                        x.centromedico=this.getCentro(x.centromedicid);
-                        x.sintomas=this.getAllSintomas(x.id);
-                        //console.log(x)
-                    });
+                    // this.collection.items.forEach(x => {
+                    //     if(x.pacienteid!==null){
+                    //         this.$proxies.pacienteProxy.getById(x.pacienteid)
+                    //             .then(xy=>{
+                    //                 console.log(xy.data);
+                    //                 x.paciente=xy.data;
+                    //             }
+                    //             );
+                    //     }
+                    //     //this.$proxies.acompananteProxy.getById(x.acompananteid).then(xy=>{
+                    //     //        x.acompanante=xy.data;
+                    //     //    }
+                    //     //    );
+                    //     this.$proxies.centroMedicoProxy.getById(x.centromedicid).then(xy=>{
+                    //             x.centromedico=xy.data;
+                    //         }
+                    //         );
+                    //     //x.usuario=this.getUsuario(x.usuarioregistroid);
+                    //     //x.acompanante=this.getAcompanante(x.acompananteid);
+                    //     //x.centromedico=this.getCentro(x.centromedicid);
+                    //     //x.sintomas=this.getAllSintomas(x.id);
+                    //     //console.log(x)
+                    // });
                     this.isLoading = false;
                 }).catch(() => {
                     this.isLoading = false;
                 });
         },
-        getPaciente(idPaciente) {
-            let paciente={}
-            this.isLoading = true;
+        // getPaciente(idPaciente) {
+        //     let paciente={}
+        //     this.isLoading = true;
 
-                this.$proxies.pacienteProxy.getById(idPaciente)
-                .then(x => {
-                    paciente = x.data;
-                    this.isLoading = false;
-                }).catch(() => {
-                    this.isLoading = false;
-                });
-                    console.log(paciente)
-            return paciente;
-        },
-        getAcompanante(idAcompanante) {
-            let acompanante={}
-            this.isLoading = true;
+        //         this.$proxies.pacienteProxy.getById(idPaciente)
+        //         .then(x => {
+        //             //console.log(x.data);
+        //             paciente = x.data;
+        //             this.isLoading = false;
+        //             return paciente;
+        //         }).catch(() => {
+        //             this.isLoading = false;
+        //         });
+        //         //    console.log(paciente)
+        //     //return paciente;
+        // },
+        // getAcompanante(idAcompanante) {
+        //     let acompanante={}
+        //     this.isLoading = true;
 
-                this.$proxies.acompananteProxy.getById(idAcompanante)
-                .then(x => {
-                    acompanante = x.data;
-                    this.isLoading = false;
-                }).catch(() => {
-                    this.isLoading = false;
-                });
-            return acompanante;
-            //console.log(this.$proxies.pacienteProxy.getAll())
-        },
-        getUsuario(idUsuario) {
-            let usuario={}
-            this.isLoading = true;
+        //         this.$proxies.acompananteProxy.getById(idAcompanante)
+        //         .then(x => {
+        //             //console.log(x.data);
+        //             acompanante = x.data;
+        //             this.isLoading = false;
+        //         }).catch(() => {
+        //             this.isLoading = false;
+        //         });
+        //     return acompanante;
+        //     //console.log(this.$proxies.pacienteProxy.getAll())
+        // },
+        // getUsuario(idUsuario) {
+        //     let usuario={}
+        //     this.isLoading = true;
 
-                this.$proxies.userProxy.getById(idUsuario)
-                .then(x => {
-                    usuario = x.data;
-                    this.isLoading = false;
-                }).catch(() => {
-                    this.isLoading = false;
-                });
-            return usuario;
-            //console.log(this.$proxies.pacienteProxy.getAll())
-        },
-        getCentro(idcentro) {
-            let centro={}
-            this.isLoading = true;
+        //         this.$proxies.userProxy.getById(idUsuario)
+        //         .then(x => {
+        //             usuario = x.data;
+        //             this.isLoading = false;
+        //         }).catch(() => {
+        //             this.isLoading = false;
+        //         });
+        //     return usuario;
+        //     //console.log(this.$proxies.pacienteProxy.getAll())
+        // },
+        // getCentro(idcentro) {
+        //     let centro={}
+        //     this.isLoading = true;
 
-                this.$proxies.centroMedicoProxy.getById(idcentro)
-                .then(x => {
-                    centro = x.data;
-                    this.isLoading = false;
-                }).catch(() => {
-                    this.isLoading = false;
-                });
-                return centro;
-            //console.log(this.$proxies.pacienteProxy.getAll())
-        },
-        getAllSintomas(idatencion) {
-            let sintomas=[]
-            this.isLoading = true;
+        //         this.$proxies.centroMedicoProxy.getById(idcentro)
+        //         .then(x => {
+        //             centro = x.data;
+        //             this.isLoading = false;
+        //         }).catch(() => {
+        //             this.isLoading = false;
+        //         });
+        //         return centro;
+        //     //console.log(this.$proxies.pacienteProxy.getAll())
+        // },
+        // getAllSintomas(idatencion) {
+        //     let sintomas=[]
+        //     this.isLoading = true;
             
-                this.$proxies.sintomaProxy.getByAtencionId(idatencion)
-                .then(x => {
-                    //this.collection = x.data;
-                    this.collection.items.sintomas = x.data;
-                    this.isLoading = false;
-                }).catch(() => {
-                    this.isLoading = false;
-                });
-                return sintomas;
-            //console.log(this.$proxies.pacienteProxy.getAll())
-        },
+        //         this.$proxies.sintomaProxy.getByAtencionId(idatencion)
+        //         .then(x => {
+        //             //this.collection = x.data;
+        //             this.collection.items.sintomas = x.data;
+        //             this.isLoading = false;
+        //         }).catch(() => {
+        //             this.isLoading = false;
+        //         });
+        //         return sintomas;
+        //     //console.log(this.$proxies.pacienteProxy.getAll())
+        // },
         changeview(){
             this.detailed = !this.detailed;
             this.getAll(this.collection.page);

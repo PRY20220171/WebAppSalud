@@ -33,7 +33,7 @@
                                         </div>
                                     </v-col>
                                 </v-row>
-                                <!--{{item}}-->
+                                {{item}}
                               </td>
                             </template>
                             <template #[`item.gruposangrh`]="{ item }">{{ item.gruposang }} {{ item.rh }}</template>
