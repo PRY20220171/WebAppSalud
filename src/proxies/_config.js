@@ -58,12 +58,8 @@ Axios.interceptors.response.use(
         return Promise.reject(error);
     }
 );
-//La url es la ip de la VM donde se expone el servicio
-//let url = 'http://54.196.169.244:5000/';
-//En caso querramos poner la direccion con DNS de la computadora, esta direccion es más permanente:
-//let url = 'http://ec2-54-196-169-244.compute-1.amazonaws.com:5000/';
-//let url = 'http://localhost:5000/'; //->Para conexion local
-let url='http://localhost:3000/';
+let url = 'http://localhost:3000/'; //->Para conexion local
+//let url='http://3.218.153.182:3000/'; //->Para conexion cloud
 
 export default {
     

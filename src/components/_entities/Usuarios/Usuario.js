@@ -16,7 +16,7 @@ export default {
             procedencia:'Peruano',
             rol:"Administrador",
             numcolegiatura:"123456",
-            especialidad:"Cardiología",
+            especialidad:["Cardiología"],
         },
         rol:{
             idrol:'',
