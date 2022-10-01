@@ -1,16 +1,16 @@
 <template>
-    <v-container id="AtencionesIndex" class="fill-height" fluid>
+    <v-container id="PacientesIndex" class="fill-height" fluid>
         <v-row align="center" justify="center">
             <v-card class="px-5 pb-5 pt-6">
                 <v-row class="align-items-center px-5">
-                    <h3>Consultas</h3>
+                    <h3>Pacientes</h3>
                 </v-row>
                 <v-row class="align-items-center px-5">
                     <v-col >
-                        <router-link :to="{name: 'Registro Consulta'}" >
+                        <router-link :to="{name: 'Registro Paciente'}" >
                             <v-btn color="primary">
                                 <v-icon left>mdi-account-plus</v-icon>
-                                Registrar Consulta
+                                Registrar paciente
                             </v-btn>
                         </router-link>
                     </v-col>
@@ -33,13 +33,13 @@
                                         </div>
                                     </v-col>
                                 </v-row>
-                                {{item}}
+                                <!--{{item}}-->
                               </td>
                             </template>
                             <template #[`item.gruposangrh`]="{ item }">{{ item.gruposang }} {{ item.rh }}</template>
                             <!--https://stackoverflow.com/questions/61344980/v-slot-directive-doesnt-support-any-modifier-->
                             <template #[`item.actions`]="{ item }">
-                                <router-link :to="'/consultas/update/'+item.id">
+                                <router-link :to="'/diagnosticos/update/'+item.id">
                                     <v-btn color="primary" outlined x-small fab> 
                                         <v-icon>mdi-pencil</v-icon>
                                     </v-btn>
@@ -55,7 +55,7 @@
         </v-row>
     </v-container>
 </template>
-<script src="../../../components/_indexes/AtencionesIndex.js">
+<script src="../../../components/_indexes/DiagnosticosIndex.js">
 </script>
 <style scoped>
 .v-input.expanding-search {

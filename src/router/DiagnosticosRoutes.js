@@ -18,7 +18,7 @@ export function ListarDiagnosticosRoute() {
     return {
         path: '/diagnosticos',
         name: 'Diagnosticos',
-        component: () => import( '../views/_indexes/DiagnosticosIndex.vue')
+        component: () => import( '../views/_indexes/Diagnosticos/DiagnosticosIndex.vue')
         //beforeEnter: SellerAuthorization
     };
 }
