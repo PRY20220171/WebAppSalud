@@ -1,0 +1,164 @@
+[
+    {
+        "id": "ab52b678-cd4d-4f15-a3be-d813925bfd27",
+        "ubicacionid": "01230ad0-013d-44d4-83bd-94091ac49bde",
+        "nombre": "Hospital Nacional \u201cArzobispo Loayza\u201d",
+        "sector": "estatal"
+    },
+    {
+        "id": "bdca4305-2306-4398-b840-438a735d1963",
+        "ubicacionid": "40477407-308d-4fa4-aa62-dcddcc5a0b39",
+        "nombre": "Hospital Nacional \u201cDos de Mayo\u201d",
+        "sector": "estatal"
+    },
+    {
+        "id": "522375d4-1ad1-49b2-b0cf-6c881bfdc4fc",
+        "ubicacionid": "aacafb81-4fe9-4eae-a68e-381cb59eac81",
+        "nombre": "Hospital Nacional Docente Madre Ni\u00f1o \u201cSan Bartolom\u00e9\u201d",
+        "sector": "estatal"
+    },
+    {
+        "id": "bc0bc141-3190-4939-a80f-594ebdc28ee9",
+        "ubicacionid": "0f5378ea-7b22-446b-a9e2-f8072c7c5101",
+        "nombre": "Hospital Nacional \u201cCayetano Heredia\u201d",
+        "sector": "estatal"
+    },
+    {
+        "id": "f47bd21a-76ea-4631-be60-0fa9da39f07d",
+        "ubicacionid": "af405768-0d4f-4304-a978-2d84702544b5",
+        "nombre": "Hospital Nacional \u201cDaniel Alcides Carri\u00f3n\u201d",
+        "sector": "estatal"
+    },
+    {
+        "id": "6b33b3bc-a553-4e8a-86a5-d9faadcd4227",
+        "ubicacionid": "ac28f6cc-c0c3-43df-a283-72eb27acf948",
+        "nombre": "Hospital Nacional \u201cHip\u00f3lito Unanue\u201d",
+        "sector": "estatal"
+    },
+    {
+        "id": "caec7a26-ecd3-4fc8-be4f-57c12915313c",
+        "ubicacionid": "da327c5b-9257-42f0-b031-9bcd10e24ddd",
+        "nombre": "Hospital Nacional \u201cSergio E. Bernales\u201d",
+        "sector": "estatal"
+    },
+    {
+        "id": "852c0735-46b7-48f9-88b7-115a099b7372",
+        "ubicacionid": "606c5ec0-d2a7-41a1-9436-54f3200e2880",
+        "nombre": "Hospital de Emergencias \u201cJos\u00e9 Casimiro Ulloa\u201d",
+        "sector": "estatal"
+    },
+    {
+        "id": "bc07efe9-906c-4301-b12a-d12e94409814",
+        "ubicacionid": "a3ce28d5-6382-4a89-b9f5-573267e7ea6a",
+        "nombre": "Hospital \u201cHermilio Valdizan\u201d",
+        "sector": "estatal"
+    },
+    {
+        "id": "fe86cb40-f92e-40f9-8c3d-3870bc5b5e6c",
+        "ubicacionid": "c3cba4bd-d6d8-4c71-ace8-76232ef492f3",
+        "nombre": "Hospital \u201cMar\u00eda Auxiliadora\u201d",
+        "sector": "estatal"
+    },
+    {
+        "id": "6994a0d5-132c-44a8-8681-c2c61e2964c2",
+        "ubicacionid": "6e7c0293-e7f2-4eeb-96e9-59bb8b5c22a1",
+        "nombre": "Hospital \u201cSan Jos\u00e9\u201d",
+        "sector": "estatal"
+    },
+    {
+        "id": "ebd3d21a-f77f-4422-bbe8-268e0ce563d8",
+        "ubicacionid": "5c13de83-bdf9-4896-bb38-73073e35a5f9",
+        "nombre": "Hospital \u201cSanta Rosa\u201d",
+        "sector": "estatal"
+    },
+    {
+        "id": "523473b1-5451-4935-af8f-8fc3a88454a8",
+        "ubicacionid": "560480f8-d427-4e9f-80d8-a82fb11d97c7",
+        "nombre": "Hospital \u201cVictor Larco Herrera\u201d",
+        "sector": "estatal"
+    },
+    {
+        "id": "52055703-ed15-485b-878c-6c78e9526927",
+        "ubicacionid": "37f8c9e1-62b9-4470-890d-98dae5f09c9d",
+        "nombre": "Hospital \u201cCarlos Lafranco La Hoz\u201d",
+        "sector": "estatal"
+    },
+    {
+        "id": "2fea014d-d3e6-4fb1-80af-ec9dc6e7279c",
+        "ubicacionid": "505095b3-e8b9-4877-8768-fc6681f04f8e",
+        "nombre": "Hospital de Emergencias Pedi\u00e1tricas",
+        "sector": "estatal"
+    },
+    {
+        "id": "44ba4d22-dae9-48f0-8f20-031180127ea2",
+        "ubicacionid": "6b279429-9ccc-4ad7-8b0f-e1f70d5648b0",
+        "nombre": "Hospital San Juan de Lurigancho",
+        "sector": "estatal"
+    },
+    {
+        "id": "95412fe6-50c0-4bd6-821a-4916393af899",
+        "ubicacionid": "df782df0-f45b-4ba3-8aaf-c732b525f3af",
+        "nombre": "Hospital de Emergencias Villa El Salvador",
+        "sector": "estatal"
+    },
+    {
+        "id": "3519306b-565b-4a5f-b488-7dc276f38d65",
+        "ubicacionid": "0e551837-ea13-4075-b47f-40ffd6291deb",
+        "nombre": "Hospital de Ventanilla",
+        "sector": "estatal"
+    },
+    {
+        "id": "4fe6f6b1-538d-4361-b164-056d48459660",
+        "ubicacionid": "34de4d65-5dad-42f6-a89f-8bb8e9077bb1",
+        "nombre": "Hospital Vitarte",
+        "sector": "estatal"
+    },
+    {
+        "id": "287c6f3f-e5e4-4287-bc84-be177817728c",
+        "ubicacionid": "6a101188-6c68-43e1-b006-7a961d2e641d",
+        "nombre": "Hospital de Huayc\u00e1n",
+        "sector": "estatal"
+    },
+    {
+        "id": "9b6de861-954a-49fc-baf8-25d56f8a09ac",
+        "ubicacionid": "0ca77936-bdb5-43ec-8aa6-c0fe49e6ef37",
+        "nombre": "Hospital \u201cJose Agurto Tello\u201d - Chosica",
+        "sector": "estatal"
+    },
+    {
+        "id": "0eb22a6b-e22e-4e2b-a53b-61e5f77fc640",
+        "ubicacionid": "795c2618-5148-475b-b9ea-1cc8225c4aa1",
+        "nombre": "Hospital \u201cRezola\u201d - Ca\u00f1ete",
+        "sector": "estatal"
+    },
+    {
+        "id": "c0b8bdcd-21e5-4979-bf7d-e4176e371460",
+        "ubicacionid": "47c7c256-c0a1-4e83-8ab1-88eeea75d41e",
+        "nombre": "Hospital Apoyo de Barranca",
+        "sector": "estatal"
+    },
+    {
+        "id": "f80af606-82a7-41ca-a2f4-a042acccb1ea",
+        "ubicacionid": "8bd2d7e2-b57c-449c-ac73-cb00fcc3c6ef",
+        "nombre": "Hospital General de Huacho",
+        "sector": "estatal"
+    },
+    {
+        "id": "c4f4d4d2-c3f8-466c-94f6-6cd8135781d9",
+        "ubicacionid": "54f0e344-7911-47da-83ed-187da85fef04",
+        "nombre": "Hospital de Chancay",
+        "sector": "estatal"
+    },
+    {
+        "id": "21ea3f3c-00ab-4798-b612-72b951b6f503",
+        "ubicacionid": "a802f16a-1e38-4c86-bad9-d9bcbd558fff",
+        "nombre": "Hospital de Supe \u201cLaura Esther Rodriguez Dulanto\u201d",
+        "sector": "estatal"
+    },
+    {
+        "id": "d7fe1436-c934-42db-ba06-1c5df267d554",
+        "ubicacionid": "4c8d1dd4-335d-4506-a000-df3e8865ff58",
+        "nombre": "Hospital Huaral \u201cSan Juan Bautista\u201d",
+        "sector": "estatal"
+    }
+]
