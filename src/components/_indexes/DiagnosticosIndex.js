@@ -26,6 +26,7 @@ export default {
                     { text: 'Descripcion', value: 'descripcion' },
                     { text: 'Estado', value: 'estado' },
                     { text: 'Telefono', value: 'tipo' },
+                    { text: 'Actions', sortable: false, value: 'actions'},
                 ],
                 locationDetail:[
 
