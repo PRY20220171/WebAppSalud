@@ -22,8 +22,33 @@ export default {
         selected: "",
       }
     },
+    mounted() {
+      this.initialize();
+    },
 
     methods: {
+      initialize() {
+        let id = this.$route.params.id;
+        if (!id) return;
+        this.isLoading = true;
+        this.$proxies.atencionProxy.getById(id)
+            .then(x => {
+                this.model = x.data;
+                this.model.sexo=this.convertTypeSex(this.model.sexo)
+                this.model.rh=this.convertTypeRH(this.model.rh)
+                this.model.gruposang=this.model.gruposang.toUpperCase()
+                this.isLoading = false;
+            })
+            .catch(() => {
+                this.isLoading = false; 
+                /* this.$notify({
+                    group: "global",
+                    type: "is-danger",
+                    text: 'Ocurrió un error inesperado'
+                }); */
+            });
+        
+      },
       addCentro(){
         this.dialog = false
         this.items.push(this.model.nombre)
