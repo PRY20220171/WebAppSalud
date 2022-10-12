@@ -39,17 +39,23 @@ export default {
         antecedentePsicocial: {},
       }
     },
+    computed:{
+      ...mapState('pacienteModule',['pacientex'])
+      //...mapState(['vaal'])
+    },
     mounted(){
       
-      this.ogetPaciente
+      this.ogetPaciente()
+      console.log(this.pacientex)
+      //console.log(this.vaal)
       //this.updateSection();
       //console.log(this.paciente.id)  
     },
     updated(){
       //this.updateSection();
     },
-    methods:{
-      ...mapActions('PacienteModule',['ogetPaciente']),
+    methods:{//...mapState(['vaal']),
+      ...mapActions('pacienteModule',['ogetPaciente']),
       async updateSection(){
         this.paciente=this.$refs.Paciente.model
         this.lugarnac=this.$refs.Ubicacion.lugarnac

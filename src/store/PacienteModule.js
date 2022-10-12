@@ -1,7 +1,7 @@
 export const PacienteModule = {
     namespaced: true,
     state: () => ({ 
-        paciente:{},
+        pacientex:{},
         pacientes : []
     }),
     mutations: {
@@ -9,7 +9,7 @@ export const PacienteModule = {
             state.pacientes=pacientesAction
         },
         fillPaciente(state, pacienteAction){
-            state.paciente=pacienteAction
+            state.pacientex=pacienteAction
         }
     },
     actions: {
@@ -34,9 +34,10 @@ export const PacienteModule = {
         },
         ogetPaciente: async function ({commit}){
             //const data = await fetch ('algo.json')
-            //const paciente = await data.json();
+            //const pacientex = await data.json();
             let model = {}
-            /*
+            
+            console.log( 'here',$route)
             let id = this.$route.params.id;
             if (!id) return;
             
@@ -45,12 +46,12 @@ export const PacienteModule = {
                     model = x.data;
                 })
                 .catch(() => { });
-                */
+                
 
-            const paciente = await model;
-            console.log("en vuex", paciente)
+            const pacientex = await model;
+            console.log("en vuex", model)
 
-            commit('fillPaciente',paciente)
+            commit('fillPaciente',pacientex)
         }
     }
 }

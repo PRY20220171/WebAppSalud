@@ -9,5 +9,8 @@ const state = {
 export default new Vuex.Store({
   modules: {
     pacienteModule: PacienteModule,
-}
+  }/*
+  state:{
+    vaal:'a'
+  }*/
 })
