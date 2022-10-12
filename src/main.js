@@ -43,6 +43,10 @@ Vue.use({
     Object.defineProperty(Vue.prototype, '$proxies', {
       value: proxyConfig
     })
+    /*,
+    Object.defineProperty(Vue.prototype, '$store', {
+      value: store
+    })*/
   }
 });
 new Vue({

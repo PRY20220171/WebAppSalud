@@ -39,7 +39,8 @@ export default {
     },
     
     mounted() {
-      this.initialize(null);
+      //this.initialize(null);
+      this.getAntecedentePsicosocial();
     },
     
     methods:{
@@ -69,6 +70,25 @@ export default {
               } else {
                   this.$proxies.antecedentePsicocialProxy.register(this.model)
               }
+      },
+      getAntecedentePsicosocial(){
+        let id = this.$route.params.id;
+        if (!id) return;
+        this.isLoading = true;
+        console.log(id)
+        this.$proxies.pacienteProxy.getById(id)
+            .then(x => {
+                this.model = x.data.antecedenteperi;
+                this.isLoading = false;
+            })
+            .catch(() => {
+                this.isLoading = false; 
+                /* this.$notify({
+                    group: "global",
+                    type: "is-danger",
+                    text: 'Ocurrió un error inesperado'
+                }); */
+            });
       }
     }
   }

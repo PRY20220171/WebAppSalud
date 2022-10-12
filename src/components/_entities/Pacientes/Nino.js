@@ -9,15 +9,15 @@ export default {
         
         model:{
             id:'',
-            Tipoembarazo: '',
-            Embarazoriesgo: '',
-            Controlprenatal: '',
-            Nroembarazo: '',
-            Edadgestalnac: '',
-            Pesoalnac: '',
-            Tallaalnac: '',
-            Perimcefalico: '',
-            Respllanto: '',
+            tipoembarazo: '',
+            embarazoriesgo: '',
+            controlprenatal: '',
+            nroembarazo: '',
+            edadgestalnac: '',
+            pesoalnac: '',
+            tallaalnac: '',
+            perimcefalico: '',
+            respllanto: '',
         },
 
         tipo_embarazo: ['Normal', 'complicado'],
@@ -27,7 +27,8 @@ export default {
       }
     },
     mounted() {
-      this.initialize(null);
+     // this.initialize(null);
+     this.getNino();
     },
     methods:{
       initialize(id){
@@ -55,6 +56,26 @@ export default {
                       })
                 }
           return id;
+        },
+        
+        getNino(){
+          let id = this.$route.params.id;
+          if (!id) return;
+          this.isLoading = true;
+          console.log(id)
+          this.$proxies.pacienteProxy.getById(id)
+              .then(x => {
+                  this.model = x.data.nino;
+                  this.isLoading = false;
+              })
+              .catch(() => {
+                  this.isLoading = false; 
+                  /* this.$notify({
+                      group: "global",
+                      type: "is-danger",
+                      text: 'Ocurrió un error inesperado'
+                  }); */
+              });
         }
     }
   }

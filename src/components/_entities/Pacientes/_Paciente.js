@@ -7,13 +7,15 @@ import AntecedentePatologico from '../../../views/_createOrUpdate/Pacientes/Ante
 import AntecedentePsicocial from '../../../views/_createOrUpdate/Pacientes/AntecedentePsicocialView.vue';
 import Nino from '../../../views/_createOrUpdate/Pacientes/NinoView.vue';
 
+import {mapState, mapMutations, mapActions} from 'vuex'
+
 export default {
     name: 'RegistrarPaciente',
 
     components: {
       //compartidos
       //inf. general
-        Paciente:Paciente,
+        Paciente,
         Ubicacion,
       //antecedentes
         Nino,
@@ -39,22 +41,16 @@ export default {
     },
     mounted(){
       
-      this.paciente=this.$refs.Paciente.model
-      
-      this.$refs.Ubicacion.initialize(this.paciente.lugarnacid,this.paciente.domicilioactid)
-      this.$refs.Nino.initialize(this.paciente.idnino)
-      this.$refs.AntecedenteFamiliar.initialize(this.paciente.idantecedentefam)
-      this.$refs.AntecedentePatologico.initialize(this.paciente.idantecedentepato)
-      this.$refs.AntecedentePsicocial.initialize(this.paciente.idantecedenteperi)
-
-      this.updateSection();
-      console.log(this.paciente.id)  
+      this.ogetPaciente
+      //this.updateSection();
+      //console.log(this.paciente.id)  
     },
     updated(){
-      this.updateSection();
+      //this.updateSection();
     },
     methods:{
-      updateSection(){
+      ...mapActions('PacienteModule',['ogetPaciente']),
+      async updateSection(){
         this.paciente=this.$refs.Paciente.model
         this.lugarnac=this.$refs.Ubicacion.lugarnac
         this.domicilioact=this.$refs.Ubicacion.domicilioact 
@@ -62,7 +58,7 @@ export default {
         this.antecedenteFamiliar=this.$refs.AntecedenteFamiliar.model
         this.antecedentePatologico=this.$refs.AntecedentePatologico.model 
         this.antecedentePsicocial=this.$refs.AntecedentePsicocial.model 
-         /*
+        await nextTick()
         console.log('sssssssssssssssssssssss')
         console.log(this.paciente)
         console.log(this.lugarnac)
@@ -70,7 +66,7 @@ export default {
         console.log(this.antecedenteFamiliar)
         console.log(this.antecedentePatologico)
         console.log(this.antecedentePsicocial)
-        */
+        
       },
       nextStep(){
         switch (this.e1) {
@@ -89,15 +85,15 @@ export default {
       },
       registrar(){
         let id = this.$route.params.id;
-
+/*
         this.$refs.Ubicacion.save()
         this.nino.id=this.$refs.Nino.save()
         this.$refs.AntecedenteFamiliar.save()
         this.$refs.AntecedentePatologico.save()
         this.$refs.AntecedentePsicocial.save()
-
+*/
         this.updateSection()
-        
+        /*
         console.log(this.nino)
         console.log(this.nino.id)
         this.paciente.lugarnacid= this.lugarnac.id;
@@ -113,9 +109,10 @@ export default {
         this.paciente.antecedenteFamiliar= this.antecedenteFamiliar;
         this.paciente.antecedentePatologico= this.antecedentePatologico;
         this.paciente.antecedentePsicocial= this.antecedentePsicocial;
+        */
 
-        this.$refs.Paciente.save()
-        //console.log(this.paciente)
+        console.log(this.paciente)
+        //this.$refs.Paciente.save()
       }
     }
   }

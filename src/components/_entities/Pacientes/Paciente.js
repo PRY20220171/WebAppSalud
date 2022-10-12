@@ -35,12 +35,12 @@ export default {
             idantecedentepato:'',
         },
 
-        tipo_doc: ['dni', 'Carnet de Extranjería', 'Pasaporte'],
+        tipo_doc: ['DNI', 'Carnet de Extranjería', 'Pasaporte'],
         tipo_sexo: ['masculino','femenino','intersexual'],
         tipo_sangre: ['O','A','B','AB'],
         tipo_rh:['negativo','positivo','nulo'],
-        tipo_educ: ['Inicial','Primario','Secundario','Técnica','Superior','Especial'],
-        tipo_ecivil: [ 'soltero', 'casado', 'divorciado', 'en separación', 'viudo', 'concubinato']
+        tipo_educ: ['Inicial','Primaria','Secundaria','Técnica','Superior','Especial'],
+        tipo_ecivil: [ 'Soltero', 'Casado', 'Divorciado', 'En separación', 'Viudo', 'Concubinato']
       }
     },
 
@@ -69,9 +69,9 @@ export default {
         convertTypeSex(val){
             let sexType=''
             switch (val) {
-                case 'm':sexType=this.tipo_sexo[0]; break;
-                case 'f':sexType=this.tipo_sexo[1]; break;
-                case 'i':sexType=this.tipo_sexo[2]; break;
+                case 'm': case 'M' :sexType=this.tipo_sexo[0]; break;
+                case 'f': case 'F': sexType=this.tipo_sexo[1]; break;
+                case 'i': case 'I' :sexType=this.tipo_sexo[2]; break;
                 default:val;
               }
               return sexType;

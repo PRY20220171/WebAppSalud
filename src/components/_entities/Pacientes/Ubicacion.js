@@ -25,7 +25,8 @@ export default {
       this.domicilioact=this.model
     },
     mounted() {
-      this.initialize(null,null);
+     // this.initialize(null,null);
+     this.getPlaces();
     },
     methods:{
         getUbication(id){
@@ -57,6 +58,26 @@ export default {
                     this.$proxies.ubicacionProxy.register(this.lugarnac)
                     this.$proxies.ubicacionProxy.register(this.domicilioact)
                 }
+        },
+        getPlaces(){
+          let id = this.$route.params.id;
+          if (!id) return;
+          this.isLoading = true;
+          console.log(id)
+          this.$proxies.pacienteProxy.getById(id)
+              .then(x => {
+                  this.lugarnac = x.data.lugarnac;
+                  this.domicilioact = x.data.domicilioact;
+                  this.isLoading = false;
+              })
+              .catch(() => {
+                  this.isLoading = false; 
+                  /* this.$notify({
+                      group: "global",
+                      type: "is-danger",
+                      text: 'Ocurrió un error inesperado'
+                  }); */
+              });
         }
     }
   }

@@ -9,15 +9,15 @@ export default {
         
         model:{
           id: '',
-            tbc: '',
-            vihsida: '',
-            diabetes: '',
-            epilepsia: '',
-            alergiamedic: '',
-            violenciafam: '',
-            alcoholismo: '',
-            drogradiccion: '',
-            hepatitisb: '',
+            tbc: [],
+            vihsida: [],
+            diabetes: [],
+            epilepsia: [],
+            alergiamedic: [],
+            violenciafam: [],
+            alcoholismo: [],
+            drogradiccion: [],
+            hepatitisb: [],
         },
 
         familiares: [
@@ -31,7 +31,8 @@ export default {
       }
     },
     mounted() {
-        this.initialize(null);
+       // this.initialize(null);
+       this.getAntecedenteFamiliar();
     },
     
     methods:{
@@ -61,6 +62,25 @@ export default {
               } else {
                   this.$proxies.antecedenteFamiliarProxy.register(this.model)
               }
+      },
+      getAntecedenteFamiliar(){
+        let id = this.$route.params.id;
+        if (!id) return;
+        this.isLoading = true;
+        console.log(id)
+        this.$proxies.pacienteProxy.getById(id)
+            .then(x => {
+                this.model = x.data.antecedentefam;
+                this.isLoading = false;
+            })
+            .catch(() => {
+                this.isLoading = false; 
+                /* this.$notify({
+                    group: "global",
+                    type: "is-danger",
+                    text: 'Ocurrió un error inesperado'
+                }); */
+            });
       }
     }
   }
