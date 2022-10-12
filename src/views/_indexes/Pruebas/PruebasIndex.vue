@@ -10,7 +10,7 @@
                       <router-link :to="{name: 'Registro Prueba'}" >
                           <v-btn color="primary">
                               <v-icon left>mdi-account-plus</v-icon>
-                              Registrar diagnósticos
+                              Registrar pruebas
                           </v-btn>
                       </router-link>
                   </v-col>
