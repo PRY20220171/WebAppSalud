@@ -1,6 +1,5 @@
   <template>
     <div id="RegistrarPaciente" class="fill-height">
-      
         <v-row class="mt-5 mb-0 mx-5">
               <v-col>
                 <v-text-field label="Fecha de registro" name="fecharegistro" 
@@ -15,22 +14,17 @@
         </v-row>
         <v-stepper v-model="e1" class="grey lighten-4 fill-height" >
             <v-stepper-header class="stepper_plus">
-  
               <v-stepper-step :complete="e1 > 1" step="1" >
                 Datos Generales
               </v-stepper-step>
               <v-divider></v-divider>
-  
               <v-stepper-step :complete="e1 > 2" step="2" >
                 Diagnóstico y Tratamiento
               </v-stepper-step>
               <v-divider></v-divider>
-  
             </v-stepper-header>
-  
               <v-form>
             <v-stepper-items>
-  
                 <v-stepper-content step="1">
                   <v-row>
                     <v-col cols="12"  md="4"><Acompanante/></v-col>
@@ -43,11 +37,10 @@
                   <v-btn color="primary" @click="e1 = 2">  Continue </v-btn>
                   <v-btn text> Cancel </v-btn>
                 </v-stepper-content>
-  
                 <v-stepper-content step="2">
                   <v-row>
-                    <v-col cols="12"  md="2"> <SignosVitales/> </v-col>
-                    <v-col cols="12"  md="10"> <Tratamientos/> </v-col>
+                    <v-col cols="12"  md="3"> <SignosVitales/> </v-col>
+                    <v-col cols="12"  md="9"> <Tratamientos/> </v-col>
                     <v-col cols="12"  > <Diagnosticos/> </v-col>
                     <v-col cols="12"  > <Pruebas/> </v-col>
                   </v-row>
@@ -55,15 +48,12 @@
                   <v-btn color="primary" @click="e1 = 1" > Continue </v-btn>
                   <v-btn text> Cancel </v-btn>
                 </v-stepper-content>
-  
             </v-stepper-items>
               </v-form>
         </v-stepper>
-        
     </div>
   </template>
-  
-  <script src="../../../components/_entities/Atenciones/_Atencion">
+  <script src="../../../components/_entities/Atenciones/_Atencion.js">
 import SignosVitales from "../Pruebas/SignosVitales.vue";
 import TratamientoIndex from '@/views/_indexes/Pruebas/TratamientoIndex.vue';
 import DiagnosticosIndex from '@/views/_indexes/DiagnosticosIndex.vue';</script>

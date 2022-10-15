@@ -26,14 +26,14 @@
                             <template v-slot:expanded-item="{ headers, item }">
                               <td :colspan="headers.length" class="py-2" >
                                 <v-row class="align-items-center px-5">
-                                    <v-col v-for="header in pacienteHeaders.locationDetail" v-bind:key="header.value"> 
+                                    <v-col v-for="header in pacienteHeaders.atencionDetail" v-bind:key="header.value"> 
                                         <b>{{header.text}}:</b> 
                                         <div v-for="subheader in header.detail" v-bind:key="subheader.value">
                                             {{subheader.text}}: {{item[header.value][subheader.value]}}
                                         </div>
                                     </v-col>
                                 </v-row>
-                                {{item}}
+                                <!-- {{item}} -->
                               </td>
                             </template>
                             <template #[`item.gruposangrh`]="{ item }">{{ item.gruposang }} {{ item.rh }}</template>

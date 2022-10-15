@@ -59,7 +59,7 @@ Axios.interceptors.response.use(
     }
 );
 let url = 'http://localhost:3000/'; //->Para conexion local
-//let url='http://3.218.153.182:3000/'; //->Para conexion cloud
+//let url='http://192.168.101.23:3000/'; //->Para conexion cloud
 
 export default {
     

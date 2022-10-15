@@ -1,0 +1,702 @@
+[
+    {
+        "id": "41c70ae0-7383-4a9b-9625-d4df745c7e9a",
+        "fecregistro": "30/08/2016",
+        "descripcion": "descripcion de diagnostico 0",
+        "estado": "en proceso",
+        "tipo": "inicial"
+    },
+    {
+        "id": "714448ba-2d58-44fe-b872-f2072c85dab0",
+        "fecregistro": "07/03/2001",
+        "descripcion": "descripcion de diagnostico 1",
+        "estado": "esperando pruebas",
+        "tipo": "inicial"
+    },
+    {
+        "id": "5c3b1834-8e75-4194-aca6-16b3727f08bf",
+        "fecregistro": "16/11/2002",
+        "descripcion": "descripcion de diagnostico 2",
+        "estado": "esperando pruebas",
+        "tipo": "medio"
+    },
+    {
+        "id": "cea780ee-d441-4cde-aeab-78e6888f519f",
+        "fecregistro": "17/04/2008",
+        "descripcion": "descripcion de diagnostico 3",
+        "estado": "en proceso",
+        "tipo": "medio"
+    },
+    {
+        "id": "80b43d0f-8990-41f5-97cb-35bc3a51cd64",
+        "fecregistro": "25/06/2010",
+        "descripcion": "descripcion de diagnostico 4",
+        "estado": "esperando pruebas",
+        "tipo": "final"
+    },
+    {
+        "id": "c9877f5c-abf8-4be3-83f5-41c344ab836e",
+        "fecregistro": "18/06/2009",
+        "descripcion": "descripcion de diagnostico 5",
+        "estado": "finalizado",
+        "tipo": "medio"
+    },
+    {
+        "id": "38353ebc-ca5c-4fe4-9a1e-32f923775d5e",
+        "fecregistro": "30/01/2000",
+        "descripcion": "descripcion de diagnostico 6",
+        "estado": "finalizado",
+        "tipo": "medio"
+    },
+    {
+        "id": "ebd4660b-f3bf-4f21-be06-7e1711278849",
+        "fecregistro": "29/03/2010",
+        "descripcion": "descripcion de diagnostico 7",
+        "estado": "en proceso",
+        "tipo": "medio"
+    },
+    {
+        "id": "aeba77ef-a344-46c4-95dc-9df8453ad19f",
+        "fecregistro": "08/08/2016",
+        "descripcion": "descripcion de diagnostico 8",
+        "estado": "esperando pruebas",
+        "tipo": "inicial"
+    },
+    {
+        "id": "d4ab1d0e-4717-4af1-b53b-ba8be04b9912",
+        "fecregistro": "16/07/2010",
+        "descripcion": "descripcion de diagnostico 9",
+        "estado": "en proceso",
+        "tipo": "final"
+    },
+    {
+        "id": "31bacdb3-2c74-4b74-92ca-f17aebfddb91",
+        "fecregistro": "05/05/2009",
+        "descripcion": "descripcion de diagnostico 10",
+        "estado": "en proceso",
+        "tipo": "inicial"
+    },
+    {
+        "id": "c3d32664-c20b-4a0b-b38b-2af3029b305a",
+        "fecregistro": "20/01/2019",
+        "descripcion": "descripcion de diagnostico 11",
+        "estado": "en proceso",
+        "tipo": "medio"
+    },
+    {
+        "id": "b026ceea-0f5d-4291-a25b-98f4266f1cca",
+        "fecregistro": "18/06/2020",
+        "descripcion": "descripcion de diagnostico 12",
+        "estado": "finalizado",
+        "tipo": "inicial"
+    },
+    {
+        "id": "8b3b7578-390c-4116-9298-2788bbd90fcf",
+        "fecregistro": "14/04/2015",
+        "descripcion": "descripcion de diagnostico 13",
+        "estado": "esperando pruebas",
+        "tipo": "final"
+    },
+    {
+        "id": "33430495-625e-4d29-8ce6-167e32c7452d",
+        "fecregistro": "27/09/2015",
+        "descripcion": "descripcion de diagnostico 14",
+        "estado": "esperando pruebas",
+        "tipo": "inicial"
+    },
+    {
+        "id": "eff49e4a-b010-40e4-bc8c-8894f5131b81",
+        "fecregistro": "24/09/2007",
+        "descripcion": "descripcion de diagnostico 15",
+        "estado": "esperando pruebas",
+        "tipo": "final"
+    },
+    {
+        "id": "279c9179-4efc-40f7-bb76-ea7d6ba8eb3d",
+        "fecregistro": "15/03/2015",
+        "descripcion": "descripcion de diagnostico 16",
+        "estado": "esperando pruebas",
+        "tipo": "inicial"
+    },
+    {
+        "id": "749548d4-9579-4e34-8215-3fd1b74cad61",
+        "fecregistro": "28/06/2012",
+        "descripcion": "descripcion de diagnostico 17",
+        "estado": "finalizado",
+        "tipo": "medio"
+    },
+    {
+        "id": "82f7f2d7-47ed-415e-bd5a-89eb37a659f8",
+        "fecregistro": "21/09/2009",
+        "descripcion": "descripcion de diagnostico 18",
+        "estado": "en proceso",
+        "tipo": "medio"
+    },
+    {
+        "id": "632f1eb8-3f62-4cbb-9e02-0ebe036db0f3",
+        "fecregistro": "13/10/2015",
+        "descripcion": "descripcion de diagnostico 19",
+        "estado": "esperando pruebas",
+        "tipo": "inicial"
+    },
+    {
+        "id": "07fcb977-bed3-4ae0-b695-f3c16c97d73f",
+        "fecregistro": "28/11/2002",
+        "descripcion": "descripcion de diagnostico 20",
+        "estado": "finalizado",
+        "tipo": "medio"
+    },
+    {
+        "id": "f866780a-58cb-4add-8834-dfdb55ad3ad3",
+        "fecregistro": "12/01/2000",
+        "descripcion": "descripcion de diagnostico 21",
+        "estado": "finalizado",
+        "tipo": "medio"
+    },
+    {
+        "id": "e2c28b52-11a2-4cf1-878b-4cb34849d242",
+        "fecregistro": "01/09/2006",
+        "descripcion": "descripcion de diagnostico 22",
+        "estado": "esperando pruebas",
+        "tipo": "medio"
+    },
+    {
+        "id": "5fb7badf-64ae-4456-88b9-260a587384c4",
+        "fecregistro": "26/06/2001",
+        "descripcion": "descripcion de diagnostico 23",
+        "estado": "esperando pruebas",
+        "tipo": "final"
+    },
+    {
+        "id": "7c04a32b-6022-4537-8159-148f9ce58dba",
+        "fecregistro": "27/02/2000",
+        "descripcion": "descripcion de diagnostico 24",
+        "estado": "en proceso",
+        "tipo": "final"
+    },
+    {
+        "id": "4364277e-eee7-4983-9bbb-5884ebf5a8f5",
+        "fecregistro": "21/11/2019",
+        "descripcion": "descripcion de diagnostico 25",
+        "estado": "finalizado",
+        "tipo": "medio"
+    },
+    {
+        "id": "392a156c-02c4-4fbc-8962-b845bd4aab63",
+        "fecregistro": "01/08/2002",
+        "descripcion": "descripcion de diagnostico 26",
+        "estado": "finalizado",
+        "tipo": "inicial"
+    },
+    {
+        "id": "25c34588-0e60-401d-a567-4a68e1391121",
+        "fecregistro": "18/10/2020",
+        "descripcion": "descripcion de diagnostico 27",
+        "estado": "en proceso",
+        "tipo": "inicial"
+    },
+    {
+        "id": "32237d47-9eaf-4596-894b-44f555983240",
+        "fecregistro": "20/06/2005",
+        "descripcion": "descripcion de diagnostico 28",
+        "estado": "esperando pruebas",
+        "tipo": "final"
+    },
+    {
+        "id": "efd58044-040c-4404-9003-f654ab549cf4",
+        "fecregistro": "27/09/2002",
+        "descripcion": "descripcion de diagnostico 29",
+        "estado": "esperando pruebas",
+        "tipo": "medio"
+    },
+    {
+        "id": "f1da4cbe-28ee-4aad-9c18-76d789657c77",
+        "fecregistro": "03/10/2006",
+        "descripcion": "descripcion de diagnostico 30",
+        "estado": "esperando pruebas",
+        "tipo": "medio"
+    },
+    {
+        "id": "486e55f1-75a3-482f-8385-62609e80722d",
+        "fecregistro": "21/09/2011",
+        "descripcion": "descripcion de diagnostico 31",
+        "estado": "esperando pruebas",
+        "tipo": "medio"
+    },
+    {
+        "id": "53f9853e-141b-4649-ae7e-e01583287cb8",
+        "fecregistro": "09/10/2021",
+        "descripcion": "descripcion de diagnostico 32",
+        "estado": "finalizado",
+        "tipo": "medio"
+    },
+    {
+        "id": "663b6d36-4cc6-49dc-b977-9e550cde9e3c",
+        "fecregistro": "22/11/2021",
+        "descripcion": "descripcion de diagnostico 33",
+        "estado": "esperando pruebas",
+        "tipo": "final"
+    },
+    {
+        "id": "3dac7db6-47d0-4ad6-ab78-9168d7f905ad",
+        "fecregistro": "07/01/2015",
+        "descripcion": "descripcion de diagnostico 34",
+        "estado": "en proceso",
+        "tipo": "medio"
+    },
+    {
+        "id": "5217d46e-d8d8-4bf7-b819-d8939e225991",
+        "fecregistro": "11/08/2015",
+        "descripcion": "descripcion de diagnostico 35",
+        "estado": "en proceso",
+        "tipo": "medio"
+    },
+    {
+        "id": "abaf4554-3dfe-403f-92de-a6ec14a1c1aa",
+        "fecregistro": "30/06/2003",
+        "descripcion": "descripcion de diagnostico 36",
+        "estado": "esperando pruebas",
+        "tipo": "medio"
+    },
+    {
+        "id": "d5df726b-7ffc-4ee1-84dd-70b495af9054",
+        "fecregistro": "21/01/2020",
+        "descripcion": "descripcion de diagnostico 37",
+        "estado": "finalizado",
+        "tipo": "inicial"
+    },
+    {
+        "id": "de1774d8-b790-456f-ad72-dc53962341bc",
+        "fecregistro": "21/03/2000",
+        "descripcion": "descripcion de diagnostico 38",
+        "estado": "en proceso",
+        "tipo": "inicial"
+    },
+    {
+        "id": "75d1b9eb-9dd6-40aa-8aa8-0697c720ee2d",
+        "fecregistro": "05/08/2006",
+        "descripcion": "descripcion de diagnostico 39",
+        "estado": "en proceso",
+        "tipo": "final"
+    },
+    {
+        "id": "0d6088ff-816f-4aec-a286-e67115ec76f4",
+        "fecregistro": "30/03/2021",
+        "descripcion": "descripcion de diagnostico 40",
+        "estado": "esperando pruebas",
+        "tipo": "medio"
+    },
+    {
+        "id": "0bb3d534-cef8-4863-b44e-4d1003208218",
+        "fecregistro": "28/01/2008",
+        "descripcion": "descripcion de diagnostico 41",
+        "estado": "en proceso",
+        "tipo": "inicial"
+    },
+    {
+        "id": "34bae06a-db2a-45b4-97b5-45341abc23d4",
+        "fecregistro": "14/01/2013",
+        "descripcion": "descripcion de diagnostico 42",
+        "estado": "en proceso",
+        "tipo": "inicial"
+    },
+    {
+        "id": "380fe248-30be-4cc3-8623-ec857d2bb654",
+        "fecregistro": "17/08/2007",
+        "descripcion": "descripcion de diagnostico 43",
+        "estado": "esperando pruebas",
+        "tipo": "final"
+    },
+    {
+        "id": "e8ef6984-2111-47c2-87b2-ebe266c936d8",
+        "fecregistro": "20/04/2008",
+        "descripcion": "descripcion de diagnostico 44",
+        "estado": "finalizado",
+        "tipo": "final"
+    },
+    {
+        "id": "00cc9df2-e7f9-4fe6-ad06-69e0d61cbaf1",
+        "fecregistro": "24/04/2015",
+        "descripcion": "descripcion de diagnostico 45",
+        "estado": "esperando pruebas",
+        "tipo": "inicial"
+    },
+    {
+        "id": "d23a0d8d-8376-480a-a736-7db5bb5b7578",
+        "fecregistro": "07/10/2000",
+        "descripcion": "descripcion de diagnostico 46",
+        "estado": "esperando pruebas",
+        "tipo": "medio"
+    },
+    {
+        "id": "98b0cd2c-0a40-4be4-9c84-27d30fd88706",
+        "fecregistro": "16/08/2004",
+        "descripcion": "descripcion de diagnostico 47",
+        "estado": "en proceso",
+        "tipo": "medio"
+    },
+    {
+        "id": "0ae09346-1843-425b-a18f-6487bbec4fcb",
+        "fecregistro": "22/09/2004",
+        "descripcion": "descripcion de diagnostico 48",
+        "estado": "finalizado",
+        "tipo": "inicial"
+    },
+    {
+        "id": "741adcd5-bcc0-41d7-a8cc-96b3ad0c95ec",
+        "fecregistro": "01/07/2020",
+        "descripcion": "descripcion de diagnostico 49",
+        "estado": "finalizado",
+        "tipo": "inicial"
+    },
+    {
+        "id": "eae02095-1af5-4d7c-b725-abc93da6fc2a",
+        "fecregistro": "07/11/2005",
+        "descripcion": "descripcion de diagnostico 50",
+        "estado": "en proceso",
+        "tipo": "medio"
+    },
+    {
+        "id": "d6bcf5a9-84ee-49a9-8b60-0cdaf975fb5a",
+        "fecregistro": "15/05/2004",
+        "descripcion": "descripcion de diagnostico 51",
+        "estado": "finalizado",
+        "tipo": "final"
+    },
+    {
+        "id": "4476ae29-af1d-4ea5-86d7-a01121e68f7c",
+        "fecregistro": "14/04/2013",
+        "descripcion": "descripcion de diagnostico 52",
+        "estado": "en proceso",
+        "tipo": "medio"
+    },
+    {
+        "id": "807313d5-2295-4c77-8138-f6dd17ded3ef",
+        "fecregistro": "17/11/2014",
+        "descripcion": "descripcion de diagnostico 53",
+        "estado": "esperando pruebas",
+        "tipo": "final"
+    },
+    {
+        "id": "d77d9e0c-1adf-4efe-97eb-b5eba280dec5",
+        "fecregistro": "25/03/2020",
+        "descripcion": "descripcion de diagnostico 54",
+        "estado": "esperando pruebas",
+        "tipo": "inicial"
+    },
+    {
+        "id": "f82c0e56-f669-485c-a544-ada0b3df0e24",
+        "fecregistro": "28/06/2018",
+        "descripcion": "descripcion de diagnostico 55",
+        "estado": "en proceso",
+        "tipo": "medio"
+    },
+    {
+        "id": "373d7d6c-1d66-43e6-b03b-46ffc7ae8bd3",
+        "fecregistro": "05/10/2006",
+        "descripcion": "descripcion de diagnostico 56",
+        "estado": "esperando pruebas",
+        "tipo": "medio"
+    },
+    {
+        "id": "05d3e29f-a2af-42d6-9a5b-7c7209cc4fdf",
+        "fecregistro": "10/09/2001",
+        "descripcion": "descripcion de diagnostico 57",
+        "estado": "en proceso",
+        "tipo": "medio"
+    },
+    {
+        "id": "7105636c-f086-47d1-aea0-dde6f5efcb55",
+        "fecregistro": "02/03/2020",
+        "descripcion": "descripcion de diagnostico 58",
+        "estado": "esperando pruebas",
+        "tipo": "final"
+    },
+    {
+        "id": "440b3f92-ede4-4917-9c3c-aad1a464e56b",
+        "fecregistro": "05/03/2006",
+        "descripcion": "descripcion de diagnostico 59",
+        "estado": "en proceso",
+        "tipo": "medio"
+    },
+    {
+        "id": "98e38b20-8993-41b7-bdf0-06b6fb0e396b",
+        "fecregistro": "19/02/2001",
+        "descripcion": "descripcion de diagnostico 60",
+        "estado": "esperando pruebas",
+        "tipo": "inicial"
+    },
+    {
+        "id": "0cc3c2f3-37d4-42ae-9f6d-61d98737dd86",
+        "fecregistro": "15/09/2019",
+        "descripcion": "descripcion de diagnostico 61",
+        "estado": "en proceso",
+        "tipo": "inicial"
+    },
+    {
+        "id": "0ac25176-2798-4a5a-b028-ce981e33c781",
+        "fecregistro": "02/10/2002",
+        "descripcion": "descripcion de diagnostico 62",
+        "estado": "en proceso",
+        "tipo": "inicial"
+    },
+    {
+        "id": "f28769a7-db9d-4997-b5e7-e0545628bb65",
+        "fecregistro": "18/03/2017",
+        "descripcion": "descripcion de diagnostico 63",
+        "estado": "esperando pruebas",
+        "tipo": "inicial"
+    },
+    {
+        "id": "9e87984c-720d-4bb8-aa99-c7cbdf6ab0a0",
+        "fecregistro": "03/01/2000",
+        "descripcion": "descripcion de diagnostico 64",
+        "estado": "esperando pruebas",
+        "tipo": "inicial"
+    },
+    {
+        "id": "5d84e98e-029e-4aa7-99fe-e86083e9334e",
+        "fecregistro": "08/06/2012",
+        "descripcion": "descripcion de diagnostico 65",
+        "estado": "finalizado",
+        "tipo": "inicial"
+    },
+    {
+        "id": "dd01332f-7869-4352-83b4-2fd9cc656a3d",
+        "fecregistro": "27/06/2009",
+        "descripcion": "descripcion de diagnostico 66",
+        "estado": "finalizado",
+        "tipo": "medio"
+    },
+    {
+        "id": "e588a89c-f995-4e69-a7c2-aa909a302962",
+        "fecregistro": "15/07/2021",
+        "descripcion": "descripcion de diagnostico 67",
+        "estado": "esperando pruebas",
+        "tipo": "inicial"
+    },
+    {
+        "id": "642eacb2-8b19-4156-bb35-e7c806c22507",
+        "fecregistro": "01/11/2005",
+        "descripcion": "descripcion de diagnostico 68",
+        "estado": "en proceso",
+        "tipo": "final"
+    },
+    {
+        "id": "8df0ca74-ac05-414d-95d5-846faf8601a4",
+        "fecregistro": "14/12/2015",
+        "descripcion": "descripcion de diagnostico 69",
+        "estado": "en proceso",
+        "tipo": "inicial"
+    },
+    {
+        "id": "d722109d-e306-49fe-834b-788586d60660",
+        "fecregistro": "06/11/2005",
+        "descripcion": "descripcion de diagnostico 70",
+        "estado": "en proceso",
+        "tipo": "final"
+    },
+    {
+        "id": "2556b79c-6b0f-4d8a-bdd1-393c42ecda38",
+        "fecregistro": "14/08/2020",
+        "descripcion": "descripcion de diagnostico 71",
+        "estado": "finalizado",
+        "tipo": "medio"
+    },
+    {
+        "id": "a676e3fa-f7d0-4d6e-b8f7-50e537174f62",
+        "fecregistro": "18/08/2005",
+        "descripcion": "descripcion de diagnostico 72",
+        "estado": "finalizado",
+        "tipo": "medio"
+    },
+    {
+        "id": "96d59767-8657-4e7b-b3b9-d7eb6287648b",
+        "fecregistro": "29/12/2010",
+        "descripcion": "descripcion de diagnostico 73",
+        "estado": "esperando pruebas",
+        "tipo": "inicial"
+    },
+    {
+        "id": "b97a7c77-1ee0-43a6-9cbe-3587e5e7595d",
+        "fecregistro": "18/11/2002",
+        "descripcion": "descripcion de diagnostico 74",
+        "estado": "finalizado",
+        "tipo": "final"
+    },
+    {
+        "id": "397228a1-5d4b-4068-b3e3-df548046b4df",
+        "fecregistro": "16/05/2016",
+        "descripcion": "descripcion de diagnostico 75",
+        "estado": "esperando pruebas",
+        "tipo": "inicial"
+    },
+    {
+        "id": "27943ff5-595a-49cc-8b8f-4c0efda3709a",
+        "fecregistro": "30/04/2018",
+        "descripcion": "descripcion de diagnostico 76",
+        "estado": "en proceso",
+        "tipo": "final"
+    },
+    {
+        "id": "bb6ade32-aca0-4642-b945-2c98bac06cdd",
+        "fecregistro": "19/02/2020",
+        "descripcion": "descripcion de diagnostico 77",
+        "estado": "en proceso",
+        "tipo": "inicial"
+    },
+    {
+        "id": "c7a71b9a-b84e-4a54-94d7-61c94369c930",
+        "fecregistro": "05/02/2008",
+        "descripcion": "descripcion de diagnostico 78",
+        "estado": "en proceso",
+        "tipo": "medio"
+    },
+    {
+        "id": "f88e8b82-bf5f-445a-a87c-63d559150435",
+        "fecregistro": "08/11/2011",
+        "descripcion": "descripcion de diagnostico 79",
+        "estado": "en proceso",
+        "tipo": "final"
+    },
+    {
+        "id": "7f4e974a-8605-447a-a0c8-2e2035d2ba71",
+        "fecregistro": "05/03/2021",
+        "descripcion": "descripcion de diagnostico 80",
+        "estado": "en proceso",
+        "tipo": "final"
+    },
+    {
+        "id": "a3984b42-929a-4435-bbf1-5c226a2ea2b3",
+        "fecregistro": "18/11/2018",
+        "descripcion": "descripcion de diagnostico 81",
+        "estado": "esperando pruebas",
+        "tipo": "final"
+    },
+    {
+        "id": "8ae3db1c-ff1e-4c05-a99d-c51e42769b94",
+        "fecregistro": "24/08/2020",
+        "descripcion": "descripcion de diagnostico 82",
+        "estado": "esperando pruebas",
+        "tipo": "medio"
+    },
+    {
+        "id": "a0efa4dd-384a-4d62-b027-4bbd634d322d",
+        "fecregistro": "05/12/2021",
+        "descripcion": "descripcion de diagnostico 83",
+        "estado": "en proceso",
+        "tipo": "inicial"
+    },
+    {
+        "id": "90580ae0-ac77-4f8a-ab10-ecd4a95e5cf3",
+        "fecregistro": "21/07/2016",
+        "descripcion": "descripcion de diagnostico 84",
+        "estado": "en proceso",
+        "tipo": "medio"
+    },
+    {
+        "id": "023a1c6b-756f-408b-962c-81ec8305dc45",
+        "fecregistro": "15/06/2021",
+        "descripcion": "descripcion de diagnostico 85",
+        "estado": "esperando pruebas",
+        "tipo": "inicial"
+    },
+    {
+        "id": "180b0225-7c5f-4d35-865f-b193b706d82a",
+        "fecregistro": "12/10/2005",
+        "descripcion": "descripcion de diagnostico 86",
+        "estado": "finalizado",
+        "tipo": "inicial"
+    },
+    {
+        "id": "f4be7629-a106-4b54-afae-88be0faf7b2b",
+        "fecregistro": "26/06/2001",
+        "descripcion": "descripcion de diagnostico 87",
+        "estado": "finalizado",
+        "tipo": "final"
+    },
+    {
+        "id": "5ddadf6d-475f-452e-b72e-60e78bde094a",
+        "fecregistro": "04/02/2016",
+        "descripcion": "descripcion de diagnostico 88",
+        "estado": "finalizado",
+        "tipo": "final"
+    },
+    {
+        "id": "a9497906-1d4e-4846-9759-b670eb127cb3",
+        "fecregistro": "05/09/2007",
+        "descripcion": "descripcion de diagnostico 89",
+        "estado": "esperando pruebas",
+        "tipo": "inicial"
+    },
+    {
+        "id": "ce713ff6-af4e-4f68-840c-5365b6a3d32f",
+        "fecregistro": "16/04/2003",
+        "descripcion": "descripcion de diagnostico 90",
+        "estado": "esperando pruebas",
+        "tipo": "medio"
+    },
+    {
+        "id": "ed5696ed-d243-4f57-9e89-51cb597d6830",
+        "fecregistro": "27/01/2009",
+        "descripcion": "descripcion de diagnostico 91",
+        "estado": "en proceso",
+        "tipo": "inicial"
+    },
+    {
+        "id": "9d8507c5-6c94-42d1-a03f-80417d17f8e9",
+        "fecregistro": "09/12/2017",
+        "descripcion": "descripcion de diagnostico 92",
+        "estado": "esperando pruebas",
+        "tipo": "inicial"
+    },
+    {
+        "id": "c4c691e0-84ea-4646-be7a-b5dc67b11101",
+        "fecregistro": "12/10/2006",
+        "descripcion": "descripcion de diagnostico 93",
+        "estado": "finalizado",
+        "tipo": "medio"
+    },
+    {
+        "id": "5d8c8e43-1069-4ae2-9c35-b6a993c2c7a9",
+        "fecregistro": "02/06/2001",
+        "descripcion": "descripcion de diagnostico 94",
+        "estado": "finalizado",
+        "tipo": "final"
+    },
+    {
+        "id": "f3ee9918-cb2c-4e53-9de2-55f40505b93e",
+        "fecregistro": "28/05/2002",
+        "descripcion": "descripcion de diagnostico 95",
+        "estado": "en proceso",
+        "tipo": "medio"
+    },
+    {
+        "id": "9d3f1bed-2c34-4fc3-8953-115b988139b7",
+        "fecregistro": "29/01/2000",
+        "descripcion": "descripcion de diagnostico 96",
+        "estado": "finalizado",
+        "tipo": "inicial"
+    },
+    {
+        "id": "444df399-ab5b-4b04-beb9-f88372ac7f78",
+        "fecregistro": "09/05/2011",
+        "descripcion": "descripcion de diagnostico 97",
+        "estado": "en proceso",
+        "tipo": "inicial"
+    },
+    {
+        "id": "3fec4189-b472-4592-bae7-41be6ca87562",
+        "fecregistro": "20/12/2003",
+        "descripcion": "descripcion de diagnostico 98",
+        "estado": "en proceso",
+        "tipo": "medio"
+    },
+    {
+        "id": "0d5335a0-5c0f-4e20-9174-2d54801f34f0",
+        "fecregistro": "19/09/2006",
+        "descripcion": "descripcion de diagnostico 99",
+        "estado": "finalizado",
+        "tipo": "inicial"
+    }
+]

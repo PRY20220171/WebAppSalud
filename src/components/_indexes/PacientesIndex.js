@@ -1,38 +1,30 @@
 export default {
     name: 'PacienteIndex',
-    components: {
-        //Bars,
-        //Paciente
-        //Usuario
-    },
+    components: {},
     data() {
         return {
             expanded: [],
             singleExpand: false,
-            searchText:'',
-            searchBoxClosed: true,
             isLoading: false,
             search: '',
             pacienteHeaders: {
                 base:[
-                    { text: 'Nombres',value: 'nombres'},
-                    { text: 'Apellidos',value: 'apellidos'},
-                    { text: 'Tipo de Doc.', value: 'doctipo' },
-                    { text: 'Num. de Doc', value: 'docnum' },
+                    { text: 'Nombres',value: "nombrecomp"},
+                    { text: 'Doc. Identidad', value: 'doc' },
                     { text: 'Gruposang', value: 'gruposangrh' },
                     { text: 'telefono', value: 'telefono' },
                     { text: 'Fec. nacimiento', value: 'fecnac' },
                     { text: 'Actions', sortable: false, value: 'actions'},
                 ],
-                locationDetail:[
+                ubicacionDetail:[
                     {
                         text: 'Lugar de nacimiento',
                         value: 'lugarnac',
                         detail: [
                             { text: 'Procedencia', value: 'pais' },
-                            { text: 'Region natal', value: 'region' },
-                            { text: 'Provincia natal', value: 'provincia' },
-                            { text: 'Distrito natal', value: 'distrito' }
+                            { text: 'Region', value: 'region' },
+                            { text: 'Provincia', value: 'provincia' },
+                            { text: 'Distrito', value: 'distrito' }
                         ]
                     },
                     {
@@ -40,9 +32,69 @@ export default {
                         value: 'domicilioact',
                         detail: [
                             { text: 'Procedencia', value: 'pais' },
-                            { text: 'Region natal', value: 'region' },
-                            { text: 'Provincia natal', value: 'provincia' },
-                            { text: 'Distrito natal', value: 'distrito' }
+                            { text: 'Region', value: 'region' },
+                            { text: 'Provincia', value: 'provincia' },
+                            { text: 'Distrito', value: 'distrito' }
+                        ]
+                    }],
+                antecedentesDetail:[
+                    {
+                        text: 'Antecedentes perinatales:',
+                        value: 'antecedenteperi',
+                        detail: [
+                            { text: 'a', value:'tipoembarazo'},
+                            { text: 'a', value:'embarazoriesgo'},
+                            { text: 'a', value:'controlprenatal'},
+                            { text: 'a', value:'nroembarazo'},
+                            { text: 'a', value:'edadgestalnac'},
+                            { text: 'a', value:'pesoalnac'},
+                            { text: 'a', value:'tallaalnac'},
+                            { text: 'a', value:'perimcefalico'},
+                            { text: 'a', value:'respllanto'}
+                        ]
+                    },
+                    {
+                        text: 'Antecedentes psicologicos:',
+                        value: 'antecedentepsico',
+                        detail: [
+                            { text: 'a', value:"apoyofam"},
+                            { text: 'a', value:"edadgestante"},
+                            { text: 'a', value:"nrohijos"},
+                            { text: 'a', value:"embarazoespac"},
+                            { text: 'a', value:"tipotrabajo"},
+                            { text: 'a', value:"violenciaocupacional"},
+                            { text: 'a', value:"vidasocial"},
+                            { text: 'a', value:"perteneceorg"}
+                        ]
+                    },
+                    {
+                        text: 'Antecedentes familiares:',
+                        value: 'antecedentefam',
+                        detail: [
+                            { text: 'a', value:'tipoembarazo'},
+                            { text: 'a', value:'embarazoriesgo'},
+                            { text: 'a', value:'controlprenatal'},
+                            { text: 'a', value:'nroembarazo'},
+                            { text: 'a', value:'edadgestalnac'},
+                            { text: 'a', value:'pesoalnac'},
+                            { text: 'a', value:'tallaalnac'},
+                            { text: 'a', value:'perimcefalico'},
+                            { text: 'a', value:'respllanto'}
+                        ]
+                    },
+                    {
+                        text: 'Antecedentes patologicos:',
+                        value: 'antecedentepato',
+                        detail: [
+                            { text: 'a', value:'tipoembarazo'},
+                            { text: 'a', value:'embarazoriesgo'},
+                            { text: 'a', value:'controlprenatal'},
+                            { text: 'a', value:'nroembarazo'},
+                            { text: 'a', value:'edadgestalnac'},
+                            { text: 'a', value:'pesoalnac'},
+                            { text: 'a', value:'tallaalnac'},
+                            { text: 'a', value:'perimcefalico'},
+                            { text: 'a', value:'respllanto'}
                         ]
                     }
                 ]
@@ -54,31 +106,13 @@ export default {
                 page: 1,
                 pages: 0
             },
-            ids: [],
         }
     },
     mounted() {
-       // console.log(this.$proxies)
-        this.getAll(1);
+        this.getAll();
     },
     methods: {
-        getPlace(id){/*
-            let pais ='';
-            let region ='';
-            let provincia ='';
-            let distrito ='';
-
-            this.isLoading = true;
-                this.$proxies.ubicacionProxy.getById(id)
-                .then(x => {
-                    pais = x.data;
-                    this.isLoading = false;
-                }).catch(() => {
-                    this.isLoading = false;
-                });
-            console.log(pais)*/
-        },
-        getAll(page) {
+        getAll() {
             this.isLoading = true;
                 this.$proxies.pacienteProxy.getAll()
                 .then(x => {
@@ -87,17 +121,16 @@ export default {
                     if (this.collection.items.length>0)
                         this.collection.hasItems=true;
                     this.collection.total=this.collection.items.length
-
+                    this.collection.items.forEach(x => {
+                        x.nombrecomp = x.nombres + ' ' + x.apellidos;
+                        x.doc = x.doctipo + ': ' + x.docnum;
+                    });
                     this.isLoading = false;
                 }).catch(() => {
                     this.isLoading = false;
                 });
             //console.log(this.$proxies.pacienteProxy.getAll())
             console.log(this.collection)
-        },
-        changeview(){
-            this.detailed = !this.detailed;
-            this.getAll(this.collection.page);
         },
         clickRow(item, event) {
             console.log(item);
@@ -117,59 +150,6 @@ export default {
             }).catch(()=>{
                 this.isLoading = false;
             })
-        },
-        collapse(id){
-            let index = this.ids.indexOf(id);
-            if(index == -1){
-                //Hacemos la peticion get para ese paciente:
-                this.$proxies.pacienteProxy.getById(id)
-                .then(x => {
-                    //Aqui tenemos que empujar los datos adicionales al paciente
-                    let aux = this.collection.items.find(element => element.pacienteId === id);
-                    aux.details = x.data;
-                    this.ids.push(id);
-                })
-                .catch(() => {
-                    this.$notify({
-                        group: "global",
-                        type: "is-danger",
-                        text: 'Ocurrió un error inesperado'
-                    });
-                });
-            }
-            else{
-                let aux = this.collection.items.find(element=>element.pacienteId===id);
-                aux.details = null;
-                this.ids.splice(index,1);
-            }
-
-        },
-        infiniteHandler($state){
-            if(this.collection.page > this.collection.pages){
-                $state.complete();
-                return;
-            }
-            this.$proxies.pacienteProxy.getAll(this.collection.page+1, 10)
-                .then(x => {
-                    if(this.collection.page <= x.data.pages){
-                        this.collection.page+=1;
-                        x.data.items.forEach(element => {
-                            this.collection.items.push(element);
-                        });
-                        this.collection.total = x.data.total;
-                        this.collection.pages = x.data.pages;
-                        $state.loaded();
-                    }
-                    else{
-                        $state.complete();
-                    }
-                }).catch(cod => {
-                    this.$notify({
-                        group: "global",
-                        type: "is-danger",
-                        text: 'Ocurrió un error inesperado, codigo de error: '+ cod
-                    });
-                });
         }
     }
 }

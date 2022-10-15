@@ -1,7 +1,7 @@
 <template>
     <v-container id="PacientesIndex" class="fill-height" fluid>
         <v-row align="center" justify="center">
-            <v-card class="px-5 pb-5 pt-6">
+            <v-card class="px-5 pb-5 pt-6" >
                 <v-row class="align-items-center px-5">
                     <h3>Pacientes</h3>
                 </v-row>
@@ -24,10 +24,18 @@
                     <v-col>
                         <v-data-table :headers="pacienteHeaders.base" :items="collection.items" :expanded.sync="expanded" :search="search" @click:row="clickRow">
                             <template v-slot:expanded-item="{ headers, item }">
-                              <td :colspan="headers.length" class="py-2" >
+                              <td :colspan="headers.length" class="py-2">
                                 <v-row class="align-items-center px-5">
-                                    <v-col v-for="header in pacienteHeaders.locationDetail" v-bind:key="header.value"> 
-                                        <b>{{header.text}}:</b> 
+                                    <v-col v-for="header in pacienteHeaders.ubicacionDetail" v-bind:key="header.value"> 
+                                        <b>{{header.text}}:</b>
+                                        <div v-for="subheader in header.detail" v-bind:key="subheader.value">
+                                            {{subheader.text}}: {{item[header.value][subheader.value]}}
+                                        </div>
+                                    </v-col>
+                                </v-row>
+                                <v-row class="align-items-center px-5">
+                                    <v-col v-for="header in pacienteHeaders.antecedentesDetail" v-bind:key="header.value"> 
+                                        <b>{{header.text}}:</b>
                                         <div v-for="subheader in header.detail" v-bind:key="subheader.value">
                                             {{subheader.text}}: {{item[header.value][subheader.value]}}
                                         </div>

@@ -4,5 +4,5 @@ $ npm install -g json-server
 ```
 y posteriormente ejecutar:
 ```
-$ json-server --watch src/mock/db.js
+$ json-server -H 0.0.0.0 --watch src/mock/db.js
 ```
