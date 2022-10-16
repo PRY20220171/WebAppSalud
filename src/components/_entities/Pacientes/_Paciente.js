@@ -44,9 +44,8 @@ export default {
       //...mapState(['vaal'])
     },
     mounted(){
-      
-      this.ogetPaciente()
-      console.log(this.pacientex)
+      this.ogetPaciente({id:this.$route.params.id, proxy:this.$proxies.pacienteProxy});
+      console.log(this.pacientex);
       //console.log(this.vaal)
       //this.updateSection();
       //console.log(this.paciente.id)  
@@ -57,21 +56,21 @@ export default {
     methods:{//...mapState(['vaal']),
       ...mapActions('pacienteModule',['ogetPaciente']),
       async updateSection(){
-        this.paciente=this.$refs.Paciente.model
-        this.lugarnac=this.$refs.Ubicacion.lugarnac
-        this.domicilioact=this.$refs.Ubicacion.domicilioact 
-        this.nino=this.$refs.Nino.model
-        this.antecedenteFamiliar=this.$refs.AntecedenteFamiliar.model
-        this.antecedentePatologico=this.$refs.AntecedentePatologico.model 
-        this.antecedentePsicocial=this.$refs.AntecedentePsicocial.model 
-        await nextTick()
-        console.log('sssssssssssssssssssssss')
-        console.log(this.paciente)
-        console.log(this.lugarnac)
-        console.log(this.nino)
-        console.log(this.antecedenteFamiliar)
-        console.log(this.antecedentePatologico)
-        console.log(this.antecedentePsicocial)
+        this.paciente=this.$refs.Paciente.model;
+        this.lugarnac=this.$refs.Ubicacion.lugarnac;
+        this.domicilioact=this.$refs.Ubicacion.domicilioact ;
+        this.nino=this.$refs.Nino.model;
+        this.antecedenteFamiliar=this.$refs.AntecedenteFamiliar.model;
+        this.antecedentePatologico=this.$refs.AntecedentePatologico.model ;
+        this.antecedentePsicocial=this.$refs.AntecedentePsicocial.model ;
+        await nextTick();
+        console.log('sssssssssssssssssssssss');
+        console.log(this.paciente);
+        console.log(this.lugarnac);
+        console.log(this.nino);
+        console.log(this.antecedenteFamiliar);
+        console.log(this.antecedentePatologico);
+        console.log(this.antecedentePsicocial);
         
       },
       nextStep(){

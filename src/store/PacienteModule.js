@@ -1,3 +1,4 @@
+
 export const PacienteModule = {
     namespaced: true,
     state: () => ({ 
@@ -32,24 +33,28 @@ export const PacienteModule = {
 
             commit('listPacientes',pacientes)
         },
-        ogetPaciente: async function ({commit}){
-            //const data = await fetch ('algo.json')
-            //const pacientex = await data.json();
+        ogetPaciente: async function ({commit}, params){
+            let proxy = params.proxy;
+            let id = params.id;
             let model = {}
-            
-            console.log( 'here',$route)
-            let id = this.$route.params.id;
+            console.log('aaaa');
+            console.log(proxy)
+            console.log('id: ',id);
+            console.log('bbbb');
+            //let id = this.$route.params.id;
             if (!id) return;
             
-            this.$proxies.pacienteProxy.getById(id)
+            proxy.getById(id)
                 .then(x => {
                     model = x.data;
+                    console.log('model:');
+                    console.log(model);
                 })
                 .catch(() => { });
                 
 
-            const pacientex = await model;
-            console.log("en vuex", model)
+            let pacientex = await proxy.getById(id);
+            console.log("en vuex", pacientex)
 
             commit('fillPaciente',pacientex)
         }
