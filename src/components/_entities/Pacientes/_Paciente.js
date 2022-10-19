@@ -30,27 +30,22 @@ export default {
       //  user: this.$store.state.user,
       //  isLoading: false,
         e1: 1,
-        paciente: {},
+        //paciente: {},
         lugarnac: {},
         domicilioact: {},
         nino: {},
         antecedenteFamiliar: {},
         antecedentePatologico: {},
         antecedentePsicocial: {},
-      //...mapState('pacienteModule',['pacientex'])
       }
     },
     computed:{
+      ...mapState('pacienteModule',['paciente'])
       //...mapState(['vaal'])
     },
-    beforeMount(){
-      
-      this.ogetPaciente({id:this.$route.params.id, proxy:this.$proxies.pacienteProxy});
+    beforeMount(){      
     },
     mounted(){
-      console.log("en component")
-      console.log(this.pacientex);
-      //console.log(this.vaal)
       //this.updateSection();
       //console.log(this.paciente.id)  
     },
@@ -58,7 +53,6 @@ export default {
       //this.updateSection();
     },
     methods:{//...mapState(['vaal']),
-      ...mapActions('pacienteModule',['ogetPaciente']),
       async updateSection(){
         this.paciente=this.$refs.Paciente.model;
         this.lugarnac=this.$refs.Ubicacion.lugarnac;

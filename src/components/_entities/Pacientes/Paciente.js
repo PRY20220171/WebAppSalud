@@ -1,3 +1,5 @@
+import {mapState, mapMutations, mapActions} from 'vuex'
+
 export default {
     name: 'Paciente',
 
@@ -43,6 +45,9 @@ export default {
         tipo_ecivil: [ 'Soltero', 'Casado', 'Divorciado', 'En separación', 'Viudo', 'Concubinato']
       }
     },
+    computed:{
+      ...mapState('pacienteModule',['paciente'])
+    },
 
     validators: {
         'model.Nombres'(value) {
@@ -64,8 +69,10 @@ export default {
 
     mounted() {
         this.initialize();
+        this.setPaciente(this.model);
     },
     methods:{
+        ...mapActions('pacienteModule',['setPaciente']),
         convertTypeSex(val){
             let sexType=''
             switch (val) {

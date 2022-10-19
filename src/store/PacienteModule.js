@@ -2,7 +2,7 @@
 export const PacienteModule = {
     namespaced: true,
     state: () => ({ 
-        pacientex:{},
+        paciente:{},
         pacientes : []
     }),
     mutations: {
@@ -10,7 +10,8 @@ export const PacienteModule = {
             state.pacientes=pacientesAction
         },
         fillPaciente(state, pacienteAction){
-            state.pacientex=pacienteAction
+            state.paciente=pacienteAction
+            console.log("se llenó el paciente")
         }
     },
     actions: {
@@ -53,10 +54,16 @@ export const PacienteModule = {
                 .catch(() => { });
                 
 
-            let pacientex = await proxy.getById(id);
-            console.log("en vuex 2", pacientex)
+            const paciente = await proxy.getById(id);
+            console.log("en vuex 2", paciente)
 
-            commit('fillPaciente',pacientex)
+            commit('fillPaciente',paciente)
+        },
+        setPaciente: async function ({commit}, value){
+            const paciente = await value;
+            console.log("set paciente")
+            console.log(paciente)
+            commit('fillPaciente',paciente)
         }
     }
 }
