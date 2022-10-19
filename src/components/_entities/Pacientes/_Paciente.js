@@ -37,14 +37,18 @@ export default {
         antecedenteFamiliar: {},
         antecedentePatologico: {},
         antecedentePsicocial: {},
+      //...mapState('pacienteModule',['pacientex'])
       }
     },
     computed:{
-      ...mapState('pacienteModule',['pacientex'])
       //...mapState(['vaal'])
     },
-    mounted(){
+    beforeMount(){
+      
       this.ogetPaciente({id:this.$route.params.id, proxy:this.$proxies.pacienteProxy});
+    },
+    mounted(){
+      console.log("en component")
       console.log(this.pacientex);
       //console.log(this.vaal)
       //this.updateSection();

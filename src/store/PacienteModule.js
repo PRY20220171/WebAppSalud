@@ -37,10 +37,10 @@ export const PacienteModule = {
             let proxy = params.proxy;
             let id = params.id;
             let model = {}
-            console.log('aaaa');
+            console.log('proxy');
             console.log(proxy)
             console.log('id: ',id);
-            console.log('bbbb');
+            console.log('en vuex 1');
             //let id = this.$route.params.id;
             if (!id) return;
             
@@ -54,7 +54,7 @@ export const PacienteModule = {
                 
 
             let pacientex = await proxy.getById(id);
-            console.log("en vuex", pacientex)
+            console.log("en vuex 2", pacientex)
 
             commit('fillPaciente',pacientex)
         }
