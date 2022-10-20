@@ -36,88 +36,28 @@ export default {
             idantecedentefam:'',
             idantecedentepato:'',
         },
-
         tipo_doc: ['DNI', 'Carnet de Extranjería', 'Pasaporte'],
-        tipo_sexo: ['masculino','femenino','intersexual'],
+        tipo_sexo: [{show:'masculino', val:'m'},{show:'femenino', val:'f'},{show:'intersexual masculino', val:'im'},{show:'intersexual femenino', val:'fm'}],
         tipo_sangre: ['O','A','B','AB'],
-        tipo_rh:['negativo','positivo','nulo'],
+        tipo_rh:[{show:'negativo', val:'-'},{show:'positivo', val:'+'},{show:'nulo', val:'0'}],
         tipo_educ: ['Inicial','Primaria','Secundaria','Técnica','Superior','Especial'],
         tipo_ecivil: [ 'Soltero', 'Casado', 'Divorciado', 'En separación', 'Viudo', 'Concubinato']
       }
     },
     computed:{
-      ...mapState('pacienteModule',['paciente'])
-    },
-
-    validators: {
-        'model.Nombres'(value) {
-            return this.$validator
-                .value(value)
-                .required();
-        },
-        'model.Apellidos'(value) {
-            return this.$validator
-                .value(value)
-                .required();
-        },
-        'model.Docnum'(value) {
-            return this.$validator
-                .value(value)
-                .required();
-        },
-    },
-
-    mounted() {
-        this.initialize();
-        this.setPaciente(this.model);
-    },
-    methods:{
-        ...mapActions('pacienteModule',['setPaciente']),
-        convertTypeSex(val){
-            let sexType=''
-            switch (val) {
-                case 'm': case 'M' :sexType=this.tipo_sexo[0]; break;
-                case 'f': case 'F': sexType=this.tipo_sexo[1]; break;
-                case 'i': case 'I' :sexType=this.tipo_sexo[2]; break;
-                default:val;
-              }
-              return sexType;
-        },
-        convertTypeRH(val){
-            let rhType=''
-            switch (val) {
-                case '-':rhType=this.tipo_rh[0]; break;
-                case '+':rhType=this.tipo_rh[1]; break;
-                case '0':rhType=this.tipo_rh[2]; break;
-                default:val;
-              }
-              return rhType;
-        },
-        initialize() {
-            let id = this.$route.params.id;
-            if (!id) return;
-            this.isLoading = true;
-            this.$proxies.pacienteProxy.getById(id)
-                .then(x => {
-                    this.model = x.data;
-                    this.model.sexo=this.convertTypeSex(this.model.sexo)
-                    this.model.rh=this.convertTypeRH(this.model.rh)
-                    this.model.gruposang=this.model.gruposang.toUpperCase()
-                    this.isLoading = false;
-                })
-                .catch(() => {
-                    this.isLoading = false; 
-                    /* this.$notify({
-                        group: "global",
-                        type: "is-danger",
-                        text: 'Ocurrió un error inesperado'
-                    }); */
-                });
-            
-        },
-
-      clacEdad(){
-        var fecha=this.model.fec_nac;
+      ...mapState('pacienteModule',['paciente']),
+      
+      edad(){
+        
+        let edadp={
+            anios:0,
+            meses:0,
+            dias:0,
+            text:''
+        }
+        var fecha=this.paciente.fecnac;
+        
+        if(this.paciente.fecnac!==''){
         var ultimoDiaMes = new Date();
         
         var values = fecha.split("-");
@@ -166,14 +106,86 @@ export default {
             dias = ultimoDiaMes.getDate() - (dia - ahora_dia);
         }
         if(edad < 0)
-            this.model.edad = 'ERROR'
+            edadp.text = 'ERROR'
         else{
-            this.model.anios=edad;
-            this.model.meses=meses;
-            this.model.dias=dias;
-            this.model.edad = edad + " años, " + meses + " meses y " + dias + " días";
+            edadp.anios=edad;
+            edadp.meses=meses;
+            edadp.dias=dias;
+            edadp.text = edad + " años, " + meses + " meses y " + dias + " días";
         }
-      },
+      }
+        return edadp},
+      
+    },
+
+    validators: {
+        'model.Nombres'(value) {
+            return this.$validator
+                .value(value)
+                .required();
+        },
+        'model.Apellidos'(value) {
+            return this.$validator
+                .value(value)
+                .required();
+        },
+        'model.Docnum'(value) {
+            return this.$validator
+                .value(value)
+                .required();
+        },
+    },
+
+    mounted() {
+        //this.initialize();
+        this.getPaciente({id:this.$route.params.id, proxy:this.$proxies.pacienteProxy});
+    },
+    methods:{
+        ...mapActions('pacienteModule',['getPaciente']),
+        convertTypeSex(val){
+            let sexType=''
+            switch (val) {
+                case 'm': case 'M' :sexType=this.tipo_sexo[0]; break;
+                case 'f': case 'F': sexType=this.tipo_sexo[1]; break;
+                case 'i': case 'I' :sexType=this.tipo_sexo[2]; break;
+                default:val;
+              }
+              return sexType;
+        },
+        convertTypeRH(val){
+            let rhType=''
+            switch (val) {
+                case '-':rhType=this.tipo_rh[0]; break;
+                case '+':rhType=this.tipo_rh[1]; break;
+                case '0':rhType=this.tipo_rh[2]; break;
+                default:val;
+              }
+              return rhType;
+        },
+        initialize() {
+            let id = this.$route.params.id;
+            if (!id) return;
+            this.isLoading = true;
+            this.$proxies.pacienteProxy.getById(id)
+                .then(x => {
+                    this.model = x.data;
+                    this.model.sexo=this.convertTypeSex(this.model.sexo)
+                    this.model.rh=this.convertTypeRH(this.model.rh)
+                    this.model.gruposang=this.model.gruposang.toUpperCase()
+                    this.isLoading = false;
+                })
+                .catch(() => {
+                    this.isLoading = false; 
+                    /* this.$notify({
+                        group: "global",
+                        type: "is-danger",
+                        text: 'Ocurrió un error inesperado'
+                    }); */
+                });
+            
+        },
+
+   
       save() {
         console.log("guardar paciente")
 

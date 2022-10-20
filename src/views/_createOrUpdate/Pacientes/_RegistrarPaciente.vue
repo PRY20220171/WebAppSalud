@@ -1,6 +1,6 @@
 <template>
   <div id="RegistrarPaciente" class="fill-height">
-   <p>{{paciente.data}}AQUI</p>
+   <p>{{paciente.id}}AQUI</p>
       <v-stepper v-model="e1" class="grey lighten-4 fill-height" >
           <v-stepper-header class="stepper_plus">
 

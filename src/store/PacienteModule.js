@@ -12,7 +12,7 @@ export const PacienteModule = {
         fillPaciente(state, pacienteAction){
             state.paciente=pacienteAction
             console.log("se llenó el paciente")
-        }
+        },
     },
     actions: {
         ogetPacientes: async function ({commit}){
@@ -34,36 +34,112 @@ export const PacienteModule = {
 
             commit('listPacientes',pacientes)
         },
-        ogetPaciente: async function ({commit}, params){
+        getPaciente: async function ({commit}, params){
             let proxy = params.proxy;
             let id = params.id;
-            let model = {}
+            let model = {
+                id: "",
+                nombres:  "",
+                apellidos:  "",
+                docnum:  "",
+                doctipo:  "",
+                sexo:  "",
+                gruposang:  "",
+                rh:  "",
+                telefono:  "",
+                gradoinstruccion:  "",
+                ocupacion:  "",
+                estadocivil:  "",
+                fecnac:  "",
+                idlugarnac:  "",
+                lugarnac: {
+                    id:  "",
+                    pais: "Peru",
+                    region: "Lima",
+                    provincia: "Lima",
+                    distrito:  "",
+                    direccion:  "",
+                },
+                iddomicilioact:  "",
+                domicilioact: {
+                    id: "",
+                    pais: "Peru",
+                    region: "Lima",
+                    provincia: "Lima",
+                    distrito: "",
+                    direccion:  "",
+                },
+                idantecedenteperi:  "",
+                antecedenteperi: {
+                    id:  "",
+                    tipoembarazo:  "",
+                    embarazoriesgo:  "",
+                    controlprenatal:  "",
+                    nroembarazo:  "",
+                    edadgestalnac:  "",
+                    pesoalnac:  "",
+                    tallaalnac:  "",
+                    perimcefalico:  "",
+                    respllanto:  "",
+                },
+                idantecedentepsico:  "",
+                antecedentepsico: {
+                    id:  "",
+                    apoyofam:  "",
+                    edadgestante:  "",
+                    nrohijos:  "",
+                    embarazoespac:  "",
+                    tipotrabajo: "",
+                    violenciaocupacional: "",
+                    vidasocial: "",
+                    perteneceorg: "",
+                },
+                idantecedentefam:  "",
+                antecedentefam: {
+                    id:  "",
+                    tbc: [],
+                    vihsida: [],
+                    diabetes: [],
+                    epilepsia: [],
+                    alergiamedic: [],
+                    violenciafam:  "",
+                    alcoholismo: [],
+                    drogradiccion:  "",
+                    hepatitisb:  "",
+                },
+                idantecedentepato:  "",
+                antecedentepato: {
+                    id:  "",
+                    tbc:  "",
+                    sobasma:  "",
+                    transfsangre:  "",
+                    neurologico:  "",
+                    alergiamedic:  "",
+                    otros:  "",
+                }
+            }
             console.log('proxy');
             console.log(proxy)
             console.log('id: ',id);
             console.log('en vuex 1');
             //let id = this.$route.params.id;
-            if (!id) return;
-            
-            proxy.getById(id)
-                .then(x => {
-                    model = x.data;
-                    console.log('model:');
-                    console.log(model);
-                })
-                .catch(() => { });
+            if (!id) 
+                commit('fillPaciente',model);
+            else {
+                proxy.getById(id)
+                    .then(x => {
+                        model = x.data;
+                        console.log('model:');
+                        console.log(model);
+                    })
+                    .catch(() => { });
+                    
+
+                const paciente = await proxy.getById(id);
+                console.log("en vuex 2", paciente)
                 
-
-            const paciente = await proxy.getById(id);
-            console.log("en vuex 2", paciente)
-
-            commit('fillPaciente',paciente)
+                commit('fillPaciente',paciente.data)
+            }
         },
-        setPaciente: async function ({commit}, value){
-            const paciente = await value;
-            console.log("set paciente")
-            console.log(paciente)
-            commit('fillPaciente',paciente)
-        }
     }
 }
