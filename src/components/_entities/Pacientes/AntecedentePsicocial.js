@@ -1,3 +1,4 @@
+import {mapState} from 'vuex'
 export default {
     name: 'AntecedentePsicosocial',
 
@@ -7,20 +8,8 @@ export default {
     data () {
       return {
         
-        model:{
-          id:'',
-            apoyofam: '',
-            edadgestante: '',
-            nrohijos: '',
-            embarazoespac: '',
-            tipotrabajo: '',
-            violenciaocupacional: '',
-            vidaSocial: '',
-            perteneceorg: '',
-        },
-
-        tipo_apoyo: ['Si', 'No'],
-        tipo_emb_espac: ['<2', '2a5','>6'],
+        tipo_apoyo: ['si', 'no'],
+        //tipo_emb_espac: ['<2', '2a5','>6'],
         tipo_trabajo: [
           'Remunerado - t. completo - estable',
           'Remunerado - t. completo - inestable',
@@ -31,11 +20,14 @@ export default {
           'No remunerado - t. medio - estable',
           'No remunerado - t. medio - inestable',
         ],
-        tipo_violencia_ocp: ['Si', 'No'],
+        tipo_violencia_ocp: ['si', 'no'],
         tipo_social: ['es aceptado', 'es ignorado','algo aceptado'],
-        tipo_pertenece_org: ['Si', 'No'],
+        tipo_pertenece_org: ['si', 'no'],
 
       }
+    },
+    computed:{
+      ...mapState('pacienteModule',['paciente']),
     },
     
     mounted() {

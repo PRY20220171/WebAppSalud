@@ -6,7 +6,7 @@ import UsuarioXRolProxy from './Usuarios/UsuarioXRolProxy';
 
 import PacienteProxy from './Pacientes/PacienteProxy';
 import UbicacionProxy from './Pacientes/UbicacionProxy';
-import NinoProxy from './Pacientes/NinoProxy';
+import AntecedentePerinatalProxy from './Pacientes/AntecedentePerinatalProxy';
 import AntecedentePsicocialProxy from './Pacientes/AntecedentePsicocialProxy';
 import AntecedenteFamiliarProxy from './Pacientes/AntecedenteFamiliarProxy';
 import AntecedentePatologicoProxy from './Pacientes/AntecedentePatologicoProxy';
@@ -69,7 +69,7 @@ export default {
 
     pacienteProxy: new PacienteProxy(Axios,url),
     ubicacionProxy: new UbicacionProxy(Axios,url),
-    ninoProxy: new NinoProxy(Axios,url),
+    antecedentePerinatalProxy: new AntecedentePerinatalProxy(Axios,url),
     antecedentePsicocialProxy: new AntecedentePsicocialProxy(Axios,url),
     antecedenteFamiliarProxy: new AntecedenteFamiliarProxy(Axios,url),
     antecedentePatologicoProxy: new AntecedentePatologicoProxy(Axios,url),

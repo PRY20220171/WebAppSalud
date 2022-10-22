@@ -8,6 +8,8 @@ import Tratamientos from '../../../views/_indexes/Resultados/TratamientoIndex.vu
 import Pruebas from '../../../views/_indexes/Pruebas/PruebasIndex.vue';
 import Diagnosticos from '../../../views/_indexes/Diagnosticos/DiagnosticosIndexInAtencionEdit.vue';
 
+import {mapState} from 'vuex'
+
 export default {
     name: 'RegistrarAtencion',
 
@@ -29,6 +31,9 @@ export default {
         e1: 1,
         Atencion: Atencion.model,
       }
+    },
+    computed:{
+      ...mapState('pacienteModule',['paciente'])
     },
     mounted(){
       console.log(this.Atencion)

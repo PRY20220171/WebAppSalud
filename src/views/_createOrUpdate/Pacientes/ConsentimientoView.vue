@@ -9,9 +9,9 @@
         <v-divider class="ml-4"></v-divider>
     
         <v-card-text>
-          <p>Nombres y Apellidos:</p>
+          <p>Nombres y Apellidos: <b>{{paciente.nombres}} {{paciente.apellidos}}</b></p>
           <p>N° de Historia Clínica:</p>
-          <p>Con DNI o Documento de Identidad:</p>
+          <p>Con DNI o Documento de Identidad: <b>{{paciente.docnum}} </b></p>
           <p> Autorizo de manera libre, previa, expresa, informada e inequívoca de conformidad con la Ley N° 297333 
               - Ley de Protección de datos Personales y su Reglamento, que mis datos personales en especial los referidos 
               a mis datos sensibles o datos de salud (registro de la atención e información complementaria) y que se encuentren 
@@ -26,14 +26,14 @@
           <p> En caso de querer ejercer algún derecho de protección de datos personales (derecho de acceso, derecho de
               información, derecho de rectificación, derecho de cancelación y derecho de oposición), serán dirigidas a
               la Institución Prestadora de Servicio de Salud – IPRESS a la siguiente dirección:IPRESS Domicilio C</p>
-          <p>________________________________________________________________</p>
         </v-card-text>
+        <v-divider class="ml-4"></v-divider>
       </v-card>
     </v-col>
   </template>
   
   <script >
-    
+    import {mapState} from 'vuex'
     export default {
     name: 'Consentimiento',
 
@@ -46,6 +46,9 @@
       }
     },
     
+    computed:{
+      ...mapState('pacienteModule',['paciente']),
+    },
     methods:{
     }
   }

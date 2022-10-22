@@ -4,7 +4,7 @@
         <v-form class="flex">
             <v-row class="mx-auto justify-center my-10">
                 <v-col cols="12" md="5" class="">
-                    <v-card class="mb-12 elevation-4 px-5 py-5" outlined id="Nino">
+                    <v-card class="mb-12 elevation-4 px-5 py-5" outlined >
                         <v-card-title class="main_color--text text--darken-1 text-subtitle-1">
                             Información general
                         </v-card-title>
@@ -55,7 +55,7 @@
                     </v-card>
                 </v-col>
                 <v-col cols="12" md="5">
-                    <v-card class="mb-12 elevation-4 px-5 py-5" outlined id="Nino">
+                    <v-card class="mb-12 elevation-4 px-5 py-5" outlined >
                         <v-card-title class="main_color--text text--darken-1 text-subtitle-1">
                             Información específica
                         </v-card-title>

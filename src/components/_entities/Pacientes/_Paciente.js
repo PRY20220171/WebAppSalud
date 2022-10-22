@@ -5,7 +5,7 @@ import Consentimiento from '../../../views/_createOrUpdate/Pacientes/Consentimie
 import AntecedenteFamiliar from '../../../views/_createOrUpdate/Pacientes/AntecedenteFamiliarView.vue';
 import AntecedentePatologico from '../../../views/_createOrUpdate/Pacientes/AntecedentePatologicoView.vue';
 import AntecedentePsicocial from '../../../views/_createOrUpdate/Pacientes/AntecedentePsicocialView.vue';
-import Nino from '../../../views/_createOrUpdate/Pacientes/NinoView.vue';
+import AntecedentePerinatal from '../../../views/_createOrUpdate/Pacientes/AntecedentePerinatalView.vue';
 
 import {mapState, mapMutations, mapActions} from 'vuex'
 
@@ -18,7 +18,7 @@ export default {
         Paciente,
         Ubicacion,
       //antecedentes
-        Nino,
+        AntecedentePerinatal,
         AntecedenteFamiliar,
         AntecedentePatologico,
         AntecedentePsicocial,
@@ -30,92 +30,179 @@ export default {
       //  user: this.$store.state.user,
       //  isLoading: false,
         e1: 1,
-        //paciente: {},
-        lugarnac: {},
-        domicilioact: {},
-        nino: {},
-        antecedenteFamiliar: {},
-        antecedentePatologico: {},
-        antecedentePsicocial: {},
+        stepRules:[
+          [(value) => true],
+          [(value) => true],
+          [(value) => true]
+        ],
+        stepComplete:[
+          false,false
+        ],
+        stepAlert:[
+          [0,''],
+          [0,''],
+          [0,''],
+        ],
+        tipos_alerta:{
+          s:'success',
+          i:'info',
+          w:'warning',
+          e:'error'
+        },
+        alertType:'info',
+        mensaje:'Por favor completar la información necesaria antes de guardar',
+        cancelar:'Cancelar',
       }
     },
     computed:{
       ...mapState('pacienteModule',['paciente'])
-      //...mapState(['vaal'])
+    },
+    watch: {
+      'e1': {
+        handler(newValue, oldValue) {
+          this.camposCompletos(newValue-1)
+          console.log('a:', newValue,' desde:', oldValue, ' ',this.stepAlert[oldValue-1])
+        },
+        deep: true
+      },
+      'paciente': {
+        handler(val) {
+          this.cancelar='Cancelar'
+        },
+        deep: true
+      }
     },
     beforeMount(){      
     },
     mounted(){
-      //this.updateSection();
-      //console.log(this.paciente.id)  
     },
     updated(){
-      //this.updateSection();
     },
-    methods:{//...mapState(['vaal']),
-      async updateSection(){
-        this.paciente=this.$refs.Paciente.model;
-        this.lugarnac=this.$refs.Ubicacion.lugarnac;
-        this.domicilioact=this.$refs.Ubicacion.domicilioact ;
-        this.nino=this.$refs.Nino.model;
-        this.antecedenteFamiliar=this.$refs.AntecedenteFamiliar.model;
-        this.antecedentePatologico=this.$refs.AntecedentePatologico.model ;
-        this.antecedentePsicocial=this.$refs.AntecedentePsicocial.model ;
-        await nextTick();
-        console.log('sssssssssssssssssssssss');
-        console.log(this.paciente);
-        console.log(this.lugarnac);
-        console.log(this.nino);
-        console.log(this.antecedenteFamiliar);
-        console.log(this.antecedentePatologico);
-        console.log(this.antecedentePsicocial);
-        
+    methods:{
+      validarStep1(){
+        if(this.paciente.nombres== "") this.stepAlert[0][0]++
+        if(this.paciente.apellidos== "") this.stepAlert[0][0]++
+        if(this.paciente.docnum== "") this.stepAlert[0][0]++
+        if(this.paciente.doctipo== "") this.stepAlert[0][0]++
+        if(this.paciente.sexo== "") this.stepAlert[0][0]++
+        if(this.paciente.gruposang== "") this.stepAlert[0][0]++
+        if(this.paciente.rh== "") this.stepAlert[0][0]++
+        if(this.paciente.telefono== "") this.stepAlert[0][0]++
+        if(this.paciente.gradoinstruccion== "") this.stepAlert[0][0]++
+        if(this.paciente.ocupacion== "") this.stepAlert[0][0]++
+        if(this.paciente.estadocivil== "") this.stepAlert[0][0]++
+        if(this.paciente.fecnac== "") this.stepAlert[0][0]++
+   
+        for (let i in this.paciente.lugarnacc){
+          if(i!='id' && this.paciente.lugarnacc[i]== "") this.stepAlert[0][0]++
+        }
+        for (let i in this.paciente.domicilioact){
+          if(i!='id' && this.paciente.domicilioact[i]== "") this.stepAlert[0][0]++
+        }
+        //console.log('completo s1',this.stepAlert[0][0]<1)
+          this.stepRules[0]=[(value) => this.stepAlert[0][0]<1]
       },
-      nextStep(){
-        switch (this.e1) {
-          case 1: 
-            this.e1=2
+      validarStep2(){
+          //console.log('antecedenteperi')
+            for (let i in this.paciente.antecedenteperi){
+              if(i!='id' && this.paciente.antecedenteperi[i]== "") this.stepAlert[1][0]++
+             // console.log(i,':',this.paciente.antecedenteperi[i])
+            }
+          //console.log('antecedentepsico')
+            for (let i in this.paciente.antecedentepsico){
+              if(i!='id' && this.paciente.antecedentepsico[i]== "") this.stepAlert[1][0]++
+             // console.log(i,':',this.paciente.antecedentepsico[i])
+            }
+          //console.log('antecedentepato')
+            for (let i in this.paciente.antecedentepato){
+              if(i!='id' && this.paciente.antecedentepato[i]== "") this.stepAlert[1][0]++
+             // console.log(i,':',this.paciente.antecedentepato[i])
+          }
+          //console.log('antecedentefam')
+            for (let i in this.paciente.antecedentefam){
+              if(i!='id' && this.paciente.antecedentefam[i]!='otros' ) {
+                for (let j = 0; j < this.paciente.antecedentefam[i].length; j++) {
+                  if(this.paciente.antecedentefam[i][j]== "") {
+                    this.stepAlert[1][0]++
+                  }//console.log(i,j,':',this.paciente.antecedentefam[i][j])
+                }
+              }
+            }
+            //console.log('completo s2',this.stepAlert[1][0]<1)
+          this.stepRules[1]=[(value) => this.stepAlert[1][0]<1]
+      },
+      setAlerta(val){
+        if (this.stepAlert[val][0]>0){
+          this.stepAlert[val][1]='Falta '+this.stepAlert[val][0]+' campo(s)'
+          this.stepComplete[val]=false
+        } else {
+          this.stepAlert[val][1]='Datos completos'
+          this.stepComplete[val]=true
+        }
+      },
+      camposCompletos(val){
+        this.stepAlert[val][0]=0
+        switch (val) {
+          case 0:
+            this.validarStep1()
+            this.setAlerta(0)
             break;
-          case 2: 
-              this.e1=3
-              break;     
+          case 1:
+            this.validarStep2()
+            this.setAlerta(1)
+            break;
+          case 2:
+            this.validarStep1()
+            this.validarStep2()
+            this.setAlerta(0)
+            this.setAlerta(1)
+            break;
           default:
             break;
         }
+        console.log('errores',this.stepAlert )
+        if(this.stepAlert[0][0]+this.stepAlert[1][0]>0){
+          this.alertType = this.tipos_alerta.w
+        }else
+        this.alertType = this.tipos_alerta.i
+        
       },
       Cancel(){
         this.$router.push('/pacientes');
       },
+      crearConsulta(){
+        this.$router.push('/consultas/create');
+      },
       registrar(){
         let id = this.$route.params.id;
-/*
-        this.$refs.Ubicacion.save()
-        this.nino.id=this.$refs.Nino.save()
-        this.$refs.AntecedenteFamiliar.save()
-        this.$refs.AntecedentePatologico.save()
-        this.$refs.AntecedentePsicocial.save()
-*/
-        this.updateSection()
-        /*
-        console.log(this.nino)
-        console.log(this.nino.id)
-        this.paciente.lugarnacid= this.lugarnac.id;
-        this.paciente.domicilioactid= this.domicilioact.id;
-        this.paciente.idnino= this.nino.id;
-        this.paciente.idantecedenteperi= this.antecedentePsicocial.id;
-        this.paciente.idantecedentefam= this.antecedenteFamiliar.id;
-        this.paciente.idantecedentepato= this.antecedentePatologico.id;
+        let paciente= this.paciente
+        delete paciente.edad;
 
-        this.paciente.lugarnac= this.lugarnac;
-        this.paciente.domicilioact= this.lugarnac;
-        this.paciente.nino= this.nino;
-        this.paciente.antecedenteFamiliar= this.antecedenteFamiliar;
-        this.paciente.antecedentePatologico= this.antecedentePatologico;
-        this.paciente.antecedentePsicocial= this.antecedentePsicocial;
-        */
-
-        console.log(this.paciente)
-        //this.$refs.Paciente.save()
+        if (!id){
+          this.$proxies.pacienteProxy.register(paciente)
+          .then(x => {
+              this.alertType = this.tipos_alerta.s
+              this.mensaje = "Paciente creado con éxito"
+              this.cancelar = 'Ir a lista de pacientes'
+              this.isLoading = false;
+          }).catch(() => {
+              this.alertType = this.tipos_alerta.e
+              this.mensaje = "No se pudo crear paciente"
+              this.isLoading = false;
+          });
+        }else{
+          this.$proxies.pacienteProxy.update(id,paciente)
+          .then(x => {
+              this.alertType = this.tipos_alerta.s
+              this.mensaje = "Paciente actualizado con éxito"
+              this.cancelar = 'Ir a lista de pacientes'
+              this.isLoading = false;
+          }).catch(() => {
+              this.alertType = this.tipos_alerta.e
+              this.mensaje = "No se pudo actualizar paciente"
+              this.isLoading = false;
+          });
+        }
       }
     }
   }

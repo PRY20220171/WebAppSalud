@@ -4,8 +4,12 @@ import router from './router/_indexRoutes'
 import store from './store/index'
 import vuetify from './plugins/vuetify'
 import proxyConfig from './proxies/_config';
+
 import './assets/styles.css'
 import 'vuetify/dist/vuetify.min.css'
+
+import * as globalHelpers from  '@/assets/script'
+
 Vue.config.productionTip = false
 // Vue.use({
 //   install(Vue) {
@@ -38,20 +42,28 @@ Vue.config.productionTip = false
 //     })
 //   }
 // });
+let MyPlugin = {
+  install(Vue) {
+      Vue.prototype.$calcEdad = function (fecha){
+        return globalHelpers.calcEdad(fecha)      
+      } 
+    }
+  }
+
 Vue.use({
   install(Vue) {
     Object.defineProperty(Vue.prototype, '$proxies', {
       value: proxyConfig
     })
-    /*,
-    Object.defineProperty(Vue.prototype, '$store', {
-      value: store
-    })*/
   }
 });
+
+Vue.use(MyPlugin)
+
 new Vue({
   router,
   store,
   vuetify,
   render: h => h(App)
 }).$mount('#app')
+

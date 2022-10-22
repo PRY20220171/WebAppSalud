@@ -1,3 +1,4 @@
+import {mapState} from 'vuex'
 export default {
     name: 'AntecedenteFamiliar',
 
@@ -7,28 +8,20 @@ export default {
     data () {
       return {
         
-        model:{
-          id: '',
-            tbc: [],
-            vihsida: [],
-            diabetes: [],
-            epilepsia: [],
-            alergiamedic: [],
-            violenciafam: [],
-            alcoholismo: [],
-            drogradiccion: [],
-            hepatitisb: [],
-        },
-
         familiares: [
             {show:'Padre', val:'P'},
             {show:'Madre', val:'M'},
             {show:'Hermano(s)', val:'H'},
             {show:'Abuelo(s)', val:'A'},
             {show:'Otros', val:'O'},
+            {show:'No sabe', val:'U'},
+            {show:'Ninguno', val:'N'},
         ],
         select_icons:[ 'mdi-close-box', 'mdi-checkbox-blank-outline'],
       }
+    },
+    computed:{
+      ...mapState('pacienteModule',['paciente']),
     },
     mounted() {
        // this.initialize(null);

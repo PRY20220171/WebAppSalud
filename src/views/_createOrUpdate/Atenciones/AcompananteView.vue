@@ -32,13 +32,13 @@
   
           <v-row>
             <v-col >
-              <v-text-field label="Fecha de nacimiento" name="Fecha de nacimiento"  v-model="model.fec_nac" @input="clacEdad"
+              <v-text-field label="Fecha de nacimiento" name="fec_nac"  v-model="model.fec_nac" 
               prepend-icon="mdi-cake-variant" type="date" color="main_color" hide-details="auto" />
             </v-col>
             <v-col  class="align-self-end">
               <p class="my-2">
                 <v-icon class="mr-2">mdi-cake-variant-outline</v-icon>
-                <span> Edad: {{model.edad}}</span>
+                <span> Edad: {{edad_acompanante.text}}{{model.fec_nac}}</span>
               </p>
             </v-col>
           </v-row>

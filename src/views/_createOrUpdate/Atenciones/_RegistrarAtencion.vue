@@ -6,7 +6,7 @@
                 prepend-icon="mdi-email" type="date" color="main_color" hide-details="auto" />
               </v-col>
               <v-col class="d-flex align-center">
-                <v-text-field label="Nombre del paciente" value="" disabled ></v-text-field>
+                <v-text-field label="Nombre del paciente" :value="paciente.nombres+' '+paciente.apellidos" disabled ></v-text-field>
               </v-col>
               <v-col>
                 <v-text-field label="Nombre del médico" value="" disabled ></v-text-field>

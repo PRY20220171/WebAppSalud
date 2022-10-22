@@ -1,3 +1,4 @@
+import {mapState} from 'vuex'
 export default {
     name: 'AntecedentePatologico',
 
@@ -7,19 +8,13 @@ export default {
     data () {
       return {
         
-        model:{
-          id:'',
-            tbc: '',
-            sobasma: '',
-            transfsangre: '',
-            neurologico: '',
-            alergiamedic: '',
-            otros: '',
-        },
 
         tipo_rpta: ['Si', 'No','No sé'],
 
       }
+    },
+    computed:{
+      ...mapState('pacienteModule',['paciente']),
     },
     
     mounted() {

@@ -1,6 +1,6 @@
 <template>
 
-    <v-card class="mb-12 elevation-4 mx-auto px-5 py-5" outlined id="Nino">
+    <v-card class="mb-12 elevation-4 mx-auto px-5 py-5" outlined >
       <v-card-title class="main_color--text text--darken-1 text-subtitle-1">
         Diagnostico(s)
       </v-card-title>

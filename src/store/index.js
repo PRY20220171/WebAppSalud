@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import {PacienteModule} from './PacienteModule'
+import {AtencionModule} from './AtencionModule'
 Vue.use(Vuex)
 const state = {
   user: null
@@ -8,8 +9,6 @@ const state = {
 export default new Vuex.Store({
   modules: {
     pacienteModule: PacienteModule,
-  }/*
-  state:{
-    vaal:'a'
-  }*/
+    atencionModule: AtencionModule,
+  },
 })

@@ -37,6 +37,66 @@ export const PacienteModule = {
         getPaciente: async function ({commit}, params){
             let proxy = params.proxy;
             let id = params.id;
+            let model_edad={
+                anios:0,
+                meses:0,
+                dias:0,
+                text:''
+            }
+            let antecedentefam={
+              id: '',
+                tbc: [],
+                vihsida: [],
+                diabetes: [],
+                epilepsia: [],
+                alergiamedic: [],
+                violenciafam: [],
+                alcoholismo: [],
+                drogradiccion: [],
+                hepatitisb: [],
+                otros: '',
+            }
+            let antecedentepato={
+              id:'',
+                tbc: '',
+                sobasma: '',
+                transfsangre: '',
+                neurologico: '',
+                alergiamedic: '',
+                otros: '',
+            }
+            let antecedenteperi={
+                id:'',
+                tipoembarazo: '',
+                embarazoriesgo: '',
+                controlprenatal: '',
+                nroembarazo: '',
+                edadgestalnac: '',
+                pesoalnac: '',
+                tallaalnac: '',
+                perimcefalico: '',
+                respllanto: '',
+            }
+            let antecedentepsico ={
+              id:'',
+                apoyofam: '',
+                edadgestante: '',
+                nrohijos: '',
+                embarazoespac: '',
+                tipotrabajo: '',
+                violenciaocupacional: '',
+                vidasocial: '',
+                perteneceorg: '',
+            }
+            let ubicacion={
+                id:  "",
+                pais: "Peru",
+                region: "Lima",
+                provincia: "Lima",
+                distrito:  "",
+                direccion:  "",
+            }
+
             let model = {
                 id: "",
                 nombres:  "",
@@ -51,72 +111,19 @@ export const PacienteModule = {
                 ocupacion:  "",
                 estadocivil:  "",
                 fecnac:  "",
+                edad:model_edad,
                 idlugarnac:  "",
-                lugarnac: {
-                    id:  "",
-                    pais: "Peru",
-                    region: "Lima",
-                    provincia: "Lima",
-                    distrito:  "",
-                    direccion:  "",
-                },
+                lugarnac: ubicacion,
                 iddomicilioact:  "",
-                domicilioact: {
-                    id: "",
-                    pais: "Peru",
-                    region: "Lima",
-                    provincia: "Lima",
-                    distrito: "",
-                    direccion:  "",
-                },
+                domicilioact: ubicacion,
                 idantecedenteperi:  "",
-                antecedenteperi: {
-                    id:  "",
-                    tipoembarazo:  "",
-                    embarazoriesgo:  "",
-                    controlprenatal:  "",
-                    nroembarazo:  "",
-                    edadgestalnac:  "",
-                    pesoalnac:  "",
-                    tallaalnac:  "",
-                    perimcefalico:  "",
-                    respllanto:  "",
-                },
+                antecedenteperi: antecedenteperi,
                 idantecedentepsico:  "",
-                antecedentepsico: {
-                    id:  "",
-                    apoyofam:  "",
-                    edadgestante:  "",
-                    nrohijos:  "",
-                    embarazoespac:  "",
-                    tipotrabajo: "",
-                    violenciaocupacional: "",
-                    vidasocial: "",
-                    perteneceorg: "",
-                },
+                antecedentepsico: antecedentepsico,
                 idantecedentefam:  "",
-                antecedentefam: {
-                    id:  "",
-                    tbc: [],
-                    vihsida: [],
-                    diabetes: [],
-                    epilepsia: [],
-                    alergiamedic: [],
-                    violenciafam:  "",
-                    alcoholismo: [],
-                    drogradiccion:  "",
-                    hepatitisb:  "",
-                },
+                antecedentefam: antecedentefam,
                 idantecedentepato:  "",
-                antecedentepato: {
-                    id:  "",
-                    tbc:  "",
-                    sobasma:  "",
-                    transfsangre:  "",
-                    neurologico:  "",
-                    alergiamedic:  "",
-                    otros:  "",
-                }
+                antecedentepato: antecedentepato
             }
             console.log('proxy');
             console.log(proxy)
@@ -129,16 +136,11 @@ export const PacienteModule = {
                 proxy.getById(id)
                     .then(x => {
                         model = x.data;
-                        console.log('model:');
-                        console.log(model);
+                        model.edad=model_edad
+                        console.log('model:',model);
+                        commit('fillPaciente',model)
                     })
                     .catch(() => { });
-                    
-
-                const paciente = await proxy.getById(id);
-                console.log("en vuex 2", paciente)
-                
-                commit('fillPaciente',paciente.data)
             }
         },
     }

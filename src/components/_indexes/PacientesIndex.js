@@ -42,59 +42,56 @@ export default {
                         text: 'Antecedentes perinatales:',
                         value: 'antecedenteperi',
                         detail: [
-                            { text: 'a', value:'tipoembarazo'},
-                            { text: 'a', value:'embarazoriesgo'},
-                            { text: 'a', value:'controlprenatal'},
-                            { text: 'a', value:'nroembarazo'},
-                            { text: 'a', value:'edadgestalnac'},
-                            { text: 'a', value:'pesoalnac'},
-                            { text: 'a', value:'tallaalnac'},
-                            { text: 'a', value:'perimcefalico'},
-                            { text: 'a', value:'respllanto'}
+                            { text: 'Tipo de embarazo', value:'tipoembarazo'},
+                            { text: 'Embarazo de riesgo', value:'embarazoriesgo'},
+                            { text: '¿Hubo control prenatal?', value:'controlprenatal'},
+                            { text: 'nro. de embarazo', value:'nroembarazo'},
+                            { text: 'Nacio a la semana:', value:'edadgestalnac'},
+                            { text: 'peso al nacer', value:'pesoalnac'},
+                            { text: 'tallaalnac al nacer', value:'tallaalnac'},
+                            { text: 'perimcefalico al nacer', value:'perimcefalico'},
+                            { text: 'respllanto al nacer', value:'respllanto'}
                         ]
                     },
                     {
                         text: 'Antecedentes psicologicos:',
                         value: 'antecedentepsico',
                         detail: [
-                            { text: 'a', value:"apoyofam"},
-                            { text: 'a', value:"edadgestante"},
-                            { text: 'a', value:"nrohijos"},
-                            { text: 'a', value:"embarazoespac"},
-                            { text: 'a', value:"tipotrabajo"},
-                            { text: 'a', value:"violenciaocupacional"},
-                            { text: 'a', value:"vidasocial"},
-                            { text: 'a', value:"perteneceorg"}
+                            { text: 'apoyo fam', value:"apoyofam"},
+                            { text: 'edad gestante', value:"edadgestante"},
+                            { text: 'nro de hijos', value:"nrohijos"},
+                            { text: 'embarazoespac', value:"embarazoespac"},
+                            { text: 'tipo de trabajo', value:"tipotrabajo"},
+                            { text: 'sufre violencia ocupacional', value:"violenciaocupacional"},
+                            { text: 'vida social', value:"vidasocial"},
+                            { text: 'pertenece a org.', value:"perteneceorg"}
                         ]
                     },
                     {
                         text: 'Antecedentes familiares:',
                         value: 'antecedentefam',
                         detail: [
-                            { text: 'a', value:'tipoembarazo'},
-                            { text: 'a', value:'embarazoriesgo'},
-                            { text: 'a', value:'controlprenatal'},
-                            { text: 'a', value:'nroembarazo'},
-                            { text: 'a', value:'edadgestalnac'},
-                            { text: 'a', value:'pesoalnac'},
-                            { text: 'a', value:'tallaalnac'},
-                            { text: 'a', value:'perimcefalico'},
-                            { text: 'a', value:'respllanto'}
+                            { text: 'Tuberculosis', value:'tbc'},
+                            { text: 'VIH/SIDA', value:'vihsida'},
+                            { text: 'diabetes', value:'diabetes'},
+                            { text: 'epilepsia', value:'epilepsia'},
+                            { text: 'alergia a medic.', value:'alergiamedic'},
+                            { text: 'violencia fam.', value:'violenciafam'},
+                            { text: 'alcoholismo', value:'alcoholismo'},
+                            { text: 'drogradiccion', value:'drogradiccion'},
+                            { text: 'hepatitisb', value:'hepatitisb'}
                         ]
                     },
                     {
                         text: 'Antecedentes patologicos:',
                         value: 'antecedentepato',
                         detail: [
-                            { text: 'a', value:'tipoembarazo'},
-                            { text: 'a', value:'embarazoriesgo'},
-                            { text: 'a', value:'controlprenatal'},
-                            { text: 'a', value:'nroembarazo'},
-                            { text: 'a', value:'edadgestalnac'},
-                            { text: 'a', value:'pesoalnac'},
-                            { text: 'a', value:'tallaalnac'},
-                            { text: 'a', value:'perimcefalico'},
-                            { text: 'a', value:'respllanto'}
+                            { text: 'Tuberculosis', value:'tbc'},
+                            { text: 'SOBA/ASMA', value:'sobasma'},
+                            { text: 'transf. sanguínea', value:'transfsangre'},
+                            { text: 'padec. neurologico', value:'neurologico'},
+                            { text: 'alergia a medic.', value:'alergiamedic'},
+                            { text: 'otros', value:'otros'},
                         ]
                     }
                 ]
