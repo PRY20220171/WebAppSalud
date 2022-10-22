@@ -21,9 +21,9 @@ export default {
       ...mapState('pacienteModule',['paciente']),
     },
     watch: {
-      'paciente.domicilioact': {
-        async handler(domicilioact) {
-          if (domicilioact) {
+      'paciente': {
+        async handler(paciente) {
+          if (paciente) {
             this.getPaises()
             this.getRegiones('nac')
             this.getRegiones('dom')

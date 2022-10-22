@@ -18,7 +18,15 @@ export function ListarPacientesRoute() {
     return {
         path: '/pacientes',
         name: 'Pacientes',
-        component: () => import( '../views/_indexes/PacientesIndex.vue')
+        component: () => import( '../views/_indexes/Pacientes/PacientesIndex.vue')
+        //beforeEnter: SellerAuthorization
+    };
+}
+export function ListarPacientesSinEditarRoute() {
+    return {
+        path: '/pacientes',
+        name: 'Pacientes',
+        component: () => import( '../views/_indexes/Pacientes/PacientesIndexSearch.vue')
         //beforeEnter: SellerAuthorization
     };
 }

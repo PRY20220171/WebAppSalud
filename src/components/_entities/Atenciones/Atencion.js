@@ -1,4 +1,5 @@
 import Sintoma from '../../../views/_createOrUpdate/Atenciones/SintomaView.vue';
+import {mapState,mapActions } from 'vuex'
 
 export default {
     name: 'Atencion',
@@ -30,10 +31,20 @@ export default {
       }
     },
     mounted() {
-      this.initialize();
+      this.getAtencion({
+        id:this.$route.params.id,
+        proxy:this.$proxies.atencionProxy,
+        paciente:this.paciente
+      });
+    },
+    
+    computed:{
+      ...mapState('pacienteModule',['paciente']),
+      ...mapState('atencionModule',['atencion']),
     },
     
     methods:{
+      ...mapActions('pacienteModule',['getAtencion']),
       initialize() {
         let id = this.$route.params.id;
         if (!id) return;
