@@ -3,12 +3,8 @@ export const AtencionModule = {
     namespaced: true,
     state: () => ({ 
         atencion:{},
-        atenciones : []
     }),
     mutations: {
-        listAtenciones(state, atencionesAction){
-            state.atenciones=atencionesAction
-        },
         fillAtencion(state, atencionAction){
             state.atencion=atencionAction
             console.log("se llenó el atencion")
@@ -69,7 +65,7 @@ export const AtencionModule = {
                 idfacriesgo: '',
                 idcentromedic: '',
 
-                paciente:state.paciente,
+                paciente:params.paciente,
                 acompanante:acompanante,
                 facriesgo:facriesgo,
                 centromedico:centromedico

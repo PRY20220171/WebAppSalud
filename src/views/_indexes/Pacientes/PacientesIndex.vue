@@ -63,7 +63,7 @@
         </v-row>
     </v-container>
 </template>
-<script src="../../components/_indexes/PacientesIndex.js">
+<script src="@/components/_indexes/PacientesIndex.js">
 </script>
 <style scoped>
 .v-input.expanding-search {

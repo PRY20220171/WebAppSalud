@@ -28,18 +28,18 @@ export default {
         tipo_parentezco: ['Padre', 'Madre','Hermano(a)','Tío(a)','Primo(a)','Hijo(a)','Nieto(a)','Sobrino(a)','Ninguno'],
       }
     },
-    computed:{
+    computed:{/* 
       edad_acompanante(){
         let edadp=this.$calcEdad(this.model.fecnac)
         console.log('new edad',this.edadp)
         return edadp
-      },
+      }, */
     },
     mounted(){
     },
     methods:{
     },
-    watch: {
+    watch: {/* 
       'model.fecnac': {
         deep: true,
         handler (antf,nuevaf) {
@@ -47,6 +47,6 @@ export default {
             console.log(this.edad_acompanante)
             this.edad_acompanante=this.$calcEdad(nuevaf)
         }
-      },
+      }, */
     },
   }

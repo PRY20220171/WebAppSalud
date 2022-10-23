@@ -42,6 +42,7 @@ const routes = [
   PacientesRoutes.RegistrarPacienteRoute(),
   PacientesRoutes.EditarPacienteRoute(),
   PacientesRoutes.ListarPacientesRoute(),
+  PacientesRoutes.ListarPacientesSinEditarRoute(),
 
   AtencionesRoutes.RegistrarAtencionRoute(),
   AtencionesRoutes.EditarAtencionRoute(),

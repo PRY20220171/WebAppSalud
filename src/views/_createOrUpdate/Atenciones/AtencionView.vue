@@ -40,4 +40,4 @@
   </v-card>
 </template>
 
-<script src="../../../components/_entities/Atenciones/Atencion.js">';</script>
+<script src="../../../components/_entities/Atenciones/Atencion.js"></script>

@@ -35,12 +35,12 @@
               <v-text-field label="Fecha de nacimiento" name="fec_nac"  v-model="model.fec_nac" 
               prepend-icon="mdi-cake-variant" type="date" color="main_color" hide-details="auto" />
             </v-col>
-            <v-col  class="align-self-end">
+            <!--<v-col  class="align-self-end">
               <p class="my-2">
                 <v-icon class="mr-2">mdi-cake-variant-outline</v-icon>
-                <span> Edad: {{edad_acompanante.text}}{{model.fec_nac}}</span>
+                 <span> Edad: {{edad_acompanante.text}}{{model.fec_nac}}</span>
               </p>
-            </v-col>
+            </v-col> -->
           </v-row>
   
           <v-row>
@@ -54,7 +54,7 @@
             </v-col>
           </v-row>
           <v-row>
-            <v-col md="6">
+            <v-col >
               <v-select :items="tipo_educ" label="grado de instrucción" name="grado_instr" v-model="model.Gradoinstruccion" 
               prepend-icon="mdi-school" color="main_color" hide-details="auto"></v-select>
             </v-col>
