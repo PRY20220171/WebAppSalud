@@ -10,7 +10,7 @@ import Diagnosticos from '@/views/_indexes/Diagnosticos/DiagnosticosIndexInAtenc
 
 import PacientesIndexSearch from '@/views/_indexes/Pacientes/PacientesIndexSearch.vue'
 
-import {mapState} from 'vuex'
+import {mapState, mapMutations, mapActions} from 'vuex'
 
 export default {
     name: 'RegistrarAtencion',
@@ -32,15 +32,45 @@ export default {
     data () {
       return {
         e1: 1,
-        Atencion: Atencion.model,
+        //Atencion: Atencion.model,
       }
     },
     computed:{
-      ...mapState('pacienteModule',['paciente'])
+      ...mapState('atencionModule',['atencion']),
+      ...mapState('pacienteModule',['paciente']),
+    },
+    created(){
+      let id = this.$route.params.id;
+      this.getAtencion({
+        id:id,
+        proxy:this.$proxies.atencionProxy
+      });
+      if (id){
+        this.e1 = 2;
+      }
+    },
+    watch: {
+      'e1': {
+        handler(newValue, oldValue) {
+          this.camposCompletos(newValue-1)
+          console.log('a:', newValue,' desde:', oldValue, ' ',this.stepAlert[oldValue-1])
+        },
+        deep: true
+      },
+      'atencion': {
+        handler(val) {
+          this.cancelar='Cancelar'
+        },
+        deep: true
+      }
+    },
+    beforeMount(){      
     },
     mounted(){
-      console.log(this.Atencion)
+    },
+    updated(){
     },
     methods:{
+      ...mapActions('atencionModule',['getAtencion']),
     }
   }

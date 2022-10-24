@@ -32,7 +32,7 @@
                 <v-card-title class="main_color--text text--darken-1 text-subtitle-1">
                     {{paciente.nombres}} {{paciente.apellidos}}
                 </v-card-title>
-                <v-card-text class="" v-if="typeof paciente.id!='undefined'">
+                <v-card-text class="" v-if="typeof paciente.id!='undefined' ">
                     <v-row>
                         <v-col cols='6' lg='4' v-for="(item,i) in datosPaciente">
                             <v-list-item >

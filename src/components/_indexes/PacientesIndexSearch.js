@@ -28,6 +28,7 @@ export default {
     },
     computed:{
       ...mapState('pacienteModule',['paciente']),
+      ...mapState('atencionModule',['atencion']),
       datosPaciente(){
         return {
             'Tipo de documento': this.paciente.doctipo,
@@ -67,9 +68,12 @@ export default {
             console.log(this.collection)
         },
         ...mapActions('pacienteModule',['getPaciente']),
+        ...mapActions('atencionModule',['updatePacienteOnCreate']),
         selected(idpaciente){
             console.log(idpaciente)
             this.getPaciente({id:idpaciente, proxy:this.$proxies.pacienteProxy});
+            this.updatePacienteOnCreate({idpaciente:idpaciente, pacienteProxy:this.$proxies.pacienteProxy});
+
         }
     }
 }

@@ -1,26 +1,65 @@
 export const DiagnosticoModule = {
-    state: () => ({ 
-        diagnostico:{},
-        diagnosticos : []
+    state: () => ({
+        diagnostico: {},
+        diagnosticos: []
     }),
     mutations: {
-        listDiagnosticos(state, diagnosticosAction){
-            state.diagnosticos=diagnosticosAction
+        listDiagnosticos(state, diagnosticosAction) {
+            state.diagnosticos = diagnosticosAction
         },
-        fillDiagnostico(state, diagnosticoAction){
-            state.diagnostico=diagnosticoAction
+        fillDiagnostico(state, diagnosticoAction) {
+            state.diagnostico = diagnosticoAction
+            console.log("se llenó el diagnostico")
         }
     },
     actions: {
-        getDiagnosticos: async function ({commit}){
-            const data = await fetch ('algo.json')
+        getDiagnosticos: async function ({
+            commit
+        }, params) {
+            const data = await fetch('algo.json')
             const diagnosticos = await data.json();
-            commit('listDiagnosticos',diagnosticos)
+            commit('listDiagnosticos', diagnosticos)
         },
-        getDiagnostico: async function ({commit}){
-            const data = await fetch ('algo.json')
-            const diagnostico = await data.json();
-            commit('fillDiagnostico',diagnostico)
+        getDiagnostico: async function ({
+            commit
+        }, params) {
+            let proxy = params.proxy;
+            let id = params.id;
+            let model = {
+                id: "",
+                fecregistro: "",
+                descripcion: "",
+                estado: "",
+                tipo: "",
+                idatencion: "",
+                resultados: [{
+                    id: "",
+                    registro: "",
+                    descripcion: "",
+                    estado: ""
+                }],
+                pruebas: [{
+                    id: "",
+                    idtipoprueba: "",
+                    idpaciente: "",
+                    fecresultado: "",
+                    fecprueba: "",
+                    resultado: 0,
+                    observacion: "",
+                    signosvitales: ""
+                }]
+            }
+            if (!id) {
+                commit('fillDiagnostico', model);
+            } else {
+                proxy.getById(id)
+                    .then(x => {
+                        let model = x.data;
+                        console.log('model:', model);
+                        commit('fillDiagnostico', model)
+                    })
+                    .catch(() => {});
+            }
         }
     }
 }
