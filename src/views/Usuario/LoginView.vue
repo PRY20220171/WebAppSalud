@@ -5,6 +5,7 @@
     <v-row align="center" justify="center">
       <v-col cols="12" sm="8" md="8">
         <v-card class="elevation-12">
+          <v-alert type="error" v-if="wrong"> Por favor, ingresar datos correctos</v-alert>
           <v-row>
 
             <v-col cols="12" md="8" class="">
@@ -15,8 +16,8 @@
               <v-form ref="form" @submit.prevent="authenticate">
                 <v-card-text class="">
                   <h4 class="text-center mt-4">Por favor, ingresa tus datos</h4>
-                    <v-text-field label="Correo" name="Correo" prepend-icon="mdi-email" type="text" color="main_color" />
-                    <v-text-field label="Contraseña" name="Password" prepend-icon="mdi-lock" type="password"
+                    <v-text-field label="Correo" name="Correo" v-model="loginData.email" prepend-icon="mdi-email" type="text" color="main_color" />
+                    <v-text-field label="Contraseña" name="Password" v-model="loginData.password" prepend-icon="mdi-lock" type="password"
                       color="main_color" />
                 </v-card-text>
                 <v-card-actions class="justify-center mb-6">
@@ -38,20 +39,41 @@
                 <p class="text-center">Inicia sesión para acceder a la información requerida</p>
                 <p class="text-center text-h6  mt-4">¿Olvidaste tu contraseña?</p>
               </v-card-text>
-              <v-card-actions class="justify-center pt-0 pb-5">
-                <v-btn rounded outlined dark>Sí, la olvidé</v-btn>
+              <v-card-actions class="row justify-center pt-0 pb-5">
+                <v-btn rounded outlined dark @click.stop="forget=true">Sí, la olvidé</v-btn>
+                <v-alert  colored-border color="main_color" type="success" v-model="enviado" dismissible class="mt-3"> Se envió correo </v-alert>
               </v-card-actions>
             </v-col>
 
           </v-row>
         </v-card>
       </v-col>
+            <v-dialog v-model="forget" max-width="350">
+              <v-card>
+                <v-card-title class="main_color--text text--darken-1 justify-center">
+                  Olvidé mi contraseña
+                </v-card-title>
+                <v-divider class="ml-4"></v-divider>
+                <v-card-text><p></p>
+                  <p>Se le proporcionará una nueva contraseña.</p>
+                  <p>Por favor, ingrese su correo</p>
+                  <v-text-field label="Correo" name="Correo" prepend-icon="mdi-email" type="text" color="main_color" />
+                  <v-row class="justify-center mb-6">
+                    <v-btn rounded color="main_color" dark class="px-5" @click="solicitar = true">
+                      <v-icon>mdi-login </v-icon> Enviar solicitud de cambio
+                    </v-btn>
+                  </v-row>
+                  <v-progress-linear :active="solicitar" :indeterminate="solicitar"  bottom color="second_0"></v-progress-linear>
+                </v-card-text>
+              </v-card>
+            </v-dialog>
     </v-row>
   </v-container>
 
 </template>
 
 <script>
+  import {mapState, mapActions} from 'vuex'
   export default {
     name: 'LoginPage',
     data() {
@@ -60,13 +82,37 @@
                 email: null,
                 password: null,
                 loading: false
-              }
+              },
+              wrong:false,
+              forget:false,
+              solicitar:false,
+              enviado: false,
                   //isLoggedIn: false
             };
       },
+    watch: {
+      solicitar (val) {
+        if (!val) return
+        setTimeout(() => (
+          this.solicitar = false,
+          this.forget = false,
+          this.enviado = true
+        ), 3000)
+      },
+    },
+    computed:{
+      ...mapState('UsuarioModule',['usuario']),
+    },
     methods: {
+      ...mapActions('UsuarioModule',['getUsuarioByAutentificacion']),
       authenticate() {
-        console.log("authenticated");
+        console.log("authenticated",this.$proxies.userProxy);
+          this.getUsuarioByAutentificacion({
+          correo:this.loginData.email,
+          password:this.loginData.password,
+          proxy:this.$proxies.userProxy
+        });
+        console.log(this.usuario)
         /*
                 this.login.loading = true;
                 this.$proxies.identityProxy
@@ -98,8 +144,13 @@
                     }
                     this.login.loading = false;
                   });*/
-        this.$parent.$parent.$parent.isLoggedIn = true;
-        localStorage.setItem("access_token", "l");
+        
+        if(!this.usuario) {
+          wrong=true
+          return
+        }
+          this.$parent.$parent.$parent.isLoggedIn = true;
+        localStorage.setItem("access_token", this.usuario.id);
         //this.$refs.form.validate();
       },
       addNewUser() {

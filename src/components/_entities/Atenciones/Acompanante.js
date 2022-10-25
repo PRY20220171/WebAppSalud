@@ -28,12 +28,8 @@ export default {
         tipo_parentezco: ['Padre', 'Madre','Hermano(a)','Tío(a)','Primo(a)','Hijo(a)','Nieto(a)','Sobrino(a)','Ninguno'],
       }
     },
-    computed:{/* 
-      edad_acompanante(){
-        let edadp=this.$calcEdad(this.model.fecnac)
-        console.log('new edad',this.edadp)
-        return edadp
-      }, */
+    computed:{
+      ...mapState('atencionModule',['atencion']),
     },
     mounted(){
     },

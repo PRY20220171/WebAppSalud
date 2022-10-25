@@ -1,7 +1,7 @@
 export const ResultadoModule = {
     namespaced: true,
     state: () => ({
-      resultado: {}
+      resultados: []
     }),
     mutations: {
       fillAtencion(state, resultadoAction) {

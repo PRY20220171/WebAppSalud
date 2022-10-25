@@ -10,7 +10,7 @@
         "direccion": "Av. La Marina 6908",
         "procedencia": "Lima",
         "numcolegiatura": "987654321",
-        "especialidad": "cirujano",
+        "especialidad": ["Cirugía General y Laparoscópica"],
         "roles":[
             {
                 "rol":{
@@ -32,7 +32,7 @@
         "direccion": "Av. La Marina 6908",
         "procedencia": "Lima",
         "numcolegiatura": "000000000",
-        "especialidad": "enfermero",
+        "especialidad": ["Enfermería"],
         "roles":[
             {
                 "rol":{
@@ -54,7 +54,7 @@
         "direccion": "Av. La Marina 6908",
         "procedencia": "Lima",
         "numcolegiatura": "000000000",
-        "especialidad": "administrador",
+        "especialidad": ["Medicina General"],
         "roles":[
             {
                 "rol":{

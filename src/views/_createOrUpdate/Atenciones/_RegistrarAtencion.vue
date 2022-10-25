@@ -1,17 +1,16 @@
   <template>
     <div id="RegistrarAtencion" class="fill-height">
-      {{atencion}}
-      <!-- {{paciente}} -->
+      
         <v-row class="mt-5 mb-0 mx-5">
               <v-col>
-                <v-text-field label="Fecha de registro" name="fecharegistro" 
+                <v-text-field label="Fecha de registro" name="fecharegistro" v-model="atencion.fecharegistro"
                 prepend-icon="mdi-email" type="date" color="main_color" hide-details="auto" />
               </v-col>
               <v-col class="d-flex align-center">
-                <v-text-field label="Nombre del paciente" :value="atencion.paciente.nombres+' '+atencion.paciente.apellidos" disabled ></v-text-field>
+                <v-text-field label="Nombre del paciente" :value="paciente.nombres+' '+paciente.apellidos" disabled ></v-text-field>
               </v-col>
               <v-col>
-                <v-text-field label="Nombre del médico" value="" disabled ></v-text-field>
+                <v-text-field label="Nombre del médico" :value="usuario.nombres" disabled ></v-text-field>
               </v-col>
         </v-row>
         <v-stepper v-model="e1" class="grey lighten-4 fill-height" >
@@ -53,12 +52,14 @@
                 </v-stepper-content>
                 <v-stepper-content step="3">
                   <v-row>
-                    <v-col cols="12"  md="3"> <SignosVitales/> </v-col>
-                    <v-col cols="12"  md="9"> <Tratamientos/> </v-col>
-                    <v-col cols="12"  > <Diagnosticos/> </v-col>
-                    <v-col cols="12"  > <Pruebas/> </v-col>
+                    <v-col cols="12"  > <SignosVitales/> </v-col>
+                    <v-col cols="12"  > <DiagnosticosAtencionIndex/> </v-col>
+                    <v-col cols="12"  > <PruebasAtencionIndex/> </v-col>
+                    <v-col cols="12"  > <ResultadosAtencionIndex/> </v-col>
+                    <v-col cols="12"  > <TratamientosAtencionIndex/> </v-col>
                   </v-row>
                   <v-btn color="main_color darken-1" @click="e1 = 2" dark> Anterior </v-btn>
+                <v-btn color="primary" @click="registrar" > Registrar </v-btn>
                   <v-btn text> Cancel </v-btn>
                 </v-stepper-content>
             </v-stepper-items>

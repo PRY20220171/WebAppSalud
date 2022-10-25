@@ -6,28 +6,28 @@
     </v-card-title>
     <v-divider class="ml-4"></v-divider>
     <v-card-text class="">
-      <v-col>
-        <v-row>
-          <v-text-field suffix="°C" prefix="Temperatura" name="temperatura" type="text" color="main_color"
+      <v-row>
+        <v-col cols='3'>
+          <v-text-field  v-model='atencion.signosvitales.temperatura' suffix="°C" prefix="Temperatura" name="temperatura" type="number" color="main_color"
             hide-details="auto" dense />
-        </v-row>
-        <v-row>
-          <v-text-field suffix="" prefix="Presion Arterial" name="presionArterial" type="text" color="main_color"
+        </v-col>
+        <v-col cols='3'>
+          <v-text-field  v-model='atencion.signosvitales.presionArterial' suffix="mm Hg" prefix="Presion Arterial" name="presionArterial" type="number" color="main_color"
             hide-details="auto" dense />
-        </v-row>
-        <v-row>
-          <v-text-field suffix="" prefix="Frecuencia Cardiaca" name="frecuenciaCardiaca" type="text" color="main_color"
+        </v-col>
+        <v-col cols='4'>
+          <v-text-field  v-model='atencion.signosvitales.frecuenciaCardiaca' suffix="ppm" prefix="Frecuencia Cardiaca" name="frecuenciaCardiaca" type="number" color="main_color"
             hide-details="auto" dense />
-        </v-row>
-        <v-row>
-          <v-text-field suffix="kg" prefix="Peso" name="peso" type="text" color="main_color" hide-details="auto"
+        </v-col>
+        <v-col cols='3'>
+          <v-text-field  v-model='atencion.signosvitales.peso' suffix="kg" prefix="Peso" name="peso" type="number" color="main_color" hide-details="auto"
             dense />
-        </v-row>
-        <v-row>
-          <v-text-field suffix="cm" prefix="Talla" name="talla" type="text" color="main_color" hide-details="auto"
+        </v-col>
+        <v-col cols='3'>
+          <v-text-field  v-model='atencion.signosvitales.talla' suffix="cm" prefix="Talla" name="talla" type="number" color="main_color" hide-details="auto"
             dense />
-        </v-row>
-      </v-col>
+        </v-col>
+      </v-row>
     </v-card-text>
   </v-card>
 </template>

@@ -1,4 +1,5 @@
 export const DiagnosticoModule = {
+    namespaced: true,
     state: () => ({
         diagnostico: {},
         diagnosticos: []
@@ -10,6 +11,10 @@ export const DiagnosticoModule = {
         fillDiagnostico(state, diagnosticoAction) {
             state.diagnostico = diagnosticoAction
             console.log("se llenó el diagnostico")
+        },
+        addDiagnostico(state, diagnosticoAction) {
+            state.diagnosticos.push (diagnosticoAction)
+            console.log("se llenó el diagnostico")
         }
     },
     actions: {
@@ -19,6 +24,10 @@ export const DiagnosticoModule = {
             const data = await fetch('algo.json')
             const diagnosticos = await data.json();
             commit('listDiagnosticos', diagnosticos)
+        },
+        addDiagnostico: async function ({commit}, params) {
+            console.log('module',params)
+            commit('addDiagnostico', params)
         },
         getDiagnostico: async function ({
             commit

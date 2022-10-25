@@ -2,6 +2,9 @@
     
     <v-container fill-height fluid>
         <v-form class="flex">
+          <v-alert :type="alertType" fluid>
+            {{mensaje}}
+          </v-alert>
             <v-row class="mx-auto justify-center my-10">
                 <v-col cols="12" md="5" class="">
                     <v-card class="mb-12 elevation-4 px-5 py-5" outlined >
@@ -19,17 +22,13 @@
                                     prepend-icon="mdi-account-group" type="text" color="main_color" hide-details="auto" />
                             </v-row>
                             <v-row class="py-3">
-                                <v-text-field label="Contraseña" name="password" v-model="model.password"
-                                    prepend-icon="mdi-email" type="password" color="main_color" hide-details="auto" />
-                            </v-row>
-                            <v-row class="py-3">
                                 <v-col cols="12" sm="6" class="px-0">
                                     <v-select :items="tipo_doc" label="Tipo de Documento" name="tipo_doc"
-                                        v-model="model.Doctipo" prepend-icon="mdi-card-bulleted-settings"
+                                        v-model="model.doctipo" prepend-icon="mdi-card-bulleted-settings"
                                         color="main_color" hide-details="auto"></v-select>
                                 </v-col>
                                 <v-col cols="12" sm="6" class="px-0">
-                                    <v-text-field label="Número de documento" name="num_doc" v-model="model.Docnum"
+                                    <v-text-field label="Número de documento" name="num_doc" v-model="model.docnum"
                                         prepend-icon="mdi-card-account-details" type="text" color="main_color"
                                         hide-details="auto" />
                                 </v-col>
@@ -55,16 +54,16 @@
                     </v-card>
                 </v-col>
                 <v-col cols="12" md="5">
-                    <v-card class="mb-12 elevation-4 px-5 py-5" outlined >
+                    <v-card class="mb-12 elevation-4 px-5 py-4" outlined >
                         <v-card-title class="main_color--text text--darken-1 text-subtitle-1">
                             Información específica
                         </v-card-title>
                         <v-divider class="ml-4"></v-divider>
                         <v-card-text class="">
                             <v-row class="py-3">
-                                <v-radio-group label="Por favor, seleccionar rol del usuario" v-model="model.rol"
+                                <v-radio-group label="Por favor, seleccionar rol del usuario" v-model="model.roles[0].rol.descripcion"
                                     prepend-icon="mdi-account" color="main_color" hide-details="auto">
-                                    <v-radio v-for="rol in roles" :value="rol.nombre" :key="rol.nombre" :label="rol.nombre">
+                                    <v-radio v-for="rol in roles" :value="rol.value" :label="rol.nombre">
                                     </v-radio>
                                 </v-radio-group>
                             </v-row>
@@ -80,8 +79,30 @@
                             </v-row>
                         </v-card-text>
                     </v-card>
-                    <v-btn color="primary" @click="e1 = 1"> Registrar </v-btn>
-                    <v-btn text> Cancel </v-btn>
+                    <v-card class="mb-12 elevation-4 px-5 py-4 mt-0" outlined v-if="model.id == token_usuariotem">
+                        <v-card-title class="align-center ">
+                            <v-checkbox v-model="cambiar_pass" hide-details="auto" label="Cambiar Contraseña" color="main_color"></v-checkbox>
+                        </v-card-title>
+                        <v-divider class="ml-4"></v-divider>
+                        <v-card-text v-if="cambiar_pass">
+                            <v-row class="">
+                                <v-text-field label="Por favor, colocar contraseña actual" name="password" v-model="password_verif"
+                                    prepend-icon="mdi-email" type="password" color="main_color" hide-details="auto" :disabled="!cambiar_pass" />
+                            </v-row>
+                            <v-row class="">
+                                <v-text-field label="Nueva Contraseña" name="password" v-model="nueva_password"
+                                    prepend-icon="mdi-email" type="password" color="main_color" hide-details="auto" :disabled="!cambiar_pass" />
+                            </v-row>
+                            <v-row class="">
+                                <v-text-field label="Por favor, repetir nueva contraseña" name="password_verif" v-model="nueva_password_verif "
+                                    prepend-icon="mdi-email" type="password" color="main_color" hide-details="auto" :disabled="!cambiar_pass"/>
+                            </v-row>
+                        </v-card-text>
+                    </v-card>
+
+                    <v-btn color="primary" @click="save"> Registrar </v-btn>
+                    <v-btn text @click="cancel" v-if="alertType!='success'"> Cancelar </v-btn>
+                    <v-btn text @click="cancel" v-else> Regresar </v-btn>
                 </v-col>
             </v-row>
         </v-form>
@@ -89,4 +110,4 @@
     
 </template>
 
-<script src="../../../components/_entities/Usuarios/Usuario.js"></script>
+<script src="@/components/_entities/Usuarios/_Usuario.js"></script>

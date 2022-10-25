@@ -8,7 +8,7 @@ import FactoresRiesgo from '../../../views/uneditable/Atenciones/FactoresRiesgoV
 import CentroMedico from '../../../views/uneditable/Atenciones/CentroMedicoView.vue';
 
 import SignosVitales from '../../../views/uneditable/Pruebas/SignosVitales';
-import Tratamientos from '../../../views/_indexes/Resultados/TratamientoIndexInAtencion';
+import Tratamientos from '../../../views/_indexes/Resultados/TratamientoIndexAtencion';
 import Pruebas from '../../../views/_indexes/Pruebas/PruebasIndexInAtencion.vue';
 import DiagnosticosEdit from '../../../views/_indexes/Diagnosticos/DiagnosticosIndexInAtencionEdit.vue';
 

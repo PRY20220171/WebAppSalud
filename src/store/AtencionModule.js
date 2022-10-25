@@ -65,7 +65,7 @@ export const AtencionModule = {
           },
           nombre: "",
           sector: ""
-        }
+        },
       };
       params.pacienteProxy.getById(params.idpaciente)
         .then(x => {
@@ -151,6 +151,13 @@ export const AtencionModule = {
           },
           nombre: "",
           sector: ""
+        },
+        signosvitales:{
+          temperatura:'',
+          presionArterial:'',
+          frecuenciaCardiaca:'',
+          factoresReumatoides:'',
+          peso:'',
         }
       };
       if (!id) {

@@ -1,3 +1,5 @@
+
+import {mapActions,mapState} from 'vuex'
 export default {
     name: 'PacienteIndex',
     components: {},
@@ -105,10 +107,18 @@ export default {
             },
         }
     },
+    computed:{
+      ...mapState('pacienteModule',['paciente']),
+    },
     mounted() {
         this.getAll();
     },
     methods: {
+        ...mapActions('pacienteModule',['getPaciente']),
+        selected(idpaciente){
+            console.log(idpaciente)
+            this.getPaciente({id:idpaciente, proxy:this.$proxies.pacienteProxy});
+        },
         getAll() {
             this.isLoading = true;
                 this.$proxies.pacienteProxy.getAll()

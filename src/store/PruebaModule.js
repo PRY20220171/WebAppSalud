@@ -1,4 +1,5 @@
 export const PruebaModule = {
+    namespaced: true,
     state: () => ({
         prueba: {},
         pruebas: []

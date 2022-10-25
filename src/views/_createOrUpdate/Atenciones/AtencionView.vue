@@ -11,26 +11,26 @@
       <v-row >
         <v-col  cols="12" class='px-6'>
           <v-row class="py-2">
-            <v-textarea label="Motivo de la consulta" name="motivoconsulta" v-model="model.motivoconsulta"
+            <v-textarea label="Motivo de la consulta" name="motivoconsulta" v-model="atencion.motivoconsulta"
               prepend-icon="mdi-equal-box"  color="main_color" hide-details="auto" auto-grow  no-resize rows="1" class="pr-4">
             </v-textarea>
           </v-row>
           <v-row class="py-2">
-            <v-textarea label="Observaciones" name="observaciones" v-model="model.observaciones"
+            <v-textarea label="Observaciones" name="observaciones" v-model="atencion.observaciones"
               prepend-icon="mdi-note-multiple"  color="main_color" hide-details="auto" auto-grow  no-resize rows="1" class="pr-4">
             </v-textarea>
           </v-row>
           <v-row class="py-3">
-            <v-text-field label="Tiempo de la enfermedad" name="tiempoenfermedad" v-model="model.tiempoenfermedad"
-            prepend-icon="mdi-timer" type="number" color="main_color" hide-details="auto" auto-grow />
+            <v-text-field label="Tiempo de la enfermedad" name="tiempoenfermedad" v-model="atencion.tiempoenfermedad"
+            prepend-icon="mdi-timer" type="text" color="main_color" hide-details="auto" auto-grow />
           </v-row>
           <v-row class="py-2">
-            <v-textarea label="Forma de inicio" name="formainicio" v-model="model.formainicio"
+            <v-textarea label="Forma de inicio" name="formainicio" v-model="atencion.formainicio"
               prepend-icon="mdi-note-multiple"  color="main_color" hide-details="auto" auto-grow  no-resize rows="1" class="pr-4">
             </v-textarea>
           </v-row>
           <v-row class="py-3">
-            <v-textarea label="Curso de la enfermedad" name="curso" v-model="model.curso"
+            <v-textarea label="Curso de la enfermedad" name="curso" v-model="atencion.curso"
               prepend-icon="mdi-timetable"  color="main_color" hide-details="auto" auto-grow  no-resize rows="2" class="pr-4">
             </v-textarea>
           </v-row>

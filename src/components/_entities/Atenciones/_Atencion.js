@@ -4,9 +4,10 @@ import FactoresRiesgo from '@/views/_createOrUpdate/Atenciones/FactoresRiesgoVie
 import CentroMedico from '@/views/_createOrUpdate/Atenciones/CentroMedicoView.vue';
 
 import SignosVitales from '@/views/_createOrUpdate/Pruebas/SignosVitales.vue';
-import Tratamientos from '@/views/_indexes/Resultados/TratamientoIndex.vue';
-import Pruebas from '@/views/_indexes/Pruebas/PruebasIndex.vue';
-import Diagnosticos from '@/views/_indexes/Diagnosticos/DiagnosticosIndexInAtencionEdit.vue';
+import ResultadosAtencionIndex from '@/views/_indexes/Resultados/ResultadosIndexAtencion.vue';
+import TratamientosAtencionIndex from '@/views/_indexes/Resultados/TratamientoIndexAtencion.vue';
+import PruebasAtencionIndex from '@/views/_indexes/Pruebas/PruebasIndexInAtencion.vue';
+import DiagnosticosAtencionIndex from '@/views/_indexes/Diagnosticos/DiagnosticosIndexInAtencionEdit.vue';
 
 import PacientesIndexSearch from '@/views/_indexes/Pacientes/PacientesIndexSearch.vue'
 
@@ -24,15 +25,30 @@ export default {
         CentroMedico,
       //de otros modulos
         SignosVitales,
-        Pruebas,
-        Tratamientos,
-        Diagnosticos,
-        PacientesIndexSearch
+        PruebasAtencionIndex,
+        TratamientosAtencionIndex,
+        DiagnosticosAtencionIndex,
+        PacientesIndexSearch,
+        ResultadosAtencionIndex
     },
     data () {
       return {
         e1: 1,
+        usuario:{
+          id:localStorage.getItem("access_token"),
+          nombres: localStorage.getItem("nombres"),
+          rol:localStorage.getItem("rol")
+        },
         //Atencion: Atencion.model,
+      tipos_alerta:{
+        s:'success',
+        i:'info',
+        w:'warning',
+        e:'error'
+      },
+      alertType:'info',
+      mensaje:'Por favor completar la información necesaria antes de guardar',
+      cancelar:'Cancelar',
       }
     },
     computed:{
@@ -52,7 +68,7 @@ export default {
     watch: {
       'e1': {
         handler(newValue, oldValue) {
-          this.camposCompletos(newValue-1)
+          //this.camposCompletos(newValue-1)
           console.log('a:', newValue,' desde:', oldValue, ' ',this.stepAlert[oldValue-1])
         },
         deep: true
@@ -62,15 +78,47 @@ export default {
           this.cancelar='Cancelar'
         },
         deep: true
-      }
+      },
     },
     beforeMount(){      
     },
     mounted(){
+      console.log(this.usuario)
     },
     updated(){
     },
     methods:{
       ...mapActions('atencionModule',['getAtencion']),
+      registrar(){
+          let id = this.$route.params.id;
+          let paciente= this.paciente
+          delete paciente.edad;
+  
+          if (!id){
+            this.$proxies.atencionProxy.register(this.atencion)
+            .then(x => {
+                this.alertType = this.tipos_alerta.s
+                this.mensaje = "Paciente creado con éxito"
+                this.cancelar = 'Ir a lista de pacientes'
+                this.isLoading = false;
+            }).catch(() => {
+                this.alertType = this.tipos_alerta.e
+                this.mensaje = "No se pudo crear paciente"
+                this.isLoading = false;
+            });
+          }else{
+            this.$proxies.atencionProxy.update(id,this.atencion)
+            .then(x => {
+                this.alertType = this.tipos_alerta.s
+                this.mensaje = "Paciente actualizado con éxito"
+                this.cancelar = 'Ir a lista de pacientes'
+                this.isLoading = false;
+            }).catch(() => {
+                this.alertType = this.tipos_alerta.e
+                this.mensaje = "No se pudo actualizar paciente"
+                this.isLoading = false;
+            });
+          }
+        }
     }
   }
