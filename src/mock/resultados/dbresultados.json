@@ -3,6 +3,23 @@
         "id": "ffa78aed-b56e-49da-a383-c0819ddfd190",
         "registro": "09/11/2014",
         "descripcion": "descripcion de resultado 0",
-        "estado": "finalizado"
+        "estado": "finalizado",
+        "tratamientos":[{
+            "motivo":"motivo de tratamiento0",
+            "tratamiento":{
+                "id":"ffa78aed-b56e-49da-a383-c0819ddfd190",
+                "medicamento":"paracetamol",
+                "descripcion":"descripcion de tratamiento 0"
+            }
+        },
+        {
+            "motivo":"motivo de tratamiento1",
+            "tratamiento":{
+                "id":"ffa78aed-b56e-49da-a383-c0819ddfd191",
+                "medicamento":"cetirizina",
+                "descripcion":"descripcion de tratamiento 1"
+            }
+        }
+    ]
     }
 ]
