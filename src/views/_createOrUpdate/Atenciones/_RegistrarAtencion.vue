@@ -1,13 +1,14 @@
   <template>
     <div id="RegistrarAtencion" class="fill-height">
       {{atencion}}
+      <!-- {{paciente}} -->
         <v-row class="mt-5 mb-0 mx-5">
               <v-col>
                 <v-text-field label="Fecha de registro" name="fecharegistro" 
                 prepend-icon="mdi-email" type="date" color="main_color" hide-details="auto" />
               </v-col>
               <v-col class="d-flex align-center">
-                <v-text-field label="Nombre del paciente" :value="paciente.nombres+' '+paciente.apellidos" disabled ></v-text-field>
+                <v-text-field label="Nombre del paciente" :value="atencion.paciente.nombres+' '+atencion.paciente.apellidos" disabled ></v-text-field>
               </v-col>
               <v-col>
                 <v-text-field label="Nombre del médico" value="" disabled ></v-text-field>
