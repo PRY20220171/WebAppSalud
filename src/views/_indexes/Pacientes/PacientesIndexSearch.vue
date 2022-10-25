@@ -3,9 +3,9 @@
         <v-row align="center" justify="center">
             <v-col cols="12"  lg="8">
             <v-card class="px-5 pb-5 pt-6" >
-                <v-row class="align-items-center px-5">
-                    <h3>Pacientes</h3>
-                </v-row>
+                <v-card-title class="main_color--text text--darken-1 text-subtitle-1">
+                    Buscar Paciente
+                </v-card-title>
                 <v-row class="align-items-center px-5">
                     <v-col>
                         <v-text-field class="py-0" v-model="search" append-icon="mdi-magnify"
@@ -27,22 +27,23 @@
                 </v-row>
             </v-card>
             </v-col>
-            <v-col cols="12"  lg="4">
+            <v-col cols="8"  xl="4">
             <v-card class="px-5 pb-5 pt-6" >
                 <v-card-title class="main_color--text text--darken-1 text-subtitle-1">
                     {{paciente.nombres}} {{paciente.apellidos}}
                 </v-card-title>
-                <v-card-text class="" v-if="typeof paciente.id!='undefined'">
-                    <v-row>
-                        <v-col cols='6' lg='4' v-for="(item,i) in datosPaciente">
-                            <v-list-item >
-                                <v-list-item-content >
-                                    <v-list-item-title>{{i}}</v-list-item-title>
-                                    <v-list-item-subtitle>{{item}}</v-list-item-subtitle>
-                                </v-list-item-content>
-                            </v-list-item>
-                        </v-col>
-                    </v-row>
+                <v-card-text v-if="typeof paciente.id!='undefined'">
+                    <v-card>
+                        <v-row class="py-2 px-4">
+                            <v-col cols='6' v-for="(item,i) in datosPaciente" class="">
+                                <v-row>
+                                        <v-col  class=""><b>{{i}}</b></v-col>
+                                        <v-col class="align-end text-end">{{item}}</v-col>
+                                </v-row> 
+                                <v-divider></v-divider>
+                            </v-col>
+                        </v-row>
+                    </v-card>
                 </v-card-text>
             </v-card>
             </v-col>
