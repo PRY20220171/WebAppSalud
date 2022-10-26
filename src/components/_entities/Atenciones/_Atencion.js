@@ -66,19 +66,6 @@ export default {
       }
     },
     watch: {
-      'e1': {
-        handler(newValue, oldValue) {
-          //this.camposCompletos(newValue-1)
-          console.log('a:', newValue,' desde:', oldValue, ' ',this.stepAlert[oldValue-1])
-        },
-        deep: true
-      },
-      'atencion': {
-        handler(val) {
-          this.cancelar='Cancelar'
-        },
-        deep: true
-      },
     },
     beforeMount(){      
     },

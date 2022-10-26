@@ -62,7 +62,7 @@
             <v-btn color="blue darken-1" text @click="addDiagnostico" > Save </v-btn>
           </v-card-actions>
         </v-card>
-      </v-dialog>
+      </v-dialog>{{diagnosticos}}
   </v-container>
 </template>
 <script src="../../../components/_indexes/DiagnosticosAtencionIndex.js">

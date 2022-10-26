@@ -43,7 +43,7 @@ export default {
                     }
                 ],
             },
-            estados: ['en proceso', 'esperando pruebas','finalizado'],
+            estados: ['en proceso', 'esperando diagnosticos','finalizado'],
             tipos: ['final','inicial','medio'],
         }
     },
@@ -51,21 +51,11 @@ export default {
        // console.log(this.$proxies)
         this.getAll(1);
     },
-    watch:{
-        collection:{
-            handler(val){
-                for(let item in val.items){
-                    item = {item, paciente:this.getPaciente('d5775113-ed08-4de0-8945-d3c977d504f5')}
-                }
-                console.log(val.items)
-            },
-            deep: true,
-            flush: 'post'
-        }
-    },
     computed:{
       //...mapState('DiagnosticoModule',['diagnostico']),
       ...mapState('DiagnosticoModule',['diagnosticos']),
+      ...mapState('atencionModule',['atencion']),
+      //...mapState('pacienteModule',['paciente']),
     },
     
     mounted(){
@@ -91,39 +81,28 @@ export default {
             //console.log(this.$proxies.pacienteProxy.getAll())
             //console.log(this.collection)
         },
-        getPaciente(idPaciente) {
-                this.isLoading = true;
-    
-                    this.$proxies.pacienteProxy.getById(idPaciente)
-                    .then(x => {
-                        this.paciente = x.data;
-                        this.isLoading = false;
-                    }).catch(() => {
-                        this.isLoading = false;
-                    });
-                       console.log(this.paciente)
-                return this.paciente;
-        },
-        changeview(){
-            this.detailed = !this.detailed;
-            this.getAll(this.collection.page);
-        },
-        addDiagnostico(){
-            let d = new Date           
-            
-              if(this.prueba.id=='') {
-                this.prueba.id=d.getTime()
-                this.pruebas.push(this.prueba)
+          addDiagnostico(){
+            this.diagnostico.idatencion = this.atencion.id
+            if (this.diagnostico.id==''){
+              this.$proxies.diagnosticoProxy.register(this.diagnostico)
+              .then(x => {
+                this.diagnosticos.push(x)
                 this.saved=true
                 this.dialog=false
-              }else {
-                let i = this.pruebas.findIndex(x => x.id = this.prueba.id);
-                this.pruebas[i]=this.prueba
-              }
+              }).catch(() => {
+              });
+            }else{
+              this.$proxies.diagnosticoProxy.update(id,this.diagnostico)
+              .then(x => {
+                let i = this.diagnosticos.findIndex(x => x.id = this.diagnostico.id);
+                this.diagnosticos[i]=this.diagnostico
+              }).catch(() => {
+              });
+            }
           },
           deleteDiagnostico(){
-            let i = this.pruebas.findIndex(x => x.id = this.prueba.id);
-            delete this.pruebas[i]
+            let i = this.diagnosticos.findIndex(x => x.id = this.diagnostico.id);
+            delete this.diagnosticos[i]
           },
     }
 }

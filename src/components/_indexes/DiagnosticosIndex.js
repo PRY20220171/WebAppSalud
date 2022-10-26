@@ -67,18 +67,6 @@ export default {
        // console.log(this.$proxies)
         this.getAll(1);
     },
-    watch:{
-        collection:{
-            handler(val){
-                for(let item in val.items){
-                    item = {item, paciente:this.getPaciente('d5775113-ed08-4de0-8945-d3c977d504f5')}
-                }
-                console.log(val.items)
-            },
-            deep: true,
-            flush: 'post'
-        }
-    },
     mounted(){
         /*
         console.log(this.collection)
