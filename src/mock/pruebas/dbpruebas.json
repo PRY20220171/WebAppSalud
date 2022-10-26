@@ -45,6 +45,7 @@
         "fecprueba": "20/12/2011",
         "resultado": 1,
         "observacion": "observacion de prueba 0",
-        "signosvitales": "459e0b1d-8ab0-4095-8701-2b1f76a33f23"
+        "signosvitales": "459e0b1d-8ab0-4095-8701-2b1f76a33f23",
+        "iddiagnostico": "41c70ae0-7383-4a9b-9625-d4df745c7e9a"
     }
 ]
