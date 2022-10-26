@@ -39,7 +39,7 @@
                             </v-row>
                             <v-row class="py-3">
                                 <v-text-field label="Teléfono" name="correo" v-model="model.telefono"
-                                    prepend-icon="mdi-phone" type="number" color="main_color" hide-details="auto" />
+                                    prepend-icon="mdi-phone" type="number" color="main_color" hide-details="auto" oninput="if(this.value < 0) this.value = 0;"/>
                             </v-row>
                             <v-row class="py-3">
                                 <v-text-field label="Dirección actual" name="correo" v-model="model.direccion"
