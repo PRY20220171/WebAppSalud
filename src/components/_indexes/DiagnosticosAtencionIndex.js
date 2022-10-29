@@ -45,6 +45,39 @@ export default {
             },
             estados: ['en proceso', 'esperando pruebas','finalizado'],
             tipos: ['final','inicial','medio'],
+            editedIndex: -1,
+            editedItem: {
+                id: '0',
+                fecregistro:'',
+                descripcion:'',
+                estado:'',
+                tipo:'',
+                idatencion:'',
+                resultados:[
+                    {
+                        id:'',
+                        registro:'',
+                        descripcion:'',
+                        estado:'',
+                    }
+                ],
+              },
+              defaultItem: {
+                id: '0',
+                fecregistro:'',
+                descripcion:'',
+                estado:'',
+                tipo:'',
+                idatencion:'',
+                resultados:[
+                    {
+                        id:'',
+                        registro:'',
+                        descripcion:'',
+                        estado:'',
+                    }
+                ],
+              }
         }
     },
     beforeMount() {
@@ -124,6 +157,34 @@ export default {
           deleteDiagnostico(){
             let i = this.pruebas.findIndex(x => x.id = this.prueba.id);
             delete this.pruebas[i]
+          },
+          editItem (item) {
+            this.editedIndex = this.collection.items.indexOf(item);
+            this.editedItem = Object.assign({}, item);
+          },
+      
+          deleteItem (item) {
+            const index = this.collection.items.indexOf(item);
+            confirm('Are you sure you want to delete this item?') && this.desserts.splice(index, 1);
+          },
+      
+          close () {
+            setTimeout(() => {
+              this.editedItem = Object.assign({}, this.defaultItem);
+              this.editedIndex = -1;
+            }, 300)
+          },
+          addNew() {
+             const addObj = Object.assign({}, this.defaultItem);
+             addObj.id = this.collection.items.length + 1;
+             this.collection.items.unshift(addObj);
+             this.editItem(addObj);
+          },
+          save () {
+            if (this.editedIndex > -1) {
+              Object.assign(this.collection.items[this.editedIndex], this.editedItem)
+            }
+            this.close()
           },
     }
 }

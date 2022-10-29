@@ -46,6 +46,7 @@
         "resultado": 1,
         "observacion": "observacion de prueba 0",
         "signosvitales": "459e0b1d-8ab0-4095-8701-2b1f76a33f23",
-        "iddiagnostico": "41c70ae0-7383-4a9b-9625-d4df745c7e9a"
+        "idatencion": "ec3c6a5b-80c3-4714-8126-d9b3ebd6bf80",
+        "estado":"indicada"
     }
 ]

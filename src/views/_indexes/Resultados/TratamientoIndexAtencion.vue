@@ -1,7 +1,8 @@
 <template>
-  <v-container id="TratamientoIndex" class="fill-height" fluid>
-      <v-row align="center" justify="center">
-          <v-card class="px-5 pb-5 pt-6">
+  <v-container id="TratamientoIndex" class="ma-0 pa-0 fill-height" fluid>
+      <v-container class="ma-0 max-width" fluid>
+          <v-card class="px-5 pb-2 pt-6">
+            <v-col class="max-width" >
               <v-row class="align-items-center px-5">
                   <h3>Tratamientos</h3>
               </v-row>
@@ -32,8 +33,9 @@
         </v-data-table>
       </v-card-text>
               </v-row>
+            </v-col>
           </v-card>
-      </v-row>
+      </v-container>
       
       <v-dialog v-model="dialog"  persistent max-width="600px" >
         <v-card>

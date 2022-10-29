@@ -1,6 +1,6 @@
 <template>
 
-  <v-card class="mb-12 elevation-4 mx-auto px-5 py-5" id="SignosVitales">
+  <v-card class="elevation-4 mx-auto px-5 py-5" id="SignosVitales">
     <v-card-title class="main_color--text text--darken-1 text-subtitle-1">
       Signos Vitales
     </v-card-title>

@@ -5,28 +5,6 @@
         "descripcion": "descripcion de diagnostico 0",
         "estado": "en proceso",
         "tipo": "inicial",
-        "idatencion": "ec3c6a5b-80c3-4714-8126-d9b3ebd6bf80",
-        "resultados":[
-            {
-                "id": "ffa78aed-b56e-49da-a383-c0819ddfd190",
-                "registro": "09/11/2014",
-                "descripcion": "descripcion de resultado 0",
-                "estado": "finalizado",
-                "iddiagnostico": "41c70ae0-7383-4a9b-9625-d4df745c7e9a"
-            }
-        ],
-        "pruebas":[
-            {
-                "id": "04e77d02-1a3b-428b-83f0-bef1aa426020",
-                "idtipoprueba": "bae18399-7e28-48aa-b226-2aad74224531",
-                "idpaciente": "d5775113-ed08-4de0-8945-d3c977d504f5",
-                "fecresultado": "20/01/2004",
-                "fecprueba": "20/12/2011",
-                "resultado": 1,
-                "observacion": "observacion de prueba 0",
-                "signosvitales": "459e0b1d-8ab0-4095-8701-2b1f76a33f23",
-                "iddiagnostico": "41c70ae0-7383-4a9b-9625-d4df745c7e9a"
-            }
-        ]
+        "idatencion": "ec3c6a5b-80c3-4714-8126-d9b3ebd6bf80"
     }
 ]
