@@ -94,6 +94,35 @@ export default {
                     },
             ],
             saved:[false],
+            editedIndex: -1,
+            editedItem: {
+                id: '0',
+                fecregistro: '',
+                descripcion: '',
+                estado: '',
+                tipo: '',
+                idatencion: '',
+                resultados: [{
+                    id: '',
+                    registro: '',
+                    descripcion: '',
+                    estado: '',
+                }],
+            },
+            defaultItem: {
+                id: '0',
+                fecregistro: '',
+                descripcion: '',
+                estado: '',
+                tipo: '',
+                idatencion: '',
+                resultados: [{
+                    id: '',
+                    registro: '',
+                    descripcion: '',
+                    estado: '',
+                }],
+            }
         }
     },
     beforeMount() {

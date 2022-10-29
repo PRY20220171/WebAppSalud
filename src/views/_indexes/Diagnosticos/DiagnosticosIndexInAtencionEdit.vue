@@ -8,7 +8,7 @@
           </v-row>
           <v-row class="align-items-center px-5">
             <v-col>
-              <v-btn color="primary" @click="dialog=true">
+              <v-btn color="primary" @click="addNew">
                 <v-icon left>mdi-account-plus</v-icon>
                 Registrar diagnosticos
               </v-btn>
@@ -20,45 +20,41 @@
             </v-col>
           </v-row>
           <v-row>
-            {{collection.items}}
+            <!-- {{collection.items}} -->
             <v-card-text outlined>
               <v-data-table :headers="headers" :items="collection.items">
                 <template v-slot:[`item.descripcion`]="{ item }">
-                  <v-text-field v-model="editedItem.descripcion" :hide-details="true" dense single-line :autofocus="true" v-if="item.id === editedItem.id"></v-text-field>
+                  <v-text-field v-model="editedItem.descripcion" :hide-details="true" dense single-line
+                    :autofocus="true" v-if="item.id === editedItem.id"></v-text-field>
                   <span v-else>{{item.descripcion}}</span>
                 </template>
                 <template v-slot:[`item.estado`]="{ item }">
-                  <v-text-field v-model="editedItem.estado" :hide-details="true" dense single-line :autofocus="true" v-if="item.id === editedItem.id"></v-text-field>
+                  <v-text-field v-model="editedItem.estado" :hide-details="true" dense single-line :autofocus="true"
+                    v-if="item.id === editedItem.id"></v-text-field>
                   <span v-else>{{item.estado}}</span>
                 </template>
                 <template v-slot:[`item.tipo`]="{ item }">
-                  <v-text-field v-model="editedItem.tipo" :hide-details="true" dense single-line :autofocus="true" v-if="item.id === editedItem.id"></v-text-field>
+                  <v-text-field v-model="editedItem.tipo" :hide-details="true" dense single-line :autofocus="true"
+                    v-if="item.id === editedItem.id"></v-text-field>
                   <span v-else>{{item.tipo}}</span>
                 </template>
                 <template v-slot:[`item.actions`]="{ item }">
                   <div v-if="item.id === editedItem.id">
-                    <v-icon color="red" class="mr-3" @click="close">
-                      mdi-window-close
-                    </v-icon>
-                    <v-icon color="green"  @click="save">
-                      mdi-content-save
-                    </v-icon>
+                    <v-btn color="primary" outlined x-small fab @click="save">
+                      <v-icon>mdi-content-save</v-icon>
+                    </v-btn>
+                    <v-btn color="error" outlined x-small fab @click="close">
+                      <v-icon class=" text-danger">mdi-window-close</v-icon>
+                    </v-btn>
                   </div>
                   <div v-else>
-                    <v-icon color="green" class="mr-3" @click="editItem(item)">
-                      mdi-pencil
-                    </v-icon>
-                    <v-icon color="red" @click="deleteItem(item)">
-                      mdi-delete
-                    </v-icon>
+                    <v-btn color="primary" outlined x-small fab @click="editItem(item)">
+                      <v-icon>mdi-pencil</v-icon>
+                    </v-btn>
+                    <v-btn color="error" outlined x-small fab @click="deleteItem(item)">
+                      <v-icon class=" text-danger">mdi-delete</v-icon>
+                    </v-btn>
                   </div>
-
-                  <v-btn color="primary" outlined x-small fab>
-                    <v-icon>mdi-pencil</v-icon>
-                  </v-btn>
-                  <v-btn color="error" outlined x-small fab>
-                    <v-icon class=" text-danger">mdi-delete</v-icon>
-                  </v-btn>
                 </template>
               </v-data-table>
             </v-card-text>
