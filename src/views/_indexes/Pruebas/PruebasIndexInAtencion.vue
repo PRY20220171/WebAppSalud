@@ -8,7 +8,7 @@
           </v-row>
           <v-row class="align-items-center px-5">
             <v-col>
-              <v-btn color="primary" @click="dialog=true">
+              <v-btn color="primary" @click="addNew">
                 <v-icon left>mdi-account-plus</v-icon>
                 Registrar prueba
               </v-btn>
@@ -20,9 +20,48 @@
             </v-col>
           </v-row>
           <v-row>
+            {{collection.items}}
             <v-card-text>
               <v-data-table :headers="headers" :items="collection.items" fixed-header>
                 <v-divider inset></v-divider>
+                <template v-slot:[`item.tipoprueba.nombre`]="{ item }">
+                  <v-text-field v-model="editedItem.tipoprueba.nombre" :hide-details="true" dense single-line :autofocus="true"
+                    v-if="item.id === editedItem.id"></v-text-field>
+                  <span v-else>{{item.tipoprueba.nombre}}</span>
+                </template>
+                <template v-slot:[`item.tipoprueba.medida.nombre`]="{ item }">
+                  <v-text-field v-model="editedItem.tipoprueba.medida.nombre" :hide-details="true" dense single-line :autofocus="true"
+                    v-if="item.id === editedItem.id"></v-text-field>
+                  <span v-else>{{item.tipoprueba.medida.nombre}}</span>
+                </template>
+                <template v-slot:[`item.estado`]="{ item }">
+                  <v-text-field v-model="editedItem.estado" :hide-details="true" dense single-line :autofocus="true"
+                    v-if="item.id === editedItem.id"></v-text-field>
+                  <span v-else>{{item.estado}}</span>
+                </template>
+                <template v-slot:[`item.fecprueba`]="{ item }" >
+                  <v-text-field v-model="editedItem.fecprueba" :hide-details="true" dense single-line
+                    :autofocus="true" v-if="item.id === editedItem.id"></v-text-field>
+                  <span v-else-if="item.estado=='en proceso' || item.estado=='finalizada'">{{item.fecprueba}}</span>
+                  <span v-else>-</span>
+                </template>
+                <template v-slot:[`item.fecresultado`]="{ item }">
+                    <v-text-field v-model="editedItem.fecresultado" :hide-details="true" dense single-line :autofocus="true"
+                      v-if="item.id === editedItem.id"></v-text-field>
+                    <span v-else-if="item.estado=='en proceso' || item.estado=='finalizada'">{{item.fecresultado}}</span>
+                  <span v-else>-</span>
+                </template>
+                <template v-slot:[`item.resultado`]="{ item }">
+                    <v-text-field v-model="editedItem.resultado" :hide-details="true" dense single-line :autofocus="true"
+                      v-if="item.id === editedItem.id"></v-text-field>
+                    <span v-else-if="item.estado=='en proceso' || item.estado=='finalizada'">{{item.resultado}}</span>
+                  <span v-else>-</span>
+                </template>
+                <template v-slot:[`item.observacion`]="{ item }">
+                  <v-text-field v-model="editedItem.observacion" :hide-details="true" dense single-line :autofocus="true"
+                    v-if="item.id === editedItem.id"></v-text-field>
+                  <span v-else>{{item.observacion}}</span>
+                </template>
                 <template #[`item.actions`]="{ item }">
                   <div v-if="item.id === editedItem.id">
                     <v-btn color="primary" outlined x-small fab @click="save">

@@ -1,8 +1,5 @@
 import Diagnostico from '../../views/_createOrUpdate/Diagnosticos/DiagnosticoView';
-import {
-    mapState,
-    mapActions
-} from 'vuex'
+import {mapState, mapMutations, mapActions} from 'vuex'
 export default {
     name: 'DiagnosticosAtencionIndex',
     components: {
@@ -112,7 +109,7 @@ export default {
         }
     },
     computed: {
-        //...mapState('DiagnosticoModule',['diagnostico']),
+        //...mapState('atencionModule',['atencion']),
         ...mapState('DiagnosticoModule', ['diagnosticos']),
     },
 
