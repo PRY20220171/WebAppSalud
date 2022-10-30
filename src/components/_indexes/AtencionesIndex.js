@@ -1,19 +1,25 @@
-// import Bars from '../../../views/Shared/Bars.vue';
-//import Loader from '../../../views/Shared/Loader.vue';
-//import Pager from '../../../views/Shared/Pager.vue';
+import DiagnosticosAtencionIndex from '@/views/_indexes/Diagnosticos/DiagnosticosIndexInAtencionEdit.vue';
+import PruebasAtencionIndex from '@/views/_indexes/Pruebas/PruebasIndexInAtencion.vue';
+import ResultadosAtencionIndex from '@/views/_indexes/Resultados/ResultadosIndexAtencion.vue';
+import TratamientosAtencionIndex from '@/views/_indexes/Resultados/TratamientoIndexAtencion.vue';
 
 export default {
     name: "ListaAtenciones",
 
     components: {
-        //Loader, Pager,Bars
+        DiagnosticosAtencionIndex,
+        PruebasAtencionIndex,
+        ResultadosAtencionIndex,
+        TratamientosAtencionIndex,
     },
     mounted() {
         this.getAll(1);
     },
     data() {
         return {
-            dialog: false,
+            dialog1: false,
+            dialog2:false,
+            dialog3:false,
             expanded: [],
             singleExpand: false,
             searchText: "",
