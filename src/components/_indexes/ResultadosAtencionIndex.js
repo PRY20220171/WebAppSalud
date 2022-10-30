@@ -34,62 +34,103 @@ export default {
             tipos: ['final','inicial','medio'],
             ids: [], 
             resultado:{
-                "id":'',
-                "registro":'',
-                "descripcion":'',
-                "estado":'',
-                "tratamientos":[{
-                    "motivo":'',
-                    "tratamiento":'',
-                    "id":'',
-                    "medicamento":'',
-                    "descripcion":'',
+                id:'',
+                registro:'',
+                descripcion:'',
+                estado:'',
+                tratamientos:[{
+                    motivo:'',
+                    tratamiento:'',
+                    id:'',
+                    medicamento:'',
+                    descripcion:'',
                 },{
-                    "motivo":'',
-                    "tratamiento":'',
-                    "id":'',
-                    "medicamento":'',
-                    "descripcion":'',
+                    motivo:'',
+                    tratamiento:'',
+                    id:'',
+                    medicamento:'',
+                    descripcion:'',
                     }
                 ]
             },
             tipo_resultado: [
                 {
-                    "id": "bae18399-7e28-48aa-b226-2aad74224531",
-                    "idmedida": "36032de1-e4b2-4408-855a-71cf56c6c9d8",
-                    "medida": {
-                      "id": "36032de1-e4b2-4408-855a-71cf56c6c9d8",
-                      "nombre": "m3",
-                      "descripcion": "metros cubicos"
+                    id: "bae18399-7e28-48aa-b226-2aad74224531",
+                    idmedida: "36032de1-e4b2-4408-855a-71cf56c6c9d8",
+                    medida: {
+                      id: "36032de1-e4b2-4408-855a-71cf56c6c9d8",
+                      nombre: "m3",
+                      descripcion: "metros cubicos"
                     },
-                    "idcategoriaresultado": "36032de1-e4b2-4408-855a-71cf56c6c9d8",
-                    "categoriaresultado": {
-                      "id": "36032de1-e4b2-4408-855a-71cf56c6c9d8",
-                      "nombre": "laboratorio",
-                      "descripcion": "descripcion de categoria"
+                    idcategoriaresultado: "36032de1-e4b2-4408-855a-71cf56c6c9d8",
+                    categoriaresultado: {
+                      id: "36032de1-e4b2-4408-855a-71cf56c6c9d8",
+                      nombre: "laboratorio",
+                      descripcion: "descripcion de categoria"
                     },
-                    "nombre": "glucosa",
-                    "descripcion": "descripcion de tiporesultado"
+                    nombre: "glucosa",
+                    descripcion: "descripcion de tiporesultado"
                   },
                   {
-                      "id": "bae18399-7e28-48aa-b226-2aad742333333",
-                      "idmedida": "36032de1-e4b2-4408-855a-742333333",
-                      "medida": {
-                        "id": "36032de1-e4b2-4408-855a-742333333",
-                        "nombre": "x 109/L",
-                        "descripcion": "metros cubicos"
+                      id: "bae18399-7e28-48aa-b226-2aad742333333",
+                      idmedida: "36032de1-e4b2-4408-855a-742333333",
+                      medida: {
+                        id: "36032de1-e4b2-4408-855a-742333333",
+                        nombre: "x 109/L",
+                        descripcion: "metros cubicos"
                       },
-                      "idcategoriaresultado": "36032de1-e4b2-4408-855a-71cf56c6c9d8",
-                      "categoriaresultado": {
-                        "id": "36032de1-e4b2-4408-855a-71cf56c6c9d8",
-                        "nombre": "laboratorio",
-                        "descripcion": "descripcion de categoria"
+                      idcategoriaresultado: "36032de1-e4b2-4408-855a-71cf56c6c9d8",
+                      categoriaresultado: {
+                        id: "36032de1-e4b2-4408-855a-71cf56c6c9d8",
+                        nombre: "laboratorio",
+                        descripcion: "descripcion de categoria"
                       },
-                      "nombre": "leucositos",
-                      "descripcion": "descripcion de tiporesultado"
+                      nombre: "leucositos",
+                      descripcion: "descripcion de tiporesultado"
                     },
             ],
+            editedIndex: -1,
             saved:[false],
+            editedItem: {
+                id:'0',
+                registro:'',
+                descripcion:'',
+                estado:'',
+                tratamientos:[{
+                    motivo:'',
+                    tratamiento:'',
+                    id:'',
+                    medicamento:'',
+                    descripcion:'',
+                },{
+                    motivo:'',
+                    tratamiento:'',
+                    id:'',
+                    medicamento:'',
+                    descripcion:'',
+                    }
+                ]
+            },
+            defaultItem: {
+                id:'0',
+                registro:'',
+                descripcion:'',
+                estado:'',
+                tratamientos:[{
+                    motivo:'',
+                    tratamiento:'',
+                    id:'',
+                    medicamento:'',
+                    descripcion:'',
+                },{
+                    motivo:'',
+                    tratamiento:'',
+                    id:'',
+                    medicamento:'',
+                    descripcion:'',
+                    }
+                ]
+            }
         }
     },
     beforeMount() {
@@ -164,6 +205,49 @@ export default {
         changeview(){
             this.detailed = !this.detailed;
             this.getAll(this.collection.page);
+        },
+        uuidv4() {
+            return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, c =>
+                (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+            );
+        },
+        editItem(item) {
+            this.editedIndex = this.collection.items.indexOf(item);
+            this.editedItem = Object.assign({}, item);
+        },
+
+        deleteItem(item) {
+            //console.log(item);
+            const index = this.collection.items.indexOf(item);
+            if (item.descripcion != '' || item.estado != '' || item.registro != '') {
+                confirm('Are you sure you want to delete this item?') && this.collection.items.splice(index, 1);
+            } else {
+                this.collection.items.splice(index, 1);
+            }
+        },
+        close() {
+            setTimeout(() => {
+                let item = this.collection.items.at(this.editedIndex);
+                if (item.descripcion == '' && item.estado == '' && item.registro == '') {
+                    this.collection.items.splice(this.editedIndex, 1);
+                }
+                this.editedItem = Object.assign({}, this.defaultItem);
+                this.editedIndex = -1;
+            }, 300)
+        },
+        addNew() {
+            const addObj = Object.assign({}, this.defaultItem);
+            addObj.id = this.uuidv4();
+            addObj.fecregistro = new Date().toLocaleDateString();
+            //addObj.id = this.collection.items.length + 1;
+            this.collection.items.unshift(addObj);
+            this.editItem(addObj);
+        },
+        save() {
+            if (this.editedIndex > -1) {
+                Object.assign(this.collection.items[this.editedIndex], this.editedItem)
+            }
+            this.close()
         },
     }
 }

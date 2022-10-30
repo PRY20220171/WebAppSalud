@@ -38,23 +38,23 @@
         <v-col cols="12" md="6" class='px-6'>
           <v-row class="py-3">
             <v-text-field label="Número de embarazo" name="Nroembarazo" v-model="paciente.antecedenteperi.nroembarazo"
-            prepend-icon="mdi-baby-buggy" type="number" color="main_color" hide-details="auto" />
+            prepend-icon="mdi-baby-buggy" type="number" color="main_color" hide-details="auto" oninput="if(this.value < 0) this.value = 0;"/>
           </v-row>
           <v-row class="py-3">
             <v-text-field label="Edad gest. al nacer" name="Edadgestalnac" v-model="paciente.antecedenteperi.edadgestalnac" 
-            prepend-icon="mdi-cake-variant" type="number" color="main_color" hide-details="auto" suffix=" sem"/>
+            prepend-icon="mdi-cake-variant" type="number" color="main_color" hide-details="auto" suffix=" sem" oninput="if(this.value < 0) this.value = 0;"/>
           </v-row>
           <v-row class="py-3">
             <v-text-field label="Peso al nacer" name="Pesoalnac" v-model="paciente.antecedenteperi.pesoalnac" 
-            prepend-icon="mdi-scale" type="number" color="main_color" hide-details="auto" suffix=" kg"/>
+            prepend-icon="mdi-scale" type="number" color="main_color" hide-details="auto" suffix=" kg" oninput="if(this.value < 0) this.value = 0;"/>
           </v-row>
           <v-row class="py-3">
             <v-text-field label="Talla al nacer" name="Tallaalnac" v-model="paciente.antecedenteperi.tallaalnac" 
-            prepend-icon="mdi-ruler" type="number" color="main_color" hide-details="auto" suffix=" cm"/>
+            prepend-icon="mdi-ruler" type="number" color="main_color" hide-details="auto" suffix=" cm" oninput="if(this.value < 0) this.value = 0;"/>
           </v-row>
           <v-row class="py-3">
             <v-text-field label="Perimetro cefálico al nacer" name="Perimcefalico" v-model="paciente.antecedenteperi.perimcefalico" 
-            prepend-icon="mdi-math-compass" type="number" color="main_color" hide-details="auto" suffix=" cm"/>
+            prepend-icon="mdi-math-compass" type="number" color="main_color" hide-details="auto" suffix=" cm" oninput="if(this.value < 0) this.value = 0;"/>
           </v-row>
           
         </v-col>

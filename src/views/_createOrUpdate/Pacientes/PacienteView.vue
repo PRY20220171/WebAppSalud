@@ -33,7 +33,7 @@
         <v-row>
           <v-col cols="12" sm="6">
             <v-text-field label="telefono" name="telefono" v-model="paciente.telefono" 
-            prepend-icon="mdi-phone" type="text" color="main_color" hide-details="auto" />
+            prepend-icon="mdi-phone" type="text" color="main_color" hide-details="auto" oninput="if(this.value < 0) this.value = 0;"/>
           </v-col>
           <v-col cols="12" sm="6">
             <v-select :items="tipo_sexo" label="Sexo" name="tipo_sexo" v-model="paciente.sexo"

@@ -46,7 +46,7 @@
           <v-row>
             <v-col >
               <v-text-field label="telefono" name="telefono" v-model="atencion.acompanante.telefono" 
-              prepend-icon="mdi-phone" type="text" color="main_color" hide-details="auto" />
+              prepend-icon="mdi-phone" type="text" color="main_color" hide-details="auto" oninput="if(this.value < 0) this.value = 0;"/>
             </v-col>            
             <v-col cols="12" md="6">
               <v-select :items="tipo_parentezco" label="parentezco" name="parentezco" v-model="atencion.acompanante.parentezco" 

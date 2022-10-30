@@ -51,13 +51,13 @@
                   <v-btn text> Cancel </v-btn>
                 </v-stepper-content>
                 <v-stepper-content step="3">
-                  <v-row>
-                    <v-col cols="12"  > <SignosVitales/> </v-col>
-                    <v-col cols="12"  > <DiagnosticosAtencionIndex/> </v-col>
-                    <v-col cols="12"  > <PruebasAtencionIndex/> </v-col>
-                    <v-col cols="12"  > <ResultadosAtencionIndex/> </v-col>
-                    <v-col cols="12"  > <TratamientosAtencionIndex/> </v-col>
-                  </v-row>
+                  <v-container class="ma-0 pa-0 fill-height" fluid>
+                    <SignosVitales/>
+                    <DiagnosticosAtencionIndex class="py-2"/>
+                    <PruebasAtencionIndex class="py-2"/>
+                    <ResultadosAtencionIndex class="py-2"/>
+                    <TratamientosAtencionIndex class="py-2"/>
+                  </v-container>
                   <v-btn color="main_color darken-1" @click="e1 = 2" dark> Anterior </v-btn>
                 <v-btn color="primary" @click="registrar" > Registrar </v-btn>
                   <v-btn text> Cancel </v-btn>

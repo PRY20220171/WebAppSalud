@@ -17,11 +17,8 @@ export default {
             isLoading: false,
             search: '',
             headers:  [
-                    { text: 'tipotratamiento',value: 'tipotratamiento.nombre'},
-                    { text: 'medida',value: 'tipotratamiento.medida.nombre'},
-                    { text: 'Fecha de tratamiento', value: 'fectratamiento' },
-                    { text: 'Fecha de resultado', value: 'fecresultado' },
-                    { text: 'observacion', sortable: false, value: 'observacion'},
+                    { text: 'medicamento',value: 'medicamento'},
+                    { text: 'descripcion',value: 'descripcion'},
                     { text: '', sortable: false, value: 'actions'},
                 ],
             collection: {
@@ -33,11 +30,25 @@ export default {
             },
             ids: [], 
             tratamiento:{
-                "id": "",
-                "medicamento": "",
-                "descripcion": ""
+                id: "",
+                medicamento: "",
+                descripcion: "",
+                idresultado: ""
               },
             saved:[false],
+            editedIndex: -1,
+            editedItem: {
+                id: "0",
+                medicamento: "",
+                descripcion: "",
+                idresultado: ""
+              },
+            defaultItem: {
+                id: "0",
+                medicamento: "",
+                descripcion: "",
+                idresultado: ""
+              },
         }
     },
     beforeMount() {
@@ -112,6 +123,49 @@ export default {
         changeview(){
             this.detailed = !this.detailed;
             this.getAll(this.collection.page);
+        },
+        uuidv4() {
+            return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, c =>
+                (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+            );
+        },
+        editItem(item) {
+            this.editedIndex = this.collection.items.indexOf(item);
+            this.editedItem = Object.assign({}, item);
+        },
+
+        deleteItem(item) {
+            //console.log(item);
+            const index = this.collection.items.indexOf(item);
+            if (item.descripcion != '' || item.medicamento != '') {
+                confirm('Are you sure you want to delete this item?') && this.collection.items.splice(index, 1);
+            } else {
+                this.collection.items.splice(index, 1);
+            }
+        },
+        close() {
+            setTimeout(() => {
+                let item = this.collection.items.at(this.editedIndex);
+                if (item.descripcion == '' && item.medicamento == '') {
+                    this.collection.items.splice(this.editedIndex, 1);
+                }
+                this.editedItem = Object.assign({}, this.defaultItem);
+                this.editedIndex = -1;
+            }, 300)
+        },
+        addNew() {
+            const addObj = Object.assign({}, this.defaultItem);
+            addObj.id = this.uuidv4();
+            //addObj.fecregistro = new Date().toLocaleDateString();
+            //addObj.id = this.collection.items.length + 1;
+            this.collection.items.unshift(addObj);
+            this.editItem(addObj);
+        },
+        save() {
+            if (this.editedIndex > -1) {
+                Object.assign(this.collection.items[this.editedIndex], this.editedItem)
+            }
+            this.close()
         },
     }
 }

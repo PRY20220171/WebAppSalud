@@ -65,7 +65,8 @@ export const PruebaModule = {
                 fecprueba: "",
                 resultado: 0,
                 observacion: "",
-                signosvitales: ""
+                signosvitales: "",
+                estado: ""
               }
             if (!id) {
                 commit('fillPrueba', model);

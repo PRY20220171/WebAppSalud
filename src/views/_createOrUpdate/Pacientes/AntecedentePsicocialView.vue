@@ -17,18 +17,18 @@
         </v-col>
         <v-col cols="12" md="6">
             <v-text-field label="Edad de la persona gestante" name="edadgestante" v-model="paciente.antecedentepsico.edadgestante"
-            prepend-icon="mdi-cake-variant" type="number" color="main_color" hide-details="auto" suffix=' años' />
+            prepend-icon="mdi-cake-variant" type="number" color="main_color" hide-details="auto" suffix=' años' oninput="if(this.value < 0) this.value = 0;"/>
         </v-col>
       </v-row>
 
       <v-row>
         <v-col cols="12" md="6" >
             <v-text-field label="Embarazos espaciados"  name="embarazoespac" v-model="paciente.antecedentepsico.embarazoespac"
-            prepend-icon="mdi-timetable" type="number" color="main_color" hide-details="auto" prefix='' suffix='años' />
+            prepend-icon="mdi-timetable" type="number" color="main_color" hide-details="auto" prefix='' suffix='años' oninput="if(this.value < 0) this.value = 0;"/>
         </v-col>
         <v-col cols="12" md="6">
             <v-text-field label="Nro. de hijos" name="nrohijos" v-model="paciente.antecedentepsico.nrohijos"
-            prepend-icon="mdi-baby-buggy" type="number" color="main_color" hide-details="auto" suffix=" hijos" />
+            prepend-icon="mdi-baby-buggy" type="number" color="main_color" hide-details="auto" suffix=" hijos" oninput="if(this.value < 0) this.value = 0;"/>
         </v-col>
       </v-row>
 

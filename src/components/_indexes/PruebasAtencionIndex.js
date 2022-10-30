@@ -19,6 +19,7 @@ export default {
             headers:  [
                     { text: 'tipoprueba',value: 'tipoprueba.nombre'},
                     { text: 'medida',value: 'tipoprueba.medida.nombre'},
+                    { text: 'Estado', value: 'estado' },
                     { text: 'Fecha de prueba', value: 'fecprueba' },
                     { text: 'Fecha de resultado', value: 'fecresultado' },
                     { text: 'observacion', sortable: false, value: 'observacion'},
@@ -56,6 +57,7 @@ export default {
                 fecprueba: "",
                 resultado: 0,
                 observacion: "",
+                estado: ""
             },
             tipo_prueba: [
                 {
@@ -94,6 +96,59 @@ export default {
                     },
             ],
             saved:[false],
+            editedIndex: -1,
+            editedItem: {
+                id: "0",
+                idtipoprueba: "",
+                tipoprueba: {
+                  id: "",
+                  idmedida: "",
+                  medida: {
+                    id: "",
+                    nombre: "",
+                    descripcion: ""
+                  },
+                  idcategoriaprueba: "",
+                  categoriaprueba: {
+                    id: "",
+                    nombre: "",
+                    descripcion: ""
+                  },
+                  nombre: "",
+                  descripcion: ""
+                },
+                fecresultado: "",
+                fecprueba: "",
+                resultado: 0,
+                observacion: "",
+                estado: ""
+            },
+            defaultItem: {
+                id: "0",
+                idtipoprueba: "",
+                tipoprueba: {
+                  id: "",
+                  idmedida: "",
+                  medida: {
+                    id: "",
+                    nombre: "",
+                    descripcion: ""
+                  },
+                  idcategoriaprueba: "",
+                  categoriaprueba: {
+                    id: "",
+                    nombre: "",
+                    descripcion: ""
+                  },
+                  nombre: "",
+                  descripcion: ""
+                },
+                fecresultado: "",
+                fecprueba: "",
+                resultado: 0,
+                observacion: "",
+                estado: ""
+            }
         }
     },
     beforeMount() {
@@ -168,68 +223,48 @@ export default {
         changeview(){
             this.detailed = !this.detailed;
             this.getAll(this.collection.page);
-        },/*
-        remove(pacienteid){
-            this.isLoading = true;
-            this.$proxies.pacienteProxy.remove(pacienteid)
-            .then(() =>{
-                this.getAll(1);
-            }).catch(()=>{
-                this.isLoading = false;
-            })
         },
-        collapse(id){
-            let index = this.ids.indexOf(id);
-            if(index == -1){
-                //Hacemos la peticion get para ese paciente:
-                this.$proxies.pacienteProxy.getById(id)
-                .then(x => {
-                    //Aqui tenemos que empujar los datos adicionales al paciente
-                    let aux = this.collection.items.find(element => element.pacienteId === id);
-                    aux.details = x.data;
-                    this.ids.push(id);
-                })
-                .catch(() => {
-                    this.$notify({
-                        group: "global",
-                        type: "is-danger",
-                        text: 'Ocurrió un error inesperado'
-                    });
-                });
-            }
-            else{
-                let aux = this.collection.items.find(element=>element.pacienteId===id);
-                aux.details = null;
-                this.ids.splice(index,1);
-            }
-
+        editItem(item) {
+            this.editedIndex = this.collection.items.indexOf(item);
+            this.editedItem = Object.assign({}, item);
         },
-        infiniteHandler($state){
-            if(this.collection.page > this.collection.pages){
-                $state.complete();
-                return;
+        uuidv4() {
+            return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, c =>
+                (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+            );
+        },
+        deleteItem(item) {
+            //console.log(item);
+            const index = this.collection.items.indexOf(item);
+            if (item.resultado != '' || item.observacion != '') {
+                confirm('Are you sure you want to delete this item?') && this.collection.items.splice(index, 1);
+            } else {
+                this.collection.items.splice(index, 1);
             }
-            this.$proxies.pacienteProxy.getAll(this.collection.page+1, 10)
-                .then(x => {
-                    if(this.collection.page <= x.data.pages){
-                        this.collection.page+=1;
-                        x.data.items.forEach(element => {
-                            this.collection.items.push(element);
-                        });
-                        this.collection.total = x.data.total;
-                        this.collection.pages = x.data.pages;
-                        $state.loaded();
-                    }
-                    else{
-                        $state.complete();
-                    }
-                }).catch(cod => {
-                    this.$notify({
-                        group: "global",
-                        type: "is-danger",
-                        text: 'Ocurrió un error inesperado, codigo de error: '+ cod
-                    });
-                });
-        }*/
+        },
+        close() {
+            setTimeout(() => {
+                let item = this.collection.items.at(this.editedIndex);
+                if (item.resultado == '' && item.observacion == '') {
+                    this.collection.items.splice(this.editedIndex, 1);
+                }
+                this.editedItem = Object.assign({}, this.defaultItem);
+                this.editedIndex = -1;
+            }, 300)
+        },
+        addNew() {
+            const addObj = Object.assign({}, this.defaultItem);
+            addObj.id = this.uuidv4();
+            addObj.fecprueba = new Date().toLocaleDateString();
+            //addObj.id = this.collection.items.length + 1;
+            this.collection.items.unshift(addObj);
+            this.editItem(addObj);
+        },
+        save() {
+            if (this.editedIndex > -1) {
+                Object.assign(this.collection.items[this.editedIndex], this.editedItem)
+            }
+            this.close()
+        },
     }
 }
