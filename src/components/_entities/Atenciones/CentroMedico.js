@@ -122,6 +122,7 @@ export default {
         this.items.push(this.model.nombre)
         //this.selected=this.model.nombre
         this.atencion.centromedico=this.model
+        console.log(this.items,this.atencion.centromedico)
       },
       handleChange(value) {
         var searchWord = value.srcElement._value

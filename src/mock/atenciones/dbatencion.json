@@ -91,6 +91,13 @@
                 "descripcion": "descripcion de resultado 0",
                 "estado": "finalizado",
                 "idatencion": "41c70ae0-7383-4a9b-9625-d4df745c7e9a"
+            },
+            {
+                "id": "ffa78aed-b56e-49da-a383-c0819ddfd000",
+                "registro": "09/11/2020",
+                "descripcion": "descripcion de resultado 0",
+                "estado": "en proceso",
+                "idatencion": "41c70ae0-7383-4a9b-9625-d4df745c7e9a"
             }
         ],
         "pruebas":[

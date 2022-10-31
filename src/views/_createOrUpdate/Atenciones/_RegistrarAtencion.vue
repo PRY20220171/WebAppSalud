@@ -34,7 +34,7 @@
                   <v-row>
                     <v-col cols="12"><PacientesIndexSearch/></v-col>
                   </v-row>
-                  <v-btn color="primary" @click="e1 = 2">  Continue </v-btn>
+                  <v-btn color="primary" @click="e1 = 2" v-if="paciente.nombres">  Continue </v-btn>
                   <v-btn text> Cancel </v-btn>
                 </v-stepper-content>
                 <v-stepper-content step="2">

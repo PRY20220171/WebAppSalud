@@ -85,4 +85,4 @@
     </v-card>
   </template>
   
-  <script src="../../../components/_entities/Resultados/Resultado.js"></script>
+  <script src="@/components/_entities/Resultados/Resultado.js"></script>

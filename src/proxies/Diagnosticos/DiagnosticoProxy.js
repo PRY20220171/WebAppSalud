@@ -9,8 +9,8 @@ export default class DiagnosticoProxy {
     getAll() {
         return this.axios.get(this.url + `diagnosticos`);
     }
-    getAll() {
-        return this.axios.get(this.url + `diagnosticos`);
+    getByAtencionId(id) {
+        return this.axios.get(this.url + `diagnosticos?idatencion=${id}`);
     }
     getById(id) {
         return this.axios.get(this.url + `diagnosticos/${id}`);

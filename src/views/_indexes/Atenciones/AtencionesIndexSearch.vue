@@ -1,10 +1,10 @@
 <template>
-    <v-container id="PacientesIndex" class="fill-height" fluid>
+    <v-container id="AtencionsIndex" class="fill-height" fluid>
         <v-row align="center" justify="center">
             <v-col cols="12"  lg="8">
             <v-card class="px-5 pb-5 pt-6" >
                 <v-card-title class="main_color--text text--darken-1 text-subtitle-1">
-                    Buscar Paciente
+                    Buscar Atencion
                 </v-card-title>
                 <v-row class="align-items-center px-5">
                     <v-col>
@@ -14,11 +14,9 @@
                 </v-row>
                 <v-row>
                     <v-col>
-                        <v-data-table :headers="pacienteHeaders" :items="collection.items" :search="search" >                            
-                            <template #[`item.gruposangrh`]="{ item }">{{ item.gruposang }} {{ item.rh }}</template>                     
-                            <template #[`item.sexo`]="{ item }"> {{tipo_sexo[item.sexo]}} </template>
+                        <v-data-table :headers="atencionHeaders" :items="collection.items" :search="search" >
                             <template #[`item.actions`]="{ item }">
-                                <v-btn  color="primary" outlined x-small fab @click="selected(item.id)">
+                                <v-btn  color="primary" outlined x-small fab @click="selected(item.id, item.paciente.id)">
                                    <v-icon class=" text-primary">mdi-eye</v-icon>
                                 </v-btn>
                             </template>
@@ -27,37 +25,14 @@
                 </v-row>
             </v-card>
             </v-col>
-            <v-col cols="8"  xl="4">
-            <v-card class="px-5 pb-5 pt-6" >
-                <v-card-title class="main_color--text text--darken-1 text-subtitle-1">
-                    {{paciente.nombres}} {{paciente.apellidos}}
-                </v-card-title>
-                <v-card-text v-if="typeof paciente.id!='undefined'">
-                        <v-expansion-panels class="py-2 px-4" focusable v-model="panel">
-                            <v-expansion-panel cols='6' v-for="(item,i) in datosPaciente" class="">
-                                <v-expansion-panel-header  class="text-center main_color--text text--darken-1">
-                                    <b>{{i}}</b>
-                                </v-expansion-panel-header>
-                                <v-expansion-panel-content >
-                                    <v-row>
-                                        <v-col cols="6" class="py-7 px-5" v-for="subcategoria in item">
-                                            <v-row><b>{{subcategoria.text}}</b></v-row>
-                                            <v-row v-for="subitem in subcategoria.detail">
-                                                <v-col>{{subitem.text}}</v-col>
-                                                <v-col class="align-end text-end">{{subitem.value}}</v-col>
-                                                <v-col cols="12" class="py-0 my-0"><v-divider></v-divider></v-col>
-                                            </v-row>
-                                        </v-col>
-                                    </v-row>
-                                </v-expansion-panel-content>
-                                <v-divider></v-divider>
-                            </v-expansion-panel>
-                        </v-expansion-panels>
-                </v-card-text>
-            </v-card>
+            <v-col cols="10" md="5" >
+                <PacienteUneditable/>
+            </v-col>
+            <v-col cols="12"  md="8">
+                <AtencionUneditable/>
             </v-col>
         </v-row>
     </v-container>
 </template>
-<script src="@/components/_indexes/PacientesIndexSearch.js">
+<script src="@/components/_indexes/AtencionesIndexSearch.js">
 </script>

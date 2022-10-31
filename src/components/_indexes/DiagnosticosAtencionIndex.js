@@ -98,6 +98,7 @@ export default {
       ...mapState('DiagnosticoModule',['diagnosticos']),
       ...mapState('atencionModule',['atencion']),
       //...mapState('pacienteModule',['paciente']),
+    },
     watch: {
         collection: {
             handler(val) {

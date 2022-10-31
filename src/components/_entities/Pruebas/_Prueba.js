@@ -1,42 +1,15 @@
-import CategoriaPrueba from '../../../views/_createOrUpdate/Pruebas/CategoriaPruebaView.vue';
-import Medida from '../../../views/_createOrUpdate/Pruebas/MedidaView.vue';
-import Prueba from '../../../views/_createOrUpdate/Pruebas/PruebaView.vue';
-import TipoPrueba from '../../../views/_createOrUpdate/Pruebas/TipoPruebaView.vue';
+import AtencionesIndexSearch from '@/views/_indexes/Atenciones/AtencionesIndexSearch.vue';
+import PruebasAtencionIndex from '@/views/_indexes/Pruebas/PruebasIndexInAtencion.vue';
 
-import Atencion from '../../../views/uneditable/Atenciones/AtencionView.vue';
-import Acompanante from '../../../views/uneditable/Atenciones/AcompananteView.vue';
-import FactoresRiesgo from '../../../views/uneditable/Atenciones/FactoresRiesgoView.vue';
-import CentroMedico from '../../../views/uneditable/Atenciones/CentroMedicoView.vue';
-
-import SignosVitales from '../../../views/uneditable/Pruebas/SignosVitales';
-import Tratamientos from '../../../views/_indexes/Resultados/TratamientoIndexAtencion';
-import Pruebas from '../../../views/_indexes/Pruebas/PruebasIndexInAtencion.vue';
-import Diagnosticos from '../../../views/_indexes/Diagnosticos/DiagnosticosIndexInAtencionEdit.vue';
-
+import {mapState, mapMutations, mapActions} from 'vuex'
 export default {
-    name: 'RegistrarCategoriaPrueba',
+    name: 'RegistrarPrueba',
 
     components: {
       //compartidos
       //inf. general
-        CategoriaPrueba,
-        Medida,
-        Prueba,
-        TipoPrueba,
-      //detalle
-        Atencion,
-        Acompanante,
-        FactoresRiesgo,
-        CentroMedico,
-      //de otros modulos
-        SignosVitales,
-        Pruebas,
-        Tratamientos,
-        Diagnosticos,
-      //inf. general
-        Diagnostico,
-        DiagnosticoXPrueba,
-        DiagnosticoXResultado,
+        AtencionesIndexSearch,
+        PruebasAtencionIndex
     },
     
     data () {
@@ -44,11 +17,34 @@ export default {
       //  user: this.$store.state.user,
       //  isLoading: false,
         e1: 1,
+        usuario:{
+          id:localStorage.getItem("access_token"),
+          nombres: localStorage.getItem("nombres"),
+          rol:localStorage.getItem("rol")
+        },
+        tipos_alerta:{
+          s:'success',
+          i:'info',
+          w:'warning',
+          e:'error'
+        },
+        alertType:'info',
+        mensaje:'Por favor completar la información necesaria antes de guardar',
+        cancelar:'Cancelar',
       }
+    },
+    computed:{
+      ...mapState('atencionModule',['atencion']),
+      ...mapState('pacienteModule',['paciente']),
     },
     mounted(){
       console.log(this.paciente)
+      this.getAtencion({id:null, proxy:this.$proxies.atencionProxy});
+      this.getPaciente({id:null, proxy:this.$proxies.pacienteProxy});
+      console.log(this.atencion)
     },
     methods:{
+      ...mapActions('atencionModule',['getAtencion']),
+      ...mapActions('pacienteModule',['getPaciente']),
     }
   }

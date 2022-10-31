@@ -8,6 +8,16 @@ export default {
     },
     data() {
         return {
+            
+        familiares: [
+            {show:'Padre', val:'P'},
+            {show:'Madre', val:'M'},
+            {show:'Hermano(s)', val:'H'},
+            {show:'Abuelo(s)', val:'A'},
+            {show:'Otros', val:'O'},
+            {show:'No sabe', val:'U'},
+            {show:'Ninguno', val:'N'},
+        ],
             dialog: false,
             expanded: [],
             singleExpand: false,
@@ -61,6 +71,7 @@ export default {
                     this.collection.total = this.collection.items.length;
                     this.collection.items.forEach((x) => {
                         x.nombrecomp = x.paciente.nombres + " " + x.paciente.apellidos;
+                        x.nombreusarioreg = x.usuarioregistro.nombres + " " + x.usuarioregistro.apellidos;
                     });
                     this.isLoading = false;
                 })

@@ -7,10 +7,10 @@
                     </v-row>
                     <v-row class="align-items-center px-5">
                         <v-col>
-                            <router-link :to="{ name: 'Registro Consulta' }">
+                            <router-link :to="{ name: 'Registro Resultado' }">
                                 <v-btn color="primary">
                                     <v-icon left>mdi-account-plus</v-icon>
-                                    Registrar Consulta
+                                    Registrar Resultado
                                 </v-btn>
                             </router-link>
                         </v-col>
@@ -24,10 +24,10 @@
                     <!--comienzo del data table-->
                     <v-data-table :headers="headers.base" :items="collection.items" :expanded.sync="expanded"
                         :search="search" @click:row="clickRow">
-                        <template v-slot:expanded-item="{ headers, item }">
-                            <td :colspan="headers.length">
-                                <v-data-table :headers="resultadoDetail.detail" :items="item.resultados" >
-                                    {{item}}
+                        <template v-slot:expanded-item="{ headers, item }" >
+                            <td :colspan="headers.length" class="py-4  grey lighten-4">
+                                <v-data-table :headers="resultadoDetail" :items="item.resultados" class="elevation-1 outlined"  hide-default-footer >
+                                    
                                 </v-data-table>
                                 <!-- {{item}} -->
                             </td>
