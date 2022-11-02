@@ -4,9 +4,10 @@
       <v-card class="px-5 pb-2 pt-6">
         <v-col class="max-width">
           <v-row class="align-items-center px-5">
+           <!-- <h3>{{datos}}</h3>-->
             <h3>Diagnosticos</h3>
           </v-row>
-          <v-row class="align-items-center px-5">
+          <v-row class="align-items-center px-a5">
             <v-col>
               <v-btn color="primary" @click="addNew">
                 <v-icon left>mdi-account-plus</v-icon>
