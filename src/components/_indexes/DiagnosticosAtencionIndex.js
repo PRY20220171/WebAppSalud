@@ -212,18 +212,12 @@ export default {
             console.log(diagnost);
             alert("Diagnostico eliminado");
         }
-
-        this.close();
-
-        /*
-      //console.log(item);
-      const index = this.collection.items.indexOf(item);
-      if (item.descripcion != "" || item.estado != "" || item.tipo != "") {
-        confirm("Are you sure you want to delete this item?") &&
+        const index = this.collection.items.indexOf(item);
+        if (item.descripcion != "" || item.estado != "" || item.tipo != "") {
           this.collection.items.splice(index, 1);
-      } else {
-        this.collection.items.splice(index, 1);
-      }*/
+        } else {
+            this.collection.items.splice(index, 1);
+        }
     },
     close() {
       setTimeout(() => {

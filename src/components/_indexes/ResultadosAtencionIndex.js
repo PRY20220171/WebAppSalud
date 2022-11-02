@@ -1,3 +1,4 @@
+import	axios from	"axios";
 import {mapState,mapActions} from 'vuex'
 import Resultado from '../../views/_createOrUpdate/Resultados/ResultadoView.vue'
 
@@ -216,11 +217,18 @@ export default {
             this.editedItem = Object.assign({}, item);
         },
 
-        deleteItem(item) {
-            //console.log(item);
+        async deleteItem(item) {
+            let x = window.confirm('¿Está seguro de eliminar el resultado?');
+            if(x){
+                const result = await axios.delete(
+                    `http://localhost:3000/resultados/${item.id}`
+                );
+                console.log(result);
+                alert("Resultado eliminado");
+            }
             const index = this.collection.items.indexOf(item);
             if (item.descripcion != '' || item.estado != '' || item.registro != '') {
-                confirm('Are you sure you want to delete this item?') && this.collection.items.splice(index, 1);
+               this.collection.items.splice(index, 1);
             } else {
                 this.collection.items.splice(index, 1);
             }
@@ -243,11 +251,24 @@ export default {
             this.collection.items.unshift(addObj);
             this.editItem(addObj);
         },
-        save() {
-            if (this.editedIndex > -1) {
+        async save() {
+            try{
+                const new_resultado= await axios.post(
+                    'http://localhost:3000/resultados',{
+                        id: this.uuidv4(),
+                        registro: new Date().toLocaleDateString(),
+                        descripcion: this.editedItem.descripcion,
+                        estado: this.editedItem.estado,
+                        tratamientos: this.editedItem.tratamientos                    })
+            }
+            catch(error){
+                console.log(error)
+            }
+            this.close();
+            /*if (this.editedIndex > -1) {
                 Object.assign(this.collection.items[this.editedIndex], this.editedItem)
             }
-            this.close()
+            this.close()*/
         },
     }
 }
