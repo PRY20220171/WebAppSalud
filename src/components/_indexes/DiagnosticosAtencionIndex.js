@@ -1,7 +1,7 @@
 import axios from "axios";
 import Diagnostico from "../../views/_createOrUpdate/Diagnosticos/DiagnosticoView";
 import { mapState, mapMutations, mapActions } from "vuex";
-import { id_Atencion } from "../_entities/Atenciones/_Atencion.js";
+import { id_Paciente, id_Atencion } from "../_entities/Atenciones/_Atencion.js";
 
 export default {
   name: "DiagnosticosAtencionIndex",
@@ -249,8 +249,8 @@ export default {
                     descripcion: this.editedItem.descripcion,
                     estado: this.editedItem.estado,
                     tipo: this.editedItem.tipo,
-                    idatencion: id_Atencion,
-                    idpaciente: this.atencion.idpaciente,
+                    idatencion: this.atencion.id,
+                    idpaciente: id_Paciente,
                 })
         }
         catch(error){

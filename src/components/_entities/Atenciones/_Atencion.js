@@ -12,15 +12,17 @@ import PacientesIndexSearch from '@/views/_indexes/Pacientes/PacientesIndexSearc
 
 import { mapState, mapMutations, mapActions } from 'vuex'
 
-let id_Atencion ='';
+let id_Paciente ='';
+let id_Atencion='';
 
-export function idAtencion(_idAtencion){
+export function idAtencion(_idPaciente) {
   console.log("Me llaman desde _Atencion.js");
-  id_Atencion = _idAtencion;
-  console.log("id_Atencion: " + id_Atencion);
+  id_Paciente = _idPaciente;
+  console.log("id_Paciente: " + id_Paciente);
+
 };
 
-export {id_Atencion};
+export {id_Paciente, id_Atencion};
 export default {
   name: 'RegistrarAtencion',
   components: {
@@ -41,6 +43,7 @@ export default {
   },
   data() {
     return {
+      id_Paciente:'',
       id_Atencion:'',
       e1: 1,
       usuario: {
@@ -70,6 +73,7 @@ export default {
       id: id,
       proxy: this.$proxies.atencionProxy
     });
+    this.getIdAtencion(this.atencion.id);
     if (id) {
       this.e1 = 2;
     }
@@ -84,6 +88,10 @@ export default {
   updated() {
   },
   methods: {
+    getIdAtencion(idAtencion){
+      id_Atencion=idAtencion;
+      console.log("id_Atencion: " + id_Atencion);
+    },
     ...mapActions('atencionModule', ['getAtencion']),
     registrar() {
       let id = this.$route.params.id;
@@ -115,6 +123,7 @@ export default {
           });
       }
     },
+
   },
 };
 
