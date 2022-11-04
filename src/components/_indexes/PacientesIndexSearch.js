@@ -1,14 +1,18 @@
 
 import {mapActions,mapState} from 'vuex'
 import PacienteUneditable from '@/views/uneditable/Pacientes/PacienteUneditableView.vue';
+
+import {idAtencion} from '@/components/_entities/Atenciones/_Atencion.js';
  
 export default {
     name: 'PacientesIndexSearch',
+
     components: {
         PacienteUneditable
     },
     data() {
         return {
+            id_Paciente: '',
             isLoading: false,
             search: '',
             panel: [0, 1],
@@ -63,8 +67,9 @@ export default {
         ...mapActions('atencionModule',['updatePacienteOnCreate']),
         selected(idpaciente){
             console.log(idpaciente)
+            this.id_Paciente = idpaciente;
             this.getPaciente({id:idpaciente, proxy:this.$proxies.pacienteProxy});
-
+            idAtencion(idpaciente);
         }
     }
 }

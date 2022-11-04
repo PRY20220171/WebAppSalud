@@ -1,6 +1,6 @@
 <template>
     <v-container id="PacientesIndex" class="fill-height" fluid>
-        <v-row align="center" justify="center">
+        <v-row justify="center">
             <v-col cols="12"  lg="8">
             <v-card class="px-5 pb-5 pt-6" >
                 <v-card-title class="main_color--text text--darken-1 text-subtitle-1">
@@ -18,8 +18,8 @@
                             <template #[`item.gruposangrh`]="{ item }">{{ item.gruposang }} {{ item.rh }}</template>                     
                             <template #[`item.sexo`]="{ item }"> {{tipo_sexo[item.sexo]}} </template>
                             <template #[`item.actions`]="{ item }">
-                                <v-btn  color="primary" outlined x-small fab @click="selected(item.id)">
-                                   <v-icon class=" text-primary">mdi-eye</v-icon>
+                                <v-btn  justify="center" color="primary" outlined x-small fab @click="selected(item.id)">
+                                   <v-icon  class=" text-primary">mdi-eye</v-icon>
                                 </v-btn>
                             </template>
                         </v-data-table>
