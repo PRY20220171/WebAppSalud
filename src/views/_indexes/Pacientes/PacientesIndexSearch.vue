@@ -18,8 +18,8 @@
                             <template #[`item.gruposangrh`]="{ item }">{{ item.gruposang }} {{ item.rh }}</template>                     
                             <template #[`item.sexo`]="{ item }"> {{tipo_sexo[item.sexo]}} </template>
                             <template #[`item.actions`]="{ item }">
-                                <v-btn  justify="center" color="primary" outlined x-small fab @click="selected(item.id)">
-                                   <v-icon  class=" text-primary">mdi-eye</v-icon>
+                                <v-btn  color="primary" outlined x-small fab @click="selected(item.id)">
+                                   <v-icon class=" text-primary">mdi-eye</v-icon>
                                 </v-btn>
                             </template>
                         </v-data-table>

@@ -20,7 +20,7 @@ export function idAtencion(_idAtencion){
   console.log("id_Atencion: " + id_Atencion);
 };
 
-export {id_Atencion}
+export {id_Atencion};
 export default {
   name: 'RegistrarAtencion',
   components: {

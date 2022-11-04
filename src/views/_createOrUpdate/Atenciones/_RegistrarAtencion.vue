@@ -13,7 +13,20 @@
               </v-col>
         </v-row>
         <v-stepper v-model="e1" class="grey lighten-4 fill-height" >
-        
+            <v-stepper-header class="stepper_plus">
+              <v-stepper-step :complete="e1 > 1" step="1" >
+                Seleccionar Paciente
+              </v-stepper-step>
+              <v-divider></v-divider>
+              <v-stepper-step :complete="e1 > 2" step="2" >
+                Datos Generales
+              </v-stepper-step>
+              <v-divider></v-divider>
+              <v-stepper-step :complete="e1 > 3" step="3" >
+                Diagnóstico y Tratamiento
+              </v-stepper-step>
+              <v-divider></v-divider>
+            </v-stepper-header>
               <v-form>
             <v-stepper-items>
                 <v-stepper-content step="1">
