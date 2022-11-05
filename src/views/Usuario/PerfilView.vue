@@ -1,48 +1,35 @@
 <template>
-    <div id="RegistrarPaciente" class="fill-height">
+    <div id="VerUsuario" class="fill-height">
         
-      <v-main class="fill-height grey lighten-4 ">
-        <v-row class="my-15 justify-center">
-            <div class="text-h2"> Bienvenido <b>{{model.apellidos}}, {{model.nombres}}</b>.</div>
-        </v-row>
-        <v-row class="justify-center pa-0 mb-0">
-            <div class="mt-4 text-h3 main_color--text text--darken-1"> Rol: <b>{{model.rol}}</b></div>
-        </v-row>
+      <v-main class="fill-height grey lighten-4 align-center ">
+        <v-col v-if="esPerfil">
+            <v-row class="mt-15 justify-center">
+                <div class="text-h2"> Bienvenido <b>{{model.apellidos}}, {{model.nombres}}</b>!</div>
+            </v-row>
+            <v-row class="justify-center pa-0 mb-10">
+                <div class="mt-4 text-h3 main_color--text text--darken-1 text-capitalize"> Rol: <b>{{model.roles[0].rol.descripcion}}</b></div>
+            </v-row>
+        </v-col>
         <v-row class="justify-center mt-0">
-            <v-col cols="8" md="4" class="">
-                <v-card class="elevation-4 px-5 py-5" outlined>
-                    <v-card-text class="">
-                        <v-row class="py-3 align-start">
-                            <v-icon class="pr-2" left>mdi-card-account-details</v-icon>
-                            <p>{{model.doctipo}}: </p>
-                            <span class='pl-3 rounded-pill accent lighten-4'>{{model.docnum}}</span>
-                        </v-row>
-                        <v-row class="py-3 align-start">
-                            <v-icon class="pr-2" left>mdi-email</v-icon>
-                            <p>Correo: </p>
-                            <span class='pl-3  rounded-pill accent lighten-4'>{{model.correo}}</span>
-                        </v-row>
-                        <v-row class="py-3 align-start">
-                            <v-icon class="pr-2" left>mdi-phone</v-icon>
-                            <p>Teléfono: </p>
-                            <span class='pl-3  rounded-pill accent lighten-4'>{{model.telefono}}</span>
-                        </v-row>
-                        <v-row class="py-3 align-start">
-                            <v-icon class="pr-2" left>mdi-city</v-icon>
-                            <p>Dirección: </p>
-                            <span class='pl-3  rounded-pill accent lighten-4'>{{model.direccion}}</span>
-                        </v-row>
-                        <v-row class="py-3 align-start">
-                            <v-icon class="pr-2" left>mdi-map-marker</v-icon>
-                            <p>Procedencia (Nacionalidad): </p>
-                            <span class='pl-3  rounded-pill accent lighten-4'>{{model.procedencia}}</span>
-                        </v-row>
-                        <v-row class="py-3 align-start">
-                            <v-icon class="pr-2" left>mdi-account-tie</v-icon>
-                            <p>Especialidad(es): </p>
-                            <span class='pl-3  rounded-pill accent lighten-4'>{{model.especialidad}}</span>
-                        </v-row>
-                    </v-card-text>
+            <v-col cols="10" md="6" class="">
+                <v-card v-if="typeof model.id!='undefined'" class="elevation-4 px-5 py-5">
+                    <v-row v-if="!esPerfil" class="justify-center align-center my-5">
+                            <span class="text-h4 mr-5"> <b>{{model.apellidos}}, {{model.nombres}}</b>!</span>
+                            <span class="text-h4 main_color--text text--darken-1 text-capitalize"> ({{model.roles[0].rol.descripcion}}) </span>
+                    </v-row>
+                    <v-row v-for="item in datosUsuario">
+                        <v-col  class="">
+                            <v-icon class="pr-2" left>{{item.icon}}</v-icon>
+                            <span>{{item.name}}</span>
+                        </v-col>
+                        <v-col class="align-end text-end">
+                            <v-chip-group active-class="primary--text" column v-if="item.name=='Especialidades'">
+                                <v-chip v-for="subitem in item.valor"  color="second_0" outlined> {{ subitem }} </v-chip>
+                            </v-chip-group>
+                            <span v-else  class="second_0--text ">{{item.valor}}</span>
+                        </v-col>
+                        <v-col cols="12" class="py-0"><v-divider></v-divider></v-col>
+                    </v-row>
                 </v-card>
             </v-col>
         </v-row>
@@ -55,75 +42,4 @@
     </div>
   </template>
   
-  <script>
-export default {
-    name: 'MiPerfil',
-    data () {
-      return {
-        model:{
-            idusuario:'1',
-            nombres:'Samael',
-            apellidos:'Veritas',
-            password:'',
-            docnum:'12345678',
-            doctipo:'DNI',
-            correo:'sveritas@salud.com',
-            telefono:'987654321',
-            direccion:'Psje. 123',
-            procedencia:'Peruano',
-            rol:"Administrador",
-            numcolegiatura:"123456",
-            especialidad:"Cardiología",
-        },
-        rol:{
-            idrol:'',
-            descripcion:'',
-        },
-
-        tipo_doc: ['DNI', 'Carnet de Extranjería', 'Pasaporte'],
-        roles: [
-          {nombre:'Administrador',descripcion:'Acceso completo al sistema'},
-          {nombre:'Médico',descripcion:'Acceso parcial al sistema'},
-          {nombre:'Enfermero',descripcion:'Acceso parcial al sistema'}
-        ],
-        especialidades:[
-          "Alergología",
-          "Cardiología",
-          "Cirugía de Cabeza y Cuello",
-          "Cirugía de Torax y Cardiovascular",
-          "Cirugía General y Laparoscópica",
-          "Cirugía Oncológica",
-          "Cirugía Pediátrica",
-          "Dermatología",
-          "Ecografía",
-          "Endocrinología",
-          "Gastroenterología",
-          "Geriatría",
-          "Ginecología Oncológica",
-          "Ginecología y Obstetricia",
-          "Hematología",
-          "Mastología",
-          "Medicina Física y Rehabilitación",
-          "Medicina General",
-          "Medicina Interna",
-          "Nefrología",
-          "Neumología",
-          "Neurocirugía",
-          "Neurología",
-          "Nutrición",
-          "Odontología",
-          "Oftalmología",
-          "Otorrinolaringología",
-          "Pediatría",
-          "Psicología",
-          "Radiología",
-          "Reumatologia",
-          "Salud Mental",
-          "Traumatologia y Ortopedia",
-          "Urología",
-        ]
-      }
-    },
-  }
-
-  </script>
+  <script src="@/components/_entities/Usuarios/Usuario.js"> </script>

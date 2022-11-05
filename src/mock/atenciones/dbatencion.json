@@ -23,7 +23,6 @@
             "idantecedentefam": "d4914f81-a94b-4169-9e58-a53a2904d766",
             "idantecedentepato": "2a811d22-dd44-42b5-9cc8-446deea58fd0"
         },
-        "idusuarioregistro": "9a7377da-d8a8-4c3b-80fc-8e4ef4d4b6e2",
         "fecharegistro": "21/09/2018",
         "motivoconsulta": "Dolor en extremidad superior",
         "observaciones": "El paciente tiene un dolor agudo en el brazo izquierdo",
@@ -69,6 +68,51 @@
             },
             "nombre": "Hospital Nacional Dos de Mayo",
             "sector": "estatal"
-        }
+        },
+        "idusuarioregistro":"04e77d02-1a3b-428b-83f0-bef1aa426020",
+        "usuarioregistro":{
+            "id": "04e77d02-1a3b-428b-83f0-bef1aa426020",
+            "nombres": "Zhang",
+            "apellidos": "Shou",
+            "password": "admin",
+            "docnum": "98926073",
+            "doctipo": "DNI",
+            "correo": "admin@admin.com",
+            "telefono": "987654321",
+            "direccion": "Av. La Marina 6908",
+            "procedencia": "Lima",
+            "numcolegiatura": "987654321",
+            "especialidad": "cirujano"
+        },
+        "resultados":[
+            {
+                "id": "ffa78aed-b56e-49da-a383-c0819ddfd190",
+                "registro": "09/11/2014",
+                "descripcion": "descripcion de resultado 0",
+                "estado": "finalizado",
+                "idatencion": "41c70ae0-7383-4a9b-9625-d4df745c7e9a"
+            },
+            {
+                "id": "ffa78aed-b56e-49da-a383-c0819ddfd000",
+                "registro": "09/11/2020",
+                "descripcion": "descripcion de resultado 0",
+                "estado": "en proceso",
+                "idatencion": "41c70ae0-7383-4a9b-9625-d4df745c7e9a"
+            }
+        ],
+        "pruebas":[
+            {
+                "id": "04e77d02-1a3b-428b-83f0-bef1aa426020",
+                "idtipoprueba": "bae18399-7e28-48aa-b226-2aad74224531",
+                "idpaciente": "d5775113-ed08-4de0-8945-d3c977d504f5",
+                "fecresultado": "20/01/2004",
+                "fecprueba": "20/12/2011",
+                "resultado": 1,
+                "observacion": "observacion de prueba 0",
+                "signosvitales": "459e0b1d-8ab0-4095-8701-2b1f76a33f23",
+                "idatencion": "41c70ae0-7383-4a9b-9625-d4df745c7e9a",
+                "estado":"indicada"
+            }
+        ]
     }
 ]

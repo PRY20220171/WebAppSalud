@@ -1,3 +1,4 @@
+import {mapState} from 'vuex'
 export default {
     name: 'Sintoma',
 
@@ -19,6 +20,9 @@ export default {
         search: '',
         selected: [],
       }
+    },
+    computed:{
+      ...mapState('atencionModule',['atencion']),
     },
     
     methods: {

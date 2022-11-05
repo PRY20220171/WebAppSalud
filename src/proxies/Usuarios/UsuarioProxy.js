@@ -12,6 +12,10 @@ export default class UsuarioProxy {
     getById(id) {
         return this.axios.get(this.url + `usuarios/${id}`);
     }
+    getByCorreoAndPassword(correo,password) {
+        console.log(this.url + 'usuarios?correo='+correo+'&password='+password)
+        return this.axios.get(this.url + 'usuarios?correo='+correo+'&password='+password);
+    }
     register(model){
         return this.axios.post(this.url+`usuarios`,model);
     }

@@ -43,59 +43,59 @@ export const PacienteModule = {
                 dias:0,
                 text:''
             }
-            let antecedentefam={
-              id: '',
-                tbc: [],
-                vihsida: [],
-                diabetes: [],
-                epilepsia: [],
-                alergiamedic: [],
-                violenciafam: [],
-                alcoholismo: [],
-                drogradiccion: [],
-                hepatitisb: [],
-                otros: '',
-            }
-            let antecedentepato={
-              id:'',
-                tbc: '',
-                sobasma: '',
-                transfsangre: '',
-                neurologico: '',
-                alergiamedic: '',
-                otros: '',
-            }
-            let antecedenteperi={
-                id:'',
-                tipoembarazo: '',
-                embarazoriesgo: '',
-                controlprenatal: '',
-                nroembarazo: '',
-                edadgestalnac: '',
-                pesoalnac: '',
-                tallaalnac: '',
-                perimcefalico: '',
-                respllanto: '',
-            }
-            let antecedentepsico ={
-              id:'',
-                apoyofam: '',
-                edadgestante: '',
-                nrohijos: '',
-                embarazoespac: '',
-                tipotrabajo: '',
-                violenciaocupacional: '',
-                vidasocial: '',
-                perteneceorg: '',
-            }
-            let ubicacion={
-                id:  "",
-                pais: "Peru",
-                region: "Lima",
-                provincia: "Lima",
-                distrito:  "",
-                direccion:  "",
-            }
+            //let antecedentefam={
+            //  id: '',
+            //    tbc: [],
+            //    vihsida: [],
+            //    diabetes: [],
+            //    epilepsia: [],
+            //    alergiamedic: [],
+            //    violenciafam: [],
+            //    alcoholismo: [],
+            //    drogradiccion: [],
+            //    hepatitisb: [],
+            //    otros: '',
+            //}
+            //let antecedentepato={
+            //  id:'',
+            //    tbc: '',
+            //    sobasma: '',
+            //    transfsangre: '',
+            //    neurologico: '',
+            //    alergiamedic: '',
+            //    otros: '',
+            //}
+            //let antecedenteperi={
+            //    id:'',
+            //    tipoembarazo: '',
+            //    embarazoriesgo: '',
+            //    controlprenatal: '',
+            //    nroembarazo: '',
+            //    edadgestalnac: '',
+            //    pesoalnac: '',
+            //    tallaalnac: '',
+            //    perimcefalico: '',
+            //    respllanto: '',
+            //}
+            //let antecedentepsico ={
+            //  id:'',
+            //    apoyofam: '',
+            //    edadgestante: '',
+            //    nrohijos: '',
+            //    embarazoespac: '',
+            //    tipotrabajo: '',
+            //    violenciaocupacional: '',
+            //    vidasocial: '',
+            //    perteneceorg: '',
+            //}
+            //let ubicacion={
+            //    id:  "",
+            //    pais: "Peru",
+            //    region: "Lima",
+            //    provincia: "Lima",
+            //    distrito:  "",
+            //    direccion:  "",
+            //}
 
             let model = {
                 id: "",
@@ -113,22 +113,77 @@ export const PacienteModule = {
                 fecnac:  "",
                 edad:model_edad,
                 idlugarnac:  "",
-                lugarnac: ubicacion,
+                lugarnac: {
+                    id:  "",
+                    pais: "Peru",
+                    region: "Lima",
+                    provincia: "Lima",
+                    distrito:  "",
+                    direccion:  "",
+                },
                 iddomicilioact:  "",
-                domicilioact: ubicacion,
+                domicilioact: {
+                    id:  "",
+                    pais: "Peru",
+                    region: "Lima",
+                    provincia: "Lima",
+                    distrito:  "",
+                    direccion:  "",
+                },
                 idantecedenteperi:  "",
-                antecedenteperi: antecedenteperi,
+                antecedenteperi: {
+                    id:'',
+                    tipoembarazo: '',
+                    embarazoriesgo: '',
+                    controlprenatal: '',
+                    nroembarazo: '',
+                    edadgestalnac: '',
+                    pesoalnac: '',
+                    tallaalnac: '',
+                    perimcefalico: '',
+                    respllanto: '',
+                },
                 idantecedentepsico:  "",
-                antecedentepsico: antecedentepsico,
+                antecedentepsico: {
+                    id:'',
+                      apoyofam: '',
+                      edadgestante: '',
+                      nrohijos: '',
+                      embarazoespac: '',
+                      tipotrabajo: '',
+                      violenciaocupacional: '',
+                      vidasocial: '',
+                      perteneceorg: '',
+                  },
                 idantecedentefam:  "",
-                antecedentefam: antecedentefam,
+                antecedentefam: {
+                    id: '',
+                      tbc: [],
+                      vihsida: [],
+                      diabetes: [],
+                      epilepsia: [],
+                      alergiamedic: [],
+                      violenciafam: [],
+                      alcoholismo: [],
+                      drogradiccion: [],
+                      hepatitisb: [],
+                      otros: '',
+                  },
                 idantecedentepato:  "",
-                antecedentepato: antecedentepato
+                antecedentepato: {
+                    id:'',
+                      tbc: '',
+                      sobasma: '',
+                      transfsangre: '',
+                      neurologico: '',
+                      alergiamedic: '',
+                      otros: '',
+                  }
             }
-            console.log('proxy');
-            console.log(proxy)
-            console.log('id: ',id);
-            console.log('en vuex 1');
+            //console.log('proxy');
+            //console.log(proxy)
+            //console.log('id: ',id);
+            //console.log('en vuex 1');
             //let id = this.$route.params.id;
             if (!id) 
                 commit('fillPaciente',model);

@@ -1,3 +1,4 @@
+import {mapState} from 'vuex'
 export default {
     name: 'FactoresRiesgo',
 
@@ -24,6 +25,9 @@ export default {
       }
     },
     
+    computed:{
+      ...mapState('atencionModule',['atencion']),
+    },
     methods:{
     }
   }

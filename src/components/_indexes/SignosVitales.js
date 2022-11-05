@@ -1,52 +1,52 @@
-import Bars from '../../views/Shared/Bars.vue';
+
+import {mapActions,mapState} from 'vuex'
 export default {
     name: 'SignosVitales',
     components: {
-        Bars,
     },
     mounted() {
-        this.getAll(1);
+        //this.getAll(1);
     },
     data() {
         return {
-            signosVitales:[
-                {
+            signosVitales:{
+                temperatura:{
                     nombre:'temperatura',
                     sigla:'PA',
                     medicion:'°C',
                     val:''
                 },
-                {
+                temperatura:{
                     nombre:'presionArterial',
                     sigla:'PA',
                     medicion:'',
                     val:''
                 },
-                {
+                frecuenciaCardiaca:{
                     nombre:'frecuenciaCardiaca',
                     sigla:'FC',
                     medicion:'',
                     val:''
                 },
-                {
+                factoresReumatoides:{
                     nombre:'factoresReumatoides',
                     sigla:'FR',
                     medicion:'PA',
                     val:''
                 },
-                {
+                peso:{
                     nombre:'peso',
                     sigla:'Peso',
                     medicion:'kg',
                     val:''
                 },
-                {
+                nombre:{
                     nombre:'talla',
                     sigla:'talla',
                     medicion:'cm',
                     val:''
                 },
-            ]
+            }
             
             /*
             user: this.$store.state.user,
@@ -60,38 +60,7 @@ export default {
             }*/  
         }
     },
-    methods: {
-        getAll(page) {/*
-            this.isLoading = true;
-            if(this.user.roles.includes('ADMIN')){
-                this.isLoading = true;
-                this.$proxies.insumoProxy.getAllAdmin(page, 10)
-                .then(x => {
-                    this.collection = x.data;
-                    this.isLoading = false;
-                }).catch(() => {
-                    this.isLoading = false;
-                });
-            }
-            else{
-                this.$proxies.insumoProxy.getAll(page, 10)
-                .then(x => {
-                    this.collection = x.data;
-                    this.isLoading = false;
-                }).catch(() => {
-                    this.isLoading = false;
-                });
-            }
-            */
-        },
-        remove(insumoId){/*
-            this.isLoading = true;
-            this.$proxies.insumoProxy.remove(insumoId)
-            .then(() =>{
-                this.getAll(1);
-            }).catch(()=>{
-                this.isLoading = false;
-            })*/
-        }
-    }
+    computed:{
+        ...mapState('atencionModule',['atencion']),
+    },
 }

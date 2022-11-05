@@ -1,0 +1,67 @@
+[{
+        "id": "04e77d02-1a3b-428b-83f0-bef1aa426020",
+        "nombres": "Zhang",
+        "apellidos": "Shou",
+        "password": "admin",
+        "docnum": "98926073",
+        "doctipo": "DNI",
+        "correo": "admin@admin.com",
+        "telefono": "987654321",
+        "direccion": "Av. La Marina 6908",
+        "procedencia": "Lima",
+        "numcolegiatura": "987654321",
+        "especialidad": ["Cirugía General y Laparoscópica"],
+        "roles":[
+            {
+                "rol":{
+                    "id": "04e77d02-1a3b-428b-83f0-bef1aa426020",
+                    "descripcion": "medico"
+                }
+            }
+        ]
+    },
+    {
+        "id": "04e77d02-1a3b-428b-83f0-bef1aa426021",
+        "nombres": "Ma",
+        "apellidos": "Dawei",
+        "password": "admin",
+        "docnum": "98926074",
+        "doctipo": "DNI",
+        "correo": "admin1@admin.com",
+        "telefono": "987654321",
+        "direccion": "Av. La Marina 6908",
+        "procedencia": "Lima",
+        "numcolegiatura": "000000000",
+        "especialidad": ["Enfermería"],
+        "roles":[
+            {
+                "rol":{
+                    "id": "04e77d02-1a3b-428b-83f0-bef1aa426021",
+                    "descripcion": "enfermero"
+                }
+            }
+        ]
+    },
+    {
+        "id": "04e77d02-1a3b-428b-83f0-bef1aa426022",
+        "nombres": "Lin",
+        "apellidos": "Na",
+        "password": "admin",
+        "docnum": "98926075",
+        "doctipo": "DNI",
+        "correo": "admin2@admin.com",
+        "telefono": "987654321",
+        "direccion": "Av. La Marina 6908",
+        "procedencia": "Lima",
+        "numcolegiatura": "000000000",
+        "especialidad": ["Medicina General"],
+        "roles":[
+            {
+                "rol":{
+                    "id": "04e77d02-1a3b-428b-83f0-bef1aa426022",
+                    "descripcion": "administrador"
+                }
+            }
+        ]
+    }
+]

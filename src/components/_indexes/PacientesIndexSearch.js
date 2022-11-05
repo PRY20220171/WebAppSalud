@@ -1,12 +1,21 @@
 
 import {mapActions,mapState} from 'vuex'
+import PacienteUneditable from '@/views/uneditable/Pacientes/PacienteUneditableView.vue';
+
+import {idAtencion} from '@/components/_entities/Atenciones/_Atencion.js';
+ 
 export default {
     name: 'PacientesIndexSearch',
-    components: {},
+
+    components: {
+        PacienteUneditable
+    },
     data() {
         return {
+            id_Paciente: '',
             isLoading: false,
             search: '',
+            panel: [0, 1],
             pacienteHeaders: [
                     { text: 'Nombres',value: "nombrecomp"},
                     { text: 'Doc. Identidad', value: 'doc' },
@@ -28,19 +37,7 @@ export default {
     },
     computed:{
       ...mapState('pacienteModule',['paciente']),
-      datosPaciente(){
-        return {
-            'Tipo de documento': this.paciente.doctipo,
-            'Documento': this.paciente.docnum,
-            'Sexo': this.tipo_sexo[this.paciente.sexo],
-            'Tipo de Sangre': this.paciente.gruposang+' '+ this.paciente.rh,
-            'Telefono': this.paciente.telefono,
-            'Nivel académico': this.paciente.gradoinstruccion,
-            'Ocupación': this.paciente.ocupacion,
-            'Estado civil': this.paciente.estadocivil,
-            'Fecha de Nacimiento': this.paciente.fecnac,
-        }
-      }
+      ...mapState('atencionModule',['atencion']),
     },
     mounted() {
         this.getAll();
@@ -67,9 +64,12 @@ export default {
             console.log(this.collection)
         },
         ...mapActions('pacienteModule',['getPaciente']),
+        ...mapActions('atencionModule',['updatePacienteOnCreate']),
         selected(idpaciente){
             console.log(idpaciente)
+            this.id_Paciente = idpaciente;
             this.getPaciente({id:idpaciente, proxy:this.$proxies.pacienteProxy});
+            idAtencion(idpaciente);
         }
     }
 }

@@ -12,6 +12,9 @@ export default class TratamientoProxy {
     getById(id) {
         return this.axios.get(this.url + `tratamientos/${id}`);
     }
+    getByAtencionId(id) {
+        return this.axios.get(this.url + `tratamientos?idatencion=${id}`);
+    }
     register(model){
         return this.axios.post(this.url+`tratamientos`,model);
     }

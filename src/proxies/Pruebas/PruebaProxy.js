@@ -12,6 +12,9 @@ export default class PruebaProxy {
     getById(id) {
         return this.axios.get(this.url + `pruebas/${id}`);
     }
+    getByAtencionId(id) {
+        return this.axios.get(this.url + `pruebas?idatencion=${id}`);
+    }
     register(model){
         return this.axios.post(this.url+`pruebas`,model);
     }
