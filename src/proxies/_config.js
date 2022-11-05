@@ -58,8 +58,8 @@ Axios.interceptors.response.use(
         return Promise.reject(error);
     }
 );
-let url = 'http://localhost:3000/'; //->Para conexion local
-//let url='http://192.168.101.23:3000/'; //->Para conexion cloud
+//let url = 'http://localhost:3000/'; //->Para conexion local
+let url='http://ec2-3-238-69-56.compute-1.amazonaws.com:3000/'; //->Para conexion cloud
 
 export default {
     
