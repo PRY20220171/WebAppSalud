@@ -21,7 +21,7 @@
             </v-col>
           </v-row>
           <v-row>
-            {{collection.items}}
+            <!-- {{collection.items}} -->
             <v-card-text outlined>
               <v-data-table :headers="headers" :items="collection.items">
                 <template v-slot:[`item.descripcion`]="{ item }">

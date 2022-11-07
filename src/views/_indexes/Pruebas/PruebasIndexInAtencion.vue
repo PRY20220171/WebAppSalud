@@ -20,7 +20,7 @@
             </v-col>
           </v-row>
           <v-row>
-            {{collection.items}}
+            <!-- {{collection.items}} -->
             <v-card-text>
               <v-data-table :headers="headers" :items="collection.items" fixed-header>
                 <v-divider inset></v-divider>

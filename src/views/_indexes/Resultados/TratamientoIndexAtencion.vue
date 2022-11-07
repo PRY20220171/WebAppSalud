@@ -20,7 +20,7 @@
             </v-col>
           </v-row>
           <v-row>
-            {{collection.items}}
+            <!-- {{collection.items}} -->
             <v-card-text class="">
               <v-data-table :headers="headers" :items="collection.items">
                 <template v-slot:[`item.medicamento`]="{ item }">
