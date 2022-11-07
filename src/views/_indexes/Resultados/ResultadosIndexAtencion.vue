@@ -21,7 +21,7 @@
           </v-row>
           <v-row>
             <v-card-text class="">
-              {{collection.items}}
+              <!-- {{collection.items}} -->
               <v-data-table :headers="headers" :items="collection.items">
                 <template v-slot:[`item.registro`]="{ item }">
                   
