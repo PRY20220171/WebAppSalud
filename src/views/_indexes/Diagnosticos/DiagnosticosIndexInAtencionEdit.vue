@@ -22,7 +22,8 @@
           </v-row>
           <v-row>
             {{collection.items}}
-            <v-card-text outlined>
+            <v-progress-circular indeterminate color="primary" :value="loadAtencion" v-if="loadAtencion<100"></v-progress-circular>
+            <v-card-text outlined v-if="loadAtencion==100">
               <v-data-table :headers="headers" :items="collection.items">
                 <template v-slot:[`item.descripcion`]="{ item }">
                   <v-text-field v-model="editedItem.descripcion" :hide-details="true" dense single-line
@@ -30,13 +31,13 @@
                   <span v-else>{{item.descripcion}}</span>
                 </template>
                 <template v-slot:[`item.estado`]="{ item }">
-                  <v-text-field v-model="editedItem.estado" :hide-details="true" dense single-line :autofocus="true"
-                    v-if="item.id === editedItem.id"></v-text-field>
+                  <v-select :items="estados" required v-model="editedItem.estado" :hide-details="true" dense single-line :autofocus="true"
+                    v-if="item.id === editedItem.id"></v-select>
                   <span v-else>{{item.estado}}</span>
                 </template>
                 <template v-slot:[`item.tipo`]="{ item }">
-                  <v-text-field v-model="editedItem.tipo" :hide-details="true" dense single-line :autofocus="true"
-                    v-if="item.id === editedItem.id"></v-text-field>
+                  <v-select :items="tipos"  required v-model="editedItem.tipo" :hide-details="true" dense single-line :autofocus="true"
+                    v-if="item.id === editedItem.id"></v-select>
                   <span v-else>{{item.tipo}}</span>
                 </template>
                 <template v-slot:[`item.actions`]="{ item }">

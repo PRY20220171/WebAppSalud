@@ -21,22 +21,24 @@
           </v-row>
           <v-row>
             {{collection.items}}
-            <v-card-text>
+            <v-progress-circular indeterminate color="primary" :value="loadAtencion" v-if="loadAtencion<100"></v-progress-circular>
+            <v-card-text outlined v-if="loadAtencion==100">
               <v-data-table :headers="headers" :items="collection.items" fixed-header>
                 <v-divider inset></v-divider>
                 <template v-slot:[`item.tipoprueba.nombre`]="{ item }">
-                  <v-text-field v-model="editedItem.tipoprueba.nombre" :hide-details="true" dense single-line :autofocus="true"
-                    v-if="item.id === editedItem.id"></v-text-field>
+                  <v-select :items="tipo_prueba" item-text="nombre" required v-model="editedItem.tipoprueba" return-object
+                  :hide-details="true" dense single-line :autofocus="true" v-if="item.id === editedItem.id" 
+                  v-on:input="setMedida(editedItem)">
+                  </v-select>
                   <span v-else>{{item.tipoprueba.nombre}}</span>
                 </template>
                 <template v-slot:[`item.tipoprueba.medida.nombre`]="{ item }">
-                  <v-text-field v-model="editedItem.tipoprueba.medida.nombre" :hide-details="true" dense single-line :autofocus="true"
-                    v-if="item.id === editedItem.id"></v-text-field>
+                  <span  v-if="item.id === editedItem.id">{{editedItem.tipoprueba.medida.nombre}}</span>
                   <span v-else>{{item.tipoprueba.medida.nombre}}</span>
                 </template>
                 <template v-slot:[`item.estado`]="{ item }">
-                  <v-text-field v-model="editedItem.estado" :hide-details="true" dense single-line :autofocus="true"
-                    v-if="item.id === editedItem.id"></v-text-field>
+                  <v-select :items="estados"  v-model="editedItem.estado" :hide-details="true" dense single-line :autofocus="true"
+                    v-if="item.id === editedItem.id"></v-select>
                   <span v-else>{{item.estado}}</span>
                 </template>
                 <template v-slot:[`item.fecprueba`]="{ item }" >

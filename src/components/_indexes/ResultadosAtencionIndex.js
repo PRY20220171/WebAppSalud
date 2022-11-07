@@ -7,9 +7,6 @@ export default {
     components: {
         Resultado
     },
-    mounted() {
-        this.getAll(1);
-    },
     data() {
         return {
             dialog:false,
@@ -131,22 +128,32 @@ export default {
                     descripcion:'',
                     }
                 ]
-            }
+            },
+            interval:{},
+            loadAtencion:0,      
         }
     },
-    beforeMount() {
-        // console.log(this.$proxies)
-         this.getAll(1);
-     },
+    mounted() {
+        this.interval=setInterval(() => {
+          this.loadAtencion += 1
+          //console.log(this.loadAtencion)
+        }, 10)
+        setTimeout(() => {
+          clearInterval(this.interval)
+          this.loadAtencion= 100,
+          this.getAll(1)
+        },1000);
+    },
      computed:{
        //...mapState('ResultadoModule',['resultado']),
        ...mapState('ResultadoModule',['resultados']),
+       ...mapState('atencionModule', ['atencion']),
      },
      watch:{
         collection:{
             handler(val){
                 for(let item in val.items){
-                    item = {item, paciente:this.getPaciente('d5775113-ed08-4de0-8945-d3c977d504f5')}
+                    item = {item, paciente:this.atencion.paciente}
                 }
                 console.log(val.items)
             },
@@ -175,7 +182,9 @@ export default {
           },
         getAll(page) {
             this.isLoading = true;
-                this.$proxies.resultadoProxy.getAll()
+                this.$proxies.resultadoProxy
+                //.getAll()
+                .getByAtencionId(this.atencion.id)
                 .then(x => {
                     //this.collection = x.data;
                     this.collection.items = x.data;
@@ -246,6 +255,7 @@ export default {
         addNew() {
             const addObj = Object.assign({}, this.defaultItem);
             addObj.id = this.uuidv4();
+            addObj.idatencion = this.atencion.id;
             addObj.fecregistro = new Date().toLocaleDateString();
             //addObj.id = this.collection.items.length + 1;
             this.collection.items.unshift(addObj);

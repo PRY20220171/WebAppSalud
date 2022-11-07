@@ -2,6 +2,7 @@ import DiagnosticosAtencionIndex from '@/views/_indexes/Diagnosticos/Diagnostico
 import PruebasAtencionIndex from '@/views/_indexes/Pruebas/PruebasIndexInAtencion.vue';
 import ResultadosAtencionIndex from '@/views/_indexes/Resultados/ResultadosIndexAtencion.vue';
 import TratamientosAtencionIndex from '@/views/_indexes/Resultados/TratamientoIndexAtencion.vue';
+import {mapState,mapActions} from 'vuex'
 
 export default {
     name: "ListaAtenciones",
@@ -17,9 +18,11 @@ export default {
     },
     data() {
         return {
-            dialog1: false,
+            dialog1:false,
             dialog2:false,
             dialog3:false,
+            dialog4:false,
+
             expanded: [],
             singleExpand: false,
             searchText: "",
@@ -37,6 +40,7 @@ export default {
                     { text: "Diagnosticos", sortable: false, value: "diagnosticos" },
                     { text: "Pruebas", sortable: false, value: "pruebas" },
                     { text: "Resultados", sortable: false, value: "resultados" },
+                    { text: "Tratamientos", sortable: false, value: "tratamientos" },
                 ],
                 atencionDetail: [
                     {
@@ -71,8 +75,15 @@ export default {
             ids: [],
         };
     },
+    computed: {
+      ...mapState('atencionModule', ['atencion']),
+    },
+    watch:{
+       // async dialog() { console.log('dialog'); await this.clickRow},
+    },
     methods: {
-        async getAll(page) {
+        ...mapActions('atencionModule', ['getAtencion']),
+        getAll(page) {
             this.isLoading = true;
             this.$proxies.atencionProxy
                 .getAll()
@@ -98,6 +109,7 @@ export default {
         },
 
         clickRow(item, event) {
+            console.log('clickRow');
             console.log(item);
             console.log(event);
             if (event.isExpanded) {
@@ -105,6 +117,12 @@ export default {
                 this.expanded.splice(indexExpanded, 1);
             } else {
                 this.expanded.push(item);
+                if(!this.getAtencion.id)
+                    this.getAtencion({
+                    id: item.id,
+                    proxy: this.$proxies.atencionProxy
+                });
+                console.log(item.id,'getAtencion',this.atencion,'x--x');
             }
         },
 

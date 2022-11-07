@@ -21,8 +21,14 @@
           </v-row>
           <v-row>
             {{collection.items}}
-            <v-card-text class="">
+            <v-progress-circular indeterminate color="primary" :value="loadAtencion" v-if="loadAtencion<100"></v-progress-circular>
+            <v-card-text outlined v-if="loadAtencion==100">
               <v-data-table :headers="headers" :items="collection.items">
+                <template v-slot:[`item.registro`]="{ item }">
+                  <v-text-field v-model="editedItem.registro" :hide-details="true" dense single-line :autofocus="true" type="date"
+                    v-if="item.id === editedItem.id"></v-text-field>
+                  <span v-else>{{item.medicamento}}</span>
+                </template>
                 <template v-slot:[`item.medicamento`]="{ item }">
                   <v-text-field v-model="editedItem.medicamento" :hide-details="true" dense single-line :autofocus="true"
                     v-if="item.id === editedItem.id"></v-text-field>
@@ -68,10 +74,6 @@
             <v-icon class="main_color--text text--darken-1">mdi-information</v-icon>
             <h4 class="ml-2 font-weight-regular"> Información general </h4>
           </v-row>
-
-
-          <v-select :items="tipo_tratamiento" label="Tipo" item-text="nombre" required
-            v-model="tratamiento.tipotratamiento" return-object></v-select>
 
           <v-text-field name="fectratamiento" label="fec. tratamiento" v-model="tratamiento.fectratamiento" type="date"
             color="main_color" hide-details="auto" />

@@ -6,7 +6,7 @@ export const AtencionModule = {
   mutations: {
     fillAtencion(state, atencionAction) {
       state.atencion = atencionAction
-      console.log("se llenó la atencion")
+      console.log("se llenó la atencion",state.atencion)
     }
   },
   actions: {

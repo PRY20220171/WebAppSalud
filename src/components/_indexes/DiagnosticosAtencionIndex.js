@@ -15,6 +15,10 @@ export default {
       searchText: "",
       searchBoxClosed: true,
       isLoading: false,
+
+      interval:{},
+      loadAtencion:0,
+
       search: "",
       headers: [
         {
@@ -63,7 +67,7 @@ export default {
           },
         ],
       },
-      estados: ["en proceso", "esperando pruebas", "finalizado"],
+      estados: ['inicial',"en proceso", "esperando pruebas", "finalizado"],
       tipos: ["final", "inicial", "medio"],
       editedIndex: -1,
       editedItem: {
@@ -102,7 +106,6 @@ export default {
   },
   beforeMount() {
     // console.log(this.$proxies)
-    this.getAll(1);
   },
   computed: {
     //...mapState('DiagnosticoModule',['diagnostico']),
@@ -116,16 +119,27 @@ export default {
         for (let item in val.items) {
           item = {
             item,
-            paciente: this.getPaciente("d5775113-ed08-4de0-8945-d3c977d504f5"),
+            //paciente: this.getPaciente("d5775113-ed08-4de0-8945-d3c977d504f5"),
+            paciente: this.atencion.paciente,
           };
         }
-        console.log(val.items);
+        console.log('watch',val.items);
       },
       deep: true,
       flush: "post",
     },
   },
   mounted() {
+
+    this.interval=setInterval(() => {
+      this.loadAtencion += 1
+      //console.log(this.loadAtencion)
+    }, 10)
+    setTimeout(() => {
+      clearInterval(this.interval)
+      this.loadAtencion= 100,
+      this.getAll(1)
+    },1000);
     /*
             console.log(this.collection)
             console.log(this.collection.items)*/
@@ -139,10 +153,12 @@ export default {
                 this.datos= await axios.get(`http://localhost:3000/usuarios/${id}`);
             },
             */
-    getAll(page) {
+     getAll(page) {
+        console.log('diagnostico befor')
       this.isLoading = true;
       this.$proxies.diagnosticoProxy
-        .getAll()
+        //.getAll()
+        .getByAtencionId(this.atencion.id)
         .then((x) => {
           //this.collection = x.data;
           this.collection.items = x.data;
@@ -183,7 +199,7 @@ export default {
         ).toString(16)
       );
     },
-    async addDiagnostico() {
+    addDiagnostico() {
       //let d = new Date;
       if (this.prueba.id == "") {
         this.prueba.id = uuidv4();
@@ -234,9 +250,11 @@ export default {
     addNew() {
       const addObj = Object.assign({}, this.defaultItem);
       addObj.id = this.uuidv4();
+      addObj.idatencion = this.atencion.id;
       addObj.fecregistro = new Date().toLocaleDateString();
       //addObj.id = this.collection.items.length + 1;
-      this.collection.items.unshift(addObj);
+      //this.collection.items.unshift(addObj);
+      this.collection.items.push(addObj);
       this.editItem(addObj);
     },
     async save() {
@@ -250,7 +268,7 @@ export default {
                     estado: this.editedItem.estado,
                     tipo: this.editedItem.tipo,
                     idatencion: this.atencion.id,
-                    idpaciente: id_Paciente,
+                    idpaciente: this.atencion.idpaciente,
                 })
         }
         catch(error){

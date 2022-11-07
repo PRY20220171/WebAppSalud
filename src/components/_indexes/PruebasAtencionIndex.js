@@ -7,9 +7,6 @@ export default {
   components: {
     Prueba,
   },
-  mounted() {
-    this.getAll(1);
-  },
   data() {
     return {
       dialog: false,
@@ -17,6 +14,7 @@ export default {
       searchBoxClosed: true,
       isLoading: false,
       search: "",
+      estados: ['solicitado', 'en proceso','finalizado'],
       headers: [
         { text: "tipoprueba", value: "tipoprueba.nombre" },
         { text: "medida", value: "tipoprueba.medida.nombre" },
@@ -150,15 +148,26 @@ export default {
         observacion: "",
         estado: "",
       },
+      interval:{},
+      loadAtencion:0,
     };
   },
-  beforeMount() {
+  mounted() {
     // console.log(this.$proxies)
-    this.getAll(1);
+    this.interval=setInterval(() => {
+      this.loadAtencion += 1
+      //console.log(this.loadAtencion)
+    }, 10)
+    setTimeout(() => {
+      clearInterval(this.interval)
+      this.loadAtencion= 100,
+      this.getAll(1)
+    },1000);
   },
   computed: {
     //...mapState('PruebaModule',['prueba']),
     ...mapState("pruebaModule", ["pruebas"]),
+    ...mapState('atencionModule', ['atencion']),
   },
   watch: {
     collection: {
@@ -193,10 +202,11 @@ export default {
       let i = this.pruebas.findIndex((x) => (x.id = this.prueba.id));
       delete this.pruebas[i];
     },
-    getAll(page) {
+    async  getAll(page) {
       this.isLoading = true;
       this.$proxies.pruebaProxy
-        .getAll()
+        //.getAll()
+        .getByAtencionId(this.atencion.id)
         .then((x) => {
           //this.collection = x.data;
           this.collection.items = x.data;
@@ -281,11 +291,15 @@ export default {
       try {
         const new_prueba = await axios.post("http://localhost:3000/pruebas", {
           id: this.uuidv4(),
-          idtipoprueba: this.editedItem.idtipoprueba,
+          idtipoprueba: this.editedItem.tipoprueba.id,
+          tipoprueba: this.editedItem.tipoprueba,
+          idpaciente: this.atencion.idpaciente,
+          paciente: this.atencion.paciente,
           fecresultado: this.editedItem.fecresultado,
           fecprueba: new Date().toLocaleDateString(),
           resultado: this.editedItem.resultado,
           observacion: this.editedItem.observacion,
+          idatencion: this.atencion.id,
           estado: this.editedItem.estado,
         });
       } catch (e) {
@@ -298,5 +312,8 @@ export default {
             }
             this.close()*/
     },
+    setMedida(item){
+      console.log('tipoprueba',item.tipoprueba)
+    }
   },
 };

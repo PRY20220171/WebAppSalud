@@ -6,9 +6,6 @@ export default {
     components: {
         //Tratamiento
     },
-    mounted() {
-        this.getAll(1);
-    },
     data() {
         return {
             dialog:false,
@@ -17,7 +14,8 @@ export default {
             isLoading: false,
             search: '',
             headers:  [
-                    { text: 'medicamento',value: 'medicamento'},
+                    //{ text: 'fec. de registro',value: 'registro'},
+                    { text: 'tratamiento',value: 'medicamento'},
                     { text: 'descripcion',value: 'descripcion'},
                     { text: '', sortable: false, value: 'actions'},
                 ],
@@ -33,7 +31,8 @@ export default {
                 id: "",
                 medicamento: "",
                 descripcion: "",
-                idresultado: ""
+                //idresultado: ""
+                idatencion: ""
               },
             saved:[false],
             editedIndex: -1,
@@ -41,23 +40,36 @@ export default {
                 id: "0",
                 medicamento: "",
                 descripcion: "",
-                idresultado: ""
+                //idresultado: ""
+                idatencion: ""
               },
             defaultItem: {
                 id: "0",
                 medicamento: "",
                 descripcion: "",
-                idresultado: ""
+                //idresultado: ""
+                idatencion: ""
               },
+              interval:{},
+              loadAtencion:0,    
         }
     },
-    beforeMount() {
+    mounted() {
         // console.log(this.$proxies)
-         this.getAll(1);
+        this.interval=setInterval(() => {
+            this.loadAtencion += 1
+            //console.log(this.loadAtencion)
+        }, 10)
+        setTimeout(() => {
+            clearInterval(this.interval)
+            this.loadAtencion= 100,
+            this.getAll(1)
+        },1000);
      },
      computed:{
        //...mapState('TratamientoModule',['tratamiento']),
        ...mapState('tratamientoModule',['tratamientos']),
+       ...mapState('atencionModule', ['atencion']),
      },
      watch:{
         collection:{
@@ -92,7 +104,9 @@ export default {
           },
         getAll(page) {
             this.isLoading = true;
-                this.$proxies.tratamientoProxy.getAll()
+                this.$proxies.tratamientoProxy
+                //.getAll()
+                .getByAtencionId(this.atencion.id)
                 .then(x => {
                     //this.collection = x.data;
                     this.collection.items = x.data;

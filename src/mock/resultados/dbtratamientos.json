@@ -1,0 +1,16 @@
+[
+        {
+            "id": "ffa78aed-b56e-49da-a383-c0819ddfd190",
+            "registro": "09/11/2014",
+            "medicamento": "paracetamol",
+            "descripcion": "descripcion de tratamiento 0",
+            "idatencion": "ec3c6a5b-80c3-4714-8126-d9b3ebd6bf80"
+        },
+        {
+            "id": "ffa78aed-b56e-49da-a383-c0819ddfd191",
+            "registro": "09/11/2014",
+            "medicamento": "cetirizina",
+            "descripcion": "descripcion de tratamiento 1",
+            "idatencion": "ec3c6a5b-80c3-4714-8126-d9b3ebd6bf80"
+        }
+]

@@ -64,7 +64,7 @@
                         <template #[`item.diagnosticos`]>
                             <v-row justify="center">
                                 <v-btn 
-                                color="green"
+                                color="main_color  darken-2"
                                 @click="dialog1 = true"
                                 x-small 
                                 fab>
@@ -76,7 +76,7 @@
                         <template #[`item.pruebas`]>
                             <v-row justify="center">
                                 <v-btn 
-                                color="green" 
+                                color="main_color  darken-2" 
                                 @click="dialog2 = true" 
                                 x-small 
                                 fab>
@@ -88,7 +88,7 @@
                         <template #[`item.resultados`]>
                             <v-row justify="center">
                                 <v-btn 
-                                color="green" 
+                                color="main_color  darken-2" 
                                 @click="dialog3=true" 
                                 x-small 
                                 fab>
@@ -96,25 +96,80 @@
                                 </v-btn>
                             </v-row>
                         </template>
+
+                        <template #[`item.tratamientos`]>
+                            <v-row justify="center">
+                                <v-btn 
+                                color="main_color  darken-2" 
+                                @click="dialog4=true" 
+                                x-small 
+                                fab>
+                                    <v-icon>mdi-pill</v-icon>
+                                </v-btn>
+                            </v-row>
+                        </template>
+
                     </v-data-table>
                 </v-card>
             </v-row>
         </v-container>
         
         <v-dialog v-model="dialog1" persistent max-width="1000px">
-            <DiagnosticosAtencionIndex></DiagnosticosAtencionIndex>
-            <v-btn color="red" text @click="dialog1 = false">Cerrar</v-btn>
+            <v-card>
+                <v-col>
+                    <v-row>
+                        <DiagnosticosAtencionIndex></DiagnosticosAtencionIndex> 
+                    </v-row>
+                    <v-row>
+                        <v-spacer></v-spacer>
+                        <v-btn color="red" text @click="dialog1 = false">Cerrar</v-btn>
+                    </v-row>
+                </v-col>
+            </v-card>
         </v-dialog>
 
         <v-dialog v-model="dialog2" persistent max-width="1000px">
-            <PruebasAtencionIndex></PruebasAtencionIndex>
-            <v-btn color="red" text @click="dialog2= !dialog2">Cerrar</v-btn>
+            <v-card>
+                <v-col>
+                    <v-row>
+                        <PruebasAtencionIndex></PruebasAtencionIndex>
+                    </v-row>
+                    <v-row>
+                        <v-spacer></v-spacer>
+                        <v-btn color="red" text @click="dialog2= !dialog2">Cerrar</v-btn>
+                    </v-row>
+                </v-col>
+            </v-card>
         </v-dialog>
 
         
         <v-dialog v-model="dialog3" persistent max-width="1000px">
-            <ResultadosAtencionIndex></ResultadosAtencionIndex>
-            <v-btn color="red" text @click="dialog3= !dialog3">Cerrar</v-btn>
+            <v-card>
+                <v-col>
+                    <v-row>
+                        <ResultadosAtencionIndex></ResultadosAtencionIndex>
+                    </v-row>
+                    <v-row>
+                        <v-spacer></v-spacer>
+                        <v-btn color="red" text @click="dialog3= !dialog3">Cerrar</v-btn>
+                    </v-row>
+                </v-col>
+            </v-card>
+        </v-dialog>
+
+        
+        <v-dialog v-model="dialog4" persistent max-width="1000px">
+            <v-card>
+                <v-col>
+                    <v-row>
+                        <TratamientosAtencionIndex></TratamientosAtencionIndex>
+                    </v-row>
+                    <v-row>
+                        <v-spacer></v-spacer>
+                        <v-btn color="red" text @click="dialog4= !dialog4">Cerrar</v-btn>
+                    </v-row>
+                </v-col>
+            </v-card>
         </v-dialog>
     </v-container>
 
