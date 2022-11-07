@@ -22,7 +22,6 @@
           <v-row>
             <v-progress-circular indeterminate color="primary" :value="loadAtencion" v-if="loadAtencion<100"></v-progress-circular>
             <v-card-text outlined v-if="loadAtencion==100">
-              {{collection.items}}
               <v-data-table :headers="headers" :items="collection.items">
                 <template v-slot:[`item.registro`]="{ item }">
                   

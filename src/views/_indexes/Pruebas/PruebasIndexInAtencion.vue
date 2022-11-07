@@ -20,7 +20,6 @@
             </v-col>
           </v-row>
           <v-row>
-            {{collection.items}}
             <v-progress-circular indeterminate color="primary" :value="loadAtencion" v-if="loadAtencion<100"></v-progress-circular>
             <v-card-text outlined v-if="loadAtencion==100">
               <v-data-table :headers="headers" :items="collection.items" fixed-header>
