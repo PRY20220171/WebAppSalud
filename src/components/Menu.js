@@ -57,6 +57,12 @@
             ['Registrar resultados','mdi-file-plus-outline','Registro Resultado'],
             ['Ver resultados','mdi-file-multiple-outline','Resultados']
           ]
+        }, {
+          name: ['Transferencias','mdi-transfer'],
+          submenus: [
+            ['Registrar transferencias','mdi-file-plus-outline','Registro Transferencia'],
+            ['Ver transferencias','mdi-file-multiple-outline','Transferencias']
+          ]
         }
       ]
     }

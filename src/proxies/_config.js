@@ -29,6 +29,7 @@ import DiagnosticoXResultadoProxy from './Diagnosticos/DiagnosticoXResultadoProx
 import ResultadoProxy from './Resultados/ResultadoProxy';
 import TratamientoProxy from './Resultados/TratamientoProxy';
 import TratamientoXResultadoProxy from './Resultados/TratamientoXResultadoProxy';
+import TransferenciaProxy from './Transferencias/TransferenciaProxy';
 
 // Axios default behavior
 Axios.defaults.headers.common.Accept = 'application/json';
@@ -92,4 +93,5 @@ export default {
     resultadoProxy: new ResultadoProxy(Axios,url),
     tratamientoProxy: new TratamientoProxy(Axios,url),
     tratamientoXResultadoProxy: new TratamientoXResultadoProxy(Axios,url),
+    transferenciaProxy: new TransferenciaProxy(Axios,url),
 }

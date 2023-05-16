@@ -1,0 +1,23 @@
+[{
+    "id": "ffa78aed-b56e-49da-a383-c0819ddfd190",
+    "fecharegistro": "09/11/2014",
+    "descripcion": "descripcion de Transferencia 0",
+    "usuario": "Dr. Atencio",
+    "paciente":{
+        "id": "d5775113-ed08-4de0-8945-d3c977d504f5",
+        "nombres": "Kristen",
+        "apellidos": "Goullee",
+        "docnum": "98926073",
+        "doctipo": "DNI",
+        "sexo": "f",
+        "gruposang": "B",
+        "rh": "-",
+        "telefono": "921930983",
+        "gradoinstruccion": "Secundaria",
+        "ocupacion": "programador",
+        "estadocivil": "Soltero",
+        "fecnac": "1973-09-08"
+    },
+    "especialidadIni": "Psicología",
+    "especialidadFin": "Psiquiatría"
+}]

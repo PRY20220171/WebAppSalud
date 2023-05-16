@@ -1,0 +1,26 @@
+<template>
+    <div id="RegistrarTransferencia" class="fill-height">
+      
+        <v-row class="mt-5 mb-0 mx-5">
+              <v-col>
+                <v-text-field label="Fecha de registro" name="fecharegistro" v-model="atencion.fecharegistro"
+                prepend-icon="mdi-email" type="date" color="main_color" hide-details="auto" />
+              </v-col>
+              <v-col class="d-flex align-center">
+                <v-text-field label="Nombre del paciente" :value="paciente.nombres+' '+paciente.apellidos" disabled ></v-text-field>
+              </v-col>
+              <v-col>
+                <v-text-field label="Nombre del médico" :value="usuario.nombres" disabled ></v-text-field>
+              </v-col>
+        </v-row>
+                  <v-row>
+                    <v-col cols="12"><PacientesIndexSearch/></v-col>
+                  </v-row>
+                  <v-row>
+                    <v-col cols="12">
+                      <TransferenciasAtencionIndex class="py-2"/>
+                    </v-col>
+                  </v-row>
+    </div>
+  </template>
+  <script src="@/components/_entities/Transferencias/_Transferencia.js"></script>

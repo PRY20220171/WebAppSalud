@@ -9,6 +9,7 @@ import * as PacientesRoutes from  './PacientesRoutes'
 import * as PruebasRoutes from  './PruebasRoutes'
 import * as ResultadosRoutes from  './ResultadosRoutes'
 import * as UsuariosRoutes from  './UsuariosRoutes'
+import * as TransferenciasRoutes from  './TransferenciasRoutes'
 
 Vue.use(VueRouter)
 
@@ -65,6 +66,10 @@ const routes = [
   UsuariosRoutes.ListarUsuariosRoute(),
   UsuariosRoutes.VerPerfilRoute(),
   UsuariosRoutes.EditarPerfilRoute(),
+
+  TransferenciasRoutes.RegistrarTransferenciasRoute(),
+  TransferenciasRoutes.EditarTransferenciasRoute(),
+  TransferenciasRoutes.ListarTransferenciasRoute(),
 
 ]
 

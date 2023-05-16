@@ -5,6 +5,7 @@ const pacientes = require('./pacientes/dbpacientes.json');
 const pruebas = require('./pruebas/dbpruebas.json');
 const resultados = require('./resultados/dbresultados.json');
 const tratamientos = require('./resultados/dbtratamientos.json');
+const transferencias = require('./transferencias/dbtransferencias.json');
 // Something more
 
 module.exports = () => ({
@@ -15,4 +16,5 @@ module.exports = () => ({
   pruebas: pruebas,
   resultados: resultados,
   tratamientos: tratamientos,
+  transferencias:transferencias,
 });
