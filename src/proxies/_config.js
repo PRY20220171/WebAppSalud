@@ -59,11 +59,11 @@ Axios.interceptors.response.use(
         return Promise.reject(error);
     }
 );
-let url = 'http://localhost:3000/'; //->Para conexion local
-//let url='http://ec2-3-238-69-56.compute-1.amazonaws.com:3000/'; //->Para conexion cloud
+//let url = 'http://localhost:3000/'; //->Para conexion local
+let url='http://a0cf87b4b3dbe4e5a94c43389efa8cb5-1064006626.us-east-1.elb.amazonaws.com:8188/'; //->Para conexion cloud
 
 export default {
-    
+
     userProxy: new UserProxy(Axios,url),
     rolProxy: new RolProxy(Axios,url),
     usuarioXRolProxy: new UsuarioXRolProxy(Axios,url),
@@ -84,7 +84,7 @@ export default {
     diagnosticoProxy: new DiagnosticoProxy(Axios,url),
     diagnosticoXPruebaProxy: new DiagnosticoXPruebaProxy(Axios,url),
     diagnosticoXResultadoProxy: new DiagnosticoXResultadoProxy(Axios,url),
-    
+
     categoriaPruebaProxy: new CategoriaPruebaProxy(Axios,url),
     medidaProxy: new MedidaProxy(Axios,url),
     pruebaProxy: new PruebaProxy(Axios,url),
