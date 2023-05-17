@@ -1,4 +1,5 @@
-//import Transferencia from '../../../views/_createOrUpdate/Transferencias/TransferenciaView.vue';
+import Transferencia from '@/views/_createOrUpdate/Transferencias/TransferenciaView.vue';
+import AtencionesIndexSearch from '@/views/_indexes/Atenciones/AtencionesIndexSearch.vue';
 
 import {mapState, mapMutations, mapActions} from 'vuex'
 export default {
@@ -7,7 +8,8 @@ export default {
     components: {
       //compartidos
       //inf. general
-       // Transferencia
+        Transferencia,
+        AtencionesIndexSearch,
     },
     
     data () {
@@ -31,27 +33,24 @@ export default {
         cancelar:'Cancelar',
 
         
-        model:{
-          idtransferencia:'',
-          fecharegistro:'',
-          usuario:'',
-          descripcion:'',
-          estado:'',
-          especialidadIni:'',
-          especialidadFin:'',
-        },
+        
 
         estados: ['en proceso', 'esperando pruebas','finalizado'],
         }
     },
     computed:{
+      ...mapState('atencionModule',['atencion']),
       ...mapState('pacienteModule',['paciente']),
     },
     mounted(){
       console.log(this.paciente)
+      this.getAtencion({id:null, proxy:this.$proxies.atencionProxy});
       this.getPaciente({id:null, proxy:this.$proxies.pacienteProxy});
+      console.log(this.atencion)
     },
     methods:{
+      ...mapActions('atencionModule',['getAtencion']),
       ...mapActions('pacienteModule',['getPaciente']),
+      
     }
   }

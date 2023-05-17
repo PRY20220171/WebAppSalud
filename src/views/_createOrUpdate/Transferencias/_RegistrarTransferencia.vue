@@ -13,13 +13,12 @@
                 <v-text-field label="Nombre del médico" :value="usuario.nombres" disabled ></v-text-field>
               </v-col>
         </v-row>
+                <v-row>
+                  <v-col cols="12"><AtencionesIndexSearch/></v-col>
+                </v-row>
                   <v-row>
-                    <v-col cols="12"><PacientesIndexSearch/></v-col>
-                  </v-row>
-                  <v-row>
-                    <v-col cols="12">
-                      <TransferenciasAtencionIndex class="py-2"/>
-                    </v-col>
+                    
+                    <Transferencia/>
                   </v-row>
     </div>
   </template>

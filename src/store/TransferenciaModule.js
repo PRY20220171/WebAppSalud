@@ -22,11 +22,43 @@ export const TransferenciaModule = {
             let model = {
                 id: "",
                 fecharegistro:'',
-                usuario:'',
+                especialidadini:'',
+                especialidadfin:'',
+                atencion:{                        
+                    usuario:{
+                        nombres:'',
+                        apellidos:'',
+                        docnum:'',
+                        doctipo:'',
+                        numcolegiatura:'',
+                        centroMedico:{
+                            nombre:'',
+                            sector:'',
+                            pais:'',
+                            region:'',
+                            provincia:'',
+                            distrito:'',
+                        }
+                    },
+                    paciente:{
+                        nombres:'',
+                        apellidos:'',
+                        docnum:'',
+                        doctipo:'',
+                        sexo:'',
+                        fecnac:'',
+                        gruposang:'',
+                        rh:'',
+                        ocupacion: '',
+                        estadocivil: '',
+                    },
+                    fecharegistro:'',
+                    motivoconsulta:'',
+                    observaciones:'',
+                    especialidad:'',
+                },
                 descripcion:'',
-                estado:'',
-                especialidadIni:'',
-                especialidadFin:'',
+                atencion:'',
               }
             if (!id) {
                 commit('fillTransferencia', model);

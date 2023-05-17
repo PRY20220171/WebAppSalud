@@ -21,7 +21,9 @@ export default {
                     { text: "Paciente", value: "nombrecomp" },
                     { text: "Lo registró", value: "nombreusarioreg" },
                     { text: "Fecha de Registro", value: "fecharegistro" },
-                    { text: "Descripción", value: "motivoconsulta" },
+                    { text: "Descripción", value: "descripcion" },
+                    { text: "Especialidad inicial", value: "especialidadIni" },
+                    { text: "Especialidad a derivar", value: "especialidadFin" },
                     { text: "Actions", sortable: false, value: "actions" },
                 ],
             },
@@ -60,8 +62,8 @@ export default {
                     if (this.collection.items.length > 0) this.collection.hasItems = true;
                     this.collection.total = this.collection.items.length;
                     this.collection.items.forEach((x) => {
-                        x.nombrecomp = x.paciente.nombres + " " + x.paciente.apellidos;
-                        x.nombreusarioreg = x.usuarioregistro.nombres + " " + x.usuarioregistro.apellidos;
+                        x.nombrecomp = x.atencion.paciente.nombres + " " + x.atencion.paciente.apellidos;
+                        x.nombreusarioreg = x.atencion.usuario.nombres + " " + x.atencion.usuario.apellidos;
                     });
                     this.isLoading = false;
                 })

@@ -2,21 +2,39 @@
     "id": "ffa78aed-b56e-49da-a383-c0819ddfd190",
     "fecharegistro": "09/11/2014",
     "descripcion": "descripcion de Transferencia 0",
-    "usuario": "Dr. Atencio",
-    "paciente":{
-        "id": "d5775113-ed08-4de0-8945-d3c977d504f5",
-        "nombres": "Kristen",
-        "apellidos": "Goullee",
-        "docnum": "98926073",
-        "doctipo": "DNI",
-        "sexo": "f",
-        "gruposang": "B",
-        "rh": "-",
-        "telefono": "921930983",
-        "gradoinstruccion": "Secundaria",
-        "ocupacion": "programador",
-        "estadocivil": "Soltero",
-        "fecnac": "1973-09-08"
+    "atencion":{
+        "paciente":{
+            "id": "d5775113-ed08-4de0-8945-d3c977d504f5",
+            "nombres": "Kristen",
+            "apellidos": "Goullee",
+            "docnum": "98926073",
+            "doctipo": "DNI",
+            "sexo": "f",
+            "gruposang": "B",
+            "rh": "-",
+            "ocupacion": "programador",
+            "estadocivil": "Soltero",
+            "fecnac": "1973-09-08"
+        },
+        "usuario": {
+        "nombres":"Atencio",
+        "apellidos":"Rodriguez",
+        "docnum":"02700683",
+        "doctipo":"DNI",
+        "numcolegiatura":"0022201110",
+        "centroMedico":{
+            "nombre":"Clínica Buena Salud",
+            "sector":"Privado",
+            "pais":"Perú",
+            "region":"Lima",
+            "provincia":"Lima",
+            "distrito":"Agustino"
+            }
+        },
+        "fecharegistro":"09/11/2014",
+        "motivoconsulta":"Depresión",
+        "observaciones":"",
+        "especialidad":"Psicología"
     },
     "especialidadIni": "Psicología",
     "especialidadFin": "Psiquiatría"

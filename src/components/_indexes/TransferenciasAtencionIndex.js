@@ -32,60 +32,45 @@ export default {
             ids: [], 
             Transferencia:{
                 id:'',
-                registro:'',
+                fecharegistro:'',
+                especialidadini:'',
+                especialidadfin:'',
+                atencion:{                        
+                    usuario:{
+                        nombres:'',
+                        apellidos:'',
+                        docnum:'',
+                        doctipo:'',
+                        numcolegiatura:'',
+                        centroMedico:{
+                            nombre:'',
+                            sector:'',
+                            pais:'',
+                            region:'',
+                            provincia:'',
+                            distrito:'',
+                        }
+                    },
+                    paciente:{
+                        nombres:'',
+                        apellidos:'',
+                        docnum:'',
+                        doctipo:'',
+                        sexo:'',
+                        fecnac:'',
+                        gruposang:'',
+                        rh:'',
+                        ocupacion: '',
+                        estadocivil: '',
+                    },
+                    fecharegistro:'',
+                    motivoconsulta:'',
+                    observaciones:'',
+                    especialidad:'',
+                },
                 descripcion:'',
-                estado:'',
-                tratamientos:[{
-                    motivo:'',
-                    tratamiento:'',
-                    id:'',
-                    medicamento:'',
-                    descripcion:'',
-                },{
-                    motivo:'',
-                    tratamiento:'',
-                    id:'',
-                    medicamento:'',
-                    descripcion:'',
-                    }
-                ]
+                atencion:'',
             },
-            tipo_Transferencia: [
-                {
-                    id: "bae18399-7e28-48aa-b226-2aad74224531",
-                    idmedida: "36032de1-e4b2-4408-855a-71cf56c6c9d8",
-                    medida: {
-                      id: "36032de1-e4b2-4408-855a-71cf56c6c9d8",
-                      nombre: "m3",
-                      descripcion: "metros cubicos"
-                    },
-                    idcategoriaTransferencia: "36032de1-e4b2-4408-855a-71cf56c6c9d8",
-                    categoriaTransferencia: {
-                      id: "36032de1-e4b2-4408-855a-71cf56c6c9d8",
-                      nombre: "laboratorio",
-                      descripcion: "descripcion de categoria"
-                    },
-                    nombre: "glucosa",
-                    descripcion: "descripcion de tipoTransferencia"
-                  },
-                  {
-                      id: "bae18399-7e28-48aa-b226-2aad742333333",
-                      idmedida: "36032de1-e4b2-4408-855a-742333333",
-                      medida: {
-                        id: "36032de1-e4b2-4408-855a-742333333",
-                        nombre: "x 109/L",
-                        descripcion: "metros cubicos"
-                      },
-                      idcategoriaTransferencia: "36032de1-e4b2-4408-855a-71cf56c6c9d8",
-                      categoriaTransferencia: {
-                        id: "36032de1-e4b2-4408-855a-71cf56c6c9d8",
-                        nombre: "laboratorio",
-                        descripcion: "descripcion de categoria"
-                      },
-                      nombre: "leucositos",
-                      descripcion: "descripcion de tipoTransferencia"
-                    },
-            ],
             editedIndex: -1,
             saved:[false],
             editedItem: {
@@ -146,7 +131,6 @@ export default {
      computed:{
        //...mapState('TransferenciaModule',['Transferencia']),
        ...mapState('TransferenciaModule',['Transferencias']),
-       ...mapState('atencionModule', ['atencion']),
      },
      watch:{
         collection:{
