@@ -1,12 +1,14 @@
 import Atencion from '@/views/_createOrUpdate/Atenciones/AtencionView.vue';
 import Acompanante from '@/views/_createOrUpdate/Atenciones/AcompananteView.vue';
 import FactoresRiesgo from '@/views/_createOrUpdate/Atenciones/FactoresRiesgoView.vue';
-import CentroMedico from '@/views/_createOrUpdate/Atenciones/CentroMedicoView.vue';
 import SignosVitales from '@/views/_createOrUpdate/Pruebas/SignosVitales.vue';
+
 import ResultadosAtencionIndex from '@/views/_indexes/Resultados/ResultadosIndexAtencion.vue';
 import TratamientosAtencionIndex from '@/views/_indexes/Resultados/TratamientoIndexAtencion.vue';
 import PruebasAtencionIndex from '@/views/_indexes/Pruebas/PruebasIndexInAtencion.vue';
 import DiagnosticosAtencionIndex from '@/views/_indexes/Diagnosticos/DiagnosticosIndexInAtencionEdit.vue';
+
+import Transferencia from '@/views/_createOrUpdate/Transferencias/TransferenciaView.vue';
 
 import PacientesIndexSearch from '@/views/_indexes/Pacientes/PacientesIndexSearch.vue'
 
@@ -32,14 +34,15 @@ export default {
     Atencion,
     Acompanante,
     FactoresRiesgo,
-    CentroMedico,
+    //CentroMedico,
     //de otros modulos
     SignosVitales,
     PruebasAtencionIndex,
     TratamientosAtencionIndex,
     DiagnosticosAtencionIndex,
     PacientesIndexSearch,
-    ResultadosAtencionIndex
+    ResultadosAtencionIndex,
+    Transferencia
   },
   data() {
     return {
@@ -97,28 +100,30 @@ export default {
       let id = this.$route.params.id;
       let paciente = this.paciente
       delete paciente.edad;
+      this.atencion.paciente= paciente;
+      console.log(this.atencion)
       if (!id) {
         this.$proxies.atencionProxy.register(this.atencion)
           .then(() => {
             this.alertType = this.tipos_alerta.s
-            this.mensaje = "Paciente creado con éxito"
-            this.cancelar = 'Ir a lista de pacientes'
+            this.mensaje = "atencion creado con éxito"
+            this.cancelar = 'Ir a lista de atencion'
             this.isLoading = false;
           }).catch(() => {
             this.alertType = this.tipos_alerta.e
-            this.mensaje = "No se pudo crear paciente"
+            this.mensaje = "No se pudo crear atencion"
             this.isLoading = false;
           });
       } else {
         this.$proxies.atencionProxy.update(id, this.atencion)
           .then(() => {
             this.alertType = this.tipos_alerta.s
-            this.mensaje = "Paciente actualizado con éxito"
-            this.cancelar = 'Ir a lista de pacientes'
+            this.mensaje = "atencion actualizado con éxito"
+            this.cancelar = 'Ir a lista de atencion'
             this.isLoading = false;
           }).catch(() => {
             this.alertType = this.tipos_alerta.e
-            this.mensaje = "No se pudo actualizar paciente"
+            this.mensaje = "No se pudo actualizar atencion"
             this.isLoading = false;
           });
       }

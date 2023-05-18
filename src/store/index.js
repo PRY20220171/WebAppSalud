@@ -6,6 +6,7 @@ import {PruebaModule} from './PruebaModule'
 import {ResultadoModule} from './ResultadoModule'
 import {DiagnosticoModule} from './DiagnosticoModule'
 import {UsuarioModule} from './UsuarioModule'
+import {TransferenciaModule} from './TransferenciaModule'
 
 Vue.use(Vuex)
 const state = {
@@ -18,6 +19,7 @@ export default new Vuex.Store({
     pruebaModule: PruebaModule,
     ResultadoModule: ResultadoModule,
     DiagnosticoModule: DiagnosticoModule,
-    UsuarioModule:UsuarioModule
+    UsuarioModule:UsuarioModule,
+    transferenciaModule:TransferenciaModule,
   },
 })

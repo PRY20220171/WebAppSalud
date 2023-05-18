@@ -36,7 +36,9 @@ export default {
                 page: 1,
                 pages: 0
             },          
-            collapseId: []
+            collapseId: [],
+            alertType:false,
+            mensaje:'',
         }
     },
     methods: {
@@ -53,8 +55,9 @@ export default {
         },
         remove(id){
             this.isLoading = true;
-            this.$proxies.userProxy.delete(id)
-            .then(() => {
+            console.log('id',id)
+            this.$proxies.userProxy.remove(id)
+            /*.then(() => {
                 this.$notify({
                     group: "global",
                     type: "is-success",
@@ -68,7 +71,7 @@ export default {
                     type: "is-danger",
                     text: 'Ocurrió un error inesperado'+ x
                 });
-            })
+            })*/
         },/*
         collapse(id){
             id;

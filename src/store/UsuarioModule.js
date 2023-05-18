@@ -70,7 +70,20 @@ export const UsuarioModule = {
                             descripcion: ''
                         }
                     }
-                ]
+                ],centromedico: {
+                    id: "",
+                    ubicacionid: "",
+                    ubicacion: {
+                      id: "",
+                      pais: "",
+                      region: "",
+                      provincia: "",
+                      distrito: "",
+                      direccion: ""
+                    },
+                    nombre: "",
+                    sector: ""
+                  },
             }
             if (!id) 
                 commit('fillUsuario',model);
@@ -86,18 +99,25 @@ export const UsuarioModule = {
             }
         },
         getUsuarioByAutentificacion: async function ({commit}, params){
-            if (!params.correo && !params.password){
-                commit('fillUsuario',{});
+            if (!params.correo || !params.password){
+                console.log('whuy')
+                //commit('fillUsuario',{});
             }
             else {
                 console.log('s.s')
                 params.proxy.getByCorreoAndPassword(params.correo, params.password)
                     .then(x => {
-                        console.log(params,x.data)
-                        localStorage.setItem("access_token", x.data[0].id);
-                        localStorage.setItem("nombres", x.data[0].nombres+' '+x.data[0].apellidos);
-                        localStorage.setItem("rol", x.data[0].roles[0].rol.descripcion);
-                        commit('fillUsuario',x.data)
+                        console.log(params,'\n',x.data)
+                        if(x.data.length==0) {
+                            console.log('ta vacio')
+                            //localStorage.setItem("access_token", "error");
+                        }
+                        else{
+                            localStorage.setItem("access_token", x.data[0].id);
+                            localStorage.setItem("nombres", x.data[0].nombres+' '+x.data[0].apellidos);
+                            localStorage.setItem("rol", x.data[0].roles[0].rol.descripcion);
+                            commit('fillUsuario',x.data)
+                        }
                     })
                     .catch(() => { });
             }

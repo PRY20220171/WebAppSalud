@@ -2,6 +2,7 @@ import DiagnosticosAtencionIndex from '@/views/_indexes/Diagnosticos/Diagnostico
 import PruebasAtencionIndex from '@/views/_indexes/Pruebas/PruebasIndexInAtencion.vue';
 import ResultadosAtencionIndex from '@/views/_indexes/Resultados/ResultadosIndexAtencion.vue';
 import TratamientosAtencionIndex from '@/views/_indexes/Resultados/TratamientoIndexAtencion.vue';
+import Transferencia from '@/views/_createOrUpdate/Transferencias/TransferenciaView.vue';
 import {mapState,mapActions} from 'vuex'
 
 export default {
@@ -12,6 +13,7 @@ export default {
         PruebasAtencionIndex,
         ResultadosAtencionIndex,
         TratamientosAtencionIndex,
+        Transferencia,
     },
     mounted() {
         this.getAll(1);
@@ -22,6 +24,7 @@ export default {
             dialog2:false,
             dialog3:false,
             dialog4:false,
+            dialog5:false,
 
             expanded: [],
             singleExpand: false,
@@ -41,6 +44,7 @@ export default {
                     { text: "Pruebas", sortable: false, value: "pruebas" },
                     { text: "Resultados", sortable: false, value: "resultados" },
                     { text: "Tratamientos", sortable: false, value: "tratamientos" },
+                    { text: "Transferencia", sortable: false, value: "trasferencia" },
                 ],
                 atencionDetail: [
                     {

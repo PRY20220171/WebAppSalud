@@ -3,6 +3,7 @@
     "fecharegistro": "09/11/2014",
     "descripcion": "descripcion de Transferencia 0",
     "atencion":{
+        "id": "ec3c6a5b-80c3-4714-8126-d9b3ebd6bf80",
         "paciente":{
             "id": "d5775113-ed08-4de0-8945-d3c977d504f5",
             "nombres": "Kristen",

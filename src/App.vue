@@ -46,6 +46,8 @@
                         //user;
                         //this.$user.initialize();
                         this.isLoggedIn = true;
+                  }else{
+                        this.isLoggedIn = false;
                   }
             }
       }

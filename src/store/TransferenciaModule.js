@@ -58,9 +58,9 @@ export const TransferenciaModule = {
                     especialidad:'',
                 },
                 descripcion:'',
-                atencion:'',
               }
             if (!id) {
+                console.log("we here tr")
                 commit('fillTransferencia', model);
             } else {
                 proxy.getById(id)

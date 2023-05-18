@@ -1,11 +1,48 @@
-[{
+[
+    {
+        "id": "04e77d02-1a3b-428b-83f0-bef1ae426023",
+        "nombres": "Samael",
+        "apellidos": "Cruz",
+        "password": "admin",
+        "docnum": "70405010",
+        "doctipo": "DNI",
+        "correo": "admin@saludplusplus.com",
+        "telefono": "987654321",
+        "direccion": "Av. Miraflores 2243",
+        "procedencia": "Lima",
+        "numcolegiatura": "001000000",
+        "especialidad": ["Medicina General"],
+        "roles":[
+            {
+                "rol":{
+                    "id": "04e77d02-1a3b-428b-83f0-bef1aa426022",
+                    "descripcion": "administrador principal"
+                }
+            }
+        ],
+        "centromedico": {
+            "id": "bdca4305-2306-4398-b840-438a735d1000",
+            "ubicacionid": "40477407-308d-4fa4-aa62-dcddcc5a000",
+            "ubicacion": {
+              "id": "40477407-308d-4fa4-aa62-dcddcc5a000",
+              "pais": "Peru",
+              "region": "Lima",
+              "provincia": "Lima",
+              "distrito": "Lima",
+              "direccion": "Av. Principal"
+            },
+            "nombre": "Ministerio de Salud",
+            "sector": "estatal"
+          }
+    },
+    {
         "id": "04e77d02-1a3b-428b-83f0-bef1aa426020",
         "nombres": "Zhang",
         "apellidos": "Shou",
         "password": "admin",
         "docnum": "98926073",
         "doctipo": "DNI",
-        "correo": "admin@admin.com",
+        "correo": "medico@hospital.com",
         "telefono": "987654321",
         "direccion": "Av. La Marina 6908",
         "procedencia": "Lima",
@@ -18,7 +55,21 @@
                     "descripcion": "medico"
                 }
             }
-        ]
+        ],
+        "centromedico": {
+            "id": "bdca4305-2306-4398-b840-438a735d1963",
+            "ubicacionid": "40477407-308d-4fa4-aa62-dcddcc5a0b39",
+            "ubicacion": {
+              "id": "40477407-308d-4fa4-aa62-dcddcc5a0b39",
+              "pais": "Peru",
+              "region": "Lima",
+              "provincia": "Lima",
+              "distrito": "Lima",
+              "direccion": "Av. Alfonso Ugarte 825"
+            },
+            "nombre": "Hospital Nacional Dos de Mayo",
+            "sector": "estatal"
+          }
     },
     {
         "id": "04e77d02-1a3b-428b-83f0-bef1aa426021",
@@ -27,7 +78,7 @@
         "password": "admin",
         "docnum": "98926074",
         "doctipo": "DNI",
-        "correo": "admin1@admin.com",
+        "correo": "enfermero@hospital.com",
         "telefono": "987654321",
         "direccion": "Av. La Marina 6908",
         "procedencia": "Lima",
@@ -40,7 +91,21 @@
                     "descripcion": "enfermero"
                 }
             }
-        ]
+        ],
+        "centromedico": {
+            "id": "bdca4305-2306-4398-b840-438a735d1963",
+            "ubicacionid": "40477407-308d-4fa4-aa62-dcddcc5a0b39",
+            "ubicacion": {
+              "id": "40477407-308d-4fa4-aa62-dcddcc5a0b39",
+              "pais": "Peru",
+              "region": "Lima",
+              "provincia": "Lima",
+              "distrito": "Lima",
+              "direccion": "Av. Alfonso Ugarte 825"
+            },
+            "nombre": "Hospital Nacional Dos de Mayo",
+            "sector": "estatal"
+          }
     },
     {
         "id": "04e77d02-1a3b-428b-83f0-bef1aa426022",
@@ -49,7 +114,7 @@
         "password": "admin",
         "docnum": "98926075",
         "doctipo": "DNI",
-        "correo": "admin2@admin.com",
+        "correo": "administrador@hospital.com",
         "telefono": "987654321",
         "direccion": "Av. La Marina 6908",
         "procedencia": "Lima",
@@ -62,6 +127,44 @@
                     "descripcion": "administrador"
                 }
             }
-        ]
+        ],
+        "centromedico": {
+            "id": "bdca4305-2306-4398-b840-438a735d1963",
+            "ubicacionid": "40477407-308d-4fa4-aa62-dcddcc5a0b39",
+            "ubicacion": {
+              "id": "40477407-308d-4fa4-aa62-dcddcc5a0b39",
+              "pais": "Peru",
+              "region": "Lima",
+              "provincia": "Lima",
+              "distrito": "Lima",
+              "direccion": "Av. Alfonso Ugarte 825"
+            },
+            "nombre": "Hospital Nacional Dos de Mayo",
+            "sector": "estatal"
+          }
+    },
+    {
+        "id": "3Jvpazc",
+    "nombres": "Alex",
+    "apellidos": "Trevol",
+    "password": "",
+    "docnum": "70485010",
+    "doctipo": "DNI",
+    "correo": "Trevol@hospital.com",
+    "telefono": "17",
+    "direccion": "Av. La Marina 6908 mz 10",
+    "procedencia": "Peru",
+    "numcolegiatura": "",
+    "especialidad": [
+      
+    ],
+    "roles": [
+      {
+        "rol": {
+          "id": "",
+          "descripcion": "operador"
+        }
+      }
+    ]
     }
 ]

@@ -17,9 +17,17 @@
                   <v-col cols="12"><AtencionesIndexSearch/></v-col>
                 </v-row>
                   <v-row>
-                    
                     <Transferencia/>
                   </v-row>
+                  
+                          <v-row>
+                            <v-col>
+                                  <v-btn color="primary" @click="registrar" > {{registrar}} </v-btn>
+                                  <v-btn text  @click="cancel"> Cancel </v-btn>
+                            </v-col>
+                          </v-row>
+
+                          <br><br>
     </div>
   </template>
   <script src="@/components/_entities/Transferencias/_Transferencia.js"></script>

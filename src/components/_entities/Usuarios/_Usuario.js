@@ -1,9 +1,14 @@
 
 
-  import {mapState} from 'vuex'
+  
+import CentroMedico from '@/views/_createOrUpdate/Usuarios/CentroMedicoView.vue';
+import {mapState} from 'vuex'
 
   export default {
     name: 'RegistrarUsuario',
+    components: {
+      CentroMedico,
+    },
     data () {
       return {
         token_usuariotem:1,
@@ -28,7 +33,7 @@
                 }
             ]
         },
-
+       // medical:false,
         tipos_alerta:{
             s:'success',
             i:'info',
@@ -49,7 +54,8 @@
         roles: [
           {value:'administrador',nombre:'Administrador',descripcion:'Acceso completo al sistema'},
           {value:'medico',nombre:'Médico',descripcion:'Acceso parcial al sistema'},
-          {value:'enfermero',nombre:'Enfermero',descripcion:'Acceso parcial al sistema'}
+          {value:'enfermero',nombre:'Enfermero',descripcion:'Acceso parcial al sistema'},
+          {value:'operador',nombre:'Operador',descripcion:'Acceso parcial al sistema'}
         ],
         
       }
@@ -90,30 +96,55 @@
           ]
         },
     },
+    watch:{
+      'model.roles'(val){
+        console.log(val)
+      }
+    },
     methods:{
       cancel(){
         window.history.back()
       },
       save(){
         let id = ''
-
-        if(this.esPerfil)
-            id=localStorage.getItem("access_token").toString();
-        else 
-            this.$route.params.id
-        
-        if(!id) {
-            this.$proxies.userProxy.register(this.model)
-        .then(x => {})
-        .catch(() => { });
+        console.log(this.model)
+        if(this.model.nombres==''|| this.model.apellidos==''|| this.model.docnum==''|| this.model.doctipo=='' ||
+          this.model.roles[0].rol.descripcion==''){
+          
+          this.alertType='warning',
+          this.mensaje='Falta informacion obligatoria'
+          //|| this.model.password==''
         }
         else{
-            this.$proxies.userProxy.update(id,this.model)
+          if ((this.model.roles[0].rol.descripcion=='medico' || this.model.roles[0].rol.descripcion=='enfermero') && this.model.numcolegiatura=='') {
+            
+            this.alertType='warning',
+            this.mensaje='Falta informacion obligatoria'            
+          }
+          else{
+            if(this.esPerfil)
+                id=localStorage.getItem("access_token").toString();
+            else {
+                this.$route.params.id
+                console.log(this.$route.params, 'params')
+              }
+            
+            if(!this.$route.params.id) {
+                this.$proxies.userProxy.register(this.model)
             .then(x => {})
             .catch(() => { });
+            }
+            else{
+              console.log('model:',this.model)
+             console.log('user:',this.$proxies.userProxy.getById(this.$route.params.id) )
+                 this.$proxies.userProxy.update(this.$route.params.id,this.model)
+                .then(x => {})
+                .catch(() => { });
+            }
+            this.alertType='success',
+            this.mensaje='Se guardó con éxito'
+          }
         }
-        this.alertType='success',
-        this.mensaje='Se guardó con éxito'
       },
       getUsuario() {
             let id = ''

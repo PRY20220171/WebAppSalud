@@ -46,6 +46,9 @@
             </v-col>
 
           </v-row>
+          <v-alert :type="alertType">
+            {{mensaje}}
+          </v-alert>
         </v-card>
       </v-col>
             <v-dialog v-model="forget" max-width="350">
@@ -87,6 +90,9 @@
               forget:false,
               solicitar:false,
               enviado: false,
+
+              alertType:'info',
+              mensaje:'Por favor completar la información necesaria',
                   //isLoggedIn: false
             };
       },
@@ -99,6 +105,16 @@
           this.enviado = true
         ), 3000)
       },
+      usuario(val){
+        console.log("viendo user")
+        
+        console.log('l1',localStorage.access_token)
+            
+              this.$parent.$parent.isLoggedIn = true;
+              this.alertType= 'success'
+              this.mensaje='Usuario correcto'
+          location.reload();
+      }
     },
     computed:{
       ...mapState('UsuarioModule',['usuario']),
@@ -106,13 +122,18 @@
     methods: {
       ...mapActions('UsuarioModule',['getUsuarioByAutentificacion']),
       authenticate() {
-        console.log("authenticated",this.$proxies.userProxy);
+        //console.log("authenticated",this.$proxies.userProxy);
+        if (!this.loginData.email || !this.loginData.password) {
+          this.alertType= 'warning'
+          this.mensaje='Por favor completar todos los campos'
+        }else{
+
           this.getUsuarioByAutentificacion({
           correo:this.loginData.email,
           password:this.loginData.password,
           proxy:this.$proxies.userProxy
-        });
-        console.log(this.usuario)
+        });}
+        console.log('usuario:',this.usuario)
         /*
                 this.login.loading = true;
                 this.$proxies.identityProxy
@@ -144,13 +165,18 @@
                     }
                     this.login.loading = false;
                   });*/
-        
-        if(!this.usuario) {
+        /*
+        if(!this.usuario || this.usuario==[]) {
           wrong=true
-          return
-        }
-          this.$parent.$parent.$parent.isLoggedIn = true;
-        localStorage.setItem("access_token", this.usuario.id);
+          console.log('not pass')
+        }*/
+        
+        if (!localStorage.getItem("access_token")) {
+              this.alertType= 'error'
+              this.mensaje='Usuario no se encuentra registrado'
+              console.log('l2',localStorage.access_token, this.alertType, this.mensaje)
+            }
+          
         //this.$refs.form.validate();
       },
       addNewUser() {

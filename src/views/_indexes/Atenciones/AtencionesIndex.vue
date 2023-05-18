@@ -1,3 +1,6 @@
+
+import Transferencia from '@/components/_entities/Transferencias/Transferencia';
+
 <!--
     Diagnósticos','mdi-medical-bag
     'Pruebas','mdi-needle'
@@ -108,6 +111,17 @@
                                 </v-btn>
                             </v-row>
                         </template>
+                        <template #[`item.trasferencia`]>
+                            <v-row justify="center">
+                                <v-btn 
+                                color="main_color  darken-2" 
+                                @click="dialog5=true" 
+                                x-small 
+                                fab>
+                                    <v-icon>mdi-transfer</v-icon>
+                                </v-btn>
+                            </v-row>
+                        </template>
 
                     </v-data-table>
                 </v-card>
@@ -167,6 +181,22 @@
                     <v-row>
                         <v-spacer></v-spacer>
                         <v-btn color="red" text @click="dialog4= !dialog4">Cerrar</v-btn>
+                    </v-row>
+                </v-col>
+            </v-card>
+        </v-dialog>
+        <v-dialog v-model="dialog5" persistent max-width="1000px">
+            <v-card>
+                <v-col>
+                    <v-row>
+                        <br>
+                    </v-row>
+                    <v-row>
+                        <Transferencia></Transferencia>
+                    </v-row>
+                    <v-row>
+                        <v-spacer></v-spacer>
+                        <v-btn color="red" text @click="dialog5= !dialog5">Cerrar</v-btn>
                     </v-row>
                 </v-col>
             </v-card>

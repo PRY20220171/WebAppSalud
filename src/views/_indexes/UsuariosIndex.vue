@@ -30,13 +30,16 @@
                                         <v-icon>mdi-pencil</v-icon>
                                     </v-btn>
                                 </router-link>
-                                <v-btn  color="error" outlined x-small fab>
+                                <v-btn  color="error" outlined x-small fab @click="remove(item.id)">
                                         <v-icon class=" text-danger">mdi-delete</v-icon>
                                     </v-btn>
                             </template>
                         </v-data-table>
                     </v-col>
                 </v-row>
+                <v-alert :type="alertType">
+            {{mensaje}}
+          </v-alert>
             </v-card>
         </v-row>
     </v-container>

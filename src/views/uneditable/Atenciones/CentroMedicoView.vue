@@ -15,4 +15,4 @@
     </v-card>
 </template>
 
-<script src="../../../components/_entities/Atenciones/CentroMedico.js"></script>
+<script src="../../../components/_entities/Usuarios/CentroMedico.js"></script>

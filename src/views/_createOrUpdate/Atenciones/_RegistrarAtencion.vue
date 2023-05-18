@@ -34,7 +34,7 @@
                     <v-col cols="12"><PacientesIndexSearch/></v-col>
                   </v-row>
                   <v-btn color="primary" @click="e1 = 2" v-if="paciente.nombres">  Continue </v-btn>
-                  <v-btn text> Cancel </v-btn>
+                  <v-btn text @click="$router.push('/consultas')"> Cancel </v-btn>
                 </v-stepper-content>
                 <v-stepper-content step="2">
                   <v-row>
@@ -42,12 +42,11 @@
                     <v-col cols="12"  md="4"><Atencion/></v-col>
                     <v-col cols="12"  md="4">
                       <FactoresRiesgo/>
-                      <CentroMedico/>
                     </v-col>
                   </v-row>
-                  <v-btn color="main_color darken-1" @click="e1 = 2" dark> Anterior </v-btn>
+                  <v-btn color="main_color darken-1" @click="e1 = 1" dark> Anterior </v-btn>
                   <v-btn color="primary" @click="e1 = 3">  Continue </v-btn>
-                  <v-btn text> Cancel </v-btn>
+                  <v-btn text @click="$router.push('/consultas')"> Cancel </v-btn>
                 </v-stepper-content>
                 <v-stepper-content step="3">
                   <v-container class="ma-0 pa-0 fill-height" fluid>
@@ -59,7 +58,12 @@
                   </v-container>
                   <v-btn color="main_color darken-1" @click="e1 = 2" dark> Anterior </v-btn>
                 <v-btn color="primary" @click="registrar" > Registrar </v-btn>
-                  <v-btn text> Cancel </v-btn>
+                  <v-btn text @click="$router.push('/consultas')"> Cancel </v-btn>
+                  <v-btn text @click="$router.push('/consultas')"> Regresar a lista </v-btn>
+                  
+          <v-alert :type="alertType">
+            {{mensaje}}
+          </v-alert>
                 </v-stepper-content>
             </v-stepper-items>
               </v-form>

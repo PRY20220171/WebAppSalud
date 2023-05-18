@@ -15,6 +15,7 @@ export default {
             search: '',
             panel: [0, 1],
             atencionHeaders: [
+                { text: " ", value: "actions" },
                 { text: "Paciente", value: "nombrecomp" },
                 { text: "Lo registró", value: "nombreusarioreg" },
                 { text: "Centro Médico", value: "centromedico.nombre" },
@@ -24,7 +25,6 @@ export default {
                 { text: "forma de inicio", sortable: false, value: "formainicio" },
                 { text: "curso", sortable: false, value: "curso" },
                 { text: "tiempoenfermedad", value: "tiempoenfermedad" },
-                { text: " ", value: "actions" },
             ],
             collection: {
                 hasItems: false,

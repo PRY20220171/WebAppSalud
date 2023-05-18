@@ -53,16 +53,18 @@ export default {
       }
     },
     computed:{
-      ...mapState('atencionModule',['atencion']),
+      ...mapState('atencionModule',['transferencia']),
+      ...mapState('transferenciaModule',['transferencia']),
     },
-    created() {
+    created() {/*
       this.getAtencion({
         id:this.$route.params.id,
         proxy:this.$proxies.atencionProxy
-      });
+      });*/
     },
     methods:{
-      ...mapActions('atencionModule',['getAtencion','updatePacienteOnCreate']),
+      ...mapActions('atencionModule',['getAtencion']),
+      ...mapActions('transferenciaModule',['getTransferencia']),
       
     }
   }
