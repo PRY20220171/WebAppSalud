@@ -25,7 +25,7 @@ import Transferencia from '@/components/_entities/Transferencias/Transferencia';
                         </v-col>
                         <v-spacer></v-spacer>
                         <v-col>
-                            <v-text-field class="py-0" v-model="search" append-icon="mdi-magnify" label="Search"
+                            <v-text-field class="py-0" v-model="search" append-icon="mdi-magnify" label="Buscar"
                                 single-line hide-details></v-text-field>
                         </v-col>
                     </v-row>

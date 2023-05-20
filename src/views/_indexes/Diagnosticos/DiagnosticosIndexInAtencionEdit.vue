@@ -16,7 +16,7 @@
             </v-col>
             <v-spacer></v-spacer>
             <v-col>
-              <v-text-field class="py-0" v-model="search" append-icon="mdi-magnify" label="Search" single-line
+              <v-text-field class="py-0" v-model="search" append-icon="mdi-magnify" label="Buscar" single-line
                 hide-details></v-text-field>
             </v-col>
           </v-row>

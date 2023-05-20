@@ -15,10 +15,10 @@ export default {
             isLoading: false,
             search: '',
             headers:  [
-                    { text: 'registro',value: 'registro'},
+                    { text: 'fec. registro',value: 'registro'},
                     { text: 'descripcion',value: 'descripcion'},
                     { text: 'estado', value: 'estado' },
-                    { text: 'Fecha de resultado', value: 'fecresultado' },
+                    { text: 'Fec. de resultado', value: 'fecresultado' },
                     { text: '', sortable: false, value: 'actions'},
                 ],
             collection: {
@@ -256,24 +256,53 @@ export default {
             const addObj = Object.assign({}, this.defaultItem);
             addObj.id = this.uuidv4();
             addObj.idatencion = this.atencion.id;
-            addObj.fecregistro = new Date().toLocaleDateString();
+            addObj.registro = new Date().toISOString().substr(0, 10),
+      
+            console.log('o',addObj)
             //addObj.id = this.collection.items.length + 1;
             this.collection.items.unshift(addObj);
             this.editItem(addObj);
         },
         async save() {
+            console.log('ei',this.editedItem)
+            /*
             try{
                 const new_resultado= await axios.post(
                     'http://localhost:3000/resultados',{
                         id: this.uuidv4(),
-                        registro: new Date().toLocaleDateString(),
+                        //registro: new Date().toLocaleDateString(),
+                        registro: this.editedItem.registro,
                         descripcion: this.editedItem.descripcion,
                         estado: this.editedItem.estado,
-                        tratamientos: this.editedItem.tratamientos                    })
+                        //tratamientos: this.editedItem.tratamientos,
+                        fecresultado: this.editedItem.fecresultado
+                    })
             }
             catch(error){
                 console.log(error)
-            }
+            }*/
+            this.$proxies.resultadoProxy.getById(this.editedItem.id)
+                .then(response => {
+                    this.$proxies.resultadoProxy.update(this.editedItem.id,this.editedItem)
+                })
+                .catch(error => {
+                    if (error.response && error.response.status === 404) {
+
+                        this.$proxies.resultadoProxy.register(this.editedItem)
+                    }
+                });
+              
+            /*
+                const new_resultado= await axios.post(
+                    'http://localhost:3000/resultados',{
+                        id: this.uuidv4(),
+                        //registro: new Date().toLocaleDateString(),
+                        registro: this.editedItem.registro,
+                        descripcion: this.editedItem.descripcion,
+                        estado: this.editedItem.estado,
+                        //tratamientos: this.editedItem.tratamientos,
+                        fecresultado: this.editedItem.fecresultado
+                    })*/
             this.close();
             /*if (this.editedIndex > -1) {
                 Object.assign(this.collection.items[this.editedIndex], this.editedItem)

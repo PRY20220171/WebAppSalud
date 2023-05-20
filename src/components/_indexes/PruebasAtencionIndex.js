@@ -16,7 +16,7 @@ export default {
       search: "",
       estados: ['solicitado', 'en proceso','finalizado'],
       headers: [
-        { text: "tipoprueba", value: "tipoprueba.nombre" },
+        { text: "Tipo de prueba", value: "tipoprueba.nombre" },
         { text: "medida", value: "tipoprueba.medida.nombre" },
         { text: "Estado", value: "estado" },
         { text: "Fecha de prueba", value: "fecprueba" },

@@ -7,25 +7,23 @@
     <v-divider class="ml-4"></v-divider>
     <v-card-text class="">
       <v-row>
-        <v-col cols='3'>
-          <v-text-field  v-model='atencion.signosvitales.temperatura' suffix="°C" prefix="Temperatura" name="temperatura" type="number" color="main_color"
-            hide-details="auto" dense />
+        <v-col cols='6'>
+          <v-text-field  v-model='atencion.signosvitales.presionArterial' suffix="mm Hg" label="Presion Arterial" type="number" color="main_color"
+            hide-details />
         </v-col>
-        <v-col cols='3'>
-          <v-text-field  v-model='atencion.signosvitales.presionArterial' suffix="mm Hg" prefix="Presion Arterial" name="presionArterial" type="number" color="main_color"
-            hide-details="auto" dense />
+        <v-col cols='6'>
+          <v-text-field  v-model='atencion.signosvitales.frecuenciaCardiaca' suffix="ppm" label="Frecuencia Cardiaca" type="number" color="main_color"
+            hide-details />
         </v-col>
         <v-col cols='4'>
-          <v-text-field  v-model='atencion.signosvitales.frecuenciaCardiaca' suffix="ppm" prefix="Frecuencia Cardiaca" name="frecuenciaCardiaca" type="number" color="main_color"
-            hide-details="auto" dense />
+          <v-text-field  v-model='atencion.signosvitales.temperatura' suffix="°C" label="Temperatura" type="number" color="main_color"
+            hide-details />
         </v-col>
-        <v-col cols='3'>
-          <v-text-field  v-model='atencion.signosvitales.peso' suffix="kg" prefix="Peso" name="peso" type="number" color="main_color" hide-details="auto"
-            dense />
+        <v-col cols='4'>
+          <v-text-field  v-model='atencion.signosvitales.peso' suffix="kg" label="Peso"  type="number" color="main_color" hide-details/>
         </v-col>
-        <v-col cols='3'>
-          <v-text-field  v-model='atencion.signosvitales.talla' suffix="cm" prefix="Talla" name="talla" type="number" color="main_color" hide-details="auto"
-            dense />
+        <v-col cols='4'>
+          <v-text-field  v-model='atencion.signosvitales.talla' suffix="cm" label="Talla"  type="number" color="main_color" hide-details/>
         </v-col>
       </v-row>
     </v-card-text>

@@ -3,7 +3,7 @@
         <v-row class="mt-5 mb-0 mx-5">
               <v-col>
                 <v-text-field label="Fecha de registro" name="fecharegistro" v-model="atencion.fecharegistro"
-                prepend-icon="mdi-email" type="date" color="main_color" hide-details="auto" />
+                prepend-icon="mdi-date" type="date" color="main_color" hide-details="auto" />
               </v-col>
               <v-col class="d-flex align-center">
                 <v-text-field label="Nombre del paciente" :value="paciente.nombres+' '+paciente.apellidos" disabled ></v-text-field>
@@ -42,15 +42,16 @@
                     <v-col cols="12"  md="4"><Atencion/></v-col>
                     <v-col cols="12"  md="4">
                       <FactoresRiesgo/>
+                    <SignosVitales/>
                     </v-col>
                   </v-row>
                   <v-btn color="main_color darken-1" @click="e1 = 1" dark> Anterior </v-btn>
-                  <v-btn color="primary" @click="e1 = 3">  Continue </v-btn>
-                  <v-btn text @click="$router.push('/consultas')"> Cancel </v-btn>
+                  <v-btn color="primary" @click="e1 = 3" :disabled="!saved">  Continue </v-btn>
+                  <v-btn color="primary" @click="registrar" > Registrar </v-btn>
+                  <v-btn text @click="$router.push('/consultas')" > Cancel </v-btn>
                 </v-stepper-content>
                 <v-stepper-content step="3">
                   <v-container class="ma-0 pa-0 fill-height" fluid>
-                    <SignosVitales/>
                     <DiagnosticosAtencionIndex class="py-2"/>
                     <PruebasAtencionIndex class="py-2"/>
                     <ResultadosAtencionIndex class="py-2"/>
@@ -61,10 +62,10 @@
                   <v-btn text @click="$router.push('/consultas')"> Cancel </v-btn>
                   <v-btn text @click="$router.push('/consultas')"> Regresar a lista </v-btn>
                   
+                </v-stepper-content>
           <v-alert :type="alertType">
             {{mensaje}}
           </v-alert>
-                </v-stepper-content>
             </v-stepper-items>
               </v-form>
         </v-stepper>

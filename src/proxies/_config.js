@@ -56,6 +56,9 @@ Axios.interceptors.response.use(
             localStorage.removeItem('access_token');
             window.location.reload(true);
         }
+       /* if (status === 404 && error.config.method === 'get') {
+            return Promise.resolve({ data: false });
+          }*/
         return Promise.reject(error);
     }
 );

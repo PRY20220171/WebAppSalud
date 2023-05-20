@@ -15,7 +15,7 @@
             </v-col>
             <v-spacer></v-spacer>
             <v-col>
-              <v-text-field class="py-0" v-model="search" append-icon="mdi-magnify" label="Search" single-line
+              <v-text-field class="py-0" v-model="search" append-icon="mdi-magnify" label="Buscar" single-line
                 hide-details></v-text-field>
             </v-col>
           </v-row>
@@ -26,8 +26,14 @@
                 <template v-slot:[`item.registro`]="{ item }">
                   
                   <v-text-field v-model="editedItem.registro" :hide-details="true" dense single-line
-                    :autofocus="true" v-if="item.id === editedItem.id"></v-text-field>
+                    :autofocus="true" v-if="item.id === editedItem.id"  type="date" ></v-text-field>
                   <span v-else>{{item.registro}}</span>
+                </template>
+                <template v-slot:[`item.fecresultado`]="{ item }">
+                  
+                  <v-text-field v-model="editedItem.fecresultado" :hide-details="true" dense single-line
+                    :autofocus="true" v-if="item.id === editedItem.id"  type="date" ></v-text-field>
+                  <span v-else>{{item.fecresultado}}</span>
                 </template>
 
                 <template v-slot:[`item.estado`]="{ item }">

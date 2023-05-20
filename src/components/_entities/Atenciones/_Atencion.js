@@ -64,6 +64,7 @@ export default {
       alertType: 'info',
       mensaje: 'Por favor completar la información necesaria antes de guardar',
       cancelar: 'Cancelar',
+      saved:false
     }
   },
   computed: {
@@ -87,6 +88,8 @@ export default {
   },
   mounted() {
     console.log(this.usuario)
+    if (this.$route.params.id)
+            this.saved=true
   },
   updated() {
   },
@@ -103,13 +106,17 @@ export default {
       this.atencion.paciente= paciente;
       console.log(this.atencion)
       if (!id) {
+        this.saved=true
         this.$proxies.atencionProxy.register(this.atencion)
           .then(() => {
             this.alertType = this.tipos_alerta.s
             this.mensaje = "atencion creado con éxito"
             this.cancelar = 'Ir a lista de atencion'
             this.isLoading = false;
-            this.$router.push('/consultas');
+            if(this.e1==3){
+              console.log("s?",this.e1)
+              this.$router.push('/consultas');
+            }
           }).catch(() => {
             this.alertType = this.tipos_alerta.e
             this.mensaje = "No se pudo crear atencion"
