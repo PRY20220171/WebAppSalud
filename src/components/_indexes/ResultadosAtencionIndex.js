@@ -228,9 +228,6 @@ export default {
             let x = window.confirm('¿Está seguro de eliminar el resultado?');
             if(x){
                 const result = await this.$proxies.resultadoProxy.remove(item.id);
-                //axios.delete(
-                //    `http://localhost:3000/resultados/${item.id}`
-                //);
                 console.log(result);
                 alert("Resultado eliminado");
             }
@@ -262,22 +259,6 @@ export default {
         },
         async save() {
             console.log('ei',this.editedItem)
-            /*
-            try{
-                const new_resultado= await axios.post(
-                    'http://localhost:3000/resultados',{
-                        id: this.uuidv4(),
-                        //registro: new Date().toLocaleDateString(),
-                        registro: this.editedItem.registro,
-                        descripcion: this.editedItem.descripcion,
-                        estado: this.editedItem.estado,
-                        //tratamientos: this.editedItem.tratamientos,
-                        fecresultado: this.editedItem.fecresultado
-                    })
-            }
-            catch(error){
-                console.log(error)
-            }*/
             this.isLoading = true;
             this.$proxies.resultadoProxy.getById(this.editedItem.id)
                 .then(response => {

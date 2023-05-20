@@ -255,9 +255,7 @@ export default {
     async deleteItem(item) {
       let x = window.confirm("¿Está seguro de eliminar la prueba?");
       if (x) {
-        const prueba = await axios.delete(
-          `http://localhost:3000/pruebas/${item.id}`
-        );
+        const prueba = await this.$proxies.pruebaProxy.remove(item.id);
         console.log(prueba);
         alert("Prueba eliminada");
       }
@@ -270,42 +268,41 @@ export default {
       }
     },
     close() {
-      setTimeout(() => {
-        let item = this.collection.items.at(this.editedIndex);
-        if (item.resultado == "" && item.observacion == "") {
-          this.collection.items.splice(this.editedIndex, 1);
-        }
-        this.editedItem = Object.assign({}, this.defaultItem);
-        this.editedIndex = -1;
-      }, 300);
+      let item = this.collection.items.at(this.editedIndex);
+      //if (item.resultado == "" && item.observacion == "") {
+        this.collection.items.splice(this.editedIndex, 1);
+      //}
+      this.editedItem = Object.assign({}, this.defaultItem);
+      this.editedIndex = -1;
     },
     addNew() {
       const addObj = Object.assign({}, this.defaultItem);
+      addObj.idatencion = this.atencion.id;
       addObj.id = this.uuidv4();
-      addObj.fecprueba = new Date().toLocaleDateString();
+      addObj.fecprueba = new Date().toISOString().substr(0, 10);
       //addObj.id = this.collection.items.length + 1;
       this.collection.items.unshift(addObj);
       this.editItem(addObj);
     },
     async save() {
-      try {
-        const new_prueba = await axios.post("http://localhost:3000/pruebas", {
-          id: this.uuidv4(),
-          idtipoprueba: this.editedItem.tipoprueba.id,
-          tipoprueba: this.editedItem.tipoprueba,
-          idpaciente: this.atencion.idpaciente,
-          paciente: this.atencion.paciente,
-          fecresultado: this.editedItem.fecresultado,
-          fecprueba: new Date().toLocaleDateString(),
-          resultado: this.editedItem.resultado,
-          observacion: this.editedItem.observacion,
-          idatencion: this.atencion.id,
-          estado: this.editedItem.estado,
-        });
-      } catch (e) {
-        console.log(e);
-      }
-      this.close();
+      this.$proxies.pruebaProxy.getById(this.editedItem.id)
+      .then(response => {
+          this.$proxies.pruebaProxy.update(this.editedItem.id,this.editedItem).then(() => {
+              this.getAll(1);
+              this.close();
+          });
+      })
+      .catch(error => {
+          if (error.response && error.response.status === 404) {
+              //console.log("CREATING OBJECT...");
+              //console.log(this.editedItem);
+              this.$proxies.pruebaProxy.register(this.editedItem).then(() => {
+              this.getAll(1);
+              this.close();
+              });
+          }
+      });
+
       /*
             if (this.editedIndex > -1) {
                 Object.assign(this.collection.items[this.editedIndex], this.editedItem)

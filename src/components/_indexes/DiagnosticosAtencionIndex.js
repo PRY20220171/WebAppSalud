@@ -149,7 +149,7 @@ export default {
             async get_usuario(id){
                 let response = await axios.get(`http://localhost:3000/usuarios/${id}`)
                 console.log(response.data.nombres)
-                RECOLECTA BIEN LA DATA 
+                RECOLECTA BIEN LA DATA
                 this.datos= await axios.get(`http://localhost:3000/usuarios/${id}`);
             },
             */
@@ -223,10 +223,8 @@ export default {
     async deleteItem(item) {
         let x = window.confirm("¿Está seguro de eliminar el diagnostico?");
         if (x) {
-            const diagnost = await axios.delete(
-                `http://localhost:3000/diagnosticos/${item.id}`
-            );
-            
+            const diagnost = await this.$proxies.diagnosticoProxy.remove(item.id);
+
             console.log(diagnost);
             alert("Diagnostico eliminado");
         }
@@ -238,14 +236,12 @@ export default {
         }
     },
     close() {
-      setTimeout(() => {
         let item = this.collection.items.at(this.editedIndex);
         if (item.descripcion == "" && item.estado == "" && item.tipo == "") {
           this.collection.items.splice(this.editedIndex, 1);
         }
         this.editedItem = Object.assign({}, this.defaultItem);
         this.editedIndex = -1;
-      }, 300);
     },
     addNew() {
       const addObj = Object.assign({}, this.defaultItem);
@@ -253,33 +249,29 @@ export default {
       addObj.idatencion = this.atencion.id;
       addObj.fecregistro = new Date().toLocaleDateString();
       //addObj.id = this.collection.items.length + 1;
-      //this.collection.items.unshift(addObj);
-      this.collection.items.push(addObj);
+      this.collection.items.unshift(addObj);
+      //this.collection.items.push(addObj);
       this.editItem(addObj);
     },
     async save() {
-        try{
-            const new_diagnostico= await axios.post(
-                'http://localhost:3000/diagnosticos',
-                {
-                    id: this.uuidv4(),
-                    fecregistro: new Date().toLocaleDateString(),
-                    descripcion: this.editedItem.descripcion,
-                    estado: this.editedItem.estado,
-                    tipo: this.editedItem.tipo,
-                    idatencion: this.atencion.id,
-                    idpaciente: this.atencion.idpaciente,
-                })
-        }
-        catch(error){
-            console.log(error);
-        }
-        this.close();
-        /*
-      if (this.editedIndex > -1) {
-        Object.assign(this.collection.items[this.editedIndex], this.editedItem);
-      }
-      this.close();*/
+      this.isLoading = true;
+      this.$proxies.diagnosticoProxy.getById(this.editedItem.id)
+          .then(response => {
+              this.$proxies.diagnosticoProxy.update(this.editedItem.id,this.editedItem).then(() => {
+                  this.getAll(1);
+                  this.close();
+              });
+          })
+          .catch(error => {
+              if (error.response && error.response.status === 404) {
+                  //console.log("CREATING OBJECT...");
+                  //console.log(this.editedItem);
+                  this.$proxies.diagnosticoProxy.register(this.editedItem).then(() => {
+                  this.getAll(1);
+                  this.close();
+                  });
+              }
+          });
     },
   },
   created() {

@@ -26,7 +26,7 @@
                 <v-divider inset></v-divider>
                 <template v-slot:[`item.tipoprueba.nombre`]="{ item }">
                   <v-select :items="tipo_prueba" item-text="nombre" required v-model="editedItem.tipoprueba" return-object
-                  :hide-details="true" dense single-line :autofocus="true" v-if="item.id === editedItem.id" 
+                  :hide-details="true" dense single-line :autofocus="true" v-if="item.id === editedItem.id"
                   v-on:input="setMedida(editedItem)">
                   </v-select>
                   <span v-else>{{item.tipoprueba.nombre}}</span>
@@ -119,7 +119,7 @@
         <v-card-actions>
           <v-spacer></v-spacer>
           <v-btn color="blue darken-1" text @click="dialog = false"> Cancelar</v-btn>
-          <v-btn color="blue darken-1" text @click="addPrueba"> Save </v-btn>
+          <v-btn color="blue darken-1" text @click="save"> Save </v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>

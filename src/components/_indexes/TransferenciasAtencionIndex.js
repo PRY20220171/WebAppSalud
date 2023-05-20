@@ -29,13 +29,13 @@ export default {
             },
             estados: ['en proceso', 'esperando pruebas','finalizado'],
             tipos: ['final','inicial','medio'],
-            ids: [], 
+            ids: [],
             Transferencia:{
                 id:'',
                 fecharegistro:'',
                 especialidadini:'',
                 especialidadfin:'',
-                atencion:{                        
+                atencion:{
                     usuario:{
                         nombres:'',
                         apellidos:'',
@@ -114,7 +114,7 @@ export default {
                 ]
             },
             interval:{},
-            loadAtencion:0,      
+            loadAtencion:0,
         }
     },
     mounted() {
@@ -147,8 +147,8 @@ export default {
     methods: {
         addTransferencia(){
             let d = new Date
-            
-            
+
+
               if(this.Transferencia.id=='') {
                 this.Transferencia.id=d.getTime()
                 this.Transferencias.push(this.Transferencia)
@@ -184,7 +184,7 @@ export default {
         },
         getPaciente(idPaciente) {
                 this.isLoading = true;
-    
+
                     this.$proxies.pacienteProxy.getById(idPaciente)
                     .then(x => {
                         this.paciente = x.data;
@@ -212,9 +212,7 @@ export default {
         async deleteItem(item) {
             let x = window.confirm('¿Está seguro de eliminar el Transferencia?');
             if(x){
-                const result = await axios.delete(
-                    `http://localhost:3000/Transferencias/${item.id}`
-                );
+                const result = await this.$proxies.transferenciaProxy.remove(item.id);
                 console.log(result);
                 alert("Transferencia eliminado");
             }
