@@ -24,7 +24,7 @@ export default {
         AntecedentePsicocial,
         Consentimiento,
     },
-    
+
     data () {
       return {
       //  user: this.$store.state.user,
@@ -72,7 +72,7 @@ export default {
         deep: true
       }
     },
-    beforeMount(){      
+    beforeMount(){
     },
     mounted(){
     },
@@ -92,7 +92,7 @@ export default {
         if(this.paciente.ocupacion== "") this.stepAlert[0][0]++
         if(this.paciente.estadocivil== "") this.stepAlert[0][0]++
         if(this.paciente.fecnac== "") this.stepAlert[0][0]++
-   
+
         for (let i in this.paciente.lugarnacc){
           if(i!='id' && this.paciente.lugarnacc[i]== "") this.stepAlert[0][0]++
         }
@@ -165,7 +165,7 @@ export default {
           this.alertType = this.tipos_alerta.w
         }else
         this.alertType = this.tipos_alerta.i
-        
+
       },
       Cancel(){
         this.$router.push('/pacientes');
@@ -179,17 +179,33 @@ export default {
         delete paciente.edad;
 
         if (!id){
-          this.$proxies.pacienteProxy.register(paciente)
-          .then(x => {
-              this.alertType = this.tipos_alerta.s
-              this.mensaje = "Paciente creado con éxito"
-              this.cancelar = 'Ir a lista de pacientes'
-              this.isLoading = false;
-          }).catch(() => {
+          this.$proxies.pacienteProxy.getByNroDoc(paciente.docnum).then(x => {
+            if (x.data.length>0){
               this.alertType = this.tipos_alerta.e
-              this.mensaje = "No se pudo crear paciente"
+              this.mensaje = "Nro de documento ya registrado"
               this.isLoading = false;
+            }
+            else{
+              this.$proxies.pacienteProxy.register(paciente)
+                .then(x => {
+                    this.alertType = this.tipos_alerta.s
+                    this.mensaje = "Paciente creado con éxito"
+                    this.cancelar = 'Ir a lista de pacientes'
+                    this.isLoading = false;
+                    this.$router.push({name: 'Pacientes'});
+                }).catch(() => {
+                    this.alertType = this.tipos_alerta.e
+                    this.mensaje = "No se pudo crear paciente"
+                    this.isLoading = false;
+                });
+            }
+          }).catch(() => {
+            this.alertType = this.tipos_alerta.e
+            this.mensaje = "Error al momento de verificar el nro de documento"
+            this.isLoading = false;
           });
+
+
         }else{
           this.$proxies.pacienteProxy.update(id,paciente)
           .then(x => {
@@ -197,6 +213,7 @@ export default {
               this.mensaje = "Paciente actualizado con éxito"
               this.cancelar = 'Ir a lista de pacientes'
               this.isLoading = false;
+              this.$router.push({name: 'Pacientes'});
           }).catch(() => {
               this.alertType = this.tipos_alerta.e
               this.mensaje = "No se pudo actualizar paciente"

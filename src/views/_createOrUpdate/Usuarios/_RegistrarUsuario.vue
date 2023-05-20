@@ -1,5 +1,5 @@
 <template>
-    
+
     <v-container fill-height fluid>
         <v-form class="flex">
           <v-alert :type="alertType" fluid>
@@ -15,10 +15,12 @@
                         <v-card-text class="">
                             <v-row class="py-3">
                                 <v-text-field label="Nombre(s)*" name="nombres" v-model="model.nombres"
+                                :rules="rules.model.nombres"
                                     prepend-icon="mdi-account" type="text" color="main_color" hide-details="auto" />
                             </v-row>
                             <v-row class="py-3">
                                 <v-text-field label="Apellido(s)*" name="apellidos" v-model="model.apellidos"
+                                :rules="rules.model.apellidos"
                                     prepend-icon="mdi-account-group" type="text" color="main_color" hide-details="auto" />
                             </v-row>
                             <v-row class="py-3">
@@ -29,16 +31,20 @@
                                 </v-col>
                                 <v-col cols="12" sm="6" class="px-0">
                                     <v-text-field label="Número de documento*" name="num_doc" v-model="model.docnum"
+                                    :rules="rules.model.docnum"
                                         prepend-icon="mdi-card-account-details" type="text" color="main_color"
                                         hide-details="auto" />
                                 </v-col>
                             </v-row>
                             <v-row class="py-3">
-                                <v-text-field label="Correo" name="correo" v-model="model.correo"
+                                <v-text-field label="Correo" name="correo" v-model="model.correo" :rules="rules.model.correo"
+                                @blur="checkUserExists"
                                     prepend-icon="mdi-email" type="mail" color="main_color" hide-details="auto" />
+                                    <div v-if="rules.model.correoExists">Correo ya registrado!</div>
                             </v-row>
                             <v-row class="py-3">
                                 <v-text-field label="Teléfono" name="correo" v-model="model.telefono"
+                                :rules="rules.model.telefono"
                                     prepend-icon="mdi-phone" type="number" color="main_color" hide-details="auto" oninput="if(this.value < 0) this.value = 0;"/>
                             </v-row>
                             <v-row class="py-3">
@@ -76,7 +82,7 @@
                                 </v-radio-group>
                             </v-row>
                             <v-row class="py-3">
-                                <v-text-field label="Número de Colegiatura *" name="numcolegiatura" 
+                                <v-text-field label="Número de Colegiatura *" name="numcolegiatura"
                                     v-model="model.numcolegiatura" prepend-icon="mdi-medical-bag" type="number" hint="(obligatorio para personal médico)"
                                     color="main_color" persistent-hint />
                             </v-row>
@@ -114,9 +120,9 @@
                 </v-col>
             </v-row>
         </v-form>
-        
+
     </v-container>
-    
+
 </template>
 
 <script src="@/components/_entities/Usuarios/_Usuario.js"></script>

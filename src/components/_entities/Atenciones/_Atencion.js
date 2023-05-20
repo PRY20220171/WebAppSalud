@@ -109,6 +109,7 @@ export default {
             this.mensaje = "atencion creado con éxito"
             this.cancelar = 'Ir a lista de atencion'
             this.isLoading = false;
+            this.$router.push('/consultas');
           }).catch(() => {
             this.alertType = this.tipos_alerta.e
             this.mensaje = "No se pudo crear atencion"

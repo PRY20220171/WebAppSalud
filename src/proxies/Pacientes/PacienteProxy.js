@@ -19,6 +19,9 @@ export default class PacienteProxy {
   getById(id) {
       return this.axios.get(this.url + `pacientes/${id}`);
   }
+  getByNroDoc(docnum) {
+    return this.axios.get(this.url + `pacientes?docnum=${docnum}`);
+}
   register(model){
       return this.axios.post(this.url+`pacientes`,model);
   }

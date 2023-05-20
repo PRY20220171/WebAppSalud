@@ -1,6 +1,6 @@
 
 
-  
+
 import CentroMedico from '@/views/_createOrUpdate/Usuarios/CentroMedicoView.vue';
 import {mapState} from 'vuex'
 
@@ -33,6 +33,26 @@ import {mapState} from 'vuex'
                 }
             ]
         },
+        rules:{
+          model:{
+            nombres: [
+              (v) => !!v || 'Nombre es obligatorio',
+            ],
+            apellidos: [ (v) => !!v || 'Apellido es obligatorio',],
+            password: [ (v) => !!v || 'Contraseña es obligatoria',],
+            correo: [
+              (v) => !!v || 'Correo es obligatorio',
+              (v) => /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(v) || 'Correo no valido',
+            ],
+            correoExists: false,
+            docnum: [
+              (v) => !!v || 'Nro de documento es obligatorio',
+            ],
+            telefono:[
+              (v) => !!v || 'Telefono es obligatorio',
+            ]
+          }
+        },
        // medical:false,
         tipos_alerta:{
             s:'success',
@@ -57,7 +77,7 @@ import {mapState} from 'vuex'
           {value:'enfermero',nombre:'Enfermero',descripcion:'Acceso parcial al sistema'},
           {value:'operador',nombre:'Operador',descripcion:'Acceso parcial al sistema'}
         ],
-        
+
       }
     },
     computed:{
@@ -102,6 +122,22 @@ import {mapState} from 'vuex'
       }
     },
     methods:{
+      async checkUserExists() {
+        try {
+          const response = await this.$proxies.userProxy.getByCorreo(this.model.correo);
+          //const response = await axios.get(`/api/users?email=${this.email}`);
+          //console.log(response);
+          if (response.data.length !== 0){
+            this.rules.model.correoExists = true; // Assuming the server responds with an "exists" property indicating user existence
+          } else {
+            this.rules.model.correoExists = false;
+          }
+          //console.log(this.rules.model.correoExists);
+        } catch (error) {
+          console.error(error);
+          // Handle error case, e.g., show an error message
+        }
+      },
       cancel(){
         window.history.back()
       },
@@ -110,16 +146,16 @@ import {mapState} from 'vuex'
         console.log(this.model)
         if(this.model.nombres==''|| this.model.apellidos==''|| this.model.docnum==''|| this.model.doctipo=='' ||
           this.model.roles[0].rol.descripcion==''){
-          
+
           this.alertType='warning',
           this.mensaje='Falta informacion obligatoria'
           //|| this.model.password==''
         }
         else{
           if ((this.model.roles[0].rol.descripcion=='medico' || this.model.roles[0].rol.descripcion=='enfermero') && this.model.numcolegiatura=='') {
-            
+
             this.alertType='warning',
-            this.mensaje='Falta informacion obligatoria'            
+            this.mensaje='Falta informacion obligatoria'
           }
           else{
             if(this.esPerfil)
@@ -128,7 +164,7 @@ import {mapState} from 'vuex'
                 this.$route.params.id
                 console.log(this.$route.params, 'params')
               }
-            
+
             if(!this.$route.params.id) {
                 this.$proxies.userProxy.register(this.model)
             .then(x => {})
@@ -151,9 +187,9 @@ import {mapState} from 'vuex'
 
             if(this.esPerfil)
               id=localStorage.getItem("access_token").toString();
-            else 
+            else
               id=this.$route.params.id
-            
+
             if(!id) return;
 
             this.$proxies.userProxy.getById(id)

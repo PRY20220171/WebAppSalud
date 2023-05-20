@@ -1,12 +1,13 @@
-/*import Loader from '../../shared/Loader'
-import Pager from '../../shared/Pager'*/
+import Loader from '@/views/Shared/Loader';
+/*import Pager from '../../shared/Pager'*/
 import Bars from '../../views/Shared/Bars.vue';
 import Usuario from '../../views/_createOrUpdate/Usuarios/UsuarioView.vue';
 
 export default {
     nombres: 'UserIndex',
     components: {
-       // Loader, Pager,
+        Loader,
+       // Pager,
        Bars,
         Usuario
     },
@@ -35,7 +36,7 @@ export default {
                 total: 0,
                 page: 1,
                 pages: 0
-            },          
+            },
             collapseId: [],
             alertType:false,
             mensaje:'',
@@ -48,15 +49,21 @@ export default {
                 .then(x => {
                     this.collection.items = x.data;
                     console.log(this.collection.items)
-                    this.isLoading = false;                    
+                    this.isLoading = false;
                 }).catch(() => {
                     this.isLoading = false;
                 });
         },
         remove(id){
             this.isLoading = true;
-            console.log('id',id)
-            this.$proxies.userProxy.remove(id)
+            console.log('id',id);
+            this.$proxies.userProxy.remove(id).then(() => {
+                this.isLoading = false;
+                this.getAll(1);
+            }).catch(() => {
+                this.isLoading = false;
+            });
+
             /*.then(() => {
                 this.$notify({
                     group: "global",

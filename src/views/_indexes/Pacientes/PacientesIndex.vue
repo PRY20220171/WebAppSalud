@@ -1,5 +1,7 @@
 <template>
     <v-container id="PacientesIndex" class="fill-height" fluid>
+        <Loader v-if="isLoading" />
+        <template v-else>
         <v-row align="center" justify="center">
             <v-col>
             <v-card class="px-5 pb-5 pt-6" >
@@ -28,13 +30,13 @@
                             <!--https://stackoverflow.com/questions/61344980/v-slot-directive-doesnt-support-any-modifier-->
                             <template #[`item.actions`]="{ item }">
                                 <router-link :to="'/pacientes/update/'+item.id">
-                                    <v-btn color="primary" outlined x-small fab> 
+                                    <v-btn color="primary" outlined x-small fab>
                                         <v-icon>mdi-pencil</v-icon>
                                     </v-btn>
                                 </router-link>
-                                <v-btn  color="error" outlined x-small fab>
+                                <v-btn  color="error" outlined x-small fab @click="remove(item.id)">
                                         <v-icon class=" text-danger">mdi-delete</v-icon>
-                                    </v-btn>
+                                </v-btn>
                             </template>
                         </v-data-table>
                     </v-col>
@@ -42,6 +44,7 @@
             </v-card></v-col>
         <v-col>     <PacienteUneditable/></v-col>
         </v-row>
+        </template>
     </v-container>
 </template>
 <script src="@/components/_indexes/PacientesIndex.js">

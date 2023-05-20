@@ -69,7 +69,7 @@ export default {
                 this.paciente.antecedentefam=item.antecedentefam
             }
             console.log(event);
-            
+
             this.getPaciente({id:item.id, proxy:this.$proxies.pacienteProxy});
             if(event.isExpanded) {
               const indexExpanded = this.expanded.findIndex(i => i === item);
