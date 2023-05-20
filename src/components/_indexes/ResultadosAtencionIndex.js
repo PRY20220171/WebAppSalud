@@ -30,7 +30,7 @@ export default {
             },
             estados: ['en proceso', 'esperando pruebas','finalizado'],
             tipos: ['final','inicial','medio'],
-            ids: [], 
+            ids: [],
             resultado:{
                 id:'',
                 registro:'',
@@ -130,7 +130,7 @@ export default {
                 ]
             },
             interval:{},
-            loadAtencion:0,      
+            loadAtencion:0,
         }
     },
     mounted() {
@@ -164,8 +164,6 @@ export default {
     methods: {
         addResultado(){
             let d = new Date
-            
-            
               if(this.resultado.id=='') {
                 this.resultado.id=d.getTime()
                 this.resultados.push(this.resultado)
@@ -201,7 +199,7 @@ export default {
         },
         getPaciente(idPaciente) {
                 this.isLoading = true;
-    
+
                     this.$proxies.pacienteProxy.getById(idPaciente)
                     .then(x => {
                         this.paciente = x.data;
@@ -229,9 +227,10 @@ export default {
         async deleteItem(item) {
             let x = window.confirm('¿Está seguro de eliminar el resultado?');
             if(x){
-                const result = await axios.delete(
-                    `http://localhost:3000/resultados/${item.id}`
-                );
+                const result = await this.$proxies.resultadoProxy.remove(item.id);
+                //axios.delete(
+                //    `http://localhost:3000/resultados/${item.id}`
+                //);
                 console.log(result);
                 alert("Resultado eliminado");
             }
@@ -243,22 +242,20 @@ export default {
             }
         },
         close() {
-            setTimeout(() => {
-                let item = this.collection.items.at(this.editedIndex);
-                if (item.descripcion == '' && item.estado == '' && item.registro == '') {
-                    this.collection.items.splice(this.editedIndex, 1);
-                }
-                this.editedItem = Object.assign({}, this.defaultItem);
-                this.editedIndex = -1;
-            }, 300)
+            let item = this.collection.items.at(this.editedIndex);
+            //if (item.descripcion == '' && item.estado == '' && item.registro == '') {
+                this.collection.items.splice(this.editedIndex, 1);
+            //}
+            this.editedItem = Object.assign({}, this.defaultItem);
+            this.editedIndex = -1;
         },
         addNew() {
             const addObj = Object.assign({}, this.defaultItem);
             addObj.id = this.uuidv4();
             addObj.idatencion = this.atencion.id;
             addObj.registro = new Date().toISOString().substr(0, 10),
-      
-            console.log('o',addObj)
+
+            console.log('o',addObj);
             //addObj.id = this.collection.items.length + 1;
             this.collection.items.unshift(addObj);
             this.editItem(addObj);
@@ -281,29 +278,25 @@ export default {
             catch(error){
                 console.log(error)
             }*/
+            this.isLoading = true;
             this.$proxies.resultadoProxy.getById(this.editedItem.id)
                 .then(response => {
-                    this.$proxies.resultadoProxy.update(this.editedItem.id,this.editedItem)
+                    this.$proxies.resultadoProxy.update(this.editedItem.id,this.editedItem).then(() => {
+                        this.getAll(1);
+                        this.close();
+                    });
                 })
                 .catch(error => {
                     if (error.response && error.response.status === 404) {
-
-                        this.$proxies.resultadoProxy.register(this.editedItem)
+                        //console.log("CREATING OBJECT...");
+                        //console.log(this.editedItem);
+                        this.$proxies.resultadoProxy.register(this.editedItem).then(() => {
+                        this.getAll(1);
+                        this.close();
+                        });
                     }
                 });
-              
-            /*
-                const new_resultado= await axios.post(
-                    'http://localhost:3000/resultados',{
-                        id: this.uuidv4(),
-                        //registro: new Date().toLocaleDateString(),
-                        registro: this.editedItem.registro,
-                        descripcion: this.editedItem.descripcion,
-                        estado: this.editedItem.estado,
-                        //tratamientos: this.editedItem.tratamientos,
-                        fecresultado: this.editedItem.fecresultado
-                    })*/
-            this.close();
+
             /*if (this.editedIndex > -1) {
                 Object.assign(this.collection.items[this.editedIndex], this.editedItem)
             }

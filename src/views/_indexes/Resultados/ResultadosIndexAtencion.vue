@@ -1,5 +1,7 @@
 <template>
   <v-container id="PacientesIndex" class="ma-0 pa-0 fill-height" fluid>
+    <Loader v-if="isLoading" />
+        <template v-else>
     <v-container class="ma-0 max-width" fluid>
       <v-card class="px-5 pb-5 pt-6">
         <v-col class="max-width">
@@ -24,28 +26,29 @@
             <v-card-text outlined v-if="loadAtencion==100">
               <v-data-table :headers="headers" :items="collection.items">
                 <template v-slot:[`item.registro`]="{ item }">
-                  
+
                   <v-text-field v-model="editedItem.registro" :hide-details="true" dense single-line
                     :autofocus="true" v-if="item.id === editedItem.id"  type="date" ></v-text-field>
                   <span v-else>{{item.registro}}</span>
-                </template>
-                <template v-slot:[`item.fecresultado`]="{ item }">
-                  
-                  <v-text-field v-model="editedItem.fecresultado" :hide-details="true" dense single-line
-                    :autofocus="true" v-if="item.id === editedItem.id"  type="date" ></v-text-field>
-                  <span v-else>{{item.fecresultado}}</span>
-                </template>
-
-                <template v-slot:[`item.estado`]="{ item }">
-                  <v-select :items="estados" label="estados" dense single-line required v-model="editedItem.estado" 
-                  v-if="item.id === editedItem.id"></v-select>
-                  <span v-else>{{item.estado}}</span>
                 </template>
                 <template v-slot:[`item.descripcion`]="{ item }">
                   <v-text-field v-model="editedItem.descripcion" :hide-details="true" dense single-line
                     :autofocus="true" v-if="item.id === editedItem.id"></v-text-field>
                   <span v-else>{{item.descripcion}}</span>
                 </template>
+                <template v-slot:[`item.fecresultado`]="{ item }">
+
+                  <v-text-field v-model="editedItem.fecresultado" :hide-details="true" dense single-line
+                    :autofocus="true" v-if="item.id === editedItem.id"  type="date" ></v-text-field>
+                  <span v-else>{{item.fecresultado}}</span>
+                </template>
+
+                <template v-slot:[`item.estado`]="{ item }">
+                  <v-select :items="estados" label="estados" dense single-line required v-model="editedItem.estado"
+                  v-if="item.id === editedItem.id"></v-select>
+                  <span v-else>{{item.estado}}</span>
+                </template>
+
                 <template v-slot:[`item.actions`]="{ item }">
                   <div v-if="item.id === editedItem.id">
                     <v-btn color="primary" outlined x-small fab @click="save">
@@ -70,6 +73,7 @@
         </v-col>
       </v-card>
     </v-container>
+        </template>
 
     <v-dialog v-model="dialog" persistent max-width="600px">
       <v-card>
@@ -89,8 +93,8 @@
         </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn color="blue darken-1" text @click="dialog = false"> Cancelar</v-btn>
-          <v-btn color="blue darken-1" text @click="addResultado"> Save </v-btn>
+          <v-btn color="blue darken-1" text @click="close"> Cancelar</v-btn>
+          <v-btn color="blue darken-1" text @click="save"> Save </v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
