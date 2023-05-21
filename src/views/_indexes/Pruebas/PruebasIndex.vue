@@ -23,7 +23,7 @@
               <br>
               <!--comienzo del data table-->
               <v-data-table :headers="headers.base" :items="collection.items" :expanded.sync="expanded"
-                  :search="search" @click:row="clickRow">
+              :footer-props="{'items-per-page-text':'Registros por página'}" :search="search" @click:row="clickRow">
                   <template v-slot:expanded-item="{ headers, item }" >
                       <td :colspan="headers.length" class="py-4  grey lighten-4">
                         <v-col cols="6" class="mx-auto">

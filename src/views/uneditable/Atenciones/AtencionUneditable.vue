@@ -1,5 +1,5 @@
 <template>
-    
+
     <v-card class="px-5 pb-5 pt-6" >
         <v-card-title>
            <h4>Atención</h4>  <v-spacer></v-spacer>
@@ -27,7 +27,7 @@
                     </v-expansion-panel>
                 </v-expansion-panels>
                 <v-divider></v-divider>
-                
+
                 <v-expansion-panels class="py-2 px-4" focusable >{{listas.resultados.items.tratamientos}}
                     <v-expansion-panel cols='6' class="" v-for="(item,i) in listas">
                         <v-expansion-panel-header  class="text-center main_color--text text--darken-1">
@@ -35,7 +35,7 @@
                         </v-expansion-panel-header>
                         <v-expansion-panel-content >
                             <template>
-                            <v-data-table :headers="item.headers" :items="item.items" hide-default-footer class="elevation-1" >
+                            <v-data-table :footer-props="{'items-per-page-text':'Registros por página'}" :headers="item.headers" :items="item.items" hide-default-footer class="elevation-1" >
                                 <template v-slot:item.tratamientos="{ item }">
                                     <v-row v-for="subitem in item.tratamientos">
                                         {{ subitem.medicamento }} | descripcion

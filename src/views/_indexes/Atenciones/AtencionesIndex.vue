@@ -5,9 +5,11 @@ import Transferencia from '@/components/_entities/Transferencias/Transferencia';
     Diagnósticos','mdi-medical-bag
     'Pruebas','mdi-needle'
     'Resultados','mdi-clipboard-pulse-outline' -->
-    
+
 <template>
     <v-container>
+        <Loader v-if="isLoading" />
+        <template v-else>
         <v-container id="AtencionesIndex" class="fill-height" fluid>
             <v-row justify="center">
                 <v-card class="px-5 pb-5 pt-6">
@@ -33,7 +35,7 @@ import Transferencia from '@/components/_entities/Transferencias/Transferencia';
                     <!--comienzo del data table-->
 
                     <v-data-table :headers="pacienteHeaders.base" :items="collection.items" :expanded.sync="expanded"
-                        :search="search" @click:row="clickRow">
+                        :search="search" @click:row="clickRow" :footer-props="{'items-per-page-text':'Registros por página'}">
                         <template v-slot:expanded-item="{ headers, item }">
                             <td :colspan="headers.length" class="py-2">
                                 <v-row class="align-items-center px-5">
@@ -58,7 +60,7 @@ import Transferencia from '@/components/_entities/Transferencias/Transferencia';
                                         <v-icon>mdi-pencil</v-icon>
                                     </v-btn>
                                 </router-link>
-                                <v-btn color="error" outlined x-small fab>
+                                <v-btn color="error" outlined x-small fab @click="remove(item.id)">
                                     <v-icon class=" text-danger">mdi-delete</v-icon>
                                 </v-btn>
                             </v-row>
@@ -66,10 +68,10 @@ import Transferencia from '@/components/_entities/Transferencias/Transferencia';
 
                         <template #[`item.diagnosticos`]>
                             <v-row justify="center">
-                                <v-btn 
+                                <v-btn
                                 color="main_color  darken-2"
                                 @click="dialog1 = true"
-                                x-small 
+                                x-small
                                 fab>
                                     <v-icon>mdi-medical-bag</v-icon>
                                 </v-btn>
@@ -78,10 +80,10 @@ import Transferencia from '@/components/_entities/Transferencias/Transferencia';
 
                         <template #[`item.pruebas`]>
                             <v-row justify="center">
-                                <v-btn 
-                                color="main_color  darken-2" 
-                                @click="dialog2 = true" 
-                                x-small 
+                                <v-btn
+                                color="main_color  darken-2"
+                                @click="dialog2 = true"
+                                x-small
                                 fab>
                                     <v-icon>mdi-needle</v-icon>
                                 </v-btn>
@@ -90,10 +92,10 @@ import Transferencia from '@/components/_entities/Transferencias/Transferencia';
 
                         <template #[`item.resultados`]>
                             <v-row justify="center">
-                                <v-btn 
-                                color="main_color  darken-2" 
-                                @click="dialog3=true" 
-                                x-small 
+                                <v-btn
+                                color="main_color  darken-2"
+                                @click="dialog3=true"
+                                x-small
                                 fab>
                                     <v-icon>mdi-clipboard-pulse-outline</v-icon>
                                 </v-btn>
@@ -102,10 +104,10 @@ import Transferencia from '@/components/_entities/Transferencias/Transferencia';
 
                         <template #[`item.tratamientos`]>
                             <v-row justify="center">
-                                <v-btn 
-                                color="main_color  darken-2" 
-                                @click="dialog4=true" 
-                                x-small 
+                                <v-btn
+                                color="main_color  darken-2"
+                                @click="dialog4=true"
+                                x-small
                                 fab>
                                     <v-icon>mdi-pill</v-icon>
                                 </v-btn>
@@ -113,10 +115,10 @@ import Transferencia from '@/components/_entities/Transferencias/Transferencia';
                         </template>
                         <template #[`item.trasferencia`]>
                             <v-row justify="center">
-                                <v-btn 
-                                color="main_color  darken-2" 
-                                @click="dialog5=true" 
-                                x-small 
+                                <v-btn
+                                color="main_color  darken-2"
+                                @click="dialog5=true"
+                                x-small
                                 fab>
                                     <v-icon>mdi-transfer</v-icon>
                                 </v-btn>
@@ -127,12 +129,13 @@ import Transferencia from '@/components/_entities/Transferencias/Transferencia';
                 </v-card>
             </v-row>
         </v-container>
-        
+        </template>
+
         <v-dialog v-model="dialog1" persistent max-width="1000px">
             <v-card>
                 <v-col>
                     <v-row>
-                        <DiagnosticosAtencionIndex></DiagnosticosAtencionIndex> 
+                        <DiagnosticosAtencionIndex></DiagnosticosAtencionIndex>
                     </v-row>
                     <v-row>
                         <v-spacer></v-spacer>
@@ -156,7 +159,7 @@ import Transferencia from '@/components/_entities/Transferencias/Transferencia';
             </v-card>
         </v-dialog>
 
-        
+
         <v-dialog v-model="dialog3" persistent max-width="1000px">
             <v-card>
                 <v-col>
@@ -171,7 +174,7 @@ import Transferencia from '@/components/_entities/Transferencias/Transferencia';
             </v-card>
         </v-dialog>
 
-        
+
         <v-dialog v-model="dialog4" persistent max-width="1000px">
             <v-card>
                 <v-col>

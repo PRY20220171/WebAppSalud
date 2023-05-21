@@ -24,7 +24,7 @@
                     </v-row>
                     <v-row>
                         <v-col>
-                            <v-data-table :headers="usuarioHeaders" :items="collection.items" :search="search">
+                            <v-data-table :headers="usuarioHeaders" :items="collection.items" :search="search" :footer-props="{'items-per-page-text':'Registros por página'}">
 
                                 <template #[`item.actions`]="{ item }">
                                     <router-link :to="'/usuarios/update/'+item.id">

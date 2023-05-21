@@ -15,8 +15,8 @@ export default {
             search: '',
             headers:  [
                     //{ text: 'fec. de registro',value: 'registro'},
-                    { text: 'tratamiento',value: 'medicamento'},
-                    { text: 'descripcion',value: 'descripcion'},
+                    { text: 'Tratamiento',value: 'medicamento'},
+                    { text: 'Descripcion',value: 'descripcion'},
                     { text: '', sortable: false, value: 'actions'},
                 ],
             collection: {
@@ -26,7 +26,7 @@ export default {
                 page: 1,
                 pages: 0
             },
-            ids: [], 
+            ids: [],
             tratamiento:{
                 id: "",
                 medicamento: "",
@@ -51,7 +51,7 @@ export default {
                 idatencion: ""
               },
               interval:{},
-              loadAtencion:0,    
+              loadAtencion:0,
         }
     },
     mounted() {
@@ -86,8 +86,8 @@ export default {
     methods: {
         addTratamiento(){
             let d = new Date
-            
-            
+
+
               if(this.tratamiento.id=='') {
                 this.tratamiento.id=d.getTime()
                 this.tratamientos.push(this.tratamiento)
@@ -123,7 +123,7 @@ export default {
         },
         getPaciente(idPaciente) {
                 this.isLoading = true;
-    
+
                     this.$proxies.pacienteProxy.getById(idPaciente)
                     .then(x => {
                         this.paciente = x.data;

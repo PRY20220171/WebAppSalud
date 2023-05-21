@@ -21,7 +21,7 @@ export default {
         { text: "Estado", value: "estado" },
         { text: "Fecha de prueba", value: "fecprueba" },
         { text: "Fecha de resultado", value: "fecresultado" },
-        { text: "observacion", sortable: false, value: "observacion" },
+        { text: "Observacion", sortable: false, value: "observacion" },
         { text: "", sortable: false, value: "actions" },
       ],
       collection: {

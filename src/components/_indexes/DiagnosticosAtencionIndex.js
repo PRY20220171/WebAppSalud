@@ -22,19 +22,19 @@ export default {
       search: "",
       headers: [
         {
-          text: "fecregistro",
+          text: "Fecha registro",
           value: "fecregistro",
         },
         {
-          text: "descripcion",
+          text: "Descripcion",
           value: "descripcion",
         },
         {
-          text: "estado",
+          text: "Estado",
           value: "estado",
         },
         {
-          text: "tipo",
+          text: "Tipo",
           value: "tipo",
         },
         {

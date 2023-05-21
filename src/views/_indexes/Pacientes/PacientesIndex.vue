@@ -25,7 +25,8 @@
                 </v-row>
                 <v-row>
                     <v-col>
-                        <v-data-table :headers="pacienteHeaders.base" :items="collection.items" :expanded.sync="expanded" :search="search" @click:row="clickRow">
+                        <v-data-table :headers="pacienteHeaders.base" :items="collection.items" :expanded.sync="expanded"
+                        :footer-props="{'items-per-page-text':'Registros por página'}" :search="search" @click:row="clickRow">
                             <template #[`item.gruposangrh`]="{ item }">{{ item.gruposang }} {{ item.rh }}</template>
                             <!--https://stackoverflow.com/questions/61344980/v-slot-directive-doesnt-support-any-modifier-->
                             <template #[`item.actions`]="{ item }">

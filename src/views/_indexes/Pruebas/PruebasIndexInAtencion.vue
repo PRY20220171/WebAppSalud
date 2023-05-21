@@ -22,7 +22,7 @@
           <v-row>
             <v-progress-circular indeterminate color="primary" :value="loadAtencion" v-if="loadAtencion<100"></v-progress-circular>
             <v-card-text outlined v-if="loadAtencion==100">
-              <v-data-table :headers="headers" :items="collection.items" fixed-header>
+              <v-data-table :headers="headers" :items="collection.items" fixed-header :footer-props="{'items-per-page-text':'Registros por página'}">
                 <v-divider inset></v-divider>
                 <template v-slot:[`item.tipoprueba.nombre`]="{ item }">
                   <v-select :items="tipo_prueba" item-text="nombre" required v-model="editedItem.tipoprueba" return-object

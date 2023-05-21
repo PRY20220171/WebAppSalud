@@ -22,12 +22,12 @@
                 </v-row>
                 <br>
                 <!--comienzo del data table-->
-                <v-data-table :headers="headers.base" :items="collection.items" :expanded.sync="expanded"
+                <v-data-table :headers="headers.base" :items="collection.items" :expanded.sync="expanded" :footer-props="{'items-per-page-text':'Registros por página'}"
                     :search="search" @click:row="clickRow">
                     <template v-slot:expanded-item="{ headers, item }" >
                         <td :colspan="headers.length" class="py-4  grey lighten-4">
                             <v-data-table :headers="diagnosticoDetail" :items="item.diagnosticos" class="elevation-1 outlined"  hide-default-footer >
-                                
+
                             </v-data-table>
                             <!-- {{item}} -->
                         </td>

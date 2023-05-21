@@ -14,7 +14,7 @@
                 </v-row>
                 <v-row>
                     <v-col>
-                        <v-data-table :headers="atencionHeaders" :items="collection.items" :search="search" >
+                        <v-data-table :headers="atencionHeaders" :items="collection.items" :search="search" :footer-props="{'items-per-page-text':'Registros por página'}">
                             <template #[`item.actions`]="{ item }">
                                 <v-btn  color="primary" outlined x-small fab @click="selected(item.id, item.paciente.id)">
                                    <v-icon class=" text-primary">mdi-eye</v-icon>

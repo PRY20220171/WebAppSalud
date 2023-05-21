@@ -22,7 +22,7 @@
           <v-row>
             <v-progress-circular indeterminate color="primary" :value="loadAtencion" v-if="loadAtencion<100"></v-progress-circular>
             <v-card-text outlined v-if="loadAtencion==100">
-              <v-data-table :headers="headers" :items="collection.items">
+              <v-data-table :footer-props="{'items-per-page-text':'Registros por página'}" :headers="headers" :items="collection.items">
                 <template v-slot:[`item.registro`]="{ item }">
                   <v-text-field v-model="editedItem.registro" :hide-details="true" dense single-line :autofocus="true" type="date"
                     v-if="item.id === editedItem.id"></v-text-field>

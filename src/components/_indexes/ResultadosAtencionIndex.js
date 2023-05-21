@@ -15,9 +15,9 @@ export default {
             isLoading: false,
             search: '',
             headers:  [
-                    { text: 'fec. registro',value: 'registro'},
-                    { text: 'descripcion',value: 'descripcion'},
-                    { text: 'estado', value: 'estado' },
+                    { text: 'Fec. registro',value: 'registro'},
+                    { text: 'Descripcion',value: 'descripcion'},
+                    { text: 'Estado', value: 'estado' },
                     { text: 'Fec. de resultado', value: 'fecresultado' },
                     { text: '', sortable: false, value: 'actions'},
                 ],

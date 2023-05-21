@@ -14,8 +14,8 @@
                 </v-row>
                 <v-row>
                     <v-col>
-                        <v-data-table :headers="pacienteHeaders" :items="collection.items" :search="search" >                            
-                            <template #[`item.gruposangrh`]="{ item }">{{ item.gruposang }} {{ item.rh }}</template>                     
+                        <v-data-table :headers="pacienteHeaders" :items="collection.items" :footer-props="{'items-per-page-text':'Registros por página'}" :search="search" >
+                            <template #[`item.gruposangrh`]="{ item }">{{ item.gruposang }} {{ item.rh }}</template>
                             <template #[`item.sexo`]="{ item }"> {{tipo_sexo[item.sexo]}} </template>
                             <template #[`item.actions`]="{ item }">
                                 <v-btn  color="primary" outlined x-small fab @click="selected(item.id)">

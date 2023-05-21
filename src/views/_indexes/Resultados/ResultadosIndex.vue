@@ -23,16 +23,16 @@
                     <br>
                     <!--comienzo del data table-->
                     <v-data-table :headers="headers.base" :items="collection.items" :expanded.sync="expanded"
-                        :search="search" @click:row="clickRow">
+                    :footer-props="{'items-per-page-text':'Registros por página'}" :search="search" @click:row="clickRow">
                         <template v-slot:expanded-item="{ headers, item }" >
                             <td :colspan="headers.length" class="py-4  grey lighten-4">
                                 <v-data-table :headers="resultadoDetail" :items="item.resultados" class="elevation-1 outlined"  hide-default-footer >
-                                    
+
                                 </v-data-table>
                                 <!-- {{item}} -->
                             </td>
                         </template>
-    
+
                         <template #[`item.actions`]="{ item }">
                             <v-row justify="center">
                                 <router-link :to="'/consultas/update/' + item.id">
@@ -57,7 +57,7 @@
     .v-input.expanding-search {
         transition: max-width 0.5s;
     }
-    
+
     .v-input.expanding-search.closed {
         max-width: 70px;
     }
