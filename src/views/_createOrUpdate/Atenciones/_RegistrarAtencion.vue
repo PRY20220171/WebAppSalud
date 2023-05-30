@@ -56,6 +56,7 @@
                     <PruebasAtencionIndex class="py-2"/>
                     <ResultadosAtencionIndex class="py-2"/>
                     <TratamientosAtencionIndex class="py-2"/>
+                    <Transferencia class="py-2"/>
                   </v-container>
                   <v-btn color="main_color darken-1" @click="e1 = 2" dark> Anterior </v-btn>
                 <v-btn color="primary" @click="registrar" > Registrar </v-btn>

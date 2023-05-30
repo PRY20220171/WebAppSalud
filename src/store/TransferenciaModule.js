@@ -24,6 +24,7 @@ export const TransferenciaModule = {
                 fecharegistro:'',
                 especialidadini:'',
                 especialidadfin:'',
+                descripcion:'',
                 atencion:{                        
                     usuario:{
                         nombres:'',
@@ -57,7 +58,6 @@ export const TransferenciaModule = {
                     observaciones:'',
                     especialidad:'',
                 },
-                descripcion:'',
               }
             if (!id) {
                 console.log("we here tr")

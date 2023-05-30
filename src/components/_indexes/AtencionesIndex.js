@@ -81,12 +81,14 @@ export default {
     },
     computed: {
       ...mapState('atencionModule', ['atencion']),
+      ...mapState('transferenciaModule',['transferencia']),
     },
     watch:{
        // async dialog() { console.log('dialog'); await this.clickRow},
     },
     methods: {
         ...mapActions('atencionModule', ['getAtencion']),
+        ...mapActions('transferenciaModule',['getTransferencia']),
         getAll(page) {
             this.isLoading = true;
             this.$proxies.atencionProxy
@@ -127,9 +129,18 @@ export default {
                     proxy: this.$proxies.atencionProxy
                 });
                 console.log(item.id,'getAtencion',this.atencion,'x--x');
+                this.obtenerTransferencia(this.atencion.id)
             }
         },
-
+        obtenerTransferencia(id){
+            this.$proxies.transferenciaProxy.getById(id)
+            .then(x => {
+              this.transferencia = x.data;
+              console.log('transferencia:',x, id, this.transferencia);
+              commit('fillTransferencia', x.data)
+            })
+            .catch(() => {});
+        },
         remove(atencionId) {
             this.isLoading = true;
             this.$proxies.atencionProxy

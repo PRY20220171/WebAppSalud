@@ -119,7 +119,20 @@ export const AtencionModule = {
           idantecedentefam: "",
           idantecedentepato: ""
         },
-        idusuarioregistro: "",
+        usuarioregistro:{
+          id: "04e77d02-1a3b-428b-83f0-bef1aa426020",
+          nombres: "Zhang",
+          apellidos: "Shou",
+          password: "admin",
+          docnum: "98926073",
+          doctipo: "DNI",
+          correo: "admin@admin.com",
+          telefono: "987654321",
+          direccion: "Av. La Marina 6908",
+          procedencia: "Lima",
+          numcolegiatura: "987654321",
+          especialidad: "cirujano"
+      },
         fecharegistro: "",
         motivoconsulta: "",
         observaciones: "",

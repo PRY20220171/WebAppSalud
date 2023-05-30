@@ -14,12 +14,12 @@
                   
                           <v-row>
                             <v-col cols="12" sm="6">
-                              <v-text-field  label="Especialidad Inicial" name="especialidadIni" v-model="transferencia.especialidadini" 
-                              prepend-icon="mdi-medication" type="text" color="main_color" hide-details="auto"/>
+                              <v-select label="Especialidad Inicial" :items="especialidades" name="especialidadIni" 
+                              v-model="transferencia.especialidadini" prepend-icon="mdi-medication" color="main_color" hide-details="auto"/>                              
                             </v-col>
-                            <v-col  cols="12" sm="6">
-                              <v-text-field label="Especialidad a derivar" name="especialidadFin" v-model="transferencia.especialidadfin" 
-                              prepend-icon="mdi-medication-outline" type="text" color="main_color" hide-details="auto"/>
+                            <v-col cols="12" sm="6">
+                              <v-select label="Especialidad a derivar" :items="especialidades" name="especialidadFin" 
+                              v-model="transferencia.especialidadfin" prepend-icon="mdi-medication-outline" color="main_color" hide-details="auto"/>                              
                             </v-col>
                           </v-row>
                   
@@ -30,7 +30,16 @@
                             </v-col>
                           </v-row>
                   
+                          <v-row>
+                            <v-col>
+                                  <v-btn color="primary" @click="registrar" > Guardar </v-btn>
+                                  <v-btn color="error"   @click="eliminar"> Eliminar </v-btn>
+                            </v-col>
+                          </v-row>
                       </v-card-text>
+                      <v-alert :type="alertType">
+            {{mensaje}}
+          </v-alert>
                     </v-card>
 </template>
 <script src="@/components/_entities/Transferencias/Transferencia.js"></script>
