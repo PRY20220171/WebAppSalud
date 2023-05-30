@@ -4,7 +4,7 @@
             <v-col cols="12"  lg="8">
             <v-card class="px-5 pb-5 pt-6" >
                 <v-card-title class="main_color--text text--darken-1 text-subtitle-1">
-                    Buscar Atencion
+                    Buscar y seleccionar Atencion
                 </v-card-title>
                 <v-row class="align-items-center px-5">
                     <v-col>
