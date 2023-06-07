@@ -147,9 +147,18 @@ export default {
               this.isLoading = false;
               this.id= this.transferencia.id
             }).catch(() => {
-              this.alertType = this.tipos_alerta.e
-              this.mensaje = "No se pudo crear transferencia"
-              this.isLoading = false;
+              this.$proxies.transferenciaProxy.update(this.transferencia.id,this.transferencia)
+              .then(() => {
+                this.alertType = this.tipos_alerta.s
+                this.mensaje = "transferencia actualizada con éxito"
+                this.cancelar = 'Ir a lista de transferencias'
+                this.isLoading = false;
+                this.id= this.transferencia.id
+              }).catch(() => {
+                this.alertType = this.tipos_alerta.e
+                this.mensaje = "No se pudo crear transferencia"
+                this.isLoading = false;
+              });
             });
         } else {
           this.$proxies.transferenciaProxy.update(this.id, this.transferencia)
