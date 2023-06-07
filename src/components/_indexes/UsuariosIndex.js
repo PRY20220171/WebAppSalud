@@ -17,6 +17,7 @@ export default {
     data() {
         return {
             search: '',
+            centroid: '',
             usuarioHeaders: [
                 { text: 'Nombres',value: 'nombres', },
                 { text: 'Apellidos',value: 'apellidos', },
@@ -42,17 +43,46 @@ export default {
             mensaje:'',
         }
     },
+    watch: {
+      'centroid': {
+        handler(val) {
+            console.log('centroid w',val)
+            this.getAll(1)
+        },
+        deep: true
+      }
+    },
     methods: {
         getAll(page) {
             this.isLoading = true;
-            this.$proxies.userProxy.getAll()
-                .then(x => {
-                    this.collection.items = x.data;
-                    console.log(this.collection.items)
-                    this.isLoading = false;
-                }).catch(() => {
-                    this.isLoading = false;
-                });
+            
+            this.$proxies.userProxy.getById(localStorage.getItem("access_token"))
+            .then(x => {
+                this.centroid = x.data.centromedico.id;
+            }).catch(() => {
+            });
+
+                console.log('centroid',this.centroid)
+            if(localStorage.getItem("rol")=='administrador principal'){
+                this.$proxies.userProxy.getAll()
+                    .then(x => {
+                        this.collection.items = x.data;
+                        console.log(this.collection.items)
+                        this.isLoading = false;
+                    }).catch(() => {
+                        this.isLoading = false;
+                    });
+            }else{
+                this.$proxies.userProxy.getAllByCentro(this.centroid+'')
+                    .then(x => {
+                        this.collection.items = x.data;
+                        console.log(x, 'bycentro', this.centroid)
+                        this.isLoading = false;
+                    }).catch(() => {
+                        this.isLoading = false;
+                    });
+            }
+
         },
         remove(id){
             this.isLoading = true;

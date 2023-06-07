@@ -13,7 +13,7 @@
           <v-col cols="8">
             <v-autocomplete v-model="usuario.centromedico" :items="centros" item-text="nombre" return-object
             :rules="[() => !!usuario.centromedico || 'This field is required']"
-            @click="handleChange" v-on:keyup.enter="handleChange" required >
+            @click="handleChange" v-on:keyup.enter="handleChange" required :disabled="selectCenterbyRol()"  >
           
             <template v-slot:append-item>
               <v-list-item

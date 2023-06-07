@@ -201,7 +201,14 @@ import {mapState, mapActions} from 'vuex'
             else
               id=this.$route.params.id
 
-            if(!id) return;
+            if(!id) {
+              this.$proxies.userProxy.getById(localStorage.getItem("access_token"))
+            .then(x => {
+              console.log('get centro', x.data.centromedico)
+                this.usuario.centromedico = x.data.centromedico;
+            }).catch(() => {
+            });
+            };
 /*
             this.$proxies.userProxy.getById(id)
             .then(x => {

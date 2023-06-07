@@ -82,6 +82,9 @@ export default {
       },
       setCentro(){
         this.usuario.centromedico=this.model
+      },
+      selectCenterbyRol(){
+      return  localStorage.getItem('rol')!='administrador principal'
       }
     },
   }
