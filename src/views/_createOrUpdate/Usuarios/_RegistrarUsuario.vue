@@ -14,54 +14,54 @@
                         <v-divider class="ml-4"></v-divider>
                         <v-card-text class="">
                             <v-row class="py-3">
-                                <v-text-field label="Nombre(s)*" name="nombres" v-model="model.nombres"
-                                :rules="rules.model.nombres"
+                                <v-text-field label="Nombre(s)*" name="nombres" v-model="usuario.nombres"
+                                :rules="rules.usuario.nombres"
                                     prepend-icon="mdi-account" type="text" color="main_color" hide-details="auto" />
                             </v-row>
                             <v-row class="py-3">
-                                <v-text-field label="Apellido(s)*" name="apellidos" v-model="model.apellidos"
-                                :rules="rules.model.apellidos"
+                                <v-text-field label="Apellido(s)*" name="apellidos" v-model="usuario.apellidos"
+                                :rules="rules.usuario.apellidos"
                                     prepend-icon="mdi-account-group" type="text" color="main_color" hide-details="auto" />
                             </v-row>
                             <v-row class="py-3">
                                 <v-col cols="12" sm="6" class="px-0">
                                     <v-select :items="tipo_doc" label="Tipo de Documento*" name="tipo_doc"
-                                        v-model="model.doctipo" prepend-icon="mdi-card-bulleted-settings"
+                                        v-model="usuario.doctipo" prepend-icon="mdi-card-bulleted-settings"
                                         color="main_color" hide-details="auto"></v-select>
                                 </v-col>
                                 <v-col cols="12" sm="6" class="px-0">
-                                    <v-text-field label="Número de documento*" name="num_doc" v-model="model.docnum"
-                                    :rules="rules.model.docnum"
+                                    <v-text-field label="Número de documento*" name="num_doc" v-model="usuario.docnum"
+                                    :rules="rules.usuario.docnum"
                                         prepend-icon="mdi-card-account-details" type="text" color="main_color"
                                         hide-details="auto" />
                                 </v-col>
                             </v-row>
                             <v-row class="py-3">
-                                <v-text-field label="Correo" name="correo" v-model="model.correo" :rules="rules.model.correo"
+                                <v-text-field label="Correo" name="correo" v-model="usuario.correo" :rules="rules.usuario.correo"
                                 @blur="checkUserExists"
                                     prepend-icon="mdi-email" type="mail" color="main_color" hide-details="auto" />
-                                    <div v-if="rules.model.correoExists">Correo ya registrado!</div>
+                                    <div v-if="rules.usuario.correoExists">Correo ya registrado!</div>
                             </v-row>
                             <v-row class="py-3">
-                                <v-text-field label="Teléfono" name="correo" v-model="model.telefono"
-                                :rules="rules.model.telefono"
+                                <v-text-field label="Teléfono" name="correo" v-model="usuario.telefono"
+                                :rules="rules.usuario.telefono"
                                     prepend-icon="mdi-phone" type="number" color="main_color" hide-details="auto" oninput="if(this.value < 0) this.value = 0;"/>
                             </v-row>
                             <v-row class="py-3">
-                                <v-text-field label="Dirección actual" name="correo" v-model="model.direccion"
+                                <v-text-field label="Dirección actual" name="correo" v-model="usuario.direccion"
                                     prepend-icon="mdi-map-marker" type="text" color="main_color" hide-details="auto" />
                             </v-row>
                             <v-row class="py-3">
                                 <v-text-field label="Procedencia (Nacionalidad)" name="correo"
-                                    v-model="model.procedencia" prepend-icon="mdi-earth" type="text" color="main_color"
+                                    v-model="usuario.procedencia" prepend-icon="mdi-earth" type="text" color="main_color"
                                     hide-details="auto" />
                             </v-row>
                         </v-card-text>
                     </v-card>
-                    <v-card class="mb-12 elevation-4 px-5 py-4 mt-0" outlined v-if="!model.id">
+                    <v-card class="mb-12 elevation-4 px-5 py-4 mt-0" outlined v-if="!usuario.id">
                         <v-card-text >
                             <v-row class="">
-                                <v-text-field label="Por favor, colocar contraseña" name="password" v-model="model.password"
+                                <v-text-field label="Por favor, colocar contraseña" name="password" v-model="usuario.password"
                                     prepend-icon="mdi-email" type="password" color="main_color" hide-details="auto"  />
                             </v-row>
                         </v-card-text>
@@ -75,7 +75,7 @@
                         <v-divider class="ml-4"></v-divider>
                         <v-card-text class="">
                             <v-row class="py-3">
-                                <v-radio-group label="Por favor, seleccionar rol del usuario*" v-model="model.roles[0].rol.descripcion"
+                                <v-radio-group label="Por favor, seleccionar rol del usuario*" v-model="usuario.roles[0].rol.descripcion"
                                     prepend-icon="mdi-account" color="main_color" hide-details="auto">
                                     <v-radio v-for="rol in roles" :value="rol.value" :label="rol.nombre">
                                     </v-radio>
@@ -83,17 +83,17 @@
                             </v-row>
                             <v-row class="py-3">
                                 <v-text-field label="Número de Colegiatura *" name="numcolegiatura"
-                                    v-model="model.numcolegiatura" prepend-icon="mdi-medical-bag" type="number" hint="(obligatorio para personal médico)"
+                                    v-model="usuario.numcolegiatura" prepend-icon="mdi-medical-bag" type="number" hint="(obligatorio para personal médico)"
                                     color="main_color" persistent-hint />
                             </v-row>
                             <v-row class="py-3">
-                                <v-select v-model="model.especialidad" :items="especialidades" chips
+                                <v-select v-model="usuario.especialidad" :items="especialidades" chips
                                     label="Especialidades" multiple prepend-icon="mdi-school" color="main_color">
                                 </v-select>
                             </v-row>
                         </v-card-text>
                     </v-card>
-                    <v-card class="mb-12 elevation-4 px-5 py-4 mt-0" outlined v-if="model.id == token_usuariotem">
+                    <v-card class="mb-12 elevation-4 px-5 py-4 mt-0" outlined v-if="usuario.id == token_usuariotem">
                         <v-card-title class="align-center ">
                             <v-checkbox v-model="cambiar_pass" hide-details="auto" label="Cambiar Contraseña" color="main_color"></v-checkbox>
                         </v-card-title>

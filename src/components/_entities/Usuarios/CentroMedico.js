@@ -1,5 +1,5 @@
 
-import {mapState} from 'vuex'
+import {mapState, mapActions } from 'vuex'
 export default {
     name: 'CentroMedico',
 
@@ -40,9 +40,11 @@ export default {
     },
     mounted() {
       //this.initialize();
+      //this.model=this.usuario.centromedico
     },
 
     methods: {
+      ...mapActions('UsuarioModule', ['getUsuario']),
       initialize() {
         let id = this.$route.params.id;
         if (!id) return;
@@ -72,10 +74,10 @@ export default {
       },
       handleChange(value) {
         var searchWord = value.srcElement._value
-        if (this.items.filter(value => value.startsWith(searchWord)).length === 0) {
+        /*if (this.items.filter(value => value.startsWith(searchWord)).length === 0) {
           if(searchWord != null)
            if(searchWord.length>0)this.dialog=true;
-        }
+        }*/
         this.setCentro()
       },
       setCentro(){

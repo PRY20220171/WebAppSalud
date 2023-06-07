@@ -99,13 +99,13 @@ export const UsuarioModule = {
     mutations: {
         fillUsuario(state, usuarioAction){
             state.usuario=usuarioAction
+            console.log("se llenó ek user",state.atencion)
         },
     },
     actions: {
         getUsuario: async function ({commit}, params){
             let proxy = params.proxy;
             let id = params.id;
-            
             let model = {
                 id: '',
                 nombres:'',
@@ -139,19 +139,20 @@ export const UsuarioModule = {
                     nombre: "",
                     sector: ""
                   },
-            }
-            if (!id) 
+            };
+            console.log('module u', proxy, id)
+            if (!id){ 
+                console.log('model u sin id:',model);
                 commit('fillUsuario',model);
-            else {
+            }else {
                 proxy.getById(id)
-                    .then(x => {
-                        model = x.data;
-                        model.edad=model_edad
-                        console.log('model:',model);
-                        commit('fillUsuario',model)
-                    })
-                    .catch(() => { });
-            }
+                  .then(x => {
+                    let model = x.data;
+                    console.log('model:', model);
+                    commit('fillUsuario', model)
+                  })
+                  .catch(() => {});
+              }
         },
         getUsuarioByAutentificacion: async function ({commit}, params){
             if (!params.correo || !params.password){

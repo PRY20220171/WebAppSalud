@@ -9,10 +9,10 @@
       <v-card-text class="">
         <v-row class="align-center">
           <v-col cols="4" class="text-capitalize">
-            <spam class="main_color--text text--darken-2"> Sector </spam> {{model.sector}}</v-col>
+            <spam class="main_color--text text--darken-2"> Sector </spam> {{usuario.centromedico.sector}}</v-col>
           <v-col cols="8">
-            <v-autocomplete v-model="model" :items="centros" item-text="nombre" return-object
-            :rules="[() => !!model || 'This field is required']"
+            <v-autocomplete v-model="usuario.centromedico" :items="centros" item-text="nombre" return-object
+            :rules="[() => !!usuario.centromedico || 'This field is required']"
             @click="handleChange" v-on:keyup.enter="handleChange" required >
           
             <template v-slot:append-item>
@@ -29,13 +29,13 @@
           </v-col>
         </v-row>
           <v-row> <v-icon>mdi-home-city</v-icon>
-            <span class='mr-5'> | {{model.ubicacion.pais}}</span>
-            <span class='mr-5'> | {{model.ubicacion.region}}</span>
-            <span class='mr-5'> | {{model.ubicacion.provincia}}</span>
-            <span class='mr-5'> | {{model.ubicacion.distrito}}</span>
+            <span class='mr-5'> | {{usuario.centromedico.ubicacion.pais}}</span>
+            <span class='mr-5'> | {{usuario.centromedico.ubicacion.region}}</span>
+            <span class='mr-5'> | {{usuario.centromedico.ubicacion.provincia}}</span>
+            <span class='mr-5'> | {{usuario.centromedico.ubicacion.distrito}}</span>
           </v-row>
           <v-row>
-            <v-icon>mdi-map-marker</v-icon> <span class='mr-5'> {{model.ubicacion.direccion}}</span>
+            <v-icon>mdi-map-marker</v-icon> <span class='mr-5'> {{usuario.centromedico.ubicacion.direccion}}</span>
           </v-row>
 
       <v-row justify="center">
@@ -49,8 +49,8 @@
                       <v-icon class="main_color--text text--darken-1">mdi-information</v-icon>
                       <h4 class="ml-2 font-weight-regular"> Información general </h4>
                   </v-row>      
-                  <v-text-field label="nombre" required v-model="model.nombre"></v-text-field>
-                  <v-select :items="tipo_centro" label="Tipo" required v-model="model.sector"></v-select>
+                  <v-text-field label="nombre" required v-model="usuario.centromedico.nombre"></v-text-field>
+                  <v-select :items="tipo_centro" label="Tipo" required v-model="usuario.centromedico.sector"></v-select>
                    <v-divider class="ml-4"></v-divider>
                   <v-row class="mx-4 mt-1 main_color--text text--darken-1 align-end">
                       <v-icon class="main_color--text text--darken-1">mdi-home</v-icon>
@@ -58,31 +58,31 @@
                   </v-row>                  
                   <v-row>
                       <v-col cols="12" sm="6">
-                          <v-text-field label="Pais" name="nac_Pais" v-model="model.ubicacion.pais"
+                          <v-text-field label="Pais" name="nac_Pais" v-model="usuario.centromedico.ubicacion.pais"
                           prepend-icon="mdi-earth" type="text" color="main_color" hide-details="auto" >
                           </v-text-field>
                       </v-col>
                       <v-col cols="12" sm="6">
-                          <v-text-field label="Region" name="nac_Region" v-model="model.ubicacion.region"
+                          <v-text-field label="Region" name="nac_Region" v-model="usuario.centromedico.ubicacion.region"
                           prepend-icon="mdi-map" type="text" color="main_color" hide-details="auto">
                           </v-text-field>
                       </v-col>
                   </v-row>
                   <v-row>
                       <v-col cols="12" sm="6">
-                          <v-text-field label="Provincia" name="nac_Provincia" v-model="model.ubicacion.provincia" 
+                          <v-text-field label="Provincia" name="nac_Provincia" v-model="usuario.centromedico.ubicacion.provincia" 
                           prepend-icon="mdi-city" type="text" color="main_color" hide-details="auto">
                           </v-text-field>
                       </v-col>
                       <v-col cols="12" sm="6">
-                          <v-text-field label="Distrito" name="nac_Distrito" v-model="model.ubicacion.distrito" 
+                          <v-text-field label="Distrito" name="nac_Distrito" v-model="usuario.centromedico.ubicacion.distrito" 
                           prepend-icon="mdi-home-city" type="text" color="main_color" hide-details="auto"/>
                       </v-col>
                   </v-row>
           
                   <v-row>
                       <v-col >
-                          <v-text-field label="Direccion" name="nac_Direccion" v-model="model.ubicacion.direccion" 
+                          <v-text-field label="Direccion" name="nac_Direccion" v-model="usuario.centromedico.ubicacion.direccion" 
                           prepend-icon="mdi-map-marker" type="text" color="main_color" hide-details="auto"/>
                       </v-col>
                   </v-row>

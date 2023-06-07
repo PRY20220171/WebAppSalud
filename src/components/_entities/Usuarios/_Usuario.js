@@ -2,7 +2,7 @@
 
 
 import CentroMedico from '@/views/_createOrUpdate/Usuarios/CentroMedicoView.vue';
-import {mapState} from 'vuex'
+import {mapState, mapActions} from 'vuex'
 
   export default {
     name: 'RegistrarUsuario',
@@ -12,7 +12,7 @@ import {mapState} from 'vuex'
     data () {
       return {
         token_usuariotem:1,
-        model : {
+       /* usuario : {
             id: '',
             nombres:'',
             apellidos: '',
@@ -32,9 +32,9 @@ import {mapState} from 'vuex'
                     }
                 }
             ]
-        },
+        },*/
         rules:{
-          model:{
+          usuario:{
             nombres: [
               (v) => !!v || 'Nombre es obligatorio',
             ],
@@ -85,54 +85,65 @@ import {mapState} from 'vuex'
         ...mapState('UsuarioModule',['especialidades']),
         datosUsuario(){
           return [{
-              name:this.model.doctipo,
-              valor:this.model.docnum,
+              name:this.usuario.doctipo,
+              valor:this.usuario.docnum,
               icon:'mdi-card-account-details'
             },{
               name:'Correo',
-              valor:this.model.correo,
+              valor:this.usuario.correo,
               icon:'mdi-email'
             },{
               name:'Telefono',
-              valor:this.model.telefono,
+              valor:this.usuario.telefono,
               icon:'mdi-phone'
             },{
               name:'Dirección',
-              valor:this.model.direccion,
+              valor:this.usuario.direccion,
               icon:'mdi-city'
             },{
               name:'Procedencia (Nacionalidad)',
-              valor:this.model.procedencia,
+              valor:this.usuario.procedencia,
               icon:'mdi-map-marker'
             },{
               name:'Número de colegiatura',
-              valor:this.model.numcolegiatura,
+              valor:this.usuario.numcolegiatura,
               icon:'mdi-medical-bag'
             },{
               name:'Especialidades',
-              valor:this.model.especialidad,
+              valor:this.usuario.especialidad,
               icon:'mdi-account-tie'
             },
           ]
         },
     },
     watch:{
-      'model.roles'(val){
+      'usuario.roles'(val){
         console.log(val)
       }
     },
+    created() {
+      let id = this.$route.params.id;
+      this.getUsuario({
+        id: id,
+        proxy: this.$proxies.userProxy
+      });
+      console.log(id, this.usuario)
+     // this.getUsuario(this.usuario.id);
+    },
     methods:{
+      
+      ...mapActions('UsuarioModule', ['getUsuario']),
       async checkUserExists() {
         try {
-          const response = await this.$proxies.userProxy.getByCorreo(this.model.correo);
+          const response = await this.$proxies.userProxy.getByCorreo(this.usuario.correo);
           //const response = await axios.get(`/api/users?email=${this.email}`);
           //console.log(response);
           if (response.data.length !== 0){
-            this.rules.model.correoExists = true; // Assuming the server responds with an "exists" property indicating user existence
+            this.rules.usuario.correoExists = true; // Assuming the server responds with an "exists" property indicating user existence
           } else {
-            this.rules.model.correoExists = false;
+            this.rules.usuario.correoExists = false;
           }
-          //console.log(this.rules.model.correoExists);
+          //console.log(this.rules.usuario.correoExists);
         } catch (error) {
           console.error(error);
           // Handle error case, e.g., show an error message
@@ -143,16 +154,16 @@ import {mapState} from 'vuex'
       },
       save(){
         let id = ''
-        console.log(this.model)
-        if(this.model.nombres==''|| this.model.apellidos==''|| this.model.docnum==''|| this.model.doctipo=='' ||
-          this.model.roles[0].rol.descripcion==''){
+        console.log(this.usuario)
+        if(this.usuario.nombres==''|| this.usuario.apellidos==''|| this.usuario.docnum==''|| this.usuario.doctipo=='' ||
+          this.usuario.roles[0].rol.descripcion==''){
 
           this.alertType='warning',
           this.mensaje='Falta informacion obligatoria'
-          //|| this.model.password==''
+          //|| this.usuario.password==''
         }
         else{
-          if ((this.model.roles[0].rol.descripcion=='medico' || this.model.roles[0].rol.descripcion=='enfermero') && this.model.numcolegiatura=='') {
+          if ((this.usuario.roles[0].rol.descripcion=='medico' || this.usuario.roles[0].rol.descripcion=='enfermero') && this.usuario.numcolegiatura=='') {
 
             this.alertType='warning',
             this.mensaje='Falta informacion obligatoria'
@@ -166,14 +177,14 @@ import {mapState} from 'vuex'
               }
 
             if(!this.$route.params.id) {
-                this.$proxies.userProxy.register(this.model)
+                this.$proxies.userProxy.register(this.usuario)
             .then(x => {})
             .catch(() => { });
             }
             else{
-              console.log('model:',this.model)
+              console.log('usuario:',this.usuario)
              console.log('user:',this.$proxies.userProxy.getById(this.$route.params.id) )
-                 this.$proxies.userProxy.update(this.$route.params.id,this.model)
+                 this.$proxies.userProxy.update(this.$route.params.id,this.usuario)
                 .then(x => {})
                 .catch(() => { });
             }
@@ -182,7 +193,7 @@ import {mapState} from 'vuex'
           }
         }
       },
-      getUsuario() {
+      getUser() {
             let id = ''
 
             if(this.esPerfil)
@@ -191,13 +202,13 @@ import {mapState} from 'vuex'
               id=this.$route.params.id
 
             if(!id) return;
-
+/*
             this.$proxies.userProxy.getById(id)
             .then(x => {
-                this.model = x.data;
-                console.log('model:',this.model);
+                this.usuario = x.data;
+                console.log('usuario:',this.usuario, "user", this.usuario);
             })
-            .catch(() => { });
+            .catch(() => { });*/
       }
     },
     mounted(){
@@ -205,8 +216,8 @@ import {mapState} from 'vuex'
       this.token_usuariotem = localStorage.getItem("access_token").toString();
       if(this.$route.path== '/perfil/editar') this.esPerfil=true
 
-      this.getUsuario()
-      this.model.rol = this.model.roles[0].rol.descripcion
+      this.getUser()
+      //this.usuario.rol = this.usuario.roles[0].rol.descripcion
     }
 
   }

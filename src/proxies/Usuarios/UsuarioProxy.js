@@ -9,6 +9,9 @@ export default class UsuarioProxy {
     getAll() {
         return this.axios.get(this.url + `usuarios`);
     }
+    getAllByCentro(centroId) {
+        return this.axios.get(this.url + 'usuarios?centromedico.id='+centroId);
+    }
     getById(id) {
         return this.axios.get(this.url + `usuarios/${id}`);
     }
