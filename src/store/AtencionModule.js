@@ -165,7 +165,7 @@ export const AtencionModule = {
           fecultregla: ""
         },
         idcentromedico: "",
-        centromedico: {
+        /*centromedico: {
           id: "",
           ubicacionid: "",
           ubicacion: {
@@ -178,7 +178,7 @@ export const AtencionModule = {
           },
           nombre: "",
           sector: ""
-        },
+        },*/
         signosvitales:{
           temperatura:'',
           presionArterial:'',

@@ -40,6 +40,61 @@ export const UsuarioModule = {
           "Traumatologia y Ortopedia",
           "Urología",
         ],
+        centros:[
+            {
+              id: '1',
+              ubicacionid: '',
+              ubicacion: {
+                id:  "",
+                pais: "Peru",
+                region: "Lima",
+                provincia: "Lima",
+                distrito:  "Cercado",
+                direccion:  "Av. 123",
+              },
+              nombre: 'Niño Jesús',
+              sector: 'estatal',
+            },{
+              id: '2',
+              ubicacionid: '',
+              ubicacion: {
+                id:  "",
+                pais: "Peru",
+                region: "Lima",
+                provincia: "Lima",
+                distrito:  "Miraflores",
+                direccion:  "Av. 12345",
+              },
+              nombre: 'Mediplus',
+              sector: 'privado',
+            },{
+              id: '3',
+              ubicacionid: '',
+              ubicacion: {
+                id:  "",
+                pais: "Peru",
+                region: "Lima",
+                provincia: "Lima",
+                distrito:  "La molina",
+                direccion:  "Av. 123",
+              },
+              nombre: 'Clínica Liset',
+              sector: 'privado',
+            },{
+              "id": "bdca4305-2306-4398-b840-438a735d1963",
+              "ubicacionid": "40477407-308d-4fa4-aa62-dcddcc5a0b39",
+              "ubicacion": {
+                "id": "40477407-308d-4fa4-aa62-dcddcc5a0b39",
+                "pais": "Peru",
+                "region": "Lima",
+                "provincia": "Lima",
+                "distrito": "Lima",
+                "direccion": "Av. Alfonso Ugarte 825"
+              },
+              "nombre": "Hospital Nacional Dos de Mayo",
+              "sector": "estatal"
+            }
+          ],
     }),
     mutations: {
         fillUsuario(state, usuarioAction){
