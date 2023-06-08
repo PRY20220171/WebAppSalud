@@ -62,8 +62,8 @@ Axios.interceptors.response.use(
         return Promise.reject(error);
     }
 );
-let url = 'http://localhost:3000/'; //->Para conexion local
-//let url='http://a0cf87b4b3dbe4e5a94c43389efa8cb5-1064006626.us-east-1.elb.amazonaws.com:8188/'; //->Para conexion cloud
+//let url = 'http://localhost:3000/'; //->Para conexion local
+let url='http://a0cf87b4b3dbe4e5a94c43389efa8cb5-1064006626.us-east-1.elb.amazonaws.com:8188/'; //->Para conexion cloud
 
 export default {
 
