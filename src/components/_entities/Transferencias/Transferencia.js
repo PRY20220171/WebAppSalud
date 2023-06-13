@@ -109,14 +109,14 @@ export default {
                 docnum:this.atencion.usuarioregistro.docnum,
                 doctipo:this.atencion.usuarioregistro.doctipo,
                 numcolegiatura:this.atencion.usuarioregistro.numcolegiatura,
-                centroMedico:{
+               /* centroMedico:{
                     nombre:this.atencion.centromedico.nombre,
                     sector:this.atencion.centromedico.sector,
                     pais:this.atencion.centromedico.ubicacion.pais,
                     region:this.atencion.centromedico.ubicacion.region,
                     provincia:this.atencion.centromedico.ubicacion.provincia,
                     distrito:this.atencion.centromedico.ubicacion.distrito,
-                }
+                }*/
             },
             paciente:{
                 id:this.atencion.paciente.id,
