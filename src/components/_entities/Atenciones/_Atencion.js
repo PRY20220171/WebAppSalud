@@ -90,6 +90,8 @@ export default {
     console.log(this.usuario)
     if (this.$route.params.id)
             this.saved=true
+    if(this.atencion.fecharegistro=='')
+    this.atencion.fecharegistro=new Date().toLocaleDateString();
   },
   updated() {
   },
@@ -106,6 +108,19 @@ export default {
       this.atencion.paciente= paciente;
       console.log(this.atencion)
       if (!id) {
+        if(this.saved){
+          this.$proxies.atencionProxy.update(this.atencion.id, this.atencion)
+          .then(() => {
+            this.alertType = this.tipos_alerta.s
+            this.mensaje = "atencion actualizado con éxito"
+            this.cancelar = 'Ir a lista de atencion'
+            this.isLoading = false;
+          }).catch(() => {
+            this.alertType = this.tipos_alerta.e
+            this.mensaje = "No se pudo actualizar atencion"
+            this.isLoading = false;
+          });
+        }else{
         this.saved=true
         this.$proxies.atencionProxy.register(this.atencion)
           .then(() => {
@@ -122,6 +137,7 @@ export default {
             this.mensaje = "No se pudo crear atencion"
             this.isLoading = false;
           });
+        }
       } else {
         this.$proxies.atencionProxy.update(id, this.atencion)
           .then(() => {

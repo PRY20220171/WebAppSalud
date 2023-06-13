@@ -67,11 +67,26 @@ export default {
       ...mapState('transferenciaModule',['transferencia']),
       
     },
-    mounted() {
-      //setTimeout(this.obtener(), 3000);
+    watch: {
+      'atencion': {
+        handler(val) {
+          
+          console.log('transferencia de', this.atencion)
+          this.getTransferencia({
+            id: this.atencion.id,
+            proxy: this.$proxies.transferenciaProxy
+          });
+        },
+        deep: true
+      }
     },
-    created(){
-
+    beforeDestroy() {
+      this.transferencia={}
+    },
+    created() {  
+      if(this.transferencia.fecharegistro==''){
+        this.transferencia.fecharegistro= new Date().toLocaleDateString();
+      }
     },
     methods:{
       ...mapActions('atencionModule',['getAtencion']),
@@ -85,7 +100,7 @@ export default {
         //let id = this.$route.params.id;
         console.log("trans e")
         
-          this.$proxies.transferenciaProxy.remove(this.id)
+          this.$proxies.transferenciaProxy.remove(this.transferencia.id)
             .then(() => {
               
               this.transferencia.descripcion = ""
@@ -101,8 +116,7 @@ export default {
         this.transferencia.id=this.atencion.id
         console.log("trans G", this.id)
         this.transferencia.atencion = {
-          atencion:{                        
-            usuario:{
+          usuario:{
                 id : this.atencion.usuarioregistro.id,
                 nombres: this.atencion.usuarioregistro.nombres,
                 apellidos:this.atencion.usuarioregistro.apellidos,
@@ -135,7 +149,6 @@ export default {
             fecharegistro:this.atencion.fecharegistro,
             motivoconsulta:this.atencion.motivoconsulta,
             observaciones:this.atencion.observaciones,
-        },
         }
         console.log(this.transferencia)
         if (this.id=='' || !this.id) {

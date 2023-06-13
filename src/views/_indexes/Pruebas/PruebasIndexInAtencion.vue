@@ -42,13 +42,13 @@
                 </template>
                 <template v-slot:[`item.fecprueba`]="{ item }" >
                   <v-text-field v-model="editedItem.fecprueba" :hide-details="true" dense single-line
-                    :autofocus="true" v-if="item.id === editedItem.id"></v-text-field>
+                    :autofocus="true" v-if="item.id === editedItem.id" type="date"></v-text-field>
                   <span v-else-if="item.estado=='en proceso' || item.estado=='finalizada'">{{item.fecprueba}}</span>
                   <span v-else>-</span>
                 </template>
                 <template v-slot:[`item.fecresultado`]="{ item }">
                     <v-text-field v-model="editedItem.fecresultado" :hide-details="true" dense single-line :autofocus="true"
-                      v-if="item.id === editedItem.id"></v-text-field>
+                      v-if="item.id === editedItem.id" type="date"></v-text-field>
                     <span v-else-if="item.estado=='en proceso' || item.estado=='finalizada'">{{item.fecresultado}}</span>
                   <span v-else>-</span>
                 </template>

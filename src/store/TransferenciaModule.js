@@ -4,6 +4,7 @@ export const TransferenciaModule = {
         transferencia: {},
         transferencias: []
     }),
+    strict: true,
     mutations: {
         listTransferencias(state, transferenciasAction) {
             state.transferencias = transferenciasAction
@@ -69,7 +70,13 @@ export const TransferenciaModule = {
                         console.log('model:', model);
                         commit('fillTransferencia', model)
                     })
-                    .catch(() => {});
+                    .catch(error => {
+                        if (error.response && error.response.status === 404) {
+                            commit('fillTransferencia', model)
+                        } else {
+                          // Acciones para otros errores
+                        }
+                      });
             }
         }
     }
